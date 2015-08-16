@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-richardsumilang-dark"]
+	path = themes/hugo-theme-richardsumilang-dark
+	url = https://github.com/richardsumilang-blog/hugo-theme-richardsumilang-dark
