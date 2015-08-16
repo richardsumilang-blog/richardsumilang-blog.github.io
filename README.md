@@ -15,3 +15,6 @@ ran after cloning this repository.
   
       git submodule update
   
+  3) Get latest submodules
+  
+      git submodule foreach git pull origin master
