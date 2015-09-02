@@ -4,6 +4,9 @@ title = "Top Secret Labs - RichardSumilang.com"
 theme = "hugo-theme-richardsumilang-dark"
 SectionPagesMenu = "main"
 
+[permalinks]
+  wordpress = "/blog/:year/:month/:day/:title/"
+
 [author]
   name = "Richard Sumilang"
   homepage = "http://www.richardsumilang.com"
