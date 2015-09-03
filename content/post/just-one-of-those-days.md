@@ -6,6 +6,7 @@ Description = "Just one of those beautiful days to do a bike ride through Pasade
 date = "2014-03-30T01:01:01-07:00"
 title = "Just one of those days"
 disqusIdentifier = "33 http://www.richardsumilang.com/blog/?p=33"
+aliases = ["/blog/2014/03/30/just-one-of-those-days"]
 
 +++
 
