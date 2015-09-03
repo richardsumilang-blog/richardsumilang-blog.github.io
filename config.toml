@@ -13,7 +13,7 @@ SectionPagesMenu = "main"
 
 [indexes]
   category = "categories"
-  tags = "tags"
+  tag = "tags"
 
 [Params]
   AuthorName = "Richard"
