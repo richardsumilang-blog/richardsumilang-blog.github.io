@@ -1,6 +1,6 @@
 +++
 Categories = ["Programming"]
-Tags = ["MongoDB", "ObjectID", "PHP"]
+Tags = ["Database", "MongoDB", "ObjectID", "PHP"]
 date = "2014-03-31T01:01:01-07:00"
 title = "How to create a MongoDB ObjectID from a timestamp using PHP"
 disqusIdentifier = "42 http://www.richardsumilang.com/blog/?p=42"
