@@ -1,5 +1,5 @@
 +++
-Categories = ["Writings"]
+Categories = ["Etc"]
 Tags = ["Life"]
 date = "2014-04-24T01:01:01-07:00"
 title = "Reflection"

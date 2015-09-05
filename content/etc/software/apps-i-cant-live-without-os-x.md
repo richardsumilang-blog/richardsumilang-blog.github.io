@@ -1,5 +1,5 @@
 +++
-Categories = ["Writings"]
+Categories = ["Etc"]
 Tags = ["Apple", "OS X", "Software"]
 date = "2014-05-07T01:01:01-07:00"
 title = "Apps I can't live without on OS X"

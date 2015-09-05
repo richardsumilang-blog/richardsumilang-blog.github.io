@@ -1,6 +1,6 @@
 +++
 CoverImage = "/cycling/just-one-of-those-days.jpg"
-Categories = ["Writings"]
+Categories = ["Etc"]
 Tags = ["Cycling", "Pasadena"]
 Description = "Just one of those beautiful days to do a bike ride through Pasadena."
 date = "2014-03-30T01:01:01-07:00"

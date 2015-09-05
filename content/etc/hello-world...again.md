@@ -1,5 +1,5 @@
 +++
-Categories = ["Writings"]
+Categories = ["Etc"]
 Description = "Bringing back my blog!"
 date = "2014-03-29T01:01:01-07:00"
 title = "Hello world! ... Again."
