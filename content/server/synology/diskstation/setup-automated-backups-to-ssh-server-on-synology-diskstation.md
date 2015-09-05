@@ -1,6 +1,6 @@
 +++
 Categories = ["Servers"]
-Tags = ["Crontab", "DSM, 4", "DSM 5", "rsync", "SSH", "Synology"]
+Tags = ["Crontab", "DSM, 4", "DSM 5", "NAS", "rsync", "SSH", "Synology"]
 date = "2014-07-12T02:01:01-07:00"
 title = "How to setup automated backups to SSH server with Synology DiskStation"
 disqusIdentifier = "372 http://www.richardsumilang.com/blog/?p=372"

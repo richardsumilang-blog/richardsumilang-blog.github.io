@@ -1,6 +1,6 @@
 +++
 Categories = ["Servers"]
-Tags = ["DS413", "DSM 5", "RAID", "Synology"]
+Tags = ["DS413", "DSM 5", "NAS", "RAID", "Synology"]
 date = "2014-06-28T01:01:01-07:00"
 title = "Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0"
 disqusIdentifier = "310 http://www.richardsumilang.com/blog/?p=310"

@@ -1,6 +1,6 @@
 +++
 Categories = ["Servers"]
-Tags = ["DSM 5", "SSH", "Synology"]
+Tags = ["DSM 5", "NAS", "SSH", "Synology"]
 date = "2014-07-12T01:01:01-07:00"
 title = "How to enable SSH access to Synology DiskStation"
 disqusIdentifier = "364 http://www.richardsumilang.com/blog/?p=364"
