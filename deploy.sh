@@ -16,7 +16,7 @@ tempBranch="deploy_$(date +%s)"
 echo -e "Deploying updates to Github..."
 
 # Switch to tempBranch branch
-git checkout -vb $tempBranch
+git checkout -b $tempBranch
 
 # Build the project
 hugo -d $buildDirectory
@@ -32,16 +32,16 @@ msg="Deploying site `date`."
 if [ $# -eq 1 ]
   then msg="$1"
 fi
-git commit -vm "$msg"
+git commit -m "$msg"
 
 # Delete deploy branch on remote
-git push -v origin --delete $deployBranch
+git push origin --delete $deployBranch
 
 # Push build to deploy branch
 git subtree push  --prefix=$buildDirectory $deployRepo $deployBranch
 
 # Switch back to original branch
-git checkout -v $sourceBranch
+git checkout $sourceBranch
 
 # Delete temp branch
-git branch -vD $tempBranch
+git branch -D $tempBranch
