@@ -1,5 +1,5 @@
 +++
-CoverImage = "/cycling/just-one-of-those-days.jpg"
+CoverImage = "images/cycling/just-one-of-those-days.jpg"
 Categories = ["Etc"]
 Tags = ["Cycling", "Pasadena"]
 Description = "Just one of those beautiful days to do a bike ride through Pasadena."

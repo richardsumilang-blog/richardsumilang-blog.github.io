@@ -1,5 +1,5 @@
 +++
-CoverImage = "/programming/style-guide-cartoon.png"
+CoverImage = "images/programming/style-guide-cartoon.png"
 Categories = ["Programming"]
 Tags = ["C++", "CSS", "HTML", "Java", "JavaScript", "Lisp", "Objective C", "PHP", "Ruby", "Scala", "Shell", "Style Guides", "Swift"]
 date = "2015-02-08T01:01:01-07:00"
@@ -20,7 +20,7 @@ it's best to do what's best for each language.
 
 > "Any fool can write code that a computer can understand.
 > Good programmers write code that humans can understand."
-> 
+>
 > Martin Fowler, Refactoring: Improving the Design of Existing Code
 
 *Last updated: Feb 8th, 2015.*

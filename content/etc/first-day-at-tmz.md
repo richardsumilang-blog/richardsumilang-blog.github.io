@@ -1,7 +1,7 @@
 +++
 Categories = ["Etc"]
 Tags = ["TMZ", "Work"]
-CoverImage = "/logos/tmz/big-red.jpg"
+CoverImage = "images/logos/tmz/big-red.jpg"
 Description = "First day at TMZ!"
 date = "2014-04-01T01:01:01-07:00"
 title = "First day at TMZ"
