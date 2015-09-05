@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/backup/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 30051 05:05:05 PST</updated>
+    
+    <item>
+      <title>Backing up and Restoring with MongoDB</title>
+      <link>http://www.richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</link>
+      <pubDate>Sun, 56 Aug 30051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</guid>
+      <description>
+
+&lt;h2 id=&#34;dump:93a29bfa8cd1a35364b077bea9abfe7d&#34;&gt;Dump&lt;/h2&gt;
+
+&lt;p&gt;You can dump the database locally using the following &lt;code&gt;mongodump&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Dump Database&#34;&gt;mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will create a &lt;code&gt;dump&lt;/code&gt; folder containing a subfolder named after your
+database. The default port for MongoDB is &lt;code&gt;27017&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;import:93a29bfa8cd1a35364b077bea9abfe7d&#34;&gt;Import&lt;/h2&gt;
+
+&lt;p&gt;You can import the same dump to a local MongoDB instance using something like
+the following &lt;code&gt;mongorestore&lt;/code&gt; after changing into the &lt;code&gt;dump&lt;/code&gt; directory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Restore Database&#34;&gt;mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

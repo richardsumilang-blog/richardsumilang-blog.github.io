@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idea on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/idea/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 6051 05:05:05 PST</updated>
+    
+    <item>
+      <title>IntelliJ IDEA Optimizations</title>
+      <link>http://www.richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</link>
+      <pubDate>Sun, 56 Aug 6051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</guid>
+      <description>&lt;p&gt;Please post a comment if you have any additional tips to making IDEA faster.&lt;/p&gt;
+
+&lt;p&gt;1) The first thing you want to do is disable all the plugins you are not using.
+Go to &lt;em&gt;Preferences&amp;amp; -&amp;gt; *Plugins&lt;/em&gt; and un-check as many as possible. I
+unchecked about 80%.&lt;/p&gt;
+
+&lt;p&gt;2) Give yourself more memory. I figure if Firefox allows itself to take a gig of
+my ram then I should treat my IDE a little better. So, I gave it two. Find your
+&lt;code&gt;idea.vmpoptions&lt;/code&gt; file (on Mac you can &amp;ldquo;right&amp;rdquo; click the IntelliJ IDEA app icon,
+click &lt;code&gt;Show Package Contents&lt;/code&gt; and look in the &lt;code&gt;bin&lt;/code&gt; folder.) and tweak start-up
+settings like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ini&#34; title=&#34;idea.vmoptions&#34; &gt;-Xms512m
+-Xmx2048m
+-XX:MaxPermSize=512m
+-XX:ReservedCodeCacheSize=256m
+-XX:+UseCompressedOops
+-DlocalHistory.daysToKeep=1&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;p&gt;2.1) You might notice the last setting on there is a local history setting. I do
+a pretty good job at committing anything useful to my version control system, so
+I keep that at a minimum. Part of me wants to completely remove the local
+history feature but it doesn&amp;rsquo;t cost me much to keep it around so I keep it at
+just a day. You can change that or remove the setting to keep the default.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

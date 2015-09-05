@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nas on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/nas/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 16 Aug 9012 01:01:01 PST</updated>
+    
+    <item>
+      <title>SynoCommunity packages for Synology NAS</title>
+      <link>http://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
+      <pubDate>Sun, 16 Aug 9012 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
+      <description>&lt;p&gt;A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
+Sync, Redis, and Firefox Sync Server just to name a few. Check out the
+&lt;a href=&#34;https://synocommunity.com/packages&#34; title=&#34;SynoCommunity Packages&#34;&gt;full list of packages&lt;/a&gt; or just add the source to your package manager :)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Log into your NAS as administrator and go to Main &lt;strong&gt;Menu → Package Center →
+Settings → Package Sources.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Add&lt;/strong&gt;, type &lt;em&gt;SynoCommunity&lt;/em&gt; as &lt;strong&gt;Name&lt;/strong&gt; and
+&lt;em&gt;&lt;a href=&#34;http://packages.synocommunity.com/&#34;&gt;http://packages.synocommunity.com/&lt;/a&gt;&lt;/em&gt; as &lt;strong&gt;Location&lt;/strong&gt; and then press &lt;strong&gt;OK&lt;/strong&gt; to
+validate.&lt;/li&gt;
+&lt;li&gt;Go back to the &lt;strong&gt;Package Center&lt;/strong&gt; and enjoy SynoCommunity&amp;rsquo;s packages in the
+&lt;strong&gt;Community&lt;/strong&gt; tab&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;See the &lt;a href=&#34;https://synocommunity.com/&#34; title=&#34;SynoCommunity&#34;&gt;official site&lt;/a&gt; for more info. Happy hacking!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to setup automated backups to SSH server with Synology DiskStation</title>
+      <link>http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</link>
+      <pubDate>Sun, 76 Aug 12071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</guid>
+      <description>
+
+&lt;p&gt;As a best practice, it&amp;rsquo;s great great to have your data in more than one
+location. I use my Synology Diskation as a local network file server at my home.
+The reality is something can happen and I lose all my important data in that
+little box. From a BBQ, a birthday party, or maybe the house just burns down and
+now all my data is gone. Unfortunately my network rack at home will never be as
+secure as a network rack in a data center. So, backup your data because that&amp;rsquo;s
+much easier to do rather than trying to restore from no backup. Makes logical
+sense right? Derp.&lt;/p&gt;
+
+&lt;h2 id=&#34;requirements:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic shell knowledge.&lt;/li&gt;
+&lt;li&gt;A remote server that you can SSH into.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;why-not-use-the-backup-amp-replication-plugin:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;Why not use the &amp;ldquo;Backup &amp;amp; Replication&amp;rdquo; plugin?&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;Backup &amp;amp; Replication&lt;/em&gt; module does not have a way to specify my remote
+server&amp;rsquo;s rsync port. The default is &lt;strong&gt;22&lt;/strong&gt; but my host runs on port &lt;strong&gt;2222&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-enable-ssh-on-your-synology-box:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;1. Enable SSH on your Synology Box&lt;/h2&gt;
+
+&lt;p&gt;First things first. &lt;a href=&#34;http://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/&#34;&gt;Enable SSH&lt;/a&gt;
+on your Synology box if you haven&amp;rsquo;t already done so and log in (via ssh).&lt;/p&gt;
+
+&lt;h2 id=&#34;2-generate-ssh-keys:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;2. Generate SSH keys&lt;/h2&gt;
+
+&lt;p&gt;We&amp;rsquo;ll need to generate a pair of keys here so &lt;code&gt;rsync&lt;/code&gt; is not prompted for your
+password when it runs otherwise this defeats the purpose of automation. To do
+this, run the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen -v -t rsa -f ~/.ssh/backup -P &#34;&#34;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will generate &lt;code&gt;/root/.ssh/backup&lt;/code&gt; and &lt;code&gt;/root/.ssh/backup.pub&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;3-copy-your-public-key-to-the-remote-server:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;3. Copy your public key to the remote server&lt;/h2&gt;
+
+&lt;p&gt;Login to your remote server and put the contents of &lt;code&gt;/root/.ssh/backup.pub&lt;/code&gt; from
+your Synology box to &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; on your remote box. If this file
+on your remote box already exists, then just append the contents to it rather
+than overwriting it. If this file does not exist, then create it.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you create it manually then make sure the following files have the following
+permissions otherwise SSH will not allow you to use&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;0700: ~/.ssh&lt;/li&gt;
+&lt;li&gt;0644: ~/.ssh/authorized_keys&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should be able to SSH from your Synology Diskation to your remote machine
+without specifying a password. Here is an example command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh username@home -i /root/.ssh/backup -v
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;-i&lt;/code&gt; command tells SSH which private key to use and the &lt;code&gt;-v&lt;/code&gt; would make the
+program verbose.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-configure-rsync-and-crontab:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;4. Configure rsync and crontab&lt;/h2&gt;
+
+&lt;p&gt;Last but not least, we need to add a line in our crontab configuration to run
+rsync at a specific time. Here is an example of mine:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-crontab&#34;&gt;0   0   *   *   *   root    rsync -avztP --delete --inplace /volume1/photo/ username@host:/backups/glitch/photo -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   1   *   *   *   root    rsync -avztP --inplace /volume1/manuals/ username@host:/backups/glitch/manuals -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   2   *   *   *   root    rsync -avztP --inplace /volume1/surveillance/ username@host:/backups/glitch/surveillance -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   3   *   *   *   root    rsync -avztP --inplace /volume1/video/ username@host:/backups/glitch/video -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   4   *   *   *   root    rsync -avztP --inplace /volume1/applications/ username@host:/backups/glitch/applications -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   5   *   *   *   root    rsync -avztP --delete --inplace /volume1/zappiti/ username@host:/backups/glitch/zappiti -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s important to note that each field must be indented by a tab (not a space)
+and the user must be root. If you configure this another way then the Synology
+server will erase the entry when you reboot the machine. Here are some
+&lt;a href=&#34;http://www.freebsd.org/doc/handbook/configtuning-cron.html&#34; title=&#34;FreeBSD Configuring Cron&#34;&gt;configuration options&lt;/a&gt; for reference.&lt;/p&gt;
+
+&lt;p&gt;Put your configuration in &lt;code&gt;/etc/crontab&lt;/code&gt;. You can use &lt;code&gt;nano&lt;/code&gt; if you&amp;rsquo;re on DSM 4
+or &lt;code&gt;vi&lt;/code&gt; if you&amp;rsquo;re on DSM 5.&lt;/p&gt;
+
+&lt;p&gt;Lastly, we need to restart the cron daemon to take note of our changes. The
+command is &lt;code&gt;restart crond&lt;/code&gt; on DSM 5 machines and
+&lt;code&gt;/usr/syno/sbin/synoservice --restart crond&lt;/code&gt; on DSM 4 machines.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to enable SSH access to Synology DiskStation</title>
+      <link>http://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</link>
+      <pubDate>Sun, 76 Aug 12071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</guid>
+      <description>&lt;p&gt;Log into your system with an administrator account and open the
+&lt;strong&gt;&lt;sup&gt;1&lt;/sup&gt;Control Panel&lt;/strong&gt; applet. From there, click on
+&lt;strong&gt;&lt;sup&gt;2&lt;/sup&gt;Terminal &amp;amp; SNMP&lt;/strong&gt;, &lt;strong&gt;&lt;sup&gt;3&lt;/sup&gt;Enabled SSH service&lt;/strong&gt;, and
+&lt;strong&gt;&lt;sup&gt;4&lt;/sup&gt;Apply&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-enable-ssh-access-to-synology-diskstation/steps.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It doesn&amp;rsquo;t get any easier than that! Check out the &lt;a href=&#34;http://forum.synology.com/wiki/index.php/Enabling_the_Command_Line_Interface&#34; title=&#34;Enabling the command line interface&#34;&gt;Synology Wiki&lt;/a&gt; for more
+information. You can log to the root account using your admin password. :)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ssh root@1.2.3.4&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0</title>
+      <link>http://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>
+      <pubDate>Sun, 66 Aug 28061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</guid>
+      <description>
+
+&lt;p&gt;I received an alert from my Synology RAID regarding a few bad sectors on a hard
+drive. Even though the RAID is still operational, it&amp;rsquo;s best practice to replace
+the hard drive before any data gets corrupted due to the bad sectors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/bad-sector-count.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-setup:dd8549fedce0a50eea9ced82d12a33b0&#34;&gt;My Setup&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Synology DS413&lt;/li&gt;
+&lt;li&gt;DSM 5.0&lt;/li&gt;
+&lt;li&gt;4x Western Digital 3TB Caviar Green&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Tip: It&amp;rsquo;s best to purchase an extra disk when initially configuring your RAID.
+While I can still find WD 3TB Caviar Green drives online, they are not the same.
+Some are actually smaller than others by a few megabytes even though they are
+labeled 3TB. To rebuild your RAID, you will need a disk with the &lt;code&gt;exact&lt;/code&gt; size or
+more. Trying to replace it with a drive that is just 1mb smaller will not work.
+Your hard drive manufacturer will release a few different versions of the same
+drive model while the space may fluctuate in megabytes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I tried finding a close match by using the physical date on the drive but even a
+ones that I found with a month difference were smaller. While it was not
+impossible to find another WD Caviar drive, it was a long and annoying search.&lt;/p&gt;
+
+&lt;h2 id=&#34;lets-fix-it:dd8549fedce0a50eea9ced82d12a33b0&#34;&gt;Lets fix it!&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Edit: I think it&amp;rsquo;s best to remove the drive sooner rather than later and run
+your system (if necessary) with only the good drives. I shut down my DiskStation
+and physically removed the bad drive from the array. I did this because I did
+not want to chance data being written to the a bad sector which would then make
+it corrupt. I then powered on my DiskStation only when I needed something from
+it. I do not recommend leaving it on with a disk removed because now it
+technically has a higher chance of failure.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt; Upon logging into your DiskStation, you will be prompted with a series of
+alerts. The topmost screen, &lt;strong&gt;Storage Manager&lt;/strong&gt;, will tell your RAID is
+degraded. Your system will literally beep continuously until you click the
+&amp;ldquo;Beep Off&amp;rdquo; button in your &lt;strong&gt;Control Panel&lt;/strong&gt;. Your &lt;strong&gt;System Health&lt;/strong&gt; panel will
+also try to gain your attention.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; From your &lt;strong&gt;Storage Manager&lt;/strong&gt;, click on &lt;strong&gt;Volume&lt;/strong&gt;. You will notice that the &lt;strong&gt;Manage&lt;/strong&gt; button will be disabled until you replace the failed drive with a disk of the same size or bigger.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Be sure to power your down your DiskStation when swapping out the drives.
+Do not try and do this with it running.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-2.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt; After you replace your drive, the &lt;strong&gt;Manage&lt;/strong&gt; button will no longer be
+disabled. Click on that.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-3.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4)&lt;/strong&gt; Click the &lt;strong&gt;Repair&lt;/strong&gt; radio button and then &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-4.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5)&lt;/strong&gt; Select the correct disk in your system to use for the RAID and click
+&lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-5.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6)&lt;/strong&gt; You will be prompted with a warning before you continue. Make sure you&amp;rsquo;re ok with destroying all the current contents of the selected disk and click &lt;strong&gt;Ok&lt;/strong&gt; if you are.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-6.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7)&lt;/strong&gt; And one more window to confirm that you are ok with the warning. Click
+&lt;strong&gt;Apply&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-7.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8)&lt;/strong&gt; You will be brought back to your &lt;strong&gt;Storage Manager&lt;/strong&gt; panel while it&amp;rsquo;s
+under &lt;strong&gt;repair&lt;/strong&gt;. This took about 12 hours for it to complete. I imagine the
+process could take longer if you are actively using it while it&amp;rsquo;s under repair.
+If possible, try not to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-8.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9)&lt;/strong&gt; When complete, your volume should say &lt;strong&gt;Normal&lt;/strong&gt; next to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-9.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion:dd8549fedce0a50eea9ced82d12a33b0&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The most important things to note from this are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Have a spare drive on standby. Always.&lt;/li&gt;
+&lt;li&gt;Completely shut down your DiskStation when swapping your drive.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And last but not least, properly dispose of your bad hard drive correctly so any data is not recoverable:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/disposed-drive.jpg&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

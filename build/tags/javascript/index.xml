@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/javascript/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 36 Aug 11031 03:03:03 PST</updated>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>http://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Sun, 36 Aug 11031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>
+
+&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a quick inspection, I see that jQuery-mobile is having trouble binding
+itself to the &lt;code&gt;root&lt;/code&gt; aka &lt;code&gt;this&lt;/code&gt; aka &lt;code&gt;window&lt;/code&gt; object. This is because the way
+jQuery-mobile is wrapped in a block where &lt;code&gt;this&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt; because the
+code is not being executed in the assumed scope.&lt;/p&gt;
+
+&lt;h3 id=&#34;example:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Example:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function(require,module,exports){
+(function (global){
+;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
+&#34;use strict&#34;;(function(root, doc, factory){if(typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd){define([&#34;jquery&#34;], function($){factory($, root, doc);return $.mobile;});}else {factory(root.jQuery, root, doc);}})(undefined || window, document, function(jQuery, window, document, undefine) {
+
+/*!
+* jQuery Mobile 1.4.5
+* Git HEAD hash: 68e55e78b292634d3991c795f06f5e37a512decc &lt;&gt; Date: Fri Oct 31 2014 17:33:30 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*/
+
+(function ( root, doc, factory ) {
+    if ( typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd ) {
+        // AMD. Register as an anonymous module.
+        define( [ &#34;jquery&#34; ], function ( $ ) {
+            factory( $, root, doc );
+            return $.mobile;
+        });
+    } else {
+        // Browser globals
+        factory( root.jQuery, root, doc );
+    }
+}( this, document, function ( jQuery, window, document, undefined ) {
+(function( $ ) {
+    $.mobile = {};
+}( jQuery ));
+
+// more jquery code
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The jQuery-mobile team doesn&amp;rsquo;t want to make fixes for this because they would
+have to continue to make patches for their code when another build system comes
+out and whose got time to keep up with that? Needless to say, I wish they had
+the time for it to make their libraries more compatible for users and they are a
+bigger team than just little ole independent me but that&amp;rsquo;s just my opinion.&lt;/p&gt;
+
+&lt;p&gt;Today is going on my 2nd day being stuck with the issue (also second day of
+using gulp and browserify so give me a break) and I&amp;rsquo;ve tried just about every
+solution I can find on the web before I just gave up and wrote my own. Though,
+not exactly the most elegant solution, I simply replaced all instances of &lt;code&gt;this&lt;/code&gt;
+to &lt;code&gt;this || window&lt;/code&gt; and walla it worked.&lt;/p&gt;
+
+&lt;p&gt;Now I have jQuery-mobile working just fine in my ES6 project. I&amp;rsquo;ve bundled my
+changes up in a npm project under the name &lt;strong&gt;jquery-mobile-babel-safe&lt;/strong&gt;. Here is
+how I use it in my project:&lt;/p&gt;
+
+&lt;h3 id=&#34;install:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Install&lt;/h3&gt;
+
+&lt;p&gt;Run this command in your project room:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    npm install jquery-mobile-babel-safe --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;package.json&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;    &#34;browser&#34;: {
+      &#34;jquery-mobile&#34;: &#34;./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js&#34;
+    },
+    &#34;browserify-shim&#34;: {
+      &#34;jquery-mobile&#34;: {
+        &#34;exports&#34;: &#34;jQuery.mobile&#34;
+      }
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that&amp;rsquo;s about it. You can test by importing &lt;code&gt;jquery-mobile&lt;/code&gt; on your page. You
+should have access to &lt;code&gt;$.mobile&lt;/code&gt; in your scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;wrap-up:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Wrap up&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to hear from you if you have a simpler way of making this work. I do
+feel a little bad about polluting the npm package repository with yet another
+jQuery package and I&amp;rsquo;d like to know of a better way of doing this but I know a
+few other people were stuck with this issue so be it.&lt;/p&gt;
+
+&lt;p&gt;Happy hacking!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>http://www.richardsumilang.com/programming/a-thing-or-two-about-styleguides/</link>
+      <pubDate>Sun, 26 Aug 8021 02:02:02 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/a-thing-or-two-about-styleguides/</guid>
+      <description>
+
+&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Last updated: Feb 8th, 2015.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;general:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;General&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Programming_style&#34; title=&#34;Programming style&#34;&gt;Programming style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style&#34; title=&#34;MDN Coding Style&#34;&gt;MDN Coding Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.komputado.com/eseoj/1tbs.htm&#34; title=&#34;The One True Brace Style&#34;&gt;The One True Brace Style&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;c:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;C++&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stroustrup.com/bs_faq2.html&#34; title=&#34;Bjarne Stroustrup&#39;s C++ Style and Technique FAQ&#34;&gt;Bjarne Stroustrup&amp;rsquo;s C++ Style and Technique FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/cppguide.html&#34; title=&#34;Google C++ Style Guide&#34;&gt;Google C++ Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;html-css:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;HTML/CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://codeguide.co/&#34; title=&#34;Code Guide by @mdo&#34;&gt;Code Guide by @mdo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/css&#34; title=&#34;CSS Style Guide&#34;&gt;CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml&#34; title=&#34;Google HTML/CSS Style Guide&#34;&gt;Google HTML/CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/html/html5_syntax.asp&#34; title=&#34;HTML(5) Style Guide and Coding Conventions&#34;&gt;HTML(5) Style Guide and Coding Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;java:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://source.android.com/source/code-style.html&#34; title=&#34;Android Code Style&#34;&gt;Android Code Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/codeconvtoc-136057.html&#34; title=&#34;Code Conventions for the Java Programming Language&#34;&gt;Code Conventions for the Java Programming Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javaguide.html&#34; title=&#34;Google Java Style Guide&#34;&gt;Google Java Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaranch.com/style.jsp&#34; title=&#34;Java Programming Style Guide&#34;&gt;Java Programming Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html&#34; title=&#34;An AngularJS Style Guide for Closure Users at Google&#34;&gt;An AngularJS Style Guide for Closure Users at Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/javascript&#34; title=&#34;GitHub JavaScript style&#34;&gt;GitHub JavaScript style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml&#34; title=&#34;Google JavaScript Style Guide&#34;&gt;Google JavaScript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/felixge/node-style-guide&#34; title=&#34;Node.js Style Guide&#34;&gt;Node.js Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lisp:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Lisp&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/lispguide.xml&#34; title=&#34;Common Lisp Style Guide&#34;&gt;Common Lisp Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objective-c:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Objective C&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html&#34; title=&#34;Apple&#39;s Programming with Objective C Conventions&#34;&gt;Apple&amp;rsquo;s Programming with Objective C Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/objective-c-style-guide&#34; title=&#34;GitHub Objective C Style Guide&#34;&gt;GitHub Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml&#34; title=&#34;Google Objective C Style Guide&#34;&gt;Google Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NYTimes/objective-c-style-guide&#34; title=&#34;NYTimes Objective-C Style Guide&#34;&gt;NYTimes Objective-C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;php:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;PHP&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/standards.php&#34; title=&#34;PEAR Coding Standards&#34;&gt;PEAR Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.php-fig.org/psr/psr-2/&#34; title=&#34;PSR-2 Coding Style Guideline&#34;&gt;PSR-2 Coding Style Guideline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://symfony.com/doc/current/contributing/code/standards.html&#34; title=&#34;Symfony Coding Standards&#34;&gt;Symfony Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://framework.zend.com/manual/1.12/en/coding-standard.html&#34; title=&#34;Zend Coding Standards&#34;&gt;Zend Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/pyguide.html&#34; title=&#34;Google Python Style Guide&#34;&gt;Google Python Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/dev/peps/pep-0008/&#34; title=&#34;PEP 8 - Style Guide for Python Code&#34;&gt;PEP 8 - Style Guide for Python Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ruby:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/ruby&#34; title=&#34;GitHub Ruby Styleguide&#34;&gt;GitHub Ruby Styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bestie/objective-ruby-style-guide&#34; title=&#34;The Objective Ruby Style Guide&#34;&gt;The Objective Ruby Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;scala:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Scala&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitter.github.io/effectivescala/&#34; title=&#34;Effective Scala&#34;&gt;Effective Scala&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/style/&#34; title=&#34;Scala Style Guide&#34;&gt;Scala Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;shell:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Shell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.inquisitor.ru/doc/coding-style-shell.html&#34; title=&#34;Coding style guidelines: Shell script&#34;&gt;Coding style guidelines: Shell script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/shell.xml&#34; title=&#34;Google Shell Style Guide&#34;&gt;Google Shell Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;swift:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Swift&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/swift-style-guide&#34; title=&#34;GitHubs Swift Style Guide&#34;&gt;GitHubs Swift Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/vimscriptguide.xml&#34; title=&#34;Google Vimscript Style Guide&#34;&gt;Google Vimscript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jQuery CORS fix for IE8 and IE9</title>
+      <link>http://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <pubDate>Sun, 66 Aug 20061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
+it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;jQuery CORS IE8 and IE9 fix.&#34;&gt;if ( window.XDomainRequest ) {
+    jQuery.ajaxTransport(function( s ) {
+        if ( s.crossDomain &amp;amp;&amp;amp; s.async ) {
+            if ( s.timeout ) {
+                s.xdrTimeout = s.timeout;
+                delete s.timeout;
+            }
+            var xdr;
+            return {
+                send: function( _, complete ) {
+                    function callback( status, statusText, responses, responseHeaders ) {
+                        xdr.onload = xdr.onerror = xdr.ontimeout = jQuery.noop;
+                        xdr = undefined;
+                        complete( status, statusText, responses, responseHeaders );
+                    }
+                    xdr = new XDomainRequest();
+                    xdr.onload = function() {
+                        callback( 200, &#34;OK&#34;, { text: xdr.responseText }, &#34;Content-Type: &#34; + xdr.contentType );
+                    };
+                    xdr.onerror = function() {
+                        callback( 404, &#34;Not Found&#34; );
+                    };
+                    xdr.onprogress = jQuery.noop;
+                    xdr.ontimeout = function() {
+                        callback( 0, &#34;timeout&#34; );
+                    };
+                    xdr.timeout = s.xdrTimeout || Number.MAX_VALUE;
+                    xdr.open( s.type, s.url );
+                    xdr.send( ( s.hasContent &amp;amp;&amp;amp; s.data ) || null );
+                },
+                abort: function() {
+                    if ( xdr ) {
+                        xdr.onerror = jQuery.noop;
+                        xdr.abort();
+                    }
+                }
+            };
+        }
+    });
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: This doesn&amp;rsquo;t work when using the &lt;code&gt;{async: false}&lt;/code&gt; option in jQuery methods.&lt;/p&gt;
+
+&lt;p&gt;Be sure to set the &lt;code&gt;{crossDomain: true}&lt;/code&gt; setting and you&amp;rsquo;re good to go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Working with JavaScript templates using jQuery</title>
+      <link>http://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</link>
+      <pubDate>Sun, 46 Aug 1041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
+      <description>
+
+&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
+at &lt;a href=&#34;http://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+design from your code. This is particularly useful when you are adding content
+to your site after the initial rendering. Data can be fed in from a number of
+sources and added to a page using a template.&lt;/p&gt;
+
+&lt;p&gt;Creating an example the old fashion way using concatenation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;//Variables
+var title = &#34;Hello World&#34;;
+var excerpt = &#34;This is the world&#39;s shortest lorem ipsum. Jk.&#34;;
+
+// Template
+var template = &#34;&amp;lt;div style=&#39;article&#39;&amp;gt;&#34;;
+template += &#34;&amp;lt;h1&amp;gt;&#34; + title + &#34;&amp;lt;/h1&amp;gt;&#34;;
+template += &#34;&amp;lt;div style=&#39;excerpt&#39;&amp;gt;&#34; + excerpt + &#34;&amp;lt;/div&amp;gt;&#34;;
+template += &#34;&amp;lt;/div&amp;gt;&#34;;
+
+// Append to &#34;foo&#34; element
+document.getElementById(&#34;foo&#34;).appendChild( template );&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;While this may work, it&amp;rsquo;s a nightmare to update your markup as it changes because it&amp;rsquo;s mixed in with your code and will eventually give you gray hairs.&lt;/p&gt;
+
+&lt;p&gt;Consider this piece of markup on your page for your template:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&#34;text/xhtml&#34; id=&#34;tmpl-foo&#34;&amp;gt;
+&amp;lt;div style=&#34;article&#34;&amp;gt;
+    &amp;lt;h1 /&amp;gt;
+    &amp;lt;div class=&#34;exerpt&#34; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s very easy to read right? The trick is setting the &lt;a href=&#34;http://www.iana.org/assignments/media-types/media-types.xhtml&#34; title=&#34;Media types&#34;&gt;script type&lt;/a&gt; to a
+value your browser doesn&amp;rsquo;t know how to render. Try to give it a meaningful mime
+type but anything that your browser doesn&amp;rsquo;t know how to render will work.&lt;/p&gt;
+
+&lt;p&gt;Now your JavaScript (sprinkled with a little jQuery) could look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// Variables
+var title = &#34;Hello World&#34;;
+var excerpt = &#34;This is the world&#39;s shortest lorem ipsum. Jk.&#34;;
+var template = $( $(&#34;tmpl-foo&#34;) );
+
+// Set variables in template
+template.find(&#34;h1&#34;).html( title );
+template.find(&#34;div.excerpt&#34;).html( excerpt );
+
+// Append to &#34;foo&#34; element
+$(&#34;#foo&#34;).append( template );&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;conclusion:73e399422ffb2670abb4a9b669117b61&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Some people also like to load templates externally by putting the code in a HTML
+file on the server and using jQuery&amp;rsquo;s &lt;code&gt;$.get&lt;/code&gt; method to pull it in as needed.
+There are also plugins for jQuery that simply do string replacements in your
+template string.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

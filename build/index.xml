@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 28051 05:05:05 PST</updated>
+    
+    <item>
+      <title>&#34;effective. Power&#34; ... An AOL Flashback.</title>
+      <link>http://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</link>
+      <pubDate>Sun, 56 Aug 28051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
+iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
+
+&lt;pre&gt;
+effective. 
+Power
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m running iOS 8.3 (12F70). While testing the message, I learned that removing
+the &amp;ldquo;effective. Power&amp;rdquo; from the text will also crash my the Message app and
+prevent me and my recipient from opening the app. Fun times.&lt;/p&gt;
+
+&lt;pre&gt;
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;You can send yourself another text message something like the desktop Messages
+app with the same exact text which will cancel out the erroring one. Another
+popular technique is to send yourself a text from your photos app.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-does-this-work:54ef7fa11b89a091df9a4bb3fcf6ecc0&#34;&gt;How does this work?&lt;/h3&gt;
+
+&lt;p&gt;The problem is the set of characters used. The Messages app (and possibly
+others) try to render the bad text will cause the program manager and windowing
+system to crash and reboot.&lt;/p&gt;
+
+&lt;p&gt;This felt like a modern day AOL punter for me. A punter was usually a feature of
+an &amp;ldquo;AOL prog&amp;rdquo; or &amp;ldquo;proggie&amp;rdquo; that could sign off anyone you like, similar to this
+exploit. A recepient would receive an instant message from you with bad contents
+in the message body causing the AOL program to crash.&lt;/p&gt;
+
+&lt;p&gt;Funny enough, this is where my interest in computer programming began. Oh Visual
+Basic&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Shout outs to Fate X, Pepsi, HaVok, Pepsi, FireToolz, Fate Zero, Super MaD CoW
+97, EXoRCiST, Cold Fusion and many more for making the internet a much more
+interesting place to be in the 90s.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>http://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Sun, 36 Aug 11031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>
+
+&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a quick inspection, I see that jQuery-mobile is having trouble binding
+itself to the &lt;code&gt;root&lt;/code&gt; aka &lt;code&gt;this&lt;/code&gt; aka &lt;code&gt;window&lt;/code&gt; object. This is because the way
+jQuery-mobile is wrapped in a block where &lt;code&gt;this&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt; because the
+code is not being executed in the assumed scope.&lt;/p&gt;
+
+&lt;h3 id=&#34;example:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Example:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function(require,module,exports){
+(function (global){
+;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
+&#34;use strict&#34;;(function(root, doc, factory){if(typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd){define([&#34;jquery&#34;], function($){factory($, root, doc);return $.mobile;});}else {factory(root.jQuery, root, doc);}})(undefined || window, document, function(jQuery, window, document, undefine) {
+
+/*!
+* jQuery Mobile 1.4.5
+* Git HEAD hash: 68e55e78b292634d3991c795f06f5e37a512decc &lt;&gt; Date: Fri Oct 31 2014 17:33:30 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*/
+
+(function ( root, doc, factory ) {
+    if ( typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd ) {
+        // AMD. Register as an anonymous module.
+        define( [ &#34;jquery&#34; ], function ( $ ) {
+            factory( $, root, doc );
+            return $.mobile;
+        });
+    } else {
+        // Browser globals
+        factory( root.jQuery, root, doc );
+    }
+}( this, document, function ( jQuery, window, document, undefined ) {
+(function( $ ) {
+    $.mobile = {};
+}( jQuery ));
+
+// more jquery code
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The jQuery-mobile team doesn&amp;rsquo;t want to make fixes for this because they would
+have to continue to make patches for their code when another build system comes
+out and whose got time to keep up with that? Needless to say, I wish they had
+the time for it to make their libraries more compatible for users and they are a
+bigger team than just little ole independent me but that&amp;rsquo;s just my opinion.&lt;/p&gt;
+
+&lt;p&gt;Today is going on my 2nd day being stuck with the issue (also second day of
+using gulp and browserify so give me a break) and I&amp;rsquo;ve tried just about every
+solution I can find on the web before I just gave up and wrote my own. Though,
+not exactly the most elegant solution, I simply replaced all instances of &lt;code&gt;this&lt;/code&gt;
+to &lt;code&gt;this || window&lt;/code&gt; and walla it worked.&lt;/p&gt;
+
+&lt;p&gt;Now I have jQuery-mobile working just fine in my ES6 project. I&amp;rsquo;ve bundled my
+changes up in a npm project under the name &lt;strong&gt;jquery-mobile-babel-safe&lt;/strong&gt;. Here is
+how I use it in my project:&lt;/p&gt;
+
+&lt;h3 id=&#34;install:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Install&lt;/h3&gt;
+
+&lt;p&gt;Run this command in your project room:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    npm install jquery-mobile-babel-safe --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;package.json&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;    &#34;browser&#34;: {
+      &#34;jquery-mobile&#34;: &#34;./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js&#34;
+    },
+    &#34;browserify-shim&#34;: {
+      &#34;jquery-mobile&#34;: {
+        &#34;exports&#34;: &#34;jQuery.mobile&#34;
+      }
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that&amp;rsquo;s about it. You can test by importing &lt;code&gt;jquery-mobile&lt;/code&gt; on your page. You
+should have access to &lt;code&gt;$.mobile&lt;/code&gt; in your scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;wrap-up:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Wrap up&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to hear from you if you have a simpler way of making this work. I do
+feel a little bad about polluting the npm package repository with yet another
+jQuery package and I&amp;rsquo;d like to know of a better way of doing this but I know a
+few other people were stuck with this issue so be it.&lt;/p&gt;
+
+&lt;p&gt;Happy hacking!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>http://www.richardsumilang.com/programming/a-thing-or-two-about-styleguides/</link>
+      <pubDate>Sun, 26 Aug 8021 02:02:02 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/a-thing-or-two-about-styleguides/</guid>
+      <description>
+
+&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Last updated: Feb 8th, 2015.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;general:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;General&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Programming_style&#34; title=&#34;Programming style&#34;&gt;Programming style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style&#34; title=&#34;MDN Coding Style&#34;&gt;MDN Coding Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.komputado.com/eseoj/1tbs.htm&#34; title=&#34;The One True Brace Style&#34;&gt;The One True Brace Style&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;c:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;C++&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stroustrup.com/bs_faq2.html&#34; title=&#34;Bjarne Stroustrup&#39;s C++ Style and Technique FAQ&#34;&gt;Bjarne Stroustrup&amp;rsquo;s C++ Style and Technique FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/cppguide.html&#34; title=&#34;Google C++ Style Guide&#34;&gt;Google C++ Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;html-css:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;HTML/CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://codeguide.co/&#34; title=&#34;Code Guide by @mdo&#34;&gt;Code Guide by @mdo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/css&#34; title=&#34;CSS Style Guide&#34;&gt;CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml&#34; title=&#34;Google HTML/CSS Style Guide&#34;&gt;Google HTML/CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/html/html5_syntax.asp&#34; title=&#34;HTML(5) Style Guide and Coding Conventions&#34;&gt;HTML(5) Style Guide and Coding Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;java:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://source.android.com/source/code-style.html&#34; title=&#34;Android Code Style&#34;&gt;Android Code Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/codeconvtoc-136057.html&#34; title=&#34;Code Conventions for the Java Programming Language&#34;&gt;Code Conventions for the Java Programming Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javaguide.html&#34; title=&#34;Google Java Style Guide&#34;&gt;Google Java Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaranch.com/style.jsp&#34; title=&#34;Java Programming Style Guide&#34;&gt;Java Programming Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html&#34; title=&#34;An AngularJS Style Guide for Closure Users at Google&#34;&gt;An AngularJS Style Guide for Closure Users at Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/javascript&#34; title=&#34;GitHub JavaScript style&#34;&gt;GitHub JavaScript style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml&#34; title=&#34;Google JavaScript Style Guide&#34;&gt;Google JavaScript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/felixge/node-style-guide&#34; title=&#34;Node.js Style Guide&#34;&gt;Node.js Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lisp:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Lisp&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/lispguide.xml&#34; title=&#34;Common Lisp Style Guide&#34;&gt;Common Lisp Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objective-c:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Objective C&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html&#34; title=&#34;Apple&#39;s Programming with Objective C Conventions&#34;&gt;Apple&amp;rsquo;s Programming with Objective C Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/objective-c-style-guide&#34; title=&#34;GitHub Objective C Style Guide&#34;&gt;GitHub Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml&#34; title=&#34;Google Objective C Style Guide&#34;&gt;Google Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NYTimes/objective-c-style-guide&#34; title=&#34;NYTimes Objective-C Style Guide&#34;&gt;NYTimes Objective-C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;php:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;PHP&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/standards.php&#34; title=&#34;PEAR Coding Standards&#34;&gt;PEAR Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.php-fig.org/psr/psr-2/&#34; title=&#34;PSR-2 Coding Style Guideline&#34;&gt;PSR-2 Coding Style Guideline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://symfony.com/doc/current/contributing/code/standards.html&#34; title=&#34;Symfony Coding Standards&#34;&gt;Symfony Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://framework.zend.com/manual/1.12/en/coding-standard.html&#34; title=&#34;Zend Coding Standards&#34;&gt;Zend Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/pyguide.html&#34; title=&#34;Google Python Style Guide&#34;&gt;Google Python Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/dev/peps/pep-0008/&#34; title=&#34;PEP 8 - Style Guide for Python Code&#34;&gt;PEP 8 - Style Guide for Python Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ruby:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/ruby&#34; title=&#34;GitHub Ruby Styleguide&#34;&gt;GitHub Ruby Styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bestie/objective-ruby-style-guide&#34; title=&#34;The Objective Ruby Style Guide&#34;&gt;The Objective Ruby Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;scala:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Scala&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitter.github.io/effectivescala/&#34; title=&#34;Effective Scala&#34;&gt;Effective Scala&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/style/&#34; title=&#34;Scala Style Guide&#34;&gt;Scala Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;shell:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Shell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.inquisitor.ru/doc/coding-style-shell.html&#34; title=&#34;Coding style guidelines: Shell script&#34;&gt;Coding style guidelines: Shell script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/shell.xml&#34; title=&#34;Google Shell Style Guide&#34;&gt;Google Shell Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;swift:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Swift&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/swift-style-guide&#34; title=&#34;GitHubs Swift Style Guide&#34;&gt;GitHubs Swift Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/vimscriptguide.xml&#34; title=&#34;Google Vimscript Style Guide&#34;&gt;Google Vimscript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>http://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sun, 16 Aug 31011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;
+
+&lt;p&gt;I found &lt;a href=&#34;https://github.com/Spaceman-Labs/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this great&lt;/a&gt; git &lt;strong&gt;post-commit&lt;/strong&gt; hook by Spaceman Labs. It works by
+adding a comment to your Asana ticket when you reference your commit message by
+id. For example, &lt;strong&gt;&amp;ldquo;Fixing issue #12345.&amp;rdquo;&lt;/strong&gt; This adds a comment to your ticket:&lt;/p&gt;
+
+&lt;pre&gt;Just committed %commit-id with message:
+
+&#34;Fixing issue #1234&#34;
+
+to repository %repo-name&lt;/pre&gt;
+
+&lt;p&gt;This works by making a curl request to Asana&amp;rsquo;s REST API on your behalf while
+sending the above message as the comment. While this is great, it could be
+better by providing links to your Bitbucket changeset. I&amp;rsquo;ve made the necessary
+edits to do so in the &lt;strong&gt;post-commit&lt;/strong&gt; hook. The updated message now looks like
+this:&lt;/p&gt;
+
+&lt;pre&gt;Committed %link-to-commit with message:
+
+&#34;Fixing issue #1234&#34;
+
+to repository %repo-name&lt;/pre&gt;
+
+&lt;h3 id=&#34;how-it-works:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;How it works&lt;/h3&gt;
+
+&lt;p&gt;I loop through all the remote repositories configured for the repo and search
+for either a bitbucket.org or github.com in their URLs. Once  one is found, I
+extract the repo name from the URL and build the link to the changeset.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you are using Github then I recommend  using the free
+&lt;a href=&#34;https://asana.com/apps/github&#34; title=&#34;Asana GitHub App&#34;&gt;Asana service&lt;/a&gt; provided. I merely included the GitHub code as an example.&lt;/p&gt;
+
+&lt;p&gt;The original code from here takes over and parses out the ticket number and does
+the curl request.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Grab my edited &lt;strong&gt;post-commit&lt;/strong&gt; hook from &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;github&lt;/a&gt; and drop it into your repos
+&lt;code&gt;.git/hooks&lt;/code&gt; directory. Make sure to &lt;code&gt;chmod&lt;/code&gt; the file to &lt;code&gt;0755&lt;/code&gt;. Lastly, grab
+your &lt;a href=&#34;http://app.asana.com/-/account_api&#34; title=&#34;Asana Account API&#34;&gt;Asana key&lt;/a&gt; and run &lt;code&gt;git config --global user.asana-key
+&amp;quot;MY_ASANA_API_KEY&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;afterthoughts:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;Afterthoughts&lt;/h3&gt;
+
+&lt;p&gt;Please let me know if you have any suggestions. I&amp;rsquo;m thinking of possibly editing
+the git commit message to link back to the Asana ticket for the sake of
+cross-linking but this might require additional configuration&amp;hellip; Unless project
+id is added as part of the ticket number. Ie: #&lt;sup&gt;12345&lt;/sup&gt;&amp;frasl;&lt;sub&gt;98765&lt;/sub&gt;. Please feel free to
+add your input! :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SynoCommunity packages for Synology NAS</title>
+      <link>http://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
+      <pubDate>Sun, 16 Aug 9012 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
+      <description>&lt;p&gt;A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
+Sync, Redis, and Firefox Sync Server just to name a few. Check out the
+&lt;a href=&#34;https://synocommunity.com/packages&#34; title=&#34;SynoCommunity Packages&#34;&gt;full list of packages&lt;/a&gt; or just add the source to your package manager :)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Log into your NAS as administrator and go to Main &lt;strong&gt;Menu → Package Center →
+Settings → Package Sources.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Add&lt;/strong&gt;, type &lt;em&gt;SynoCommunity&lt;/em&gt; as &lt;strong&gt;Name&lt;/strong&gt; and
+&lt;em&gt;&lt;a href=&#34;http://packages.synocommunity.com/&#34;&gt;http://packages.synocommunity.com/&lt;/a&gt;&lt;/em&gt; as &lt;strong&gt;Location&lt;/strong&gt; and then press &lt;strong&gt;OK&lt;/strong&gt; to
+validate.&lt;/li&gt;
+&lt;li&gt;Go back to the &lt;strong&gt;Package Center&lt;/strong&gt; and enjoy SynoCommunity&amp;rsquo;s packages in the
+&lt;strong&gt;Community&lt;/strong&gt; tab&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;See the &lt;a href=&#34;https://synocommunity.com/&#34; title=&#34;SynoCommunity&#34;&gt;official site&lt;/a&gt; for more info. Happy hacking!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting the most out of your Apple AirPort Extreme network</title>
+      <link>http://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
+      <pubDate>Sun, 16 Aug 9011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
+      <description>
+
+&lt;p&gt;My home network is wired through a Dell gigabit switch which is connected to my
+AirPort extreme. Needless to say, this has worked well for me as the only
+wireless devices connected are mobile devices. I decided to set up another room
+in the house but I didn&amp;rsquo;t want to go through the hassle of running wires through
+the walls again. It&amp;rsquo;s undoubtably the best thing to do but this isn&amp;rsquo;t meant to
+be permanent. I figured the next best thing to do is extend the network by
+purchasing another AirPort Extreme. The hardware in it is better than an AirPort
+Express plus I get a few ports to hardwire a few devices. My rule of thumb is
+the less WiFi, the better.&lt;/p&gt;
+
+&lt;p&gt;I configured the extended network with the defaults and I never spent much time
+optimizing the wifi because it&amp;rsquo;s primarily used for my iPhone and iPad.
+Streaming media online from Netflix through a device in the new setup worked
+fine at first. The issue became immediately apparent when a hardwired device
+decided to come online and start streaming as well. After doing some connection
+testing, it was obvious that any hardwired device sucked all the bandwidth away
+from the WiFi leaving it with little to no room to breathe.&lt;/p&gt;
+
+&lt;p&gt;After a bit of research, I&amp;rsquo;ve found how to boost my WiFi signal significantly so
+my additional room can enjoy streaming as well. Here is what I did:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: The below is all configured through your &lt;strong&gt;AirPort Utility&lt;/strong&gt; app.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do not use &lt;strong&gt;WEP or WPA (TKIP)&lt;/strong&gt; authentication. WEP was deprecated in 2004 by
+the FBI due to it&amp;rsquo;s security flaws. WPA was superseded by WPA2 in 2006. If you
+must, use &lt;strong&gt;WPA/WPA2 Personal&lt;/strong&gt; but I feel it would be best to strictly use
+&lt;strong&gt;WPA2 Personal&lt;/strong&gt; alone to ensure best transfer rates. You can do this by
+navigating to the &lt;strong&gt;Wireless&lt;/strong&gt; tab then choosing the appropiate option under
+&lt;strong&gt;Wireless Security&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the same area screen, click the &lt;strong&gt;Wireless Options&lt;/strong&gt; button. All my
+wireless devices support 5GHz radio frequencies so it&amp;rsquo;s best to remove 2.4GHz
+support. You will notice additional settings if you hold the &lt;em&gt;option&lt;/em&gt; key and
+clicking the &lt;strong&gt;Radio Mode:&lt;/strong&gt; drop down box. I selected &lt;strong&gt;802.11n only 5GHz -
+802.11b/g/n&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;You can leave the &lt;strong&gt;2.4GHz Channel:&lt;/strong&gt; and the &lt;strong&gt;5Ghz Channel:&lt;/strong&gt; setting
+beneath set to &lt;strong&gt;Automatic&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Lastly you would like to go to the &lt;strong&gt;Internet&lt;/strong&gt; tab and click on the
+&lt;strong&gt;Internet Options&amp;hellip;&lt;/strong&gt; button. &lt;strong&gt;Configure IPv6:&lt;/strong&gt; should be set to
+&lt;strong&gt;Automatically&lt;/strong&gt; and &lt;strong&gt;IPv6 Mode:&lt;/strong&gt; should be set to &lt;strong&gt;Native&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Save all settings and click &lt;strong&gt;Update&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;conclusion:87921460928fa2ea01977b55f187d6e0&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;After applying the above settings WiFi speeds multiplied. The only drawback is
+if you are trying to support legacy devices that either do not support WPA2 or
+5GHz radio mode. Naturally, the 5GHz band has a shorter range but the 2.4GHz
+band is more prone to interference due to the fact that more devices use it.
+Another important thing to note is that the 5GHz band has 23 non-overlapping
+channels as opposed to 3 in the 2.4GHz band.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>http://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Sun, 16 Aug 8011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;
+
+&lt;p&gt;The trick here is to setup your Gmail account as an IMAP account. Do not set it
+up by selecting &lt;strong&gt;Google&lt;/strong&gt; in the add account screen. Choose &lt;strong&gt;Other&lt;/strong&gt; and apply
+the &lt;a href=&#34;https://support.google.com/mail/troubleshooter/1668960&#34; title=&#34;Configure IMAP and POP3&#34;&gt;IMAP settings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, to configure your aliases, simply go back into your account settings in
+the &lt;strong&gt;Mail, Contacts, Calendars&lt;/strong&gt; in the &lt;strong&gt;Settings&lt;/strong&gt; app, click &lt;strong&gt;Account&lt;/strong&gt;,
+then &lt;strong&gt;Email&lt;/strong&gt;, and &lt;strong&gt;Add Another Email&amp;hellip;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You are done once you save your changes and now the Mail app should reply using
+the correct alias depending on which account received the email.&lt;/p&gt;
+
+&lt;p&gt;You may also find it useful to &lt;a href=&#34;http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/&#34;&gt;configure your OS X&lt;/a&gt;
+desktop the same way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Sun, 16 Aug 8011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t already, &lt;a href=&#34;https://support.google.com/mail/troubleshooter/1668960&#34; title=&#34;Configure IMAP and POP3&#34;&gt;configure your Mail app&lt;/a&gt; to your gmail account.&lt;/p&gt;
+
+&lt;p&gt;Finally, to configure your aliases, go back into your account settings in the
+Mail app and comma separate each alias under the &lt;strong&gt;Email Address:&lt;/strong&gt; field. It&amp;rsquo;s
+far from obvious but a tooltip will appear after a moment which reads:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Enter one or more email addresses, separated by comma.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You may also find it useful to (configure your iOS)[/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/)
+device the same way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidying up your security with a Password Manager</title>
+      <link>http://www.richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</link>
+      <pubDate>Sun, 116 Aug 11111 11:11:11 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</guid>
+      <description>
+
+&lt;p&gt;Using a password manager adds numerous of security benefits. The key feature
+being strong unique passwords for each application you use. Two of the most
+popular password managers are &lt;a href=&#34;http://lastpass.com/&#34; title=&#34;LastPass&#34;&gt;LastPass&lt;/a&gt; and &lt;a href=&#34;https://agilebits.com/onepassword&#34; title=&#34;1Password&#34;&gt;1Password&lt;/a&gt;. The main
+difference is LastPass syncs to all your devices by storing your vault on their
+servers. 1Password syncs to all your devices via Dropbox and does not save your
+vault to any other servers. They are both good and whichever you choose to use
+will be up to you.&lt;/p&gt;
+
+&lt;p&gt;After importing all your passwords to the password manager of your choice, you
+should remove any traces of them from your browsers. Below are links to help you
+do that for each browser.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firefox: &lt;a href=&#34;https://support.mozilla.org/en-US/kb/password-manager-remember-delete-change-passwords#w_viewing-and-deleting-passwords&#34; title=&#34;Delete passwords from Firefox&#34;&gt;Viewing and deleting passwords.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chrome: &lt;a href=&#34;https://support.google.com/chrome/answer/95606?hl=en&#34; title=&#34;Manage your website passwords in Chrome&#34;&gt;Manage your website passwords.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Safari: &lt;a href=&#34;https://discussions.apple.com/thread/4458882?tstart=0&#34;&gt;How to delete saved passwords in Safari.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Chrome: Uncheck &amp;ldquo;Offer to save your web passwords.&amp;rdquo; in your Preferences to
+have it stop asking.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;multifactor-authentication:aaefa93093e01650172de1bca17a7451&#34;&gt;Multifactor Authentication&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s a wise choice to enable a second authentication step to access your
+account. This is especially helpful if you work on a shared computer or on a
+company owned device. It not only helps you protect your accounts but your
+company&amp;rsquo;s as well. Read more about &lt;a href=&#34;https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/&#34; title=&#34;LastPass multifactor options&#34;&gt;LastPass multifactor options&lt;/a&gt; and
+&lt;a href=&#34;https://blog.agilebits.com/2011/09/23/two-factor-or-not-two-factor/&#34; title=&#34;1Password two factor authentication&#34;&gt;1Password&lt;/a&gt;, two factor or not two factor&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My cask script!</title>
+      <link>http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <pubDate>Sun, 106 Aug 26101 10:10:10 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
+haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
+to chef recipe for my mac one day? ;)&lt;/p&gt;
+
+&lt;p&gt;Note: The latest and greatest will be maintained on &lt;a href=&#34;https://github.com/rsumilang/personal/blob/master/scripts/setup/apps-cask.sh&#34; title=&#34;apps-cask&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Cask&#34; &gt;#!/bin/sh
+# Let&#39;s automate installing all our apps!
+#
+# Note: This will require homebrew and cask!
+# See: http://caskroom.io/
+# 
+# Uninstall: Provide the --appdir when removing.
+#
+# @author Richard Sumilang &lt;me@richardsumilang.com&gt;
+INSTALL_CMD=&#34;brew cask install --appdir=/Applications&#34;
+
+###########################
+# Communication
+$INSTALL_CMD colloquy
+$INSTALL_CMD propane
+#$INSTALL_CMD skype
+
+
+
+###########################
+# Development
+$INSTALL_CMD atom
+$INSTALL_CMD charles
+$INSTALL_CMD filezilla
+$INSTALL_CMD gas-mask
+$INSTALL_CMD geektool
+$INSTALL_CMD intellij-idea
+$INSTALL_CMD robomongo
+$INSTALL_CMD sequel-pro
+$INSTALL_CMD sourcetree
+$INSTALL_CMD vagrant vagrant-bar
+$INSTALL_CMD virtualbox
+
+
+
+###########################
+# Enterprise
+#$INSTALL_CMD citrix-receiver
+
+
+
+###########################
+# Interwebs
+$INSTALL_CMD firefox
+$INSTALL_CMD google-chrome
+
+
+
+###########################
+# Media
+$INSTALL_CMD mediaelch
+$INSTALL_CMD miro-video-converter
+$INSTALL_CMD videospec
+$INSTALL_CMD vlc
+
+
+
+###########################
+# Music
+$INSTALL_CMD spotify
+
+
+
+###########################
+# Tools
+$INSTALL_CMD dropbox
+
+
+
+###########################
+# Utilities
+$INSTALL_CMD remote-desktop-connection
+$INSTALL_CMD unrarx
+$INSTALL_CMD transmission
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Working with Apple&#39;s iOS image orientation</title>
+      <link>http://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <pubDate>Sun, 106 Aug 17101 10:10:10 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
+they are not rotated properly when transferring them to another device or
+software. This happens because the device is held at a certain angle when the
+picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
+however it wants.&lt;/p&gt;
+
+&lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
+taken and you can rotate it accordingly.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Rotate iOS image&#34;&gt;&amp;lt;?php
+
+// Rotate iOS image
+// @author Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+
+$imageFile = &#39;/foo/bar.jpg&#39;;
+$finfo = finfo_open(FILEINFO_MIME_TYPE);
+$mimeType = finfo_file($finfo, $imageFile);
+finfo_close($finfo);
+
+// Detect if jpeg or tiff
+if ( in_array($mimeType, [&#39;image/jpeg&#39;, &#39;image/tiff&#39;]) ) {
+    $exif = exif_read_data($imageFile);
+    if ( isset($exif[&#39;Orientation&#39;]) &amp;amp;&amp;amp; !empty($exif[&#39;Orientation&#39;]) ) {
+
+        // Decide orientation
+        if ( $exif[&#39;Orientation&#39;] == 3 ) {
+            $rotation = 180;
+        } else if ( $exif[&#39;Orientation&#39;] == 6 ) {
+            $rotation = 90;
+        } else if ( $exif[&#39;Orientation&#39;] == 8 ) {
+            $rotation = -90;
+        } else {
+            $rotation = 0;
+        }
+
+        // Rotate the image
+        if ( $rotation ) {
+            $imagick = new Imagick();
+            $imagick-&amp;gt;readImage($imageFile);
+            $imagick-&amp;gt;rotateImage(new ImagickPixel(&#39;none&#39;), $rotation);
+            $imagick-&amp;gt;writeImage($imageFile);
+            $imagick-&amp;gt;clear();
+            $imagick-&amp;gt;destroy();
+        }
+
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: Only jpeg and tiff files contain exif information.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FTP Sync Script</title>
+      <link>http://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
+      <pubDate>Sun, 96 Aug 27091 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
+it on GitHub now. Enjoy :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/sync-ftp&#34; title=&#34;ftp sync script&#34;&gt;https://github.com/rsumilang/sync-ftp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: If you have the ability to send files in any other way like SSH then I&amp;rsquo;d
+advise using rsync. FTP should be a last resort.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monitor your filesystem events on Linux with inotify</title>
+      <link>http://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
+      <pubDate>Sun, 76 Aug 14071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
+hooks into your kernel and responding to events on your filesystem is much more
+efficient than doing something like writing a cron job to check for changes in a
+directory every minute. Fortunately, if you&amp;rsquo;re not a C developer, there is a
+package called &lt;a href=&#34;https://github.com/rvoicilas/inotify-tools/wiki&#34; title=&#34;inotify tools&#34;&gt;inotify-tools&lt;/a&gt; that comes with two programs, &lt;code&gt;inotifywait&lt;/code&gt;
+and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotifywait&lt;/code&gt; waits for changes and
+&lt;code&gt;inotifywatch&lt;/code&gt; gathers filesystem access statistics.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of using &lt;code&gt;inotifywait&lt;/code&gt; to keep two directories synced:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Example using inotifywait&#34; &gt;#!/bin/sh
+# Example: inotifywait
+# Description: This example keeps the directory &#34;/put-here&#34; in sync with &#34;/watch-here&#34; when changes are made to anything in &#34;/watch-here&#34;
+# Author: Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+#
+$watch_dir=/watch-here
+$put_dir=/put-here
+
+inotifywait -mr -e modify,attrib,moved_to,moved_from,move,move_self,create,delete,delete_self $watch_dir |
+while read dir ev file;
+do
+    if [[ $ev == &#34;DELETE&#34;  ]]; then
+        rm -rf $put_dir$file
+    elif [[ $file != *~ ]] || [[ $file != *swp ]] || [[ $file != *swx ]]; then
+        rsync -azvhp --delete --exclude &#39;.idea&#39; --exclude &#39;.svn&#39; --exclude &#39;.vagrant&#39; --exclude &#39;tmp&#39; --exclude &#39;crowdfusion&#39; --exclude &#39;system&#39; &#34;$watch_dir$file&#34; &#34;$put_dir$file&#34;
+    fi
+done;&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;h3 id=&#34;what-if-i-m-monitoring-a-network-mount:8c2a876ae8e8d02478170c0d10f1a5f7&#34;&gt;What if I&amp;rsquo;m monitoring a network mount?&lt;/h3&gt;
+
+&lt;p&gt;There are a few gotchas here. If you are monitoring a network mount then you
+will &lt;strong&gt;NOT&lt;/strong&gt; receive notifications if files are edited on the remote machine.
+This is simply because the kernel has no knowledge of this. A solution would be
+to run another process on the host machine that can send a notification.
+However, it should work if you modify files in the mount from the machine
+running &lt;code&gt;inotify&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 76 Aug 13071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>
+
+&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-keep-master-files-out-of-the-aperture-library:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;1. Keep master files out of the Aperture Library&lt;/h3&gt;
+
+&lt;p&gt;I strongly encourage this as it makes your Aperture Library much easier to
+manage and keeps free space on your workstation for more important things. I
+work in a 250gb SSD drive and space is important. Keep your masters on an
+external drive or network attached storage and only import them locally while
+you&amp;rsquo;re working on them. Adobe Lightroom gets this and actually never puts your
+masters in the Aperture Library. Or as they call it, catalog.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-create-a-aperture-library-for-different-projects:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;2. Create a Aperture Library for different projects&lt;/h3&gt;
+
+&lt;p&gt;This will keep your libraries small and efficient. This is especially nifty if
+you work on a laptop with limited space. Imagine going on a trip to take photos.
+You don&amp;rsquo;t need to carry your whole Aperture Library with you. You want as much
+space possible to take as many photos as you need. You can, if needed, merge
+your Aperture Library into another &amp;ldquo;master&amp;rdquo; Aperture Library to consolidate
+everything in the future.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-trash-your-thumbnails:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;3. Trash your thumbnails&lt;/h3&gt;
+
+&lt;p&gt;Some might be stale anyways and it&amp;rsquo;s nice to get rid of excess. Aperture will
+regenerate what it needs when you access it. Pop open a terminal and run these
+commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;find ~/Pictures -name &#34;AP.Thumbnails&#34; -delete
+find ~/Pictures -name &#34;AP.Minis&#34; -delete
+find ~/Pictures -name &#34;AP.Tinies&#34; -delete&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;p&gt;That saved me about 10 gigabytes. Your mileage may very.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-rebuild-your-database:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;4. Rebuild your database&lt;/h3&gt;
+
+&lt;p&gt;Hold &lt;code&gt;option + command&lt;/code&gt; on your keyboard while opening Aperture. This will bring
+up the &lt;em&gt;Photo Library First Aid&lt;/em&gt; dialog. Click &lt;em&gt;Rebuild Database&lt;/em&gt; then &lt;em&gt;Rebuild&lt;/em&gt;
+button.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to setup automated backups to SSH server with Synology DiskStation</title>
+      <link>http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</link>
+      <pubDate>Sun, 76 Aug 12071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</guid>
+      <description>
+
+&lt;p&gt;As a best practice, it&amp;rsquo;s great great to have your data in more than one
+location. I use my Synology Diskation as a local network file server at my home.
+The reality is something can happen and I lose all my important data in that
+little box. From a BBQ, a birthday party, or maybe the house just burns down and
+now all my data is gone. Unfortunately my network rack at home will never be as
+secure as a network rack in a data center. So, backup your data because that&amp;rsquo;s
+much easier to do rather than trying to restore from no backup. Makes logical
+sense right? Derp.&lt;/p&gt;
+
+&lt;h2 id=&#34;requirements:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic shell knowledge.&lt;/li&gt;
+&lt;li&gt;A remote server that you can SSH into.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;why-not-use-the-backup-amp-replication-plugin:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;Why not use the &amp;ldquo;Backup &amp;amp; Replication&amp;rdquo; plugin?&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;Backup &amp;amp; Replication&lt;/em&gt; module does not have a way to specify my remote
+server&amp;rsquo;s rsync port. The default is &lt;strong&gt;22&lt;/strong&gt; but my host runs on port &lt;strong&gt;2222&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-enable-ssh-on-your-synology-box:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;1. Enable SSH on your Synology Box&lt;/h2&gt;
+
+&lt;p&gt;First things first. &lt;a href=&#34;http://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/&#34;&gt;Enable SSH&lt;/a&gt;
+on your Synology box if you haven&amp;rsquo;t already done so and log in (via ssh).&lt;/p&gt;
+
+&lt;h2 id=&#34;2-generate-ssh-keys:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;2. Generate SSH keys&lt;/h2&gt;
+
+&lt;p&gt;We&amp;rsquo;ll need to generate a pair of keys here so &lt;code&gt;rsync&lt;/code&gt; is not prompted for your
+password when it runs otherwise this defeats the purpose of automation. To do
+this, run the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen -v -t rsa -f ~/.ssh/backup -P &#34;&#34;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will generate &lt;code&gt;/root/.ssh/backup&lt;/code&gt; and &lt;code&gt;/root/.ssh/backup.pub&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;3-copy-your-public-key-to-the-remote-server:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;3. Copy your public key to the remote server&lt;/h2&gt;
+
+&lt;p&gt;Login to your remote server and put the contents of &lt;code&gt;/root/.ssh/backup.pub&lt;/code&gt; from
+your Synology box to &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; on your remote box. If this file
+on your remote box already exists, then just append the contents to it rather
+than overwriting it. If this file does not exist, then create it.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you create it manually then make sure the following files have the following
+permissions otherwise SSH will not allow you to use&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;0700: ~/.ssh&lt;/li&gt;
+&lt;li&gt;0644: ~/.ssh/authorized_keys&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should be able to SSH from your Synology Diskation to your remote machine
+without specifying a password. Here is an example command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh username@home -i /root/.ssh/backup -v
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;-i&lt;/code&gt; command tells SSH which private key to use and the &lt;code&gt;-v&lt;/code&gt; would make the
+program verbose.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-configure-rsync-and-crontab:be368e5c5a440c3f73ef62c95f83fa39&#34;&gt;4. Configure rsync and crontab&lt;/h2&gt;
+
+&lt;p&gt;Last but not least, we need to add a line in our crontab configuration to run
+rsync at a specific time. Here is an example of mine:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-crontab&#34;&gt;0   0   *   *   *   root    rsync -avztP --delete --inplace /volume1/photo/ username@host:/backups/glitch/photo -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   1   *   *   *   root    rsync -avztP --inplace /volume1/manuals/ username@host:/backups/glitch/manuals -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   2   *   *   *   root    rsync -avztP --inplace /volume1/surveillance/ username@host:/backups/glitch/surveillance -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   3   *   *   *   root    rsync -avztP --inplace /volume1/video/ username@host:/backups/glitch/video -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   4   *   *   *   root    rsync -avztP --inplace /volume1/applications/ username@host:/backups/glitch/applications -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;
+0   5   *   *   *   root    rsync -avztP --delete --inplace /volume1/zappiti/ username@host:/backups/glitch/zappiti -e &#34;ssh -p 2222 -i /root/.ssh/backup&#34; --exclude &#34;.DS_Store&#34; --exclude &#34;@eaDir&#34; --exclude &#34;.apdisk&#34;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s important to note that each field must be indented by a tab (not a space)
+and the user must be root. If you configure this another way then the Synology
+server will erase the entry when you reboot the machine. Here are some
+&lt;a href=&#34;http://www.freebsd.org/doc/handbook/configtuning-cron.html&#34; title=&#34;FreeBSD Configuring Cron&#34;&gt;configuration options&lt;/a&gt; for reference.&lt;/p&gt;
+
+&lt;p&gt;Put your configuration in &lt;code&gt;/etc/crontab&lt;/code&gt;. You can use &lt;code&gt;nano&lt;/code&gt; if you&amp;rsquo;re on DSM 4
+or &lt;code&gt;vi&lt;/code&gt; if you&amp;rsquo;re on DSM 5.&lt;/p&gt;
+
+&lt;p&gt;Lastly, we need to restart the cron daemon to take note of our changes. The
+command is &lt;code&gt;restart crond&lt;/code&gt; on DSM 5 machines and
+&lt;code&gt;/usr/syno/sbin/synoservice --restart crond&lt;/code&gt; on DSM 4 machines.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

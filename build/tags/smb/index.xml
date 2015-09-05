@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smb on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/smb/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 30051 05:05:05 PST</updated>
+    
+    <item>
+      <title>Converting Windows Network Path for Mac</title>
+      <link>http://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</link>
+      <pubDate>Sun, 56 Aug 30051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re given a Windows network path such as &lt;code&gt;\\Foo\Bar&lt;/code&gt; then that basically
+means connect to shared folder &lt;code&gt;Bar&lt;/code&gt; on the server &lt;code&gt;Foo&lt;/code&gt;. To do this, you can go
+&lt;code&gt;Finder&lt;/code&gt; -&amp;gt; &lt;code&gt;Go&lt;/code&gt; -&amp;gt; &lt;code&gt;Connect to Server...&lt;/code&gt; and type &lt;code&gt;smb://Foo/Bar&lt;/code&gt; which
+is the equivalent.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

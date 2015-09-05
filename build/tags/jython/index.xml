@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jython on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/jython/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 46 Aug 8041 04:04:04 PST</updated>
+    
+    <item>
+      <title>How to install Jython on OS X</title>
+      <link>http://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
+      <pubDate>Sun, 46 Aug 8041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can end this tutorial now if you can run &lt;code&gt;jython&lt;/code&gt; without an error. If
+you&amp;rsquo;re getting the &lt;code&gt;$JYTHON_HOME&lt;/code&gt; error then just run this command once:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;$JYTHON_HOME&#34;&gt;echo &#34;export JYTHON_HOME=/usr/local/Cellar/jython/2.5.3/libexec&#34; | tee -a ~/.bash_profile; source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Walla! Now you can enjoy the power of Java from Jython! Knock your socks off
+with this &lt;a href=&#34;http://oreilly.com/catalog/jythoness/chapter/ch01.html&#34; title=&#34;Jython Book&#34;&gt;tutorial from O&amp;rsquo;reilly&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

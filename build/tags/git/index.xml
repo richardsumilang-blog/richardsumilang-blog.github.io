@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/git/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 16 Aug 31011 01:01:01 PST</updated>
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>http://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sun, 16 Aug 31011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;
+
+&lt;p&gt;I found &lt;a href=&#34;https://github.com/Spaceman-Labs/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this great&lt;/a&gt; git &lt;strong&gt;post-commit&lt;/strong&gt; hook by Spaceman Labs. It works by
+adding a comment to your Asana ticket when you reference your commit message by
+id. For example, &lt;strong&gt;&amp;ldquo;Fixing issue #12345.&amp;rdquo;&lt;/strong&gt; This adds a comment to your ticket:&lt;/p&gt;
+
+&lt;pre&gt;Just committed %commit-id with message:
+
+&#34;Fixing issue #1234&#34;
+
+to repository %repo-name&lt;/pre&gt;
+
+&lt;p&gt;This works by making a curl request to Asana&amp;rsquo;s REST API on your behalf while
+sending the above message as the comment. While this is great, it could be
+better by providing links to your Bitbucket changeset. I&amp;rsquo;ve made the necessary
+edits to do so in the &lt;strong&gt;post-commit&lt;/strong&gt; hook. The updated message now looks like
+this:&lt;/p&gt;
+
+&lt;pre&gt;Committed %link-to-commit with message:
+
+&#34;Fixing issue #1234&#34;
+
+to repository %repo-name&lt;/pre&gt;
+
+&lt;h3 id=&#34;how-it-works:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;How it works&lt;/h3&gt;
+
+&lt;p&gt;I loop through all the remote repositories configured for the repo and search
+for either a bitbucket.org or github.com in their URLs. Once  one is found, I
+extract the repo name from the URL and build the link to the changeset.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you are using Github then I recommend  using the free
+&lt;a href=&#34;https://asana.com/apps/github&#34; title=&#34;Asana GitHub App&#34;&gt;Asana service&lt;/a&gt; provided. I merely included the GitHub code as an example.&lt;/p&gt;
+
+&lt;p&gt;The original code from here takes over and parses out the ticket number and does
+the curl request.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Grab my edited &lt;strong&gt;post-commit&lt;/strong&gt; hook from &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;github&lt;/a&gt; and drop it into your repos
+&lt;code&gt;.git/hooks&lt;/code&gt; directory. Make sure to &lt;code&gt;chmod&lt;/code&gt; the file to &lt;code&gt;0755&lt;/code&gt;. Lastly, grab
+your &lt;a href=&#34;http://app.asana.com/-/account_api&#34; title=&#34;Asana Account API&#34;&gt;Asana key&lt;/a&gt; and run &lt;code&gt;git config --global user.asana-key
+&amp;quot;MY_ASANA_API_KEY&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;afterthoughts:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;Afterthoughts&lt;/h3&gt;
+
+&lt;p&gt;Please let me know if you have any suggestions. I&amp;rsquo;m thinking of possibly editing
+the git commit message to link back to the Asana ticket for the sake of
+cross-linking but this might require additional configuration&amp;hellip; Unless project
+id is added as part of the ticket number. Ie: #&lt;sup&gt;12345&lt;/sup&gt;&amp;frasl;&lt;sub&gt;98765&lt;/sub&gt;. Please feel free to
+add your input! :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

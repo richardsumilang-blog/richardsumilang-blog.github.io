@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unix Like on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/categories/unix-like/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 106 Aug 26101 10:10:10 PST</updated>
+    
+    <item>
+      <title>My cask script!</title>
+      <link>http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <pubDate>Sun, 106 Aug 26101 10:10:10 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
+haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
+to chef recipe for my mac one day? ;)&lt;/p&gt;
+
+&lt;p&gt;Note: The latest and greatest will be maintained on &lt;a href=&#34;https://github.com/rsumilang/personal/blob/master/scripts/setup/apps-cask.sh&#34; title=&#34;apps-cask&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Cask&#34; &gt;#!/bin/sh
+# Let&#39;s automate installing all our apps!
+#
+# Note: This will require homebrew and cask!
+# See: http://caskroom.io/
+# 
+# Uninstall: Provide the --appdir when removing.
+#
+# @author Richard Sumilang &lt;me@richardsumilang.com&gt;
+INSTALL_CMD=&#34;brew cask install --appdir=/Applications&#34;
+
+###########################
+# Communication
+$INSTALL_CMD colloquy
+$INSTALL_CMD propane
+#$INSTALL_CMD skype
+
+
+
+###########################
+# Development
+$INSTALL_CMD atom
+$INSTALL_CMD charles
+$INSTALL_CMD filezilla
+$INSTALL_CMD gas-mask
+$INSTALL_CMD geektool
+$INSTALL_CMD intellij-idea
+$INSTALL_CMD robomongo
+$INSTALL_CMD sequel-pro
+$INSTALL_CMD sourcetree
+$INSTALL_CMD vagrant vagrant-bar
+$INSTALL_CMD virtualbox
+
+
+
+###########################
+# Enterprise
+#$INSTALL_CMD citrix-receiver
+
+
+
+###########################
+# Interwebs
+$INSTALL_CMD firefox
+$INSTALL_CMD google-chrome
+
+
+
+###########################
+# Media
+$INSTALL_CMD mediaelch
+$INSTALL_CMD miro-video-converter
+$INSTALL_CMD videospec
+$INSTALL_CMD vlc
+
+
+
+###########################
+# Music
+$INSTALL_CMD spotify
+
+
+
+###########################
+# Tools
+$INSTALL_CMD dropbox
+
+
+
+###########################
+# Utilities
+$INSTALL_CMD remote-desktop-connection
+$INSTALL_CMD unrarx
+$INSTALL_CMD transmission
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FTP Sync Script</title>
+      <link>http://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
+      <pubDate>Sun, 96 Aug 27091 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
+it on GitHub now. Enjoy :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/sync-ftp&#34; title=&#34;ftp sync script&#34;&gt;https://github.com/rsumilang/sync-ftp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: If you have the ability to send files in any other way like SSH then I&amp;rsquo;d
+advise using rsync. FTP should be a last resort.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monitor your filesystem events on Linux with inotify</title>
+      <link>http://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
+      <pubDate>Sun, 76 Aug 14071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
+hooks into your kernel and responding to events on your filesystem is much more
+efficient than doing something like writing a cron job to check for changes in a
+directory every minute. Fortunately, if you&amp;rsquo;re not a C developer, there is a
+package called &lt;a href=&#34;https://github.com/rvoicilas/inotify-tools/wiki&#34; title=&#34;inotify tools&#34;&gt;inotify-tools&lt;/a&gt; that comes with two programs, &lt;code&gt;inotifywait&lt;/code&gt;
+and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotifywait&lt;/code&gt; waits for changes and
+&lt;code&gt;inotifywatch&lt;/code&gt; gathers filesystem access statistics.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of using &lt;code&gt;inotifywait&lt;/code&gt; to keep two directories synced:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Example using inotifywait&#34; &gt;#!/bin/sh
+# Example: inotifywait
+# Description: This example keeps the directory &#34;/put-here&#34; in sync with &#34;/watch-here&#34; when changes are made to anything in &#34;/watch-here&#34;
+# Author: Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+#
+$watch_dir=/watch-here
+$put_dir=/put-here
+
+inotifywait -mr -e modify,attrib,moved_to,moved_from,move,move_self,create,delete,delete_self $watch_dir |
+while read dir ev file;
+do
+    if [[ $ev == &#34;DELETE&#34;  ]]; then
+        rm -rf $put_dir$file
+    elif [[ $file != *~ ]] || [[ $file != *swp ]] || [[ $file != *swx ]]; then
+        rsync -azvhp --delete --exclude &#39;.idea&#39; --exclude &#39;.svn&#39; --exclude &#39;.vagrant&#39; --exclude &#39;tmp&#39; --exclude &#39;crowdfusion&#39; --exclude &#39;system&#39; &#34;$watch_dir$file&#34; &#34;$put_dir$file&#34;
+    fi
+done;&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;h3 id=&#34;what-if-i-m-monitoring-a-network-mount:8c2a876ae8e8d02478170c0d10f1a5f7&#34;&gt;What if I&amp;rsquo;m monitoring a network mount?&lt;/h3&gt;
+
+&lt;p&gt;There are a few gotchas here. If you are monitoring a network mount then you
+will &lt;strong&gt;NOT&lt;/strong&gt; receive notifications if files are edited on the remote machine.
+This is simply because the kernel has no knowledge of this. A solution would be
+to run another process on the host machine that can send a notification.
+However, it should work if you modify files in the mount from the machine
+running &lt;code&gt;inotify&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fixing OpenSSL Heartbleed vulnerability on Ubuntu</title>
+      <link>http://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
+      <pubDate>Sun, 46 Aug 14041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
+remote users to read memory without leaving a trace. Here are the steps to up
+update Ubuntu to patch the issue.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you are running an OpenSSL bug built after April 7th 2014 then
+you&amp;rsquo;re in the clear. You can double check by running the command
+&lt;code&gt;sudo openssl version -a&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get dist-upgrade
+sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; You might also want to generate new SSH keys if you are saving
+sensitive data on your servers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/unix-like/security/heartbleed.png&#34; alt=&#34;Heartbleed Bug&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to upgrade to PHP 5.4 on Ubuntu 12.10</title>
+      <link>http://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
+      <pubDate>Sun, 36 Aug 31031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
+      <description>&lt;p&gt;PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
+backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
+and run the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Installation Instructions&#34;&gt;sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php5-oldstable
+sudo apt-get update; sudo apt-get install php5&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you compiled or installed any PHP extensions via &lt;code&gt;pecl&lt;/code&gt; then you will need to
+reinstall those too. Development packages must be upgraded before you run &lt;code&gt;pecl&lt;/code&gt;
+or &lt;code&gt;phpize&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Development packages&#34;&gt;sudo apt-get install php-pear php5-dev&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Test if everything is ok by running &lt;code&gt;phpinfo();&lt;/code&gt; from a PHP script on your
+web-server and &lt;code&gt;php -i&lt;/code&gt; from your terminal.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

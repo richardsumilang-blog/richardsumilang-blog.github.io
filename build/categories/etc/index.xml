@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etc on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/categories/etc/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 28051 05:05:05 PST</updated>
+    
+    <item>
+      <title>&#34;effective. Power&#34; ... An AOL Flashback.</title>
+      <link>http://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</link>
+      <pubDate>Sun, 56 Aug 28051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
+iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
+
+&lt;pre&gt;
+effective. 
+Power
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m running iOS 8.3 (12F70). While testing the message, I learned that removing
+the &amp;ldquo;effective. Power&amp;rdquo; from the text will also crash my the Message app and
+prevent me and my recipient from opening the app. Fun times.&lt;/p&gt;
+
+&lt;pre&gt;
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;You can send yourself another text message something like the desktop Messages
+app with the same exact text which will cancel out the erroring one. Another
+popular technique is to send yourself a text from your photos app.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-does-this-work:54ef7fa11b89a091df9a4bb3fcf6ecc0&#34;&gt;How does this work?&lt;/h3&gt;
+
+&lt;p&gt;The problem is the set of characters used. The Messages app (and possibly
+others) try to render the bad text will cause the program manager and windowing
+system to crash and reboot.&lt;/p&gt;
+
+&lt;p&gt;This felt like a modern day AOL punter for me. A punter was usually a feature of
+an &amp;ldquo;AOL prog&amp;rdquo; or &amp;ldquo;proggie&amp;rdquo; that could sign off anyone you like, similar to this
+exploit. A recepient would receive an instant message from you with bad contents
+in the message body causing the AOL program to crash.&lt;/p&gt;
+
+&lt;p&gt;Funny enough, this is where my interest in computer programming began. Oh Visual
+Basic&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Shout outs to Fate X, Pepsi, HaVok, Pepsi, FireToolz, Fate Zero, Super MaD CoW
+97, EXoRCiST, Cold Fusion and many more for making the internet a much more
+interesting place to be in the 90s.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Apps I can&#39;t live without on OS X</title>
+      <link>http://www.richardsumilang.com/etc/software/apps-i-cant-live-without-os-x/</link>
+      <pubDate>Sun, 56 Aug 7051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/software/apps-i-cant-live-without-os-x/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; Want to automate your software installation? Take a look at how I
+did with &lt;a href=&#34;http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adobe.com/products/cs6.html&#34;&gt;Adobe CS 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.alfredapp.com&#34;&gt;Alfred App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/analog/id418343177?mt=12&#34;&gt;Analog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.apple.com/aperture/&#34;&gt;Aperture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.charlesproxy.com/&#34;&gt;Charles Proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.com/chrome/browser/&#34;&gt;Chrome&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb?hl=en-US&#34;&gt;AdBlock Plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/extensions/detail/alelhddbbhepgpmgidjdcjakblofbmce&#34;&gt;Awesome Screenshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en&#34;&gt;ColorPick Eyedropper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/feedly-news-blogs-and-you/hipbfijinpcgfogaopmgehiegacbhmob&#34;&gt;Feedly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&#34;&gt;JSONView&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/measureit/pokhcahijjfkdccinalifdifljglhclm?hl=en&#34;&gt;MeasureIt!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm&#34;&gt;Postman - REST Client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/ljfpjnehmoiabkefmnjegmpdddgcdnpo&#34;&gt;Ultimate User Agent Switcher, URL sniffer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/xv-%E2%80%94-xml-viewer/eeocglpgjdpaefaedpblffpeebgmgddk&#34;&gt;XV - XML Viewer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://colloquy.info&#34;&gt;Colloquy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://junecloud.com/software/mac/delivery-status.html&#34;&gt;Delivery Status Widget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.clockwise.ee/gasmask/&#34;&gt;Gas Mask&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projects.tynsoe.org/en/geektool/&#34;&gt;GeekTool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dboissier/mongo4idea&#34;&gt;Mongo4Idea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://filezilla-project.org/&#34;&gt;FileZilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.getfirefox.com&#34;&gt;Firefox&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/awesome-screenshot-capture-/&#34;&gt;Awesome Screenshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://adblockplus.org/en/firefox&#34;&gt;Adblock Plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/awesome-screenshot-capture-/&#34;&gt;Feedly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.getfirebug.com&#34;&gt;Firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.firephp.org&#34;&gt;FirePHP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/&#34;&gt;Flush DNS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsonview.com/&#34;&gt;JSONView&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/modify-headers/&#34;&gt;Modify Headers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/poster-extension/&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://chrispederick.com/work/user-agent-switcher/&#34;&gt;User Agent Switcher&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.microsoftstore.com/store/msusa/en_US/pdp/Office-for-Mac-Home-and-Student-2011/productID.253736200&#34;&gt;Office for Mac 2011&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh&#34;&gt;Oh my zsh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://propaneapp.com/&#34;&gt;Propane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.blazingtools.com/right_zoom_mac.html&#34;&gt;Right Zoom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://robomongo.org/&#34;&gt;Robomongo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.spotify.com/&#34;&gt;Spotify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sublimetext.com&#34;&gt;Sublime Text&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sublime.wbond.net/installation&#34;&gt;Package Control&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://macromates.com/&#34;&gt;Textmate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roxio.com/enu/products/toast/default.html&#34;&gt;Toast 11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.unrarx.com/&#34;&gt;UnRar X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.virtualbox.org/&#34;&gt;VirtualBox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://store.vmware.com/store/vmware/en_US/DisplayProductDetailsPage/ThemeID.2485600/productID.285051300&#34;&gt;VMWare Fusion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wunderlist.com/&#34;&gt;Wunderlist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reflection</title>
+      <link>http://www.richardsumilang.com/etc/reflection/</link>
+      <pubDate>Sun, 46 Aug 24041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/reflection/</guid>
+      <description>&lt;p&gt;Today was just one of those days that started like any other. I&amp;rsquo;ve been doing a
+lot of reflection over the past few weeks on what are my new goals. The act of
+starting a new goal is always exciting but my life is pretty consistent despite
+how random it seems. I always start off the day choosing one of my many similar
+yet different shirts. Today I chose the shirt labeled Chocolate. I just wanted
+someone to read &amp;ldquo;Chocolate&amp;rdquo; aloud so I can reply &amp;ldquo;Melts with in your mouth, not
+in your hands.&amp;rdquo; Is that too much to ask for? (Who knows&amp;hellip;) So I go about my day
+and start brushing up on PHP namespacing documents. I got some pretty useful
+information out of the &lt;a href=&#34;http://www.php.net/manual/en/language.namespaces.basics.php#82088&#34; title=&#34;PHP Namespaces&#34;&gt;top comment&lt;/a&gt; and find out that it was written by me 6
+years ago! It felt like the &lt;em&gt;past me&lt;/em&gt; was talking to &lt;em&gt;current me&lt;/em&gt;. A bit trippy
+but also a bit embarrassing because I used to be on the bleeding edge of
+software development &amp;gt;= 6 years ago. I then joined big corporations. The
+technology was usually behind but I did learn a lot in terms of scalability and
+working with agile teams. Now in my current role I have the opportunity to do
+some really cool stuff which has been a bit of a refresh. It&amp;rsquo;s true what they
+say, &amp;ldquo;if you don&amp;rsquo;t use it, you lose it&amp;rdquo;. But that&amp;rsquo;s ok as I was also focusing
+more on other aspects in my life rather than just being an engineer.&lt;/p&gt;
+
+&lt;p&gt;We get two food trucks come by the office parking lot during lunch. One was a
+rib truck today and the other was some vegan thing. Typically I go straight for
+the red meat but I thought I&amp;rsquo;ll be good this one time (at least once this month)
+and get a vegan burger. My head was lost in code while I waited for my food. The
+lady from the vegan truck called my name and when I picked up my food she said,
+&amp;ldquo;mmmm chocolate, I could take you home and eat you for dessert!&amp;rdquo; I was totally
+caught off guard without my one-liner ready. I just chuckled, said thank you,
+and went back to office. #missedjokeoppurtuniy&lt;/p&gt;
+
+&lt;p&gt;My cousin and I met up after work as we normally do on Thursdays to have a
+drink, talk about life, business, and whatever. I might add that the &amp;ldquo;Mexican&amp;rdquo;
+food at &lt;a href=&#34;http://www.pinktaco.com/&#34; title=&#34;Pink Taco&#34;&gt;Pink Taco&lt;/a&gt; is amazing! My favorite drink lately has been Johnie
+Walker black label so I&amp;rsquo;ve been ordering that wherever I go. We were coming to
+realizations of where technology and businesses are headed. During the talk we
+got comped free Johnnie Walker blue labels by our waiter! I don&amp;rsquo;t even know why
+but who can say no to that? As the Gavin Rossdale would say, &amp;ldquo;take life straight
+no chaser!&amp;rdquo;  I ended the day by buying a lottery ticket because today seemed
+like one of those special occasion weird days and might as well try to exhaust.&lt;/p&gt;
+
+&lt;p&gt;Nonetheless I&amp;rsquo;ve been having an itch that needs scratching in regards to
+something amazing that needs to be built. Maybe my recent blogs might hint where
+things are going. Expect some interesting concepts coming down the pipeline as
+I&amp;rsquo;m seeing a reflection of where things were a decade ago and getting the sense
+of a full picture. Time will tell!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First day at TMZ</title>
+      <link>http://www.richardsumilang.com/etc/first-day-at-tmz/</link>
+      <pubDate>Sun, 46 Aug 1041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/first-day-at-tmz/</guid>
+      <description>&lt;p&gt;Today marks day 1 of my journey at &lt;a href=&#34;http://www.tmz.com/&#34; title=&#34;Thirty Mile Zone&#34;&gt;TMZ&lt;/a&gt;. There is an exciting energy in
+this environment. The first thing you notice is an open workspace where there is
+action going on every minute. (You probably already know that if you&amp;rsquo;ve watched
+the show before.) The technology is also very impressive. The team no doubt
+consists of nothing but A+ players. How else would TMZ have gotten to be so big
+in a short amount of time? I&amp;rsquo;m excited to bring my skills to the team and to see
+what the future has to offer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/me/tmz.jpg&#34; alt=&#34;In the news room&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Just one of those days</title>
+      <link>http://www.richardsumilang.com/etc/just-one-of-those-days/</link>
+      <pubDate>Sun, 36 Aug 30031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/just-one-of-those-days/</guid>
+      <description>&lt;p&gt;I couldn&amp;rsquo;t help but notice how beautiful the weather was today while returning home from brunch. The sky was a perfect blue, the winds were fresh but warm, and the sun was casting amazing shadows from the trees. One of those perfect weather day&amp;rsquo;s that you would kick yourself for staying in. As soon as I got home I pulled my bike out from the garage, wiped the spiders off, pumped up the wheels, and rode away. I always forget how happy it makes me to go out for a bike ride until I&amp;rsquo;m actually riding. So glad I did. :D&lt;/p&gt;
+
+&lt;p&gt;Today&amp;rsquo;s ride in Pasadena:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Caltech&lt;/li&gt;
+&lt;li&gt;San Marino&lt;/li&gt;
+&lt;li&gt;Huntington Gardens&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello world! ... Again.</title>
+      <link>http://www.richardsumilang.com/etc/hello-world...again/</link>
+      <pubDate>Sun, 36 Aug 29031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/hello-world...again/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve decided to bring back my blog in order to share  technical notes and observations. I may carry over some content - particularly timeless posts - from my previous blog.  I&amp;rsquo;m hoping to begin a discussion on this blog, so don&amp;rsquo;t hesitate to comment on the posts.&lt;/p&gt;
+
+&lt;p&gt;Without further adieu, welcome to my blog and don&amp;rsquo;t let the door hit you on the way out. ;)&lt;/p&gt;
+
+&lt;p&gt;Sincerely,
+Me.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

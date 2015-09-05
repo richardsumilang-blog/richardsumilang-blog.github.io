@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/database/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 30051 05:05:05 PST</updated>
+    
+    <item>
+      <title>Backing up and Restoring with MongoDB</title>
+      <link>http://www.richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</link>
+      <pubDate>Sun, 56 Aug 30051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</guid>
+      <description>
+
+&lt;h2 id=&#34;dump:93a29bfa8cd1a35364b077bea9abfe7d&#34;&gt;Dump&lt;/h2&gt;
+
+&lt;p&gt;You can dump the database locally using the following &lt;code&gt;mongodump&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Dump Database&#34;&gt;mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will create a &lt;code&gt;dump&lt;/code&gt; folder containing a subfolder named after your
+database. The default port for MongoDB is &lt;code&gt;27017&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;import:93a29bfa8cd1a35364b077bea9abfe7d&#34;&gt;Import&lt;/h2&gt;
+
+&lt;p&gt;You can import the same dump to a local MongoDB instance using something like
+the following &lt;code&gt;mongorestore&lt;/code&gt; after changing into the &lt;code&gt;dump&lt;/code&gt; directory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Restore Database&#34;&gt;mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
+      <link>http://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <pubDate>Sun, 36 Aug 31031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <description>
+
+&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
+MongoDB extension. I stumbled on an example on
+&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+illustration showing how to do this and rewrote it in what I think is a slightly
+more modern way that does the same thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/reference/object-id/&#34; title=&#34;ObjectId - MongoDB Manual 2.4.9&#34;&gt;ObjectId&lt;/a&gt;&amp;rsquo;s
+are constructed using a 4-byte timestamp value, 3-byte machine identifier, 2-byte process id, and a 3-byte counter which create a 12-byte BSON type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ --------------------------------------------------
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---------------|-----------|-------|--------------|
+| time          | machine   | pid   | counter      |
+ --------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Knowing that makes this PHP code easy to understand:&lt;/p&gt;
+
+&lt;h2 id=&#34;mongoutil:1536523388bd0e63a6faba6ae8068887&#34;&gt;MongoUtil:&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;MongoUtil.php&#34;&gt;/**
+ * Class MongoUtil.
+ */
+class MongoUtil {
+
+    /**
+     * This is needed to keep documents unique that have the same timestamp.
+     * @var integer
+     * @see $timestamp
+     */
+    public static $_mongoIdFromTimestampCounter = 0;
+
+    /**
+     * Mongo Id From Timestamp
+     * @param integer $timestamp
+     * @return MongoID
+     * @see http://docs.mongodb.org/manual/reference/object-id/
+     */
+    public static function mongoIdFromTimestamp( $timestamp ) {
+        // Build Binary Id
+        $binaryTimestamp = pack(&#39;N&#39;, $timestamp); // unsigned long
+        $machineId = substr(md5(gethostname()), 0, 3); // 3 bit machine identifier
+        $binaryPID = pack(&#39;n&#39;, posix_getpid()); // unsigned short
+        $counter = substr(pack(&#39;N&#39;, self::$_mongoIdFromTimestampCounter++), 1, 3); // Counter
+        $binaryId = &#34;{$binTimestamp}{$machineId}{$machineId}{$counter}&#34;;
+
+        // Convert to ASCII
+        $id = &#39;&#39;;
+        for ($i = 0; $i &amp;lt; 12; $i++) {
+            $id .= sprintf(&#34;%02X&#34;, ord($binaryId[$i]));
+        }
+
+        // Return Mongo ID
+        return new MongoID($id);
+    }
+
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;example-of-usage:1536523388bd0e63a6faba6ae8068887&#34;&gt;Example of usage:&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Example&#34;&gt;$date = strtotime(&#39;today&#39;);
+$mongoId = MongoUtil::mongoIdFromTimestamp( $date );
+
+// Do more stuff.&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Groovy on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/groovy/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 46 Aug 15041 04:04:04 PST</updated>
+    
+    <item>
+      <title>How to install Groovy on OS X</title>
+      <link>http://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</link>
+      <pubDate>Sun, 46 Aug 15041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install groovy
+echo &#34;export GROOVY_HOME=/usr/local/opt/groovy/libexec&#34; | tee -a ~/.bash_profile; source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is a little test script taken from &lt;a href=&#34;http://groovy.codehaus.org/Quick+Start&#34; target=&#34;_blank&#34;&gt;Groovy&amp;rsquo;s quickstart guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34; title=&#34;hello.groovy&#34;&gt;//hello.groovy
+println &#34;hello, world&#34;
+for (arg in this.args ) {
+    println &#34;Argument:&#34; + arg;
+}
+// this is a comment
+/* a block comment, commenting out an alternative to above:
+this.args.each{ arg -&amp;gt; println &#34;hello, ${arg}&#34;}
+*/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save that has &lt;code&gt;hello.groovy&lt;/code&gt; and run it with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Testing script&#34;&gt;groovy hello.groovy MyName yourName HisName&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should have the following apps installed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;groovy&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovyConsole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovyc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovydoc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovysh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

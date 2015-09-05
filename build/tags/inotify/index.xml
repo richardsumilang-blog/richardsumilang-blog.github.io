@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inotify on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/inotify/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 76 Aug 14071 07:07:07 PST</updated>
+    
+    <item>
+      <title>Monitor your filesystem events on Linux with inotify</title>
+      <link>http://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
+      <pubDate>Sun, 76 Aug 14071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
+hooks into your kernel and responding to events on your filesystem is much more
+efficient than doing something like writing a cron job to check for changes in a
+directory every minute. Fortunately, if you&amp;rsquo;re not a C developer, there is a
+package called &lt;a href=&#34;https://github.com/rvoicilas/inotify-tools/wiki&#34; title=&#34;inotify tools&#34;&gt;inotify-tools&lt;/a&gt; that comes with two programs, &lt;code&gt;inotifywait&lt;/code&gt;
+and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotifywait&lt;/code&gt; waits for changes and
+&lt;code&gt;inotifywatch&lt;/code&gt; gathers filesystem access statistics.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of using &lt;code&gt;inotifywait&lt;/code&gt; to keep two directories synced:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Example using inotifywait&#34; &gt;#!/bin/sh
+# Example: inotifywait
+# Description: This example keeps the directory &#34;/put-here&#34; in sync with &#34;/watch-here&#34; when changes are made to anything in &#34;/watch-here&#34;
+# Author: Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+#
+$watch_dir=/watch-here
+$put_dir=/put-here
+
+inotifywait -mr -e modify,attrib,moved_to,moved_from,move,move_self,create,delete,delete_self $watch_dir |
+while read dir ev file;
+do
+    if [[ $ev == &#34;DELETE&#34;  ]]; then
+        rm -rf $put_dir$file
+    elif [[ $file != *~ ]] || [[ $file != *swp ]] || [[ $file != *swx ]]; then
+        rsync -azvhp --delete --exclude &#39;.idea&#39; --exclude &#39;.svn&#39; --exclude &#39;.vagrant&#39; --exclude &#39;tmp&#39; --exclude &#39;crowdfusion&#39; --exclude &#39;system&#39; &#34;$watch_dir$file&#34; &#34;$put_dir$file&#34;
+    fi
+done;&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;h3 id=&#34;what-if-i-m-monitoring-a-network-mount:8c2a876ae8e8d02478170c0d10f1a5f7&#34;&gt;What if I&amp;rsquo;m monitoring a network mount?&lt;/h3&gt;
+
+&lt;p&gt;There are a few gotchas here. If you are monitoring a network mount then you
+will &lt;strong&gt;NOT&lt;/strong&gt; receive notifications if files are edited on the remote machine.
+This is simply because the kernel has no knowledge of this. A solution would be
+to run another process on the host machine that can send a notification.
+However, it should work if you modify files in the mount from the machine
+running &lt;code&gt;inotify&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

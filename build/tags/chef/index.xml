@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chef on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/chef/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 66 Aug 12061 06:06:06 PST</updated>
+    
+    <item>
+      <title>Chef Gearman Cookbook v0.1.0</title>
+      <link>http://www.richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</link>
+      <pubDate>Sun, 66 Aug 12061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</guid>
+      <description>&lt;p&gt;A little &lt;a href=&#34;http://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; cookbook I put together for &lt;a href=&#34;http://www.getchef.com/&#34; title=&#34;Chef&#34;&gt;Chef&lt;/a&gt;. Supports installing
+multiple versions by source. Also has a recipe for the &lt;a href=&#34;https://pecl.php.net/package/gearman&#34; title=&#34;Gearman PHP Extension&#34;&gt;PHP extension&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34; title=&#34;Chef Gearman Cookbook&#34;&gt;Grab it from GitHub&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;kthxbye.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update Chef Solo on your Vagrant</title>
+      <link>http://www.richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
+      <pubDate>Sun, 66 Aug 10061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
+      <description>&lt;p&gt;Install &lt;a href=&#34;https://github.com/schisamo/vagrant-omnibus&#34; title=&#34;Vagrant Omnibus&#34;&gt;vagrant-omnibus&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install vagrant-omnibus&#34;&gt;vagrant plugin install vagrant-omnibus&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Configure your &lt;a href=&#34;http://docs.vagrantup.com/v2/vagrantfile/index.html&#34; title=&#34;Vagrantfile Doc&#34;&gt;Vagrantfile&lt;/a&gt; before provisioning to the latest version of
+Chef:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34; title=&#34;Configure Vagrantfile&#34;&gt;config.omnibus.chef_version = :latest&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can also upgrade to a specific version like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34; title=&#34;Configure Vagrantfile&#34;&gt;config.omnibus.chef_version = &#34;11.12.8&#34;&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

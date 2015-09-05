@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mail App on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/mail-app/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 16 Aug 8011 01:01:01 PST</updated>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Sun, 16 Aug 8011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t already, &lt;a href=&#34;https://support.google.com/mail/troubleshooter/1668960&#34; title=&#34;Configure IMAP and POP3&#34;&gt;configure your Mail app&lt;/a&gt; to your gmail account.&lt;/p&gt;
+
+&lt;p&gt;Finally, to configure your aliases, go back into your account settings in the
+Mail app and comma separate each alias under the &lt;strong&gt;Email Address:&lt;/strong&gt; field. It&amp;rsquo;s
+far from obvious but a tooltip will appear after a moment which reads:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Enter one or more email addresses, separated by comma.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You may also find it useful to (configure your iOS)[/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/)
+device the same way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>http://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Sun, 16 Aug 8011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;
+
+&lt;p&gt;The trick here is to setup your Gmail account as an IMAP account. Do not set it
+up by selecting &lt;strong&gt;Google&lt;/strong&gt; in the add account screen. Choose &lt;strong&gt;Other&lt;/strong&gt; and apply
+the &lt;a href=&#34;https://support.google.com/mail/troubleshooter/1668960&#34; title=&#34;Configure IMAP and POP3&#34;&gt;IMAP settings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, to configure your aliases, simply go back into your account settings in
+the &lt;strong&gt;Mail, Contacts, Calendars&lt;/strong&gt; in the &lt;strong&gt;Settings&lt;/strong&gt; app, click &lt;strong&gt;Account&lt;/strong&gt;,
+then &lt;strong&gt;Email&lt;/strong&gt;, and &lt;strong&gt;Add Another Email&amp;hellip;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You are done once you save your changes and now the Mail app should reply using
+the correct alias depending on which account received the email.&lt;/p&gt;
+
+&lt;p&gt;You may also find it useful to &lt;a href=&#34;http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/&#34;&gt;configure your OS X&lt;/a&gt;
+desktop the same way.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

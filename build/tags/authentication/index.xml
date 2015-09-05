@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/authentication/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 116 Aug 11111 11:11:11 PST</updated>
+    
+    <item>
+      <title>Tidying up your security with a Password Manager</title>
+      <link>http://www.richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</link>
+      <pubDate>Sun, 116 Aug 11111 11:11:11 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</guid>
+      <description>
+
+&lt;p&gt;Using a password manager adds numerous of security benefits. The key feature
+being strong unique passwords for each application you use. Two of the most
+popular password managers are &lt;a href=&#34;http://lastpass.com/&#34; title=&#34;LastPass&#34;&gt;LastPass&lt;/a&gt; and &lt;a href=&#34;https://agilebits.com/onepassword&#34; title=&#34;1Password&#34;&gt;1Password&lt;/a&gt;. The main
+difference is LastPass syncs to all your devices by storing your vault on their
+servers. 1Password syncs to all your devices via Dropbox and does not save your
+vault to any other servers. They are both good and whichever you choose to use
+will be up to you.&lt;/p&gt;
+
+&lt;p&gt;After importing all your passwords to the password manager of your choice, you
+should remove any traces of them from your browsers. Below are links to help you
+do that for each browser.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firefox: &lt;a href=&#34;https://support.mozilla.org/en-US/kb/password-manager-remember-delete-change-passwords#w_viewing-and-deleting-passwords&#34; title=&#34;Delete passwords from Firefox&#34;&gt;Viewing and deleting passwords.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chrome: &lt;a href=&#34;https://support.google.com/chrome/answer/95606?hl=en&#34; title=&#34;Manage your website passwords in Chrome&#34;&gt;Manage your website passwords.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Safari: &lt;a href=&#34;https://discussions.apple.com/thread/4458882?tstart=0&#34;&gt;How to delete saved passwords in Safari.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Chrome: Uncheck &amp;ldquo;Offer to save your web passwords.&amp;rdquo; in your Preferences to
+have it stop asking.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;multifactor-authentication:aaefa93093e01650172de1bca17a7451&#34;&gt;Multifactor Authentication&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s a wise choice to enable a second authentication step to access your
+account. This is especially helpful if you work on a shared computer or on a
+company owned device. It not only helps you protect your accounts but your
+company&amp;rsquo;s as well. Read more about &lt;a href=&#34;https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/&#34; title=&#34;LastPass multifactor options&#34;&gt;LastPass multifactor options&lt;/a&gt; and
+&lt;a href=&#34;https://blog.agilebits.com/2011/09/23/two-factor-or-not-two-factor/&#34; title=&#34;1Password two factor authentication&#34;&gt;1Password&lt;/a&gt;, two factor or not two factor&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

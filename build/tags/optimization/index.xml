@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/optimization/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 8051 05:05:05 PST</updated>
+    
+    <item>
+      <title>Type Casting String by Concatenation Performance Test in PHP</title>
+      <link>http://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
+      <pubDate>Sun, 56 Aug 8051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
+      <description>
+
+&lt;p&gt;The purpose of this test is to see if casting an object to a string by
+concatenating it was actually slower than using normal type casting. Here is my
+source:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;test-typecast.php&#34;&gt;&amp;lt;?php
+
+// Setup
+$tests = 1000000;
+class Foo {
+    public function __toString() {
+        return &#34;bar&#34;;
+    }
+}
+
+// Test 1
+$x = new Foo();
+$timer = microtime();
+
+for ($i = 0; $i &amp;lt; $tests; $i++) {
+    $y = &#34;&#34; . $x;
+}
+
+$timer -= microtime();
+echo &#34;Test 1 complete. Total time: {$timer}\n&#34; . PHP_EOL;
+
+// Test 2
+$x = new Foo();
+$timer = microtime();
+
+for ($i = 0; $i &amp;lt; $tests; $i++) {
+    $y = (string)$x;
+}
+
+$timer -= microtime();
+echo &#34;Test 2 complete. Total time: {$timer}\n&#34; . PHP_EOL;
+
+// Done.
+exit();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is what I got in my terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Results&#34;&gt;$php -f test-typecast.php
+Test 1 complete. Total time: -0.203729
+Test 2 complete. Total time: -0.16766&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;explanation:a40861c8c18b47fef614c59e41b70103&#34;&gt;Explanation&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Test 1&lt;/em&gt; tells PHP to 1) create a string, 2) concatenate it to an object, 3) PHP
+can&amp;rsquo;t do that so it tries to call the &lt;code&gt;$x-&amp;gt;__toString()&lt;/code&gt; method, 4) now
+concatenate &lt;code&gt;&amp;quot;&amp;quot; . $x-&amp;gt;__toString();&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Test 2&lt;/em&gt; in this case will 1) check the type of &lt;code&gt;$x&lt;/code&gt;, and 2) return the value of
+&lt;code&gt;$x-&amp;gt;__toString()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Naturally the process with the least steps would be faster.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

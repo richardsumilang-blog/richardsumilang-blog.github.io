@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet Explorer on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/internet-explorer/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 66 Aug 20061 06:06:06 PST</updated>
+    
+    <item>
+      <title>jQuery CORS fix for IE8 and IE9</title>
+      <link>http://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <pubDate>Sun, 66 Aug 20061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
+it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;jQuery CORS IE8 and IE9 fix.&#34;&gt;if ( window.XDomainRequest ) {
+    jQuery.ajaxTransport(function( s ) {
+        if ( s.crossDomain &amp;amp;&amp;amp; s.async ) {
+            if ( s.timeout ) {
+                s.xdrTimeout = s.timeout;
+                delete s.timeout;
+            }
+            var xdr;
+            return {
+                send: function( _, complete ) {
+                    function callback( status, statusText, responses, responseHeaders ) {
+                        xdr.onload = xdr.onerror = xdr.ontimeout = jQuery.noop;
+                        xdr = undefined;
+                        complete( status, statusText, responses, responseHeaders );
+                    }
+                    xdr = new XDomainRequest();
+                    xdr.onload = function() {
+                        callback( 200, &#34;OK&#34;, { text: xdr.responseText }, &#34;Content-Type: &#34; + xdr.contentType );
+                    };
+                    xdr.onerror = function() {
+                        callback( 404, &#34;Not Found&#34; );
+                    };
+                    xdr.onprogress = jQuery.noop;
+                    xdr.ontimeout = function() {
+                        callback( 0, &#34;timeout&#34; );
+                    };
+                    xdr.timeout = s.xdrTimeout || Number.MAX_VALUE;
+                    xdr.open( s.type, s.url );
+                    xdr.send( ( s.hasContent &amp;amp;&amp;amp; s.data ) || null );
+                },
+                abort: function() {
+                    if ( xdr ) {
+                        xdr.onerror = jQuery.noop;
+                        xdr.abort();
+                    }
+                }
+            };
+        }
+    });
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: This doesn&amp;rsquo;t work when using the &lt;code&gt;{async: false}&lt;/code&gt; option in jQuery methods.&lt;/p&gt;
+
+&lt;p&gt;Be sure to set the &lt;code&gt;{crossDomain: true}&lt;/code&gt; setting and you&amp;rsquo;re good to go.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

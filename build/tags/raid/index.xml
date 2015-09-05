@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raid on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/raid/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 66 Aug 28061 06:06:06 PST</updated>
+    
+    <item>
+      <title>Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0</title>
+      <link>http://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>
+      <pubDate>Sun, 66 Aug 28061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</guid>
+      <description>
+
+&lt;p&gt;I received an alert from my Synology RAID regarding a few bad sectors on a hard
+drive. Even though the RAID is still operational, it&amp;rsquo;s best practice to replace
+the hard drive before any data gets corrupted due to the bad sectors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/bad-sector-count.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-setup:dd8549fedce0a50eea9ced82d12a33b0&#34;&gt;My Setup&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Synology DS413&lt;/li&gt;
+&lt;li&gt;DSM 5.0&lt;/li&gt;
+&lt;li&gt;4x Western Digital 3TB Caviar Green&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Tip: It&amp;rsquo;s best to purchase an extra disk when initially configuring your RAID.
+While I can still find WD 3TB Caviar Green drives online, they are not the same.
+Some are actually smaller than others by a few megabytes even though they are
+labeled 3TB. To rebuild your RAID, you will need a disk with the &lt;code&gt;exact&lt;/code&gt; size or
+more. Trying to replace it with a drive that is just 1mb smaller will not work.
+Your hard drive manufacturer will release a few different versions of the same
+drive model while the space may fluctuate in megabytes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I tried finding a close match by using the physical date on the drive but even a
+ones that I found with a month difference were smaller. While it was not
+impossible to find another WD Caviar drive, it was a long and annoying search.&lt;/p&gt;
+
+&lt;h2 id=&#34;lets-fix-it:dd8549fedce0a50eea9ced82d12a33b0&#34;&gt;Lets fix it!&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Edit: I think it&amp;rsquo;s best to remove the drive sooner rather than later and run
+your system (if necessary) with only the good drives. I shut down my DiskStation
+and physically removed the bad drive from the array. I did this because I did
+not want to chance data being written to the a bad sector which would then make
+it corrupt. I then powered on my DiskStation only when I needed something from
+it. I do not recommend leaving it on with a disk removed because now it
+technically has a higher chance of failure.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt; Upon logging into your DiskStation, you will be prompted with a series of
+alerts. The topmost screen, &lt;strong&gt;Storage Manager&lt;/strong&gt;, will tell your RAID is
+degraded. Your system will literally beep continuously until you click the
+&amp;ldquo;Beep Off&amp;rdquo; button in your &lt;strong&gt;Control Panel&lt;/strong&gt;. Your &lt;strong&gt;System Health&lt;/strong&gt; panel will
+also try to gain your attention.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; From your &lt;strong&gt;Storage Manager&lt;/strong&gt;, click on &lt;strong&gt;Volume&lt;/strong&gt;. You will notice that the &lt;strong&gt;Manage&lt;/strong&gt; button will be disabled until you replace the failed drive with a disk of the same size or bigger.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Be sure to power your down your DiskStation when swapping out the drives.
+Do not try and do this with it running.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-2.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt; After you replace your drive, the &lt;strong&gt;Manage&lt;/strong&gt; button will no longer be
+disabled. Click on that.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-3.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4)&lt;/strong&gt; Click the &lt;strong&gt;Repair&lt;/strong&gt; radio button and then &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-4.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5)&lt;/strong&gt; Select the correct disk in your system to use for the RAID and click
+&lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-5.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6)&lt;/strong&gt; You will be prompted with a warning before you continue. Make sure you&amp;rsquo;re ok with destroying all the current contents of the selected disk and click &lt;strong&gt;Ok&lt;/strong&gt; if you are.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-6.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7)&lt;/strong&gt; And one more window to confirm that you are ok with the warning. Click
+&lt;strong&gt;Apply&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-7.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8)&lt;/strong&gt; You will be brought back to your &lt;strong&gt;Storage Manager&lt;/strong&gt; panel while it&amp;rsquo;s
+under &lt;strong&gt;repair&lt;/strong&gt;. This took about 12 hours for it to complete. I imagine the
+process could take longer if you are actively using it while it&amp;rsquo;s under repair.
+If possible, try not to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-8.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9)&lt;/strong&gt; When complete, your volume should say &lt;strong&gt;Normal&lt;/strong&gt; next to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-9.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion:dd8549fedce0a50eea9ced82d12a33b0&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The most important things to note from this are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Have a spare drive on standby. Always.&lt;/li&gt;
+&lt;li&gt;Completely shut down your DiskStation when swapping your drive.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And last but not least, properly dispose of your bad hard drive correctly so any data is not recoverable:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/disposed-drive.jpg&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

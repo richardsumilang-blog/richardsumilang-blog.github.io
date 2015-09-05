@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmings on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/programming/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 36 Aug 11031 03:03:03 PST</updated>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>http://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Sun, 36 Aug 11031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>
+
+&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a quick inspection, I see that jQuery-mobile is having trouble binding
+itself to the &lt;code&gt;root&lt;/code&gt; aka &lt;code&gt;this&lt;/code&gt; aka &lt;code&gt;window&lt;/code&gt; object. This is because the way
+jQuery-mobile is wrapped in a block where &lt;code&gt;this&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt; because the
+code is not being executed in the assumed scope.&lt;/p&gt;
+
+&lt;h3 id=&#34;example:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Example:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function(require,module,exports){
+(function (global){
+;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
+&#34;use strict&#34;;(function(root, doc, factory){if(typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd){define([&#34;jquery&#34;], function($){factory($, root, doc);return $.mobile;});}else {factory(root.jQuery, root, doc);}})(undefined || window, document, function(jQuery, window, document, undefine) {
+
+/*!
+* jQuery Mobile 1.4.5
+* Git HEAD hash: 68e55e78b292634d3991c795f06f5e37a512decc &lt;&gt; Date: Fri Oct 31 2014 17:33:30 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*/
+
+(function ( root, doc, factory ) {
+    if ( typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd ) {
+        // AMD. Register as an anonymous module.
+        define( [ &#34;jquery&#34; ], function ( $ ) {
+            factory( $, root, doc );
+            return $.mobile;
+        });
+    } else {
+        // Browser globals
+        factory( root.jQuery, root, doc );
+    }
+}( this, document, function ( jQuery, window, document, undefined ) {
+(function( $ ) {
+    $.mobile = {};
+}( jQuery ));
+
+// more jquery code
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The jQuery-mobile team doesn&amp;rsquo;t want to make fixes for this because they would
+have to continue to make patches for their code when another build system comes
+out and whose got time to keep up with that? Needless to say, I wish they had
+the time for it to make their libraries more compatible for users and they are a
+bigger team than just little ole independent me but that&amp;rsquo;s just my opinion.&lt;/p&gt;
+
+&lt;p&gt;Today is going on my 2nd day being stuck with the issue (also second day of
+using gulp and browserify so give me a break) and I&amp;rsquo;ve tried just about every
+solution I can find on the web before I just gave up and wrote my own. Though,
+not exactly the most elegant solution, I simply replaced all instances of &lt;code&gt;this&lt;/code&gt;
+to &lt;code&gt;this || window&lt;/code&gt; and walla it worked.&lt;/p&gt;
+
+&lt;p&gt;Now I have jQuery-mobile working just fine in my ES6 project. I&amp;rsquo;ve bundled my
+changes up in a npm project under the name &lt;strong&gt;jquery-mobile-babel-safe&lt;/strong&gt;. Here is
+how I use it in my project:&lt;/p&gt;
+
+&lt;h3 id=&#34;install:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Install&lt;/h3&gt;
+
+&lt;p&gt;Run this command in your project room:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    npm install jquery-mobile-babel-safe --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;package.json&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;    &#34;browser&#34;: {
+      &#34;jquery-mobile&#34;: &#34;./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js&#34;
+    },
+    &#34;browserify-shim&#34;: {
+      &#34;jquery-mobile&#34;: {
+        &#34;exports&#34;: &#34;jQuery.mobile&#34;
+      }
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that&amp;rsquo;s about it. You can test by importing &lt;code&gt;jquery-mobile&lt;/code&gt; on your page. You
+should have access to &lt;code&gt;$.mobile&lt;/code&gt; in your scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;wrap-up:d3542b7334ad974552de49ebf1b76abe&#34;&gt;Wrap up&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to hear from you if you have a simpler way of making this work. I do
+feel a little bad about polluting the npm package repository with yet another
+jQuery package and I&amp;rsquo;d like to know of a better way of doing this but I know a
+few other people were stuck with this issue so be it.&lt;/p&gt;
+
+&lt;p&gt;Happy hacking!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>http://www.richardsumilang.com/programming/a-thing-or-two-about-styleguides/</link>
+      <pubDate>Sun, 26 Aug 8021 02:02:02 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/a-thing-or-two-about-styleguides/</guid>
+      <description>
+
+&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Last updated: Feb 8th, 2015.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;general:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;General&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Programming_style&#34; title=&#34;Programming style&#34;&gt;Programming style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style&#34; title=&#34;MDN Coding Style&#34;&gt;MDN Coding Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.komputado.com/eseoj/1tbs.htm&#34; title=&#34;The One True Brace Style&#34;&gt;The One True Brace Style&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;c:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;C++&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stroustrup.com/bs_faq2.html&#34; title=&#34;Bjarne Stroustrup&#39;s C++ Style and Technique FAQ&#34;&gt;Bjarne Stroustrup&amp;rsquo;s C++ Style and Technique FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/cppguide.html&#34; title=&#34;Google C++ Style Guide&#34;&gt;Google C++ Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;html-css:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;HTML/CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://codeguide.co/&#34; title=&#34;Code Guide by @mdo&#34;&gt;Code Guide by @mdo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/css&#34; title=&#34;CSS Style Guide&#34;&gt;CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml&#34; title=&#34;Google HTML/CSS Style Guide&#34;&gt;Google HTML/CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/html/html5_syntax.asp&#34; title=&#34;HTML(5) Style Guide and Coding Conventions&#34;&gt;HTML(5) Style Guide and Coding Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;java:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://source.android.com/source/code-style.html&#34; title=&#34;Android Code Style&#34;&gt;Android Code Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/codeconvtoc-136057.html&#34; title=&#34;Code Conventions for the Java Programming Language&#34;&gt;Code Conventions for the Java Programming Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javaguide.html&#34; title=&#34;Google Java Style Guide&#34;&gt;Google Java Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaranch.com/style.jsp&#34; title=&#34;Java Programming Style Guide&#34;&gt;Java Programming Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html&#34; title=&#34;An AngularJS Style Guide for Closure Users at Google&#34;&gt;An AngularJS Style Guide for Closure Users at Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/javascript&#34; title=&#34;GitHub JavaScript style&#34;&gt;GitHub JavaScript style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml&#34; title=&#34;Google JavaScript Style Guide&#34;&gt;Google JavaScript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/felixge/node-style-guide&#34; title=&#34;Node.js Style Guide&#34;&gt;Node.js Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lisp:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Lisp&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/lispguide.xml&#34; title=&#34;Common Lisp Style Guide&#34;&gt;Common Lisp Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objective-c:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Objective C&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html&#34; title=&#34;Apple&#39;s Programming with Objective C Conventions&#34;&gt;Apple&amp;rsquo;s Programming with Objective C Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/objective-c-style-guide&#34; title=&#34;GitHub Objective C Style Guide&#34;&gt;GitHub Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml&#34; title=&#34;Google Objective C Style Guide&#34;&gt;Google Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NYTimes/objective-c-style-guide&#34; title=&#34;NYTimes Objective-C Style Guide&#34;&gt;NYTimes Objective-C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;php:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;PHP&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/standards.php&#34; title=&#34;PEAR Coding Standards&#34;&gt;PEAR Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.php-fig.org/psr/psr-2/&#34; title=&#34;PSR-2 Coding Style Guideline&#34;&gt;PSR-2 Coding Style Guideline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://symfony.com/doc/current/contributing/code/standards.html&#34; title=&#34;Symfony Coding Standards&#34;&gt;Symfony Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://framework.zend.com/manual/1.12/en/coding-standard.html&#34; title=&#34;Zend Coding Standards&#34;&gt;Zend Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/pyguide.html&#34; title=&#34;Google Python Style Guide&#34;&gt;Google Python Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/dev/peps/pep-0008/&#34; title=&#34;PEP 8 - Style Guide for Python Code&#34;&gt;PEP 8 - Style Guide for Python Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ruby:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/ruby&#34; title=&#34;GitHub Ruby Styleguide&#34;&gt;GitHub Ruby Styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bestie/objective-ruby-style-guide&#34; title=&#34;The Objective Ruby Style Guide&#34;&gt;The Objective Ruby Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;scala:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Scala&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitter.github.io/effectivescala/&#34; title=&#34;Effective Scala&#34;&gt;Effective Scala&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/style/&#34; title=&#34;Scala Style Guide&#34;&gt;Scala Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;shell:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Shell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.inquisitor.ru/doc/coding-style-shell.html&#34; title=&#34;Coding style guidelines: Shell script&#34;&gt;Coding style guidelines: Shell script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/shell.xml&#34; title=&#34;Google Shell Style Guide&#34;&gt;Google Shell Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;swift:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Swift&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/swift-style-guide&#34; title=&#34;GitHubs Swift Style Guide&#34;&gt;GitHubs Swift Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim:762edef8c8a6da9e2e7de6a3b42c6128&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/vimscriptguide.xml&#34; title=&#34;Google Vimscript Style Guide&#34;&gt;Google Vimscript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>http://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sun, 16 Aug 31011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;
+
+&lt;p&gt;I found &lt;a href=&#34;https://github.com/Spaceman-Labs/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this great&lt;/a&gt; git &lt;strong&gt;post-commit&lt;/strong&gt; hook by Spaceman Labs. It works by
+adding a comment to your Asana ticket when you reference your commit message by
+id. For example, &lt;strong&gt;&amp;ldquo;Fixing issue #12345.&amp;rdquo;&lt;/strong&gt; This adds a comment to your ticket:&lt;/p&gt;
+
+&lt;pre&gt;Just committed %commit-id with message:
+
+&#34;Fixing issue #1234&#34;
+
+to repository %repo-name&lt;/pre&gt;
+
+&lt;p&gt;This works by making a curl request to Asana&amp;rsquo;s REST API on your behalf while
+sending the above message as the comment. While this is great, it could be
+better by providing links to your Bitbucket changeset. I&amp;rsquo;ve made the necessary
+edits to do so in the &lt;strong&gt;post-commit&lt;/strong&gt; hook. The updated message now looks like
+this:&lt;/p&gt;
+
+&lt;pre&gt;Committed %link-to-commit with message:
+
+&#34;Fixing issue #1234&#34;
+
+to repository %repo-name&lt;/pre&gt;
+
+&lt;h3 id=&#34;how-it-works:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;How it works&lt;/h3&gt;
+
+&lt;p&gt;I loop through all the remote repositories configured for the repo and search
+for either a bitbucket.org or github.com in their URLs. Once  one is found, I
+extract the repo name from the URL and build the link to the changeset.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you are using Github then I recommend  using the free
+&lt;a href=&#34;https://asana.com/apps/github&#34; title=&#34;Asana GitHub App&#34;&gt;Asana service&lt;/a&gt; provided. I merely included the GitHub code as an example.&lt;/p&gt;
+
+&lt;p&gt;The original code from here takes over and parses out the ticket number and does
+the curl request.&lt;/p&gt;
+
+&lt;h3 id=&#34;installation:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Grab my edited &lt;strong&gt;post-commit&lt;/strong&gt; hook from &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;github&lt;/a&gt; and drop it into your repos
+&lt;code&gt;.git/hooks&lt;/code&gt; directory. Make sure to &lt;code&gt;chmod&lt;/code&gt; the file to &lt;code&gt;0755&lt;/code&gt;. Lastly, grab
+your &lt;a href=&#34;http://app.asana.com/-/account_api&#34; title=&#34;Asana Account API&#34;&gt;Asana key&lt;/a&gt; and run &lt;code&gt;git config --global user.asana-key
+&amp;quot;MY_ASANA_API_KEY&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;afterthoughts:e44030a6eac62837d3575bd8d4698fdd&#34;&gt;Afterthoughts&lt;/h3&gt;
+
+&lt;p&gt;Please let me know if you have any suggestions. I&amp;rsquo;m thinking of possibly editing
+the git commit message to link back to the Asana ticket for the sake of
+cross-linking but this might require additional configuration&amp;hellip; Unless project
+id is added as part of the ticket number. Ie: #&lt;sup&gt;12345&lt;/sup&gt;&amp;frasl;&lt;sub&gt;98765&lt;/sub&gt;. Please feel free to
+add your input! :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Working with Apple&#39;s iOS image orientation</title>
+      <link>http://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <pubDate>Sun, 106 Aug 17101 10:10:10 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
+they are not rotated properly when transferring them to another device or
+software. This happens because the device is held at a certain angle when the
+picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
+however it wants.&lt;/p&gt;
+
+&lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
+taken and you can rotate it accordingly.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Rotate iOS image&#34;&gt;&amp;lt;?php
+
+// Rotate iOS image
+// @author Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+
+$imageFile = &#39;/foo/bar.jpg&#39;;
+$finfo = finfo_open(FILEINFO_MIME_TYPE);
+$mimeType = finfo_file($finfo, $imageFile);
+finfo_close($finfo);
+
+// Detect if jpeg or tiff
+if ( in_array($mimeType, [&#39;image/jpeg&#39;, &#39;image/tiff&#39;]) ) {
+    $exif = exif_read_data($imageFile);
+    if ( isset($exif[&#39;Orientation&#39;]) &amp;amp;&amp;amp; !empty($exif[&#39;Orientation&#39;]) ) {
+
+        // Decide orientation
+        if ( $exif[&#39;Orientation&#39;] == 3 ) {
+            $rotation = 180;
+        } else if ( $exif[&#39;Orientation&#39;] == 6 ) {
+            $rotation = 90;
+        } else if ( $exif[&#39;Orientation&#39;] == 8 ) {
+            $rotation = -90;
+        } else {
+            $rotation = 0;
+        }
+
+        // Rotate the image
+        if ( $rotation ) {
+            $imagick = new Imagick();
+            $imagick-&amp;gt;readImage($imageFile);
+            $imagick-&amp;gt;rotateImage(new ImagickPixel(&#39;none&#39;), $rotation);
+            $imagick-&amp;gt;writeImage($imageFile);
+            $imagick-&amp;gt;clear();
+            $imagick-&amp;gt;destroy();
+        }
+
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: Only jpeg and tiff files contain exif information.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jQuery CORS fix for IE8 and IE9</title>
+      <link>http://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <pubDate>Sun, 66 Aug 20061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
+it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;jQuery CORS IE8 and IE9 fix.&#34;&gt;if ( window.XDomainRequest ) {
+    jQuery.ajaxTransport(function( s ) {
+        if ( s.crossDomain &amp;amp;&amp;amp; s.async ) {
+            if ( s.timeout ) {
+                s.xdrTimeout = s.timeout;
+                delete s.timeout;
+            }
+            var xdr;
+            return {
+                send: function( _, complete ) {
+                    function callback( status, statusText, responses, responseHeaders ) {
+                        xdr.onload = xdr.onerror = xdr.ontimeout = jQuery.noop;
+                        xdr = undefined;
+                        complete( status, statusText, responses, responseHeaders );
+                    }
+                    xdr = new XDomainRequest();
+                    xdr.onload = function() {
+                        callback( 200, &#34;OK&#34;, { text: xdr.responseText }, &#34;Content-Type: &#34; + xdr.contentType );
+                    };
+                    xdr.onerror = function() {
+                        callback( 404, &#34;Not Found&#34; );
+                    };
+                    xdr.onprogress = jQuery.noop;
+                    xdr.ontimeout = function() {
+                        callback( 0, &#34;timeout&#34; );
+                    };
+                    xdr.timeout = s.xdrTimeout || Number.MAX_VALUE;
+                    xdr.open( s.type, s.url );
+                    xdr.send( ( s.hasContent &amp;amp;&amp;amp; s.data ) || null );
+                },
+                abort: function() {
+                    if ( xdr ) {
+                        xdr.onerror = jQuery.noop;
+                        xdr.abort();
+                    }
+                }
+            };
+        }
+    });
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: This doesn&amp;rsquo;t work when using the &lt;code&gt;{async: false}&lt;/code&gt; option in jQuery methods.&lt;/p&gt;
+
+&lt;p&gt;Be sure to set the &lt;code&gt;{crossDomain: true}&lt;/code&gt; setting and you&amp;rsquo;re good to go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design Patterns Cheat Sheet</title>
+      <link>http://www.richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</link>
+      <pubDate>Sun, 66 Aug 2061 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</guid>
+      <description>
+
+&lt;p&gt;Here&amp;rsquo;s a quick cheat sheet for lots of design patterns. The examples in this
+post are linked to Java examples however they are not limited to a single
+language implementation. Special thanks to Derek Banas.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/08/observer-design-pattern-tutorial/&#34; title=&#34;Observer Pattern Tutorial&#34;&gt;Observer Design Pattern:&lt;/a&gt;&lt;/strong&gt; Contains an object usually referred to as
+the &lt;code&gt;subject&lt;/code&gt; that maintains a a list of dependent classes called &lt;code&gt;observers&lt;/code&gt;.
+The &lt;code&gt;subject&lt;/code&gt; object notifies all &lt;code&gt;observers&lt;/code&gt; automatically of any state changes
+by calling their methods.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/factory-design-pattern-tutorial/&#34; title=&#34;Factory Pattern Tutorial&#34;&gt;Factory Design Pattern:&lt;/a&gt;&lt;/strong&gt; Creates objects that share the same super
+class type. Usually has a method named like &lt;code&gt;makeTypeOfSuperClass&lt;/code&gt; which accepts
+an argument to tell it what to do.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/abstract-factory-design-pattern/&#34; title=&#34;Abstract Factory Pattern Tutorial&#34;&gt;Abstract Factory Design Pattern:&lt;/a&gt;&lt;/strong&gt; Groups together individual
+factories. The objects that the these factories return share a common API.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/singleton-design-pattern-tutorial/&#34; title=&#34;Observer Pattern Tutorial&#34;&gt;Singleton Design Pattern:&lt;/a&gt;&lt;/strong&gt; Used to eliminate the option of instantiating
+more than one object. Contains a static variable that holds the first instance
+of the object created. This object is always is returned. Typically returned by
+using a &lt;code&gt;getInstance&lt;/code&gt; method. The constructor is set as a private function to
+prevent users instantiating it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/builder-design-pattern-tutorial/&#34; title=&#34;Builder Pattern Tutorial&#34;&gt;Builder Design Pattern:&lt;/a&gt;&lt;/strong&gt; Builder objects contain methods that tell a
+factory how to build/configure an object.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/prototype-design-pattern-tutorial/&#34; title=&#34;Prototype Pattern Tutorial&#34;&gt;Prototype Design Pattern:&lt;/a&gt;&lt;/strong&gt; Creates new objects by copying other
+objects. Nice to use a clone factory that accepts an object to clone.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/decorator-design-pattern-tutorial/&#34; title=&#34;Decorator Pattern Tutorial&#34;&gt;Decorator Design Pattern:&lt;/a&gt;&lt;/strong&gt; Adds functionality by using many simple
+classes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/command-design-pattern-tutorial/&#34; title=&#34;Command Pattern Tutorial&#34;&gt;Command Design Pattern:&lt;/a&gt;&lt;/strong&gt; Allows you to set aside a list of commands
+for later use. Each command is typically it&amp;rsquo;s own command object that implements
+the same command interface.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/adapter-design-pattern-tutorial/&#34; title=&#34;Adapter Pattern Tutorial&#34;&gt;Adapter Design Pattern:&lt;/a&gt;&lt;/strong&gt; Allows 2 incompatible objects that share a
+similar purpose to work transparently by abstraction.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/09/facade-design-pattern-tutorial/&#34; title=&#34;Facade Pattern Tutorial&#34;&gt;Facade Design Pattern:&lt;/a&gt;&lt;/strong&gt; Decouples or separates the client from all of
+the sub components. Main purpose is to simplify interfaces so you don&amp;rsquo;t have to
+worry about what&amp;rsquo;s going on under the hood. Similar to a &lt;code&gt;Service Design
+Pattern&lt;/code&gt; except a Service typically communicates on external service.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/bridge-design-pattern-tutorial/&#34; title=&#34;Bridge Pattern Tutorial&#34;&gt;Bridge Design Pattern:&lt;/a&gt;&lt;/strong&gt; Defines 2 layers of abstraction. One for the
+target which can be extended for different types of receivers and one for the
+controls which can be extended to different type of controls that will be able
+to communicate with the targets.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/template-method-design-pattern-tutorial/&#34; title=&#34;Template Method Pattern Tutorial&#34;&gt;Template Design Pattern:&lt;/a&gt;&lt;/strong&gt; Contains a &lt;em&gt;usually a final&lt;/em&gt; method that
+defines the steps of an algorithm. It allows subclasses to configure the
+&lt;em&gt;template&lt;/em&gt; by overwriting methods.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/iterator-design-pattern-tutorial/&#34; title=&#34;Iterator Design Pattern Tutorial&#34;&gt;Iterator Design Pattern:&lt;/a&gt;&lt;/strong&gt; Provides a uniform way to access different
+collection types of objects. For instance, creating an iterator interface that
+your collections of Arrays, Lists, or Maps can implement so you can iterate over
+them the same way.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/composite-design-pattern-tutorial/&#34; title=&#34;Composite Design Pattern Tutorial&#34;&gt;Composite Design Pattern:&lt;/a&gt;&lt;/strong&gt; Allows you to attach individual objects
+and a composition of objects uniformly. For example, imagine a folder tree
+structure starting at root. This can be the root composite object (aka folder)
+where it accepts types of files and types of folders. File types have no child
+components attached to them but a folder can have many more files and even more
+groupings contained within.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/flyweight-design-pattern-tutorial/&#34; title=&#34;Flyweight Design Pattern Tutorial&#34;&gt;Flyweight Design Pattern:&lt;/a&gt;&lt;/strong&gt; Used when creating a lot (i.e.: 100,000 or
+more) of similar objects. Objects will be created from a factory that checks if
+a pre-existing object does not exist that shares a similar definition. If a pre-
+existing object exists with a similar configuration then the factory will
+return this rather creating a new object and reconfiguring.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/state-design-pattern-tutorial/&#34; title=&#34;State Design Pattern Tutorial&#34;&gt;State Design Pattern:&lt;/a&gt;&lt;/strong&gt; Allows an object to change it&amp;rsquo;s behavior when
+it&amp;rsquo;s state changes. Each state implements a behavior associated with it&amp;rsquo;s state
+of context. Should be implemented with as few states as possible. Ie: Imagine a
+database connection that has  two states (connected and disconnected) and a
+query method. The connection object execute the query method differently
+depending on it&amp;rsquo;s connection state.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/proxy-design-pattern-tutorial/&#34; title=&#34;Proxy Design Pattern Tutorial&#34;&gt;Proxy Design Pattern:&lt;/a&gt;&lt;/strong&gt; Provides a class with limited access to
+another class. This is done for security reasons.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/chain-of-responsibility-design-pattern-tutorial/&#34; title=&#34;Chain of Responsibility Design Pattern Tutorial&#34;&gt;Chain of Responsibility Design Pattern:&lt;/a&gt;&lt;/strong&gt; Sends problem to an object
+and if that object can&amp;rsquo;t use it, then it sends it to an object chained to it
+that might. The object chained to it can have an additional object chained and
+will continue to run it&amp;rsquo;s course until it finds an object that can solve the
+problem.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/interpreter-design-pattern-tutorial/&#34; title=&#34;Interpreter Design Pattern Tutorial&#34;&gt;Interpreter Design Pattern:&lt;/a&gt;&lt;/strong&gt; This pattern solves a problem by using a
+context object to interpret an issue and find a class using reflection to return
+the answer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/mediator-design-pattern-tutorial/&#34; title=&#34;Mediator Design Pattern Tutorial&#34;&gt;Mediator Design Pattern:&lt;/a&gt;&lt;/strong&gt; Handles communication between related
+objects without having to know anything about each other. Objects are typically
+constructed with the mediator passed in. Mediator will regulate interactions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/10/memento-design-pattern-tutorial/&#34; title=&#34;Memento Design Pattern Tutorial&#34;&gt;Memento Design Pattern:&lt;/a&gt;&lt;/strong&gt; Useful for saving history states of an
+object. The object stored in state is referred to as the Memento. Mementos are
+managed by caretakers contain a list of each version for retrieval. Lastly, we
+have an originator which is responsible for communicating with the caretaker to
+save and restore states. Imagine a save, under, and redo scenario.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.newthinktank.com/2012/11/visitor-design-pattern-tutorial/&#34; title=&#34;Visitor Design Pattern Tutorial&#34;&gt;Visitor Design Pattern:&lt;/a&gt;&lt;/strong&gt; Allows you to perform the same action on
+many objects of different types without much alteration to those classes. A
+concrete Visitor class will implement a common visit method for each type of
+visitor. Each visitable will implement a Visitable interface that implements an
+accept method. Upon usage, each visitable object can pass a type of visitor
+object to perform different functions. Extremely useful for creating new ways of
+Visitors without touching Visitable classes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;further-reading:7e9039cd389b0b99e151b9ed793c8889&#34;&gt;Further Reading&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://addyosmani.com/resources/essentialjsdesignpatterns/book/&#34; title=&#34;Essential JavaScript Design Patterns&#34;&gt;JavaScript Design Patterns:&lt;/a&gt;&lt;/strong&gt; A free book by O&amp;rsquo;Reily showing many of
+the above design patterns implemented in JavaScript.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/domnikl/DesignPatternsPHP&#34; title=&#34;Design Patterns PHP Project&#34;&gt;DesignPatternsPHP Projects:&lt;/a&gt;&lt;/strong&gt; Great code examples of implementing the
+above design patterns (and more) in PHP.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iOS Simulator Link</title>
+      <link>http://www.richardsumilang.com/programming/ios/ios-simulator-link/</link>
+      <pubDate>Sun, 56 Aug 14051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/ios/ios-simulator-link/</guid>
+      <description>&lt;p&gt;The iOS Simulator is obviously a must have tool for development. Web development
+is no exception but Apple makes you jump through a few hoops (Xcode) to get to
+it. Luckily you can run it as a standalone application.&lt;/p&gt;
+
+&lt;p&gt;Copy this command on your terminal to create a symbolic link to it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Symbolic Link to iOS Simulator&#34; &gt;ln -s /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app /Applications/iPhone\ Simulator.app&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It starts off ridiculously big but you can shrink it down by going to &lt;em&gt;Window&lt;/em&gt;
+-&amp;gt; &lt;em&gt;Scale&lt;/em&gt; -&amp;gt; &lt;em&gt;50%&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/ios/simulator-retina-4in.png&#34; alt=&#34;iOS Simulator Retina 4inch&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assembla SVN SSL Certificate Issue</title>
+      <link>http://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</link>
+      <pubDate>Sun, 56 Aug 12051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
+      <description>&lt;p&gt;I kept getting the following message when I tried running &lt;code&gt;svn&lt;/code&gt; commands on my
+computer. I tried to accept the certificate permanently with no luck:&lt;/p&gt;
+
+&lt;pre&gt;Error validating server certificate for &#39;https://subversion.assembla.com:443&#39;:
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
+Certificate information:
+ - Hostname: *.assembla.com
+ - Valid: from Wed, 16 Apr 2014 13:31:17 GMT until Thu, 24 Mar 2016 19:30:40 GMT
+ - Issuer: http://certs.godaddy.com/repository/, GoDaddy.com, Inc., Scottsdale, Arizona, US
+ - Fingerprint: ec:9f:9d:b2:39:e1:34:81:7b:27:f6:51:30:8b:ac:41:5b:62:09:19
+(R)eject, accept (t)emporarily or accept (p)ermanently?
+&lt;/pre&gt;
+
+&lt;p&gt;I noticed that the subversion files were owned by the &lt;code&gt;root&lt;/code&gt; user when
+inspecting the files on my computer. I&amp;rsquo;m not sure how this happened but it can
+easily be fixed with the &lt;code&gt;chown&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Fix SVN permissions&#34;&gt;sudo chown -R $(whoami) ~$(whoami)/.subversion&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Type Casting String by Concatenation Performance Test in PHP</title>
+      <link>http://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
+      <pubDate>Sun, 56 Aug 8051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
+      <description>
+
+&lt;p&gt;The purpose of this test is to see if casting an object to a string by
+concatenating it was actually slower than using normal type casting. Here is my
+source:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;test-typecast.php&#34;&gt;&amp;lt;?php
+
+// Setup
+$tests = 1000000;
+class Foo {
+    public function __toString() {
+        return &#34;bar&#34;;
+    }
+}
+
+// Test 1
+$x = new Foo();
+$timer = microtime();
+
+for ($i = 0; $i &amp;lt; $tests; $i++) {
+    $y = &#34;&#34; . $x;
+}
+
+$timer -= microtime();
+echo &#34;Test 1 complete. Total time: {$timer}\n&#34; . PHP_EOL;
+
+// Test 2
+$x = new Foo();
+$timer = microtime();
+
+for ($i = 0; $i &amp;lt; $tests; $i++) {
+    $y = (string)$x;
+}
+
+$timer -= microtime();
+echo &#34;Test 2 complete. Total time: {$timer}\n&#34; . PHP_EOL;
+
+// Done.
+exit();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is what I got in my terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Results&#34;&gt;$php -f test-typecast.php
+Test 1 complete. Total time: -0.203729
+Test 2 complete. Total time: -0.16766&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;explanation:a40861c8c18b47fef614c59e41b70103&#34;&gt;Explanation&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Test 1&lt;/em&gt; tells PHP to 1) create a string, 2) concatenate it to an object, 3) PHP
+can&amp;rsquo;t do that so it tries to call the &lt;code&gt;$x-&amp;gt;__toString()&lt;/code&gt; method, 4) now
+concatenate &lt;code&gt;&amp;quot;&amp;quot; . $x-&amp;gt;__toString();&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Test 2&lt;/em&gt; in this case will 1) check the type of &lt;code&gt;$x&lt;/code&gt;, and 2) return the value of
+&lt;code&gt;$x-&amp;gt;__toString()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Naturally the process with the least steps would be faster.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install Gearman for PHP on OS X</title>
+      <link>http://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
+      <pubDate>Sun, 46 Aug 23041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
+requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
+&lt;a href=&#34;http://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;
+
+&lt;p&gt;It might also be worth noting that this works for me with the brew build of PHP.
+It will probably work for the distribution that comes with OS X but I haven&amp;rsquo;t
+tested.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;sudo pecl install gearman&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next copy the following contents into &lt;code&gt;/usr/local/etc/php/5.4/conf.d/ext-gearman.ini&lt;/code&gt;
+(or wherever your extension config directory is):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ini&#34; title=&#34;Extension configuration&#34;&gt;[gearman]
+extension=&#34;/usr/local/Cellar/php54/5.4.13/lib/php/extensions/no-debug-non-zts-20100525/gearman.so&#34;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Restart apache:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apachectl restart&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s it. Test to make sure it&amp;rsquo;s loaded with &lt;code&gt;phpinfo&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install Groovy on OS X</title>
+      <link>http://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</link>
+      <pubDate>Sun, 46 Aug 15041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install groovy
+echo &#34;export GROOVY_HOME=/usr/local/opt/groovy/libexec&#34; | tee -a ~/.bash_profile; source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is a little test script taken from &lt;a href=&#34;http://groovy.codehaus.org/Quick+Start&#34; target=&#34;_blank&#34;&gt;Groovy&amp;rsquo;s quickstart guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34; title=&#34;hello.groovy&#34;&gt;//hello.groovy
+println &#34;hello, world&#34;
+for (arg in this.args ) {
+    println &#34;Argument:&#34; + arg;
+}
+// this is a comment
+/* a block comment, commenting out an alternative to above:
+this.args.each{ arg -&amp;gt; println &#34;hello, ${arg}&#34;}
+*/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save that has &lt;code&gt;hello.groovy&lt;/code&gt; and run it with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Testing script&#34;&gt;groovy hello.groovy MyName yourName HisName&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should have the following apps installed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;groovy&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovyConsole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovyc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovydoc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groovysh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install Jython on OS X</title>
+      <link>http://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
+      <pubDate>Sun, 46 Aug 8041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can end this tutorial now if you can run &lt;code&gt;jython&lt;/code&gt; without an error. If
+you&amp;rsquo;re getting the &lt;code&gt;$JYTHON_HOME&lt;/code&gt; error then just run this command once:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;$JYTHON_HOME&#34;&gt;echo &#34;export JYTHON_HOME=/usr/local/Cellar/jython/2.5.3/libexec&#34; | tee -a ~/.bash_profile; source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Walla! Now you can enjoy the power of Java from Jython! Knock your socks off
+with this &lt;a href=&#34;http://oreilly.com/catalog/jythoness/chapter/ch01.html&#34; title=&#34;Jython Book&#34;&gt;tutorial from O&amp;rsquo;reilly&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install Nimrod on OS X</title>
+      <link>http://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</link>
+      <pubDate>Sun, 46 Aug 7041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That was painless but unfortunately there is a weird issue with getting a
+symbolic link to run &lt;code&gt;nimrod&lt;/code&gt; from &lt;code&gt;/usr/local/bin&lt;/code&gt;. This can be avoided by
+using a simple shell script. Save this as &lt;code&gt;/usr/local/bin/nimrod&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;/usr/local/bin/nimrod&#34;&gt;
+#!/bin/sh
+exec /usr/local/Cellar/nimrod/0.9.2/libexec/bin/nimrod &#34;$@&#34;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Be sure to update your nimrod path above to point to the right directory
+if different from version 0.9.2.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t forget to make the script executable:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;/usr/local/bin/nimrod&#34;&gt;chmod u+x /usr/local/bin/nimrod&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now let&amp;rsquo;s give this a little test run. Save the following piece of code as
+&lt;code&gt;helloword.nim&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;hellworld.nim&#34;&gt;echo(&#34;Hello world!&#34;)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can try running it now with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Running nimrod code&#34;&gt;nimrod compile --run hellworld.nim&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If all went well, then you should have a compiled version of &lt;code&gt;hellworld.nim&lt;/code&gt;
+saved as a &lt;code&gt;helloworld&lt;/code&gt; binary in the same folder. The &lt;code&gt;--run&lt;/code&gt; argument in the
+command obviously runs the program so it should have outputted &amp;ldquo;Hello world!&amp;rdquo; at
+the end.&lt;/p&gt;
+
+&lt;p&gt;Commonly used arguments have abbreviations. You can write the above compile line
+like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Running nimrod code (shorthand)&#34;&gt;nimrod c -r hellworld.nim&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now take off with the &lt;code&gt;nimrod&lt;/code&gt; &lt;a href=&#34;http://nimrod-lang.org/tut1.html&#34; title=&#34;Nimrod tutorials&#34;&gt;tutorials&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Working with JavaScript templates using jQuery</title>
+      <link>http://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</link>
+      <pubDate>Sun, 46 Aug 1041 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
+      <description>
+
+&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
+at &lt;a href=&#34;http://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+design from your code. This is particularly useful when you are adding content
+to your site after the initial rendering. Data can be fed in from a number of
+sources and added to a page using a template.&lt;/p&gt;
+
+&lt;p&gt;Creating an example the old fashion way using concatenation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;//Variables
+var title = &#34;Hello World&#34;;
+var excerpt = &#34;This is the world&#39;s shortest lorem ipsum. Jk.&#34;;
+
+// Template
+var template = &#34;&amp;lt;div style=&#39;article&#39;&amp;gt;&#34;;
+template += &#34;&amp;lt;h1&amp;gt;&#34; + title + &#34;&amp;lt;/h1&amp;gt;&#34;;
+template += &#34;&amp;lt;div style=&#39;excerpt&#39;&amp;gt;&#34; + excerpt + &#34;&amp;lt;/div&amp;gt;&#34;;
+template += &#34;&amp;lt;/div&amp;gt;&#34;;
+
+// Append to &#34;foo&#34; element
+document.getElementById(&#34;foo&#34;).appendChild( template );&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;While this may work, it&amp;rsquo;s a nightmare to update your markup as it changes because it&amp;rsquo;s mixed in with your code and will eventually give you gray hairs.&lt;/p&gt;
+
+&lt;p&gt;Consider this piece of markup on your page for your template:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&#34;text/xhtml&#34; id=&#34;tmpl-foo&#34;&amp;gt;
+&amp;lt;div style=&#34;article&#34;&amp;gt;
+    &amp;lt;h1 /&amp;gt;
+    &amp;lt;div class=&#34;exerpt&#34; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s very easy to read right? The trick is setting the &lt;a href=&#34;http://www.iana.org/assignments/media-types/media-types.xhtml&#34; title=&#34;Media types&#34;&gt;script type&lt;/a&gt; to a
+value your browser doesn&amp;rsquo;t know how to render. Try to give it a meaningful mime
+type but anything that your browser doesn&amp;rsquo;t know how to render will work.&lt;/p&gt;
+
+&lt;p&gt;Now your JavaScript (sprinkled with a little jQuery) could look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// Variables
+var title = &#34;Hello World&#34;;
+var excerpt = &#34;This is the world&#39;s shortest lorem ipsum. Jk.&#34;;
+var template = $( $(&#34;tmpl-foo&#34;) );
+
+// Set variables in template
+template.find(&#34;h1&#34;).html( title );
+template.find(&#34;div.excerpt&#34;).html( excerpt );
+
+// Append to &#34;foo&#34; element
+$(&#34;#foo&#34;).append( template );&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;conclusion:73e399422ffb2670abb4a9b669117b61&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Some people also like to load templates externally by putting the code in a HTML
+file on the server and using jQuery&amp;rsquo;s &lt;code&gt;$.get&lt;/code&gt; method to pull it in as needed.
+There are also plugins for jQuery that simply do string replacements in your
+template string.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
+      <link>http://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <pubDate>Sun, 36 Aug 31031 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <description>
+
+&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
+MongoDB extension. I stumbled on an example on
+&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+illustration showing how to do this and rewrote it in what I think is a slightly
+more modern way that does the same thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/reference/object-id/&#34; title=&#34;ObjectId - MongoDB Manual 2.4.9&#34;&gt;ObjectId&lt;/a&gt;&amp;rsquo;s
+are constructed using a 4-byte timestamp value, 3-byte machine identifier, 2-byte process id, and a 3-byte counter which create a 12-byte BSON type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ --------------------------------------------------
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---------------|-----------|-------|--------------|
+| time          | machine   | pid   | counter      |
+ --------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Knowing that makes this PHP code easy to understand:&lt;/p&gt;
+
+&lt;h2 id=&#34;mongoutil:1536523388bd0e63a6faba6ae8068887&#34;&gt;MongoUtil:&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;MongoUtil.php&#34;&gt;/**
+ * Class MongoUtil.
+ */
+class MongoUtil {
+
+    /**
+     * This is needed to keep documents unique that have the same timestamp.
+     * @var integer
+     * @see $timestamp
+     */
+    public static $_mongoIdFromTimestampCounter = 0;
+
+    /**
+     * Mongo Id From Timestamp
+     * @param integer $timestamp
+     * @return MongoID
+     * @see http://docs.mongodb.org/manual/reference/object-id/
+     */
+    public static function mongoIdFromTimestamp( $timestamp ) {
+        // Build Binary Id
+        $binaryTimestamp = pack(&#39;N&#39;, $timestamp); // unsigned long
+        $machineId = substr(md5(gethostname()), 0, 3); // 3 bit machine identifier
+        $binaryPID = pack(&#39;n&#39;, posix_getpid()); // unsigned short
+        $counter = substr(pack(&#39;N&#39;, self::$_mongoIdFromTimestampCounter++), 1, 3); // Counter
+        $binaryId = &#34;{$binTimestamp}{$machineId}{$machineId}{$counter}&#34;;
+
+        // Convert to ASCII
+        $id = &#39;&#39;;
+        for ($i = 0; $i &amp;lt; 12; $i++) {
+            $id .= sprintf(&#34;%02X&#34;, ord($binaryId[$i]));
+        }
+
+        // Return Mongo ID
+        return new MongoID($id);
+    }
+
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;example-of-usage:1536523388bd0e63a6faba6ae8068887&#34;&gt;Example of usage:&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Example&#34;&gt;$date = strtotime(&#39;today&#39;);
+$mongoId = MongoUtil::mongoIdFromTimestamp( $date );
+
+// Do more stuff.&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

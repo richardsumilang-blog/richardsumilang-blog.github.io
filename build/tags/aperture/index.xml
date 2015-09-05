@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aperture on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/aperture/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 76 Aug 13071 07:07:07 PST</updated>
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 76 Aug 13071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>
+
+&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-keep-master-files-out-of-the-aperture-library:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;1. Keep master files out of the Aperture Library&lt;/h3&gt;
+
+&lt;p&gt;I strongly encourage this as it makes your Aperture Library much easier to
+manage and keeps free space on your workstation for more important things. I
+work in a 250gb SSD drive and space is important. Keep your masters on an
+external drive or network attached storage and only import them locally while
+you&amp;rsquo;re working on them. Adobe Lightroom gets this and actually never puts your
+masters in the Aperture Library. Or as they call it, catalog.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-create-a-aperture-library-for-different-projects:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;2. Create a Aperture Library for different projects&lt;/h3&gt;
+
+&lt;p&gt;This will keep your libraries small and efficient. This is especially nifty if
+you work on a laptop with limited space. Imagine going on a trip to take photos.
+You don&amp;rsquo;t need to carry your whole Aperture Library with you. You want as much
+space possible to take as many photos as you need. You can, if needed, merge
+your Aperture Library into another &amp;ldquo;master&amp;rdquo; Aperture Library to consolidate
+everything in the future.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-trash-your-thumbnails:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;3. Trash your thumbnails&lt;/h3&gt;
+
+&lt;p&gt;Some might be stale anyways and it&amp;rsquo;s nice to get rid of excess. Aperture will
+regenerate what it needs when you access it. Pop open a terminal and run these
+commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;find ~/Pictures -name &#34;AP.Thumbnails&#34; -delete
+find ~/Pictures -name &#34;AP.Minis&#34; -delete
+find ~/Pictures -name &#34;AP.Tinies&#34; -delete&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;p&gt;That saved me about 10 gigabytes. Your mileage may very.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-rebuild-your-database:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;4. Rebuild your database&lt;/h3&gt;
+
+&lt;p&gt;Hold &lt;code&gt;option + command&lt;/code&gt; on your keyboard while opening Aperture. This will bring
+up the &lt;em&gt;Photo Library First Aid&lt;/em&gt; dialog. Click &lt;em&gt;Rebuild Database&lt;/em&gt; then &lt;em&gt;Rebuild&lt;/em&gt;
+button.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

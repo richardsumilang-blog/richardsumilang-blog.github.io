@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/apple/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 56 Aug 28051 05:05:05 PST</updated>
+    
+    <item>
+      <title>&#34;effective. Power&#34; ... An AOL Flashback.</title>
+      <link>http://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</link>
+      <pubDate>Sun, 56 Aug 28051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
+iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
+
+&lt;pre&gt;
+effective. 
+Power
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m running iOS 8.3 (12F70). While testing the message, I learned that removing
+the &amp;ldquo;effective. Power&amp;rdquo; from the text will also crash my the Message app and
+prevent me and my recipient from opening the app. Fun times.&lt;/p&gt;
+
+&lt;pre&gt;
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;You can send yourself another text message something like the desktop Messages
+app with the same exact text which will cancel out the erroring one. Another
+popular technique is to send yourself a text from your photos app.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-does-this-work:54ef7fa11b89a091df9a4bb3fcf6ecc0&#34;&gt;How does this work?&lt;/h3&gt;
+
+&lt;p&gt;The problem is the set of characters used. The Messages app (and possibly
+others) try to render the bad text will cause the program manager and windowing
+system to crash and reboot.&lt;/p&gt;
+
+&lt;p&gt;This felt like a modern day AOL punter for me. A punter was usually a feature of
+an &amp;ldquo;AOL prog&amp;rdquo; or &amp;ldquo;proggie&amp;rdquo; that could sign off anyone you like, similar to this
+exploit. A recepient would receive an instant message from you with bad contents
+in the message body causing the AOL program to crash.&lt;/p&gt;
+
+&lt;p&gt;Funny enough, this is where my interest in computer programming began. Oh Visual
+Basic&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Shout outs to Fate X, Pepsi, HaVok, Pepsi, FireToolz, Fate Zero, Super MaD CoW
+97, EXoRCiST, Cold Fusion and many more for making the internet a much more
+interesting place to be in the 90s.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting the most out of your Apple AirPort Extreme network</title>
+      <link>http://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
+      <pubDate>Sun, 16 Aug 9011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
+      <description>
+
+&lt;p&gt;My home network is wired through a Dell gigabit switch which is connected to my
+AirPort extreme. Needless to say, this has worked well for me as the only
+wireless devices connected are mobile devices. I decided to set up another room
+in the house but I didn&amp;rsquo;t want to go through the hassle of running wires through
+the walls again. It&amp;rsquo;s undoubtably the best thing to do but this isn&amp;rsquo;t meant to
+be permanent. I figured the next best thing to do is extend the network by
+purchasing another AirPort Extreme. The hardware in it is better than an AirPort
+Express plus I get a few ports to hardwire a few devices. My rule of thumb is
+the less WiFi, the better.&lt;/p&gt;
+
+&lt;p&gt;I configured the extended network with the defaults and I never spent much time
+optimizing the wifi because it&amp;rsquo;s primarily used for my iPhone and iPad.
+Streaming media online from Netflix through a device in the new setup worked
+fine at first. The issue became immediately apparent when a hardwired device
+decided to come online and start streaming as well. After doing some connection
+testing, it was obvious that any hardwired device sucked all the bandwidth away
+from the WiFi leaving it with little to no room to breathe.&lt;/p&gt;
+
+&lt;p&gt;After a bit of research, I&amp;rsquo;ve found how to boost my WiFi signal significantly so
+my additional room can enjoy streaming as well. Here is what I did:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: The below is all configured through your &lt;strong&gt;AirPort Utility&lt;/strong&gt; app.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do not use &lt;strong&gt;WEP or WPA (TKIP)&lt;/strong&gt; authentication. WEP was deprecated in 2004 by
+the FBI due to it&amp;rsquo;s security flaws. WPA was superseded by WPA2 in 2006. If you
+must, use &lt;strong&gt;WPA/WPA2 Personal&lt;/strong&gt; but I feel it would be best to strictly use
+&lt;strong&gt;WPA2 Personal&lt;/strong&gt; alone to ensure best transfer rates. You can do this by
+navigating to the &lt;strong&gt;Wireless&lt;/strong&gt; tab then choosing the appropiate option under
+&lt;strong&gt;Wireless Security&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the same area screen, click the &lt;strong&gt;Wireless Options&lt;/strong&gt; button. All my
+wireless devices support 5GHz radio frequencies so it&amp;rsquo;s best to remove 2.4GHz
+support. You will notice additional settings if you hold the &lt;em&gt;option&lt;/em&gt; key and
+clicking the &lt;strong&gt;Radio Mode:&lt;/strong&gt; drop down box. I selected &lt;strong&gt;802.11n only 5GHz -
+802.11b/g/n&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;You can leave the &lt;strong&gt;2.4GHz Channel:&lt;/strong&gt; and the &lt;strong&gt;5Ghz Channel:&lt;/strong&gt; setting
+beneath set to &lt;strong&gt;Automatic&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Lastly you would like to go to the &lt;strong&gt;Internet&lt;/strong&gt; tab and click on the
+&lt;strong&gt;Internet Options&amp;hellip;&lt;/strong&gt; button. &lt;strong&gt;Configure IPv6:&lt;/strong&gt; should be set to
+&lt;strong&gt;Automatically&lt;/strong&gt; and &lt;strong&gt;IPv6 Mode:&lt;/strong&gt; should be set to &lt;strong&gt;Native&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Save all settings and click &lt;strong&gt;Update&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;conclusion:87921460928fa2ea01977b55f187d6e0&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;After applying the above settings WiFi speeds multiplied. The only drawback is
+if you are trying to support legacy devices that either do not support WPA2 or
+5GHz radio mode. Naturally, the 5GHz band has a shorter range but the 2.4GHz
+band is more prone to interference due to the fact that more devices use it.
+Another important thing to note is that the 5GHz band has 23 non-overlapping
+channels as opposed to 3 in the 2.4GHz band.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Sun, 16 Aug 8011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t already, &lt;a href=&#34;https://support.google.com/mail/troubleshooter/1668960&#34; title=&#34;Configure IMAP and POP3&#34;&gt;configure your Mail app&lt;/a&gt; to your gmail account.&lt;/p&gt;
+
+&lt;p&gt;Finally, to configure your aliases, go back into your account settings in the
+Mail app and comma separate each alias under the &lt;strong&gt;Email Address:&lt;/strong&gt; field. It&amp;rsquo;s
+far from obvious but a tooltip will appear after a moment which reads:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Enter one or more email addresses, separated by comma.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You may also find it useful to (configure your iOS)[/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/)
+device the same way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>http://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Sun, 16 Aug 8011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;
+
+&lt;p&gt;The trick here is to setup your Gmail account as an IMAP account. Do not set it
+up by selecting &lt;strong&gt;Google&lt;/strong&gt; in the add account screen. Choose &lt;strong&gt;Other&lt;/strong&gt; and apply
+the &lt;a href=&#34;https://support.google.com/mail/troubleshooter/1668960&#34; title=&#34;Configure IMAP and POP3&#34;&gt;IMAP settings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, to configure your aliases, simply go back into your account settings in
+the &lt;strong&gt;Mail, Contacts, Calendars&lt;/strong&gt; in the &lt;strong&gt;Settings&lt;/strong&gt; app, click &lt;strong&gt;Account&lt;/strong&gt;,
+then &lt;strong&gt;Email&lt;/strong&gt;, and &lt;strong&gt;Add Another Email&amp;hellip;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You are done once you save your changes and now the Mail app should reply using
+the correct alias depending on which account received the email.&lt;/p&gt;
+
+&lt;p&gt;You may also find it useful to &lt;a href=&#34;http://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/&#34;&gt;configure your OS X&lt;/a&gt;
+desktop the same way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My cask script!</title>
+      <link>http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <pubDate>Sun, 106 Aug 26101 10:10:10 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
+haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
+to chef recipe for my mac one day? ;)&lt;/p&gt;
+
+&lt;p&gt;Note: The latest and greatest will be maintained on &lt;a href=&#34;https://github.com/rsumilang/personal/blob/master/scripts/setup/apps-cask.sh&#34; title=&#34;apps-cask&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Cask&#34; &gt;#!/bin/sh
+# Let&#39;s automate installing all our apps!
+#
+# Note: This will require homebrew and cask!
+# See: http://caskroom.io/
+# 
+# Uninstall: Provide the --appdir when removing.
+#
+# @author Richard Sumilang &lt;me@richardsumilang.com&gt;
+INSTALL_CMD=&#34;brew cask install --appdir=/Applications&#34;
+
+###########################
+# Communication
+$INSTALL_CMD colloquy
+$INSTALL_CMD propane
+#$INSTALL_CMD skype
+
+
+
+###########################
+# Development
+$INSTALL_CMD atom
+$INSTALL_CMD charles
+$INSTALL_CMD filezilla
+$INSTALL_CMD gas-mask
+$INSTALL_CMD geektool
+$INSTALL_CMD intellij-idea
+$INSTALL_CMD robomongo
+$INSTALL_CMD sequel-pro
+$INSTALL_CMD sourcetree
+$INSTALL_CMD vagrant vagrant-bar
+$INSTALL_CMD virtualbox
+
+
+
+###########################
+# Enterprise
+#$INSTALL_CMD citrix-receiver
+
+
+
+###########################
+# Interwebs
+$INSTALL_CMD firefox
+$INSTALL_CMD google-chrome
+
+
+
+###########################
+# Media
+$INSTALL_CMD mediaelch
+$INSTALL_CMD miro-video-converter
+$INSTALL_CMD videospec
+$INSTALL_CMD vlc
+
+
+
+###########################
+# Music
+$INSTALL_CMD spotify
+
+
+
+###########################
+# Tools
+$INSTALL_CMD dropbox
+
+
+
+###########################
+# Utilities
+$INSTALL_CMD remote-desktop-connection
+$INSTALL_CMD unrarx
+$INSTALL_CMD transmission
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Working with Apple&#39;s iOS image orientation</title>
+      <link>http://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <pubDate>Sun, 106 Aug 17101 10:10:10 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
+they are not rotated properly when transferring them to another device or
+software. This happens because the device is held at a certain angle when the
+picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
+however it wants.&lt;/p&gt;
+
+&lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
+taken and you can rotate it accordingly.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34; title=&#34;Rotate iOS image&#34;&gt;&amp;lt;?php
+
+// Rotate iOS image
+// @author Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+
+$imageFile = &#39;/foo/bar.jpg&#39;;
+$finfo = finfo_open(FILEINFO_MIME_TYPE);
+$mimeType = finfo_file($finfo, $imageFile);
+finfo_close($finfo);
+
+// Detect if jpeg or tiff
+if ( in_array($mimeType, [&#39;image/jpeg&#39;, &#39;image/tiff&#39;]) ) {
+    $exif = exif_read_data($imageFile);
+    if ( isset($exif[&#39;Orientation&#39;]) &amp;amp;&amp;amp; !empty($exif[&#39;Orientation&#39;]) ) {
+
+        // Decide orientation
+        if ( $exif[&#39;Orientation&#39;] == 3 ) {
+            $rotation = 180;
+        } else if ( $exif[&#39;Orientation&#39;] == 6 ) {
+            $rotation = 90;
+        } else if ( $exif[&#39;Orientation&#39;] == 8 ) {
+            $rotation = -90;
+        } else {
+            $rotation = 0;
+        }
+
+        // Rotate the image
+        if ( $rotation ) {
+            $imagick = new Imagick();
+            $imagick-&amp;gt;readImage($imageFile);
+            $imagick-&amp;gt;rotateImage(new ImagickPixel(&#39;none&#39;), $rotation);
+            $imagick-&amp;gt;writeImage($imageFile);
+            $imagick-&amp;gt;clear();
+            $imagick-&amp;gt;destroy();
+        }
+
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: Only jpeg and tiff files contain exif information.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 76 Aug 13071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>
+
+&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-keep-master-files-out-of-the-aperture-library:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;1. Keep master files out of the Aperture Library&lt;/h3&gt;
+
+&lt;p&gt;I strongly encourage this as it makes your Aperture Library much easier to
+manage and keeps free space on your workstation for more important things. I
+work in a 250gb SSD drive and space is important. Keep your masters on an
+external drive or network attached storage and only import them locally while
+you&amp;rsquo;re working on them. Adobe Lightroom gets this and actually never puts your
+masters in the Aperture Library. Or as they call it, catalog.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-create-a-aperture-library-for-different-projects:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;2. Create a Aperture Library for different projects&lt;/h3&gt;
+
+&lt;p&gt;This will keep your libraries small and efficient. This is especially nifty if
+you work on a laptop with limited space. Imagine going on a trip to take photos.
+You don&amp;rsquo;t need to carry your whole Aperture Library with you. You want as much
+space possible to take as many photos as you need. You can, if needed, merge
+your Aperture Library into another &amp;ldquo;master&amp;rdquo; Aperture Library to consolidate
+everything in the future.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-trash-your-thumbnails:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;3. Trash your thumbnails&lt;/h3&gt;
+
+&lt;p&gt;Some might be stale anyways and it&amp;rsquo;s nice to get rid of excess. Aperture will
+regenerate what it needs when you access it. Pop open a terminal and run these
+commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;find ~/Pictures -name &#34;AP.Thumbnails&#34; -delete
+find ~/Pictures -name &#34;AP.Minis&#34; -delete
+find ~/Pictures -name &#34;AP.Tinies&#34; -delete&lt;/code&gt;&lt;/pre&gt; 
+
+&lt;p&gt;That saved me about 10 gigabytes. Your mileage may very.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-rebuild-your-database:fcffe46b275f0f51e8fbd34d869b35f6&#34;&gt;4. Rebuild your database&lt;/h3&gt;
+
+&lt;p&gt;Hold &lt;code&gt;option + command&lt;/code&gt; on your keyboard while opening Aperture. This will bring
+up the &lt;em&gt;Photo Library First Aid&lt;/em&gt; dialog. Click &lt;em&gt;Rebuild Database&lt;/em&gt; then &lt;em&gt;Rebuild&lt;/em&gt;
+button.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Apps I can&#39;t live without on OS X</title>
+      <link>http://www.richardsumilang.com/etc/software/apps-i-cant-live-without-os-x/</link>
+      <pubDate>Sun, 56 Aug 7051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/etc/software/apps-i-cant-live-without-os-x/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; Want to automate your software installation? Take a look at how I
+did with &lt;a href=&#34;http://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adobe.com/products/cs6.html&#34;&gt;Adobe CS 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.alfredapp.com&#34;&gt;Alfred App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/analog/id418343177?mt=12&#34;&gt;Analog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.apple.com/aperture/&#34;&gt;Aperture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.charlesproxy.com/&#34;&gt;Charles Proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.com/chrome/browser/&#34;&gt;Chrome&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb?hl=en-US&#34;&gt;AdBlock Plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/extensions/detail/alelhddbbhepgpmgidjdcjakblofbmce&#34;&gt;Awesome Screenshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en&#34;&gt;ColorPick Eyedropper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/feedly-news-blogs-and-you/hipbfijinpcgfogaopmgehiegacbhmob&#34;&gt;Feedly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&#34;&gt;JSONView&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/measureit/pokhcahijjfkdccinalifdifljglhclm?hl=en&#34;&gt;MeasureIt!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm&#34;&gt;Postman - REST Client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/ljfpjnehmoiabkefmnjegmpdddgcdnpo&#34;&gt;Ultimate User Agent Switcher, URL sniffer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/xv-%E2%80%94-xml-viewer/eeocglpgjdpaefaedpblffpeebgmgddk&#34;&gt;XV - XML Viewer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://colloquy.info&#34;&gt;Colloquy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://junecloud.com/software/mac/delivery-status.html&#34;&gt;Delivery Status Widget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.clockwise.ee/gasmask/&#34;&gt;Gas Mask&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projects.tynsoe.org/en/geektool/&#34;&gt;GeekTool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dboissier/mongo4idea&#34;&gt;Mongo4Idea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://filezilla-project.org/&#34;&gt;FileZilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.getfirefox.com&#34;&gt;Firefox&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/awesome-screenshot-capture-/&#34;&gt;Awesome Screenshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://adblockplus.org/en/firefox&#34;&gt;Adblock Plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/awesome-screenshot-capture-/&#34;&gt;Feedly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.getfirebug.com&#34;&gt;Firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.firephp.org&#34;&gt;FirePHP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/&#34;&gt;Flush DNS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsonview.com/&#34;&gt;JSONView&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/modify-headers/&#34;&gt;Modify Headers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/poster-extension/&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://chrispederick.com/work/user-agent-switcher/&#34;&gt;User Agent Switcher&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.microsoftstore.com/store/msusa/en_US/pdp/Office-for-Mac-Home-and-Student-2011/productID.253736200&#34;&gt;Office for Mac 2011&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh&#34;&gt;Oh my zsh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://propaneapp.com/&#34;&gt;Propane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.blazingtools.com/right_zoom_mac.html&#34;&gt;Right Zoom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://robomongo.org/&#34;&gt;Robomongo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.spotify.com/&#34;&gt;Spotify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sublimetext.com&#34;&gt;Sublime Text&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sublime.wbond.net/installation&#34;&gt;Package Control&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://macromates.com/&#34;&gt;Textmate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roxio.com/enu/products/toast/default.html&#34;&gt;Toast 11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.unrarx.com/&#34;&gt;UnRar X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.virtualbox.org/&#34;&gt;VirtualBox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://store.vmware.com/store/vmware/en_US/DisplayProductDetailsPage/ThemeID.2485600/productID.285051300&#34;&gt;VMWare Fusion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wunderlist.com/&#34;&gt;Wunderlist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

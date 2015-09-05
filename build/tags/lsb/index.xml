@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lsb on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/tags/lsb/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 76 Aug 7071 07:07:07 PST</updated>
+    
+    <item>
+      <title>LSB Init.d Script Template</title>
+      <link>http://www.richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</link>
+      <pubDate>Sun, 76 Aug 7071 07:07:07 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</guid>
+      <description>&lt;p&gt;Quick little &lt;code&gt;init.d&lt;/code&gt; template:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; &gt;#!/bin/bash
+# &amp;lt;Application Name&amp;gt;
+# chkconfig: 345 20 80
+# description: &amp;lt;Description&amp;gt;
+# processname: &amp;lt;Process Name|Application Name|Short name&amp;gt;
+# author: Richard Sumilang &amp;lt;me@richardsumilang.com&amp;gt;
+# see: https://wiki.debian.org/LSBInitScripts
+
+
+CMD=&#34;&#34;                             # Command goes here
+NAME=&#34;&amp;lt;Short Application Name&amp;gt;&#34;    # Short Application Name
+PIDFILE=/var/run/$NAME.pid         # Process ID File
+SCRIPTNAME=/etc/init.d/$NAME       # This script name
+
+case &#34;$1&#34; in
+start)
+
+    # Make sure process is not already running
+    if [ -f $PIDFILE ]; then
+        echo &#34;PID already exists: $PIDFILE&#34;
+        exit 1
+    fi
+
+    # Use pgrep to retrieve the Process ID
+    $CMD
+    sleep 1
+    PID=`pgrep -fn &#34;$CMD&#34;`
+    
+    # Save process ID to file
+    if [ -z $PID ]; then
+        printf &#34;%s\n&#34; &#34;Failed to start $NAME&#34;
+    else
+        echo $PID &amp;gt; $PIDFILE
+        printf &#34;%s\n&#34; &#34;$NAME ... Ok&#34;
+    fi
+;;
+status)
+    printf &#34;%-50s&#34; &#34;Checking $NAME...&#34;
+    if [ -f $PIDFILE ]; then
+        PID=`cat $PIDFILE`
+        if [ -z &#34;`ps axf | grep ${PID} | grep -v grep`&#34; ]; then
+            printf &#34;%s\n&#34; &#34;Process dead but pidfile exists&#34;
+        else
+            echo &#34;$NAME is Running&#34;
+        fi
+    else
+        printf &#34;%s\n&#34; &#34;$NAME is not running&#34;
+    fi
+;;
+stop)
+    printf &#34;%-50s&#34; &#34;Stopping $NAME&#34;
+    PID=`cat $PIDFILE`
+    if [ -f $PIDFILE ]; then
+        kill $PID
+        printf &#34;%s\n&#34; &#34;Ok&#34;
+        rm -f $PIDFILE
+    else
+        printf &#34;%s\n&#34; &#34;pidfile not found&#34;
+    fi
+;;
+
+restart)
+    $0 stop
+    $0 start
+;;
+
+*)
+    echo &#34;Usage: $0 {status|start|stop|restart}&#34;
+    exit 1
+esac&lt;/code&gt;&lt;/pre&gt; 
+</description>
+    </item>
+    
+  </channel>
+</rss>

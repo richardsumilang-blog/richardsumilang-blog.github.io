@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="Crontab, DSM, 4, DSM 5, NAS, rsync, SSH, Synology, " />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="How to setup automated backups to SSH server with Synology DiskStation" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/" />
+<meta property="og:locale" content="en_US" />
+
+  <meta property="article:published_time" content="2014-07-12" />
+  <meta property="article:modified_time" content="2014-07-12" />
+
+
+
+
+  <meta property="article:tag" content="Crontab" /><meta property="article:tag" content="DSM, 4" /><meta property="article:tag" content="DSM 5" /><meta property="article:tag" content="NAS" /><meta property="article:tag" content="rsync" /><meta property="article:tag" content="SSH" /><meta property="article:tag" content="Synology" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@rsumilang" />
+<meta name="twitter:title" content="How to setup automated backups to SSH server with Synology DiskStation" />
+<meta name="twitter:creator" content="@rsumilang" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+  <meta name="generator" content="Hugo 0.14" />"
+
+  <base href="http://www.richardsumilang.com/" />
+  <title>How to setup automated backups to SSH server with Synology DiskStation - Top Secret Labs - RichardSumilang.com</title>
+
+
+  <link rel="canonical" href="http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Top Secret Labs - RichardSumilang.com" />
+
+  
+  <link rel="stylesheet" type="text/css" href="http://www.richardsumilang.com/css/main.min.css" />
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+  <link rel="shortcut icon" href="http://www.richardsumilang.com/favicon.ico" />
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Top Secret Labs - RichardSumilang.com" />
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="http://www.richardsumilang.com/"><img src="http://www.richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps">apps</a></li>
+  
+  <li><a href="/categories/electronics">electronics</a></li>
+  
+  <li><a href="/categories/etc">etc</a></li>
+  
+  <li><a href="/categories/networking">networking</a></li>
+  
+  <li><a href="/categories/programming">programming</a></li>
+  
+  <li><a href="/categories/servers">servers</a></li>
+  
+  <li><a href="/categories/unix-like">unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+
+    <header class="heading">
+      <h2><a href="http://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/">How to setup automated backups to SSH server with Synology DiskStation</a></h2>
+      
+    </header>
+
+    <div class="details">
+      
+
+<p>As a best practice, it&rsquo;s great great to have your data in more than one
+location. I use my Synology Diskation as a local network file server at my home.
+The reality is something can happen and I lose all my important data in that
+little box. From a BBQ, a birthday party, or maybe the house just burns down and
+now all my data is gone. Unfortunately my network rack at home will never be as
+secure as a network rack in a data center. So, backup your data because that&rsquo;s
+much easier to do rather than trying to restore from no backup. Makes logical
+sense right? Derp.</p>
+
+<h2 id="requirements:be368e5c5a440c3f73ef62c95f83fa39">Requirements</h2>
+
+<ul>
+<li>Basic shell knowledge.</li>
+<li>A remote server that you can SSH into.</li>
+</ul>
+
+<h3 id="why-not-use-the-backup-amp-replication-plugin:be368e5c5a440c3f73ef62c95f83fa39">Why not use the &ldquo;Backup &amp; Replication&rdquo; plugin?</h3>
+
+<p>The <em>Backup &amp; Replication</em> module does not have a way to specify my remote
+server&rsquo;s rsync port. The default is <strong>22</strong> but my host runs on port <strong>2222</strong>.</p>
+
+<h2 id="1-enable-ssh-on-your-synology-box:be368e5c5a440c3f73ef62c95f83fa39">1. Enable SSH on your Synology Box</h2>
+
+<p>First things first. <a href="/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/">Enable SSH</a>
+on your Synology box if you haven&rsquo;t already done so and log in (via ssh).</p>
+
+<h2 id="2-generate-ssh-keys:be368e5c5a440c3f73ef62c95f83fa39">2. Generate SSH keys</h2>
+
+<p>We&rsquo;ll need to generate a pair of keys here so <code>rsync</code> is not prompted for your
+password when it runs otherwise this defeats the purpose of automation. To do
+this, run the following command:</p>
+
+<pre><code class="language-bash">ssh-keygen -v -t rsa -f ~/.ssh/backup -P ""</code></pre>
+
+<p>This will generate <code>/root/.ssh/backup</code> and <code>/root/.ssh/backup.pub</code>.</p>
+
+<h2 id="3-copy-your-public-key-to-the-remote-server:be368e5c5a440c3f73ef62c95f83fa39">3. Copy your public key to the remote server</h2>
+
+<p>Login to your remote server and put the contents of <code>/root/.ssh/backup.pub</code> from
+your Synology box to <code>~/.ssh/authorized_keys</code> on your remote box. If this file
+on your remote box already exists, then just append the contents to it rather
+than overwriting it. If this file does not exist, then create it.</p>
+
+<p><em>If you create it manually then make sure the following files have the following
+permissions otherwise SSH will not allow you to use</em></p>
+
+<ul>
+<li>0700: ~/.ssh</li>
+<li>0644: ~/.ssh/authorized_keys</li>
+</ul>
+
+<p>You should be able to SSH from your Synology Diskation to your remote machine
+without specifying a password. Here is an example command:</p>
+
+<pre><code>ssh username@home -i /root/.ssh/backup -v
+</code></pre>
+
+<p>The <code>-i</code> command tells SSH which private key to use and the <code>-v</code> would make the
+program verbose.</p>
+
+<h2 id="4-configure-rsync-and-crontab:be368e5c5a440c3f73ef62c95f83fa39">4. Configure rsync and crontab</h2>
+
+<p>Last but not least, we need to add a line in our crontab configuration to run
+rsync at a specific time. Here is an example of mine:</p>
+
+<pre><code class="language-crontab">0   0   *   *   *   root    rsync -avztP --delete --inplace /volume1/photo/ username@host:/backups/glitch/photo -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0   1   *   *   *   root    rsync -avztP --inplace /volume1/manuals/ username@host:/backups/glitch/manuals -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0   2   *   *   *   root    rsync -avztP --inplace /volume1/surveillance/ username@host:/backups/glitch/surveillance -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0   3   *   *   *   root    rsync -avztP --inplace /volume1/video/ username@host:/backups/glitch/video -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0   4   *   *   *   root    rsync -avztP --inplace /volume1/applications/ username@host:/backups/glitch/applications -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0   5   *   *   *   root    rsync -avztP --delete --inplace /volume1/zappiti/ username@host:/backups/glitch/zappiti -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"</code></pre>
+
+<p>It&rsquo;s important to note that each field must be indented by a tab (not a space)
+and the user must be root. If you configure this another way then the Synology
+server will erase the entry when you reboot the machine. Here are some
+<a href="http://www.freebsd.org/doc/handbook/configtuning-cron.html" title="FreeBSD Configuring Cron">configuration options</a> for reference.</p>
+
+<p>Put your configuration in <code>/etc/crontab</code>. You can use <code>nano</code> if you&rsquo;re on DSM 4
+or <code>vi</code> if you&rsquo;re on DSM 5.</p>
+
+<p>Lastly, we need to restart the cron daemon to take note of our changes. The
+command is <code>restart crond</code> on DSM 5 machines and
+<code>/usr/syno/sbin/synoservice --restart crond</code> on DSM 4 machines.</p>
+
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/crontab">Crontab</a>
+      
+      <a href="/tags/dsm-4">DSM, 4</a>
+      
+      <a href="/tags/dsm-5">DSM 5</a>
+      
+      <a href="/tags/nas">NAS</a>
+      
+      <a href="/tags/rsync">rsync</a>
+      
+      <a href="/tags/ssh">SSH</a>
+      
+      <a href="/tags/synology">Synology</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Jul 12, 2014
+      
+        
+          <a href="/categories/servers"><i class="fa fa-bookmark"></i> Servers</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+      <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=http%2f%2fwww.richardsumilang.com%2fserver%2fsynology%2fdiskstation%2fsetup-automated-backups-to-ssh-server-on-synology-diskstation%2f&t=How%20to%20setup%20automated%20backups%20to%20SSH%20server%20with%20Synology%20DiskStation"><span class="fa fa-facebook"></span></a>
+      <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=http%2f%2fwww.richardsumilang.com%2fserver%2fsynology%2fdiskstation%2fsetup-automated-backups-to-ssh-server-on-synology-diskstation%2f&text=How%20to%20setup%20automated%20backups%20to%20SSH%20server%20with%20Synology%20DiskStation&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+      <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=http%2f%2fwww.richardsumilang.com%2fserver%2fsynology%2fdiskstation%2fsetup-automated-backups-to-ssh-server-on-synology-diskstation%2f"><span class="fa fa-google-plus"></span></a>
+      <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=http%2f%2fwww.richardsumilang.com%2fserver%2fsynology%2fdiskstation%2fsetup-automated-backups-to-ssh-server-on-synology-diskstation%2f&media=&description=How%20to%20setup%20automated%20backups%20to%20SSH%20server%20with%20Synology%20DiskStation"><span class="fa fa-pinterest"></span></a>
+    </div>
+
+  </article>
+
+  
+<div id="disqus-thread"></div>
+<script type="text/javascript">
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'richardsumilang';
+    var disqus_identifier = '372 http:\/\/www.richardsumilang.com\/blog\/?p=372';
+    var disqus_url = 'http:\/\/www.richardsumilang.com\/server\/synology\/diskstation\/setup-automated-backups-to-ssh-server-on-synology-diskstation\/';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    document.getElementById('disqus-thread').appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  
+    <a href="http://facebook.com/pages/Richard-Sumilang/1671943293041280" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+    <a href="http://twitter.com/rsumilang" title="@rsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/rsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+    <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+    <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+    <a href="https://www.youtube.com/channel/UCoa8wraKQsA95Y691K4kTsA" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+    <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="http://www.richardsumilang.com/images/me.png">
+        I'm Richard Sumilang, an entrepreneur and DIY'er at heart but often
+        mistaken for a Developer. (Supposedly says so on my resume.)
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a> if you promise not to spam :)</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Join my periodic <a href="http://eepurl.com/bwckhL">newsletter</a>
+        (I promise not to spam) and/or stay follow a little closer with my
+        occasional rants on <a  href="http://twitter.com/rsumilang" title="@rsumilang on Twitter" target="_blank">twitter</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank">Github</a>! Even this blog.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2015. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="http://www.richardsumilang.com/js/common.js"></script>
+<script src="http://www.richardsumilang.com/js/app.js"></script>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38936074-1']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
+

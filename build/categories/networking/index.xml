@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Top Secret Labs - RichardSumilang.com </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://www.richardsumilang.com/categories/networking/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 16 Aug 9011 01:01:01 PST</updated>
+    
+    <item>
+      <title>Getting the most out of your Apple AirPort Extreme network</title>
+      <link>http://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
+      <pubDate>Sun, 16 Aug 9011 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
+      <description>
+
+&lt;p&gt;My home network is wired through a Dell gigabit switch which is connected to my
+AirPort extreme. Needless to say, this has worked well for me as the only
+wireless devices connected are mobile devices. I decided to set up another room
+in the house but I didn&amp;rsquo;t want to go through the hassle of running wires through
+the walls again. It&amp;rsquo;s undoubtably the best thing to do but this isn&amp;rsquo;t meant to
+be permanent. I figured the next best thing to do is extend the network by
+purchasing another AirPort Extreme. The hardware in it is better than an AirPort
+Express plus I get a few ports to hardwire a few devices. My rule of thumb is
+the less WiFi, the better.&lt;/p&gt;
+
+&lt;p&gt;I configured the extended network with the defaults and I never spent much time
+optimizing the wifi because it&amp;rsquo;s primarily used for my iPhone and iPad.
+Streaming media online from Netflix through a device in the new setup worked
+fine at first. The issue became immediately apparent when a hardwired device
+decided to come online and start streaming as well. After doing some connection
+testing, it was obvious that any hardwired device sucked all the bandwidth away
+from the WiFi leaving it with little to no room to breathe.&lt;/p&gt;
+
+&lt;p&gt;After a bit of research, I&amp;rsquo;ve found how to boost my WiFi signal significantly so
+my additional room can enjoy streaming as well. Here is what I did:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: The below is all configured through your &lt;strong&gt;AirPort Utility&lt;/strong&gt; app.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do not use &lt;strong&gt;WEP or WPA (TKIP)&lt;/strong&gt; authentication. WEP was deprecated in 2004 by
+the FBI due to it&amp;rsquo;s security flaws. WPA was superseded by WPA2 in 2006. If you
+must, use &lt;strong&gt;WPA/WPA2 Personal&lt;/strong&gt; but I feel it would be best to strictly use
+&lt;strong&gt;WPA2 Personal&lt;/strong&gt; alone to ensure best transfer rates. You can do this by
+navigating to the &lt;strong&gt;Wireless&lt;/strong&gt; tab then choosing the appropiate option under
+&lt;strong&gt;Wireless Security&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the same area screen, click the &lt;strong&gt;Wireless Options&lt;/strong&gt; button. All my
+wireless devices support 5GHz radio frequencies so it&amp;rsquo;s best to remove 2.4GHz
+support. You will notice additional settings if you hold the &lt;em&gt;option&lt;/em&gt; key and
+clicking the &lt;strong&gt;Radio Mode:&lt;/strong&gt; drop down box. I selected &lt;strong&gt;802.11n only 5GHz -
+802.11b/g/n&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;You can leave the &lt;strong&gt;2.4GHz Channel:&lt;/strong&gt; and the &lt;strong&gt;5Ghz Channel:&lt;/strong&gt; setting
+beneath set to &lt;strong&gt;Automatic&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Lastly you would like to go to the &lt;strong&gt;Internet&lt;/strong&gt; tab and click on the
+&lt;strong&gt;Internet Options&amp;hellip;&lt;/strong&gt; button. &lt;strong&gt;Configure IPv6:&lt;/strong&gt; should be set to
+&lt;strong&gt;Automatically&lt;/strong&gt; and &lt;strong&gt;IPv6 Mode:&lt;/strong&gt; should be set to &lt;strong&gt;Native&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Save all settings and click &lt;strong&gt;Update&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;conclusion:87921460928fa2ea01977b55f187d6e0&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;After applying the above settings WiFi speeds multiplied. The only drawback is
+if you are trying to support legacy devices that either do not support WPA2 or
+5GHz radio mode. Naturally, the 5GHz band has a shorter range but the 2.4GHz
+band is more prone to interference due to the fact that more devices use it.
+Another important thing to note is that the 5GHz band has 23 non-overlapping
+channels as opposed to 3 in the 2.4GHz band.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Converting Windows Network Path for Mac</title>
+      <link>http://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</link>
+      <pubDate>Sun, 56 Aug 30051 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>http://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re given a Windows network path such as &lt;code&gt;\\Foo\Bar&lt;/code&gt; then that basically
+means connect to shared folder &lt;code&gt;Bar&lt;/code&gt; on the server &lt;code&gt;Foo&lt;/code&gt;. To do this, you can go
+&lt;code&gt;Finder&lt;/code&gt; -&amp;gt; &lt;code&gt;Go&lt;/code&gt; -&amp;gt; &lt;code&gt;Connect to Server...&lt;/code&gt; and type &lt;code&gt;smb://Foo/Bar&lt;/code&gt; which
+is the equivalent.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

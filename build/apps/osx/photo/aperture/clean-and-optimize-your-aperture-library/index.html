@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="Aperture, Apple, Mac, OS X, " />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="How to clean and optimize your Aperture Library" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/" />
+<meta property="og:locale" content="en_US" />
+
+  <meta property="article:published_time" content="2014-07-13" />
+  <meta property="article:modified_time" content="2014-07-13" />
+
+
+
+
+  <meta property="article:tag" content="Aperture" /><meta property="article:tag" content="Apple" /><meta property="article:tag" content="Mac" /><meta property="article:tag" content="OS X" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@rsumilang" />
+<meta name="twitter:title" content="How to clean and optimize your Aperture Library" />
+<meta name="twitter:creator" content="@rsumilang" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+  <meta name="generator" content="Hugo 0.14" />"
+
+  <base href="http://www.richardsumilang.com/" />
+  <title>How to clean and optimize your Aperture Library - Top Secret Labs - RichardSumilang.com</title>
+
+
+  <link rel="canonical" href="http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Top Secret Labs - RichardSumilang.com" />
+
+  
+  <link rel="stylesheet" type="text/css" href="http://www.richardsumilang.com/css/main.min.css" />
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+  <link rel="shortcut icon" href="http://www.richardsumilang.com/favicon.ico" />
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Top Secret Labs - RichardSumilang.com" />
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="http://www.richardsumilang.com/"><img src="http://www.richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps">apps</a></li>
+  
+  <li><a href="/categories/electronics">electronics</a></li>
+  
+  <li><a href="/categories/etc">etc</a></li>
+  
+  <li><a href="/categories/networking">networking</a></li>
+  
+  <li><a href="/categories/programming">programming</a></li>
+  
+  <li><a href="/categories/servers">servers</a></li>
+  
+  <li><a href="/categories/unix-like">unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+
+    <header class="heading">
+      <h2><a href="http://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/">How to clean and optimize your Aperture Library</a></h2>
+      
+        <h3>Cleanliness is the next to godliness</h3>
+      
+    </header>
+
+    <div class="details">
+      
+
+<p>After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.</p>
+
+<h3 id="1-keep-master-files-out-of-the-aperture-library:fcffe46b275f0f51e8fbd34d869b35f6">1. Keep master files out of the Aperture Library</h3>
+
+<p>I strongly encourage this as it makes your Aperture Library much easier to
+manage and keeps free space on your workstation for more important things. I
+work in a 250gb SSD drive and space is important. Keep your masters on an
+external drive or network attached storage and only import them locally while
+you&rsquo;re working on them. Adobe Lightroom gets this and actually never puts your
+masters in the Aperture Library. Or as they call it, catalog.</p>
+
+<h3 id="2-create-a-aperture-library-for-different-projects:fcffe46b275f0f51e8fbd34d869b35f6">2. Create a Aperture Library for different projects</h3>
+
+<p>This will keep your libraries small and efficient. This is especially nifty if
+you work on a laptop with limited space. Imagine going on a trip to take photos.
+You don&rsquo;t need to carry your whole Aperture Library with you. You want as much
+space possible to take as many photos as you need. You can, if needed, merge
+your Aperture Library into another &ldquo;master&rdquo; Aperture Library to consolidate
+everything in the future.</p>
+
+<h3 id="3-trash-your-thumbnails:fcffe46b275f0f51e8fbd34d869b35f6">3. Trash your thumbnails</h3>
+
+<p>Some might be stale anyways and it&rsquo;s nice to get rid of excess. Aperture will
+regenerate what it needs when you access it. Pop open a terminal and run these
+commands:</p>
+
+<pre><code class="language-bash">find ~/Pictures -name "AP.Thumbnails" -delete
+find ~/Pictures -name "AP.Minis" -delete
+find ~/Pictures -name "AP.Tinies" -delete</code></pre> 
+
+<p>That saved me about 10 gigabytes. Your mileage may very.</p>
+
+<h3 id="4-rebuild-your-database:fcffe46b275f0f51e8fbd34d869b35f6">4. Rebuild your database</h3>
+
+<p>Hold <code>option + command</code> on your keyboard while opening Aperture. This will bring
+up the <em>Photo Library First Aid</em> dialog. Click <em>Rebuild Database</em> then <em>Rebuild</em>
+button.</p>
+
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/aperture">Aperture</a>
+      
+      <a href="/tags/apple">Apple</a>
+      
+      <a href="/tags/mac">Mac</a>
+      
+      <a href="/tags/os-x">OS X</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Jul 13, 2014
+      
+        
+          <a href="/categories/apps"><i class="fa fa-bookmark"></i> Apps</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+      <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=http%2f%2fwww.richardsumilang.com%2fapps%2fosx%2fphoto%2faperture%2fclean-and-optimize-your-aperture-library%2f&t=How%20to%20clean%20and%20optimize%20your%20Aperture%20Library"><span class="fa fa-facebook"></span></a>
+      <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=http%2f%2fwww.richardsumilang.com%2fapps%2fosx%2fphoto%2faperture%2fclean-and-optimize-your-aperture-library%2f&text=How%20to%20clean%20and%20optimize%20your%20Aperture%20Library&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+      <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=http%2f%2fwww.richardsumilang.com%2fapps%2fosx%2fphoto%2faperture%2fclean-and-optimize-your-aperture-library%2f"><span class="fa fa-google-plus"></span></a>
+      <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=http%2f%2fwww.richardsumilang.com%2fapps%2fosx%2fphoto%2faperture%2fclean-and-optimize-your-aperture-library%2f&media=&description=How%20to%20clean%20and%20optimize%20your%20Aperture%20Library"><span class="fa fa-pinterest"></span></a>
+    </div>
+
+  </article>
+
+  
+<div id="disqus-thread"></div>
+<script type="text/javascript">
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'richardsumilang';
+    var disqus_identifier = '394 http:\/\/www.richardsumilang.com\/blog\/?p=394';
+    var disqus_url = 'http:\/\/www.richardsumilang.com\/apps\/osx\/photo\/aperture\/clean-and-optimize-your-aperture-library\/';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    document.getElementById('disqus-thread').appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  
+    <a href="http://facebook.com/pages/Richard-Sumilang/1671943293041280" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+    <a href="http://twitter.com/rsumilang" title="@rsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/rsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+    <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+    <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+    <a href="https://www.youtube.com/channel/UCoa8wraKQsA95Y691K4kTsA" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+    <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="http://www.richardsumilang.com/images/me.png">
+        I'm Richard Sumilang, an entrepreneur and DIY'er at heart but often
+        mistaken for a Developer. (Supposedly says so on my resume.)
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a> if you promise not to spam :)</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Join my periodic <a href="http://eepurl.com/bwckhL">newsletter</a>
+        (I promise not to spam) and/or stay follow a little closer with my
+        occasional rants on <a  href="http://twitter.com/rsumilang" title="@rsumilang on Twitter" target="_blank">twitter</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank">Github</a>! Even this blog.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2015. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="http://www.richardsumilang.com/js/common.js"></script>
+<script src="http://www.richardsumilang.com/js/app.js"></script>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38936074-1']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
+
