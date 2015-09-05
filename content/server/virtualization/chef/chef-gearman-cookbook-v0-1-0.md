@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Chef", "Cookbook", "Gearman", "Opscode", "PHP", "Ruby"]
-date = "2014-06-12T01:01:01-07:00"
+date = "2014-06-12T11:22:00-08:00"
 title = "Chef Gearman Cookbook v0.1.0"
 disqusIdentifier = "296 http://www.richardsumilang.com/blog/?p=296"
 aliases = ["/blog/2014/06/12/chef-gearman-cookbook-v0-1-0"]

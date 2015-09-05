@@ -3,7 +3,7 @@ Categories = ["Etc"]
 Tags = ["TMZ", "Work"]
 CoverImage = "images/logos/tmz/big-red.jpg"
 Description = "First day at TMZ!"
-date = "2014-04-01T01:01:01-07:00"
+date = "2014-04-01T21:49:00-08:00"
 title = "First day at TMZ"
 disqusIdentifier = "75 http://www.richardsumilang.com/blog/?p=75"
 aliases = ["/blog/2014/04/01/first-day-at-tmz"]

@@ -1,7 +1,7 @@
 +++
 Categories = ["Unix-like"]
 Tags = ["Linux", "File System", "inotify", "monitor"]
-date = "2014-07-14T01:01:01-07:00"
+date = "2014-07-14T22:28:00-08:00"
 title = "Monitor your filesystem events on Linux with inotify"
 disqusIdentifier = "402 http://www.richardsumilang.com/blog/?p=402"
 aliases = ["/blog/2014/07/14/monitor-your-filesystem-events-with-inotify"]
@@ -34,7 +34,7 @@ do
 	elif [[ $file != *~ ]] || [[ $file != *swp ]] || [[ $file != *swx ]]; then
 		rsync -azvhp --delete --exclude '.idea' --exclude '.svn' --exclude '.vagrant' --exclude 'tmp' --exclude 'crowdfusion' --exclude 'system' "$watch_dir$file" "$put_dir$file"
 	fi
-done;</code></pre> 
+done;</code></pre>
 
 ### What if I'm monitoring a network mount?
 

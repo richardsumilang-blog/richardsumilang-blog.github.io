@@ -1,7 +1,7 @@
 +++
 Categories = ["Networking"]
 Tags = ["AirPort", "Apple", "Mac", "WiFi"]
-date = "2015-01-09T01:01:01-07:00"
+date = "2015-01-09T01:57:00-08:00"
 title = "Getting the most out of your Apple AirPort Extreme network"
 disqusIdentifier = "466 http://www.richardsumilang.com/blog/?p=466"
 aliases = ["/blog/2015/01/09/getting-the-most-out-of-your-airport-extreme-network"]
@@ -31,23 +31,23 @@ my additional room can enjoy streaming as well. Here is what I did:
 
 *Note: The below is all configured through your **AirPort Utility** app.*
 
-- Do not use **WEP or WPA (TKIP)** authentication. WEP was deprecated in 2004 by
+1. Do not use **WEP or WPA (TKIP)** authentication. WEP was deprecated in 2004 by
 the FBI due to it's security flaws. WPA was superseded by WPA2 in 2006. If you
 must, use **WPA/WPA2 Personal** but I feel it would be best to strictly use
 **WPA2 Personal** alone to ensure best transfer rates. You can do this by
 navigating to the **Wireless** tab then choosing the appropiate option under
 **Wireless Security**.
-- In the same area screen, click the **Wireless Options** button. All my
+2. In the same area screen, click the **Wireless Options** button. All my
 wireless devices support 5GHz radio frequencies so it's best to remove 2.4GHz
 support. You will notice additional settings if you hold the *option* key and
 clicking the **Radio Mode:** drop down box. I selected **802.11n only 5GHz -
 802.11b/g/n**.
-- You can leave the **2.4GHz Channel:** and the **5Ghz Channel:** setting
+3. You can leave the **2.4GHz Channel:** and the **5Ghz Channel:** setting
 beneath set to **Automatic**.
-- Lastly you would like to go to the **Internet** tab and click on the
+4. Lastly you would like to go to the **Internet** tab and click on the
 **Internet Options...** button. **Configure IPv6:** should be set to
 **Automatically** and **IPv6 Mode:** should be set to **Native**.
-- Save all settings and click **Update**.
+5. Save all settings and click **Update**.
 
 ### Conclusion
 

@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["Gearman", "OS X", "PHP"]
-date = "2014-04-23T01:01:01-07:00"
+date = "2014-04-23T23:05:00-08:00"
 title = "How to install Gearman for PHP on OS X"
 disqusIdentifier = "183 http://www.richardsumilang.com/blog/?p=183"
 aliases = ["/blog/2014/04/23/how-to-install-gearman-for-php-on-os-x"]

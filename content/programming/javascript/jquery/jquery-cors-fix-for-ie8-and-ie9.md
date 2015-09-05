@@ -2,7 +2,7 @@
 Categories = ["Programming"]
 Tags = ["CORS", "Internet Explorer", "JavaScript", "jQuery"]
 SubTitle = "No browser is left behind"
-date = "2014-06-20T01:01:01-07:00"
+date = "2014-06-20T15:09:00-08:00"
 title = "jQuery CORS fix for IE8 and IE9"
 disqusIdentifier = "302 http://www.richardsumilang.com/blog/?p=302"
 aliases = ["/blog/2014/06/20/working-with-javascript-templates-using-jquery"]

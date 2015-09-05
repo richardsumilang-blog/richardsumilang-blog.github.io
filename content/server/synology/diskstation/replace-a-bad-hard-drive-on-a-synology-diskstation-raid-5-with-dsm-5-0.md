@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["DS413", "DSM 5", "NAS", "RAID", "Synology"]
-date = "2014-06-28T01:01:01-07:00"
+date = "2014-06-28T11:30:00-08:00"
 title = "Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0"
 disqusIdentifier = "310 http://www.richardsumilang.com/blog/?p=310"
 aliases = ["/blog/2014/06/28/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0"]

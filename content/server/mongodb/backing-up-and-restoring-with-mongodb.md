@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Backup", "Database", "MongoDB", "Restore"]
-date = "2014-05-30T01:01:01-07:00"
+date = "2014-05-30T16:33:00-08:00"
 title = "Backing up and Restoring with MongoDB"
 disqusIdentifier = "260 http://www.richardsumilang.com/blog/?p=260"
 aliases = ["/blog/2014/05/30/backing-up-and-restoring-with-mongodb"]

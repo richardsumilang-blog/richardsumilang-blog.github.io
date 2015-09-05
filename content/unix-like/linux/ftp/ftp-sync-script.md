@@ -1,7 +1,7 @@
 +++
 Categories = ["Unix-like"]
 Tags = ["FTP", "GitHub", "lftp"]
-date = "2014-09-27T01:01:01-07:00"
+date = "2014-09-27T15:30:00-08:00"
 title = "FTP Sync Script"
 disqusIdentifier = "425 http://www.richardsumilang.com/blog/?p=425"
 aliases = ["/blog/2014/09/27/ftp-sync-script"]

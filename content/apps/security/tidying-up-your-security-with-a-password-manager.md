@@ -1,7 +1,7 @@
 +++
 Categories = ["Apps"]
 Tags = ["LastPass", "1Password", "Firefox", "Chrome", "Safari", "Authentication", "Multifactor Authentication", "Security"]
-date = "2014-11-11T01:01:01-07:00"
+date = "2014-11-11T16:27:00-08:00"
 title = "Tidying up your security with a Password Manager"
 disqusIdentifier = "444 http://www.richardsumilang.com/blog/?p=444"
 aliases = ["/blog/2014/11/11/tidying-up-your-system-with-a-password-manager"]

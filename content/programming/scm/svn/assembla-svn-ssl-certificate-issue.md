@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["Assembla", "SVN"]
-date = "2014-05-12T01:01:01-07:00"
+date = "2014-05-12T15:22:00-08:00"
 title = "Assembla SVN SSL Certificate Issue"
 disqusIdentifier = "228 http://www.richardsumilang.com/blog/?p=228"
 aliases = ["/blog/2014/05/12/svn-certificate-issue"]

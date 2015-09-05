@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Bash", "init.d", "LSB", "Templates"]
-date = "2014-07-07T01:01:01-07:00"
+date = "2014-07-07T14:08:00-08:00"
 title = "LSB Init.d Script Template"
 SubTitle = "Managing daemons on Linux"
 disqusIdentifier = "359 http://www.richardsumilang.com/blog/?p=359"
@@ -10,7 +10,7 @@ aliases = ["/blog/2014/07/07/lsb-init-d-script-template"]
 +++
 
 Quick little `init.d` template:
- 
+
 <pre><code class="language-bash" >#!/bin/bash
 # &lt;Application Name&gt;
 # chkconfig: 345 20 80
@@ -38,7 +38,7 @@ start)
     $CMD
     sleep 1
     PID=`pgrep -fn "$CMD"`
-    
+
     # Save process ID to file
     if [ -z $PID ]; then
         printf "%s\n" "Failed to start $NAME"
@@ -80,7 +80,7 @@ restart)
 *)
     echo "Usage: $0 {status|start|stop|restart}"
     exit 1
-esac</code></pre> 
+esac</code></pre>
 
 
 [1]: http://gearman.org/ "Gearman"

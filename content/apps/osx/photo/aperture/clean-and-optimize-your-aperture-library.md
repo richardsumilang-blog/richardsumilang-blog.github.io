@@ -1,7 +1,7 @@
 +++
 Categories = ["Apps"]
 Tags = ["Aperture", "Apple", "Mac", "OS X"]
-date = "2014-07-13T01:01:01-07:00"
+date = "2014-07-13T20:47:01-08:00"
 title = "How to clean and optimize your Aperture Library"
 SubTitle = "Cleanliness is the next to godliness"
 disqusIdentifier = "394 http://www.richardsumilang.com/blog/?p=394"
@@ -38,7 +38,7 @@ commands:
 
 <pre><code class="language-bash">find ~/Pictures -name "AP.Thumbnails" -delete
 find ~/Pictures -name "AP.Minis" -delete
-find ~/Pictures -name "AP.Tinies" -delete</code></pre> 
+find ~/Pictures -name "AP.Tinies" -delete</code></pre>
 
 That saved me about 10 gigabytes. Your mileage may very.
 

@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Crontab", "DSM, 4", "DSM 5", "NAS", "rsync", "SSH", "Synology"]
-date = "2014-07-12T02:01:01-07:00"
+date = "2014-07-12T02:01:01-08:00"
 title = "How to setup automated backups to SSH server with Synology DiskStation"
 disqusIdentifier = "372 http://www.richardsumilang.com/blog/?p=372"
 aliases = ["/blog/2014/07/12/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0"]

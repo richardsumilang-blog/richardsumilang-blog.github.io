@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["iOS", "iPad", "iPhone", "Simulator"]
-date = "2014-05-14T01:01:01-07:00"
+date = "2014-05-14T17:22:00-08:00"
 title = "iOS Simulator Link"
 disqusIdentifier = "241 http://www.richardsumilang.com/blog/?p=241"
 aliases = ["/blog/2014/05/14/ios-simulator-link"]

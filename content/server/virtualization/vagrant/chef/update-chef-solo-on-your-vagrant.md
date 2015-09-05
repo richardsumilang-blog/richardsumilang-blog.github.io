@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Chef", "Opscode", "Ruby", "Vagrant", "Virtualization"]
-date = "2014-06-10T01:01:01-07:00"
+date = "2014-06-10T15:50:00-08:00"
 title = "Update Chef Solo on your Vagrant"
 disqusIdentifier = "290 http://www.richardsumilang.com/blog/?p=290"
 aliases = ["/blog/2014/06/10/update-chef-solo-on-your-vagrant"]

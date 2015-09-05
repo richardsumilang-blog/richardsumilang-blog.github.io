@@ -1,7 +1,7 @@
 +++
 Categories = ["Apps"]
 Tags = ["Apple", "Gmail", "Mail App", "OS X"]
-date = "2015-01-08T01:01:01-07:00"
+date = "2015-01-08T21:27:00-08:00"
 title = "Configure Mac OS X Mail App to respond with Gmail aliases"
 disqusIdentifier = "458 http://www.richardsumilang.com/blog/?p=458"
 aliases = ["/blog/2015/01/08/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases"]

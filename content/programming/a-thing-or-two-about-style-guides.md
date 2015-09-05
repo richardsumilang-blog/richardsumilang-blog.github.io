@@ -2,7 +2,7 @@
 CoverImage = "images/programming/style-guide-cartoon.png"
 Categories = ["Programming"]
 Tags = ["C++", "CSS", "HTML", "Java", "JavaScript", "Lisp", "Objective C", "PHP", "Ruby", "Scala", "Shell", "Style Guides", "Swift"]
-date = "2015-02-08T01:01:01-07:00"
+date = "2015-02-08T19:25:00-08:00"
 title = "A thing or two about style guides"
 disqusIdentifier = "491 http://www.richardsumilang.com/blog/?p=491"
 aliases = ["/blog/2015/02/08/a-thing-or-two-about-style-guides"]

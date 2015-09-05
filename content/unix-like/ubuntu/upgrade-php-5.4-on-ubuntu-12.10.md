@@ -2,7 +2,7 @@
 Categories = ["Unix-like"]
 Tags = ["PHP", "Ubuntu"]
 Description = "How to upgrade to PHP 5.4 on Ubuntu 12.10"
-date = "2014-03-31T01:01:01-07:00"
+date = "2014-03-31T03:51:00-08:00"
 title = "How to upgrade to PHP 5.4 on Ubuntu 12.10"
 disqusIdentifier = "62 http://www.richardsumilang.com/blog/?p=62"
 aliases = ["/blog/2014/03/31/how-to-upgrade-to-php-5-4-on-ubuntu-12-10"]

@@ -1,7 +1,7 @@
 +++
 Categories = ["Networking"]
 Tags = ["Mac", "Networking", "SMB", "Windows"]
-date = "2014-05-30T01:01:01-07:00"
+date = "2014-05-30T15:41:00-08:00"
 title = "Converting Windows Network Path for Mac"
 disqusIdentifier = "258 http://www.richardsumilang.com/blog/?p=258"
 aliases = ["/blog/2014/05/30/converting-windows-network-path-for-mac"]

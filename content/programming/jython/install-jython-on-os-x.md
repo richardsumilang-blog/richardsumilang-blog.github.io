@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["OS X", "Jython"]
-date = "2014-04-08T01:01:01-07:00"
+date = "2014-04-08T17:58:00-08:00"
 title = "How to install Jython on OS X"
 disqusIdentifier = "139 http://www.richardsumilang.com/blog/?p=139"
 aliases = ["/blog/2014/04/08/how-to-install-jython-on-os-x"]

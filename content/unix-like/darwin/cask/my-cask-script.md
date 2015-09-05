@@ -1,7 +1,7 @@
 +++
 Categories = ["Unix-like"]
 Tags = ["Apple", "brew", "cask", "Homebrew", "OS X", "Software"]
-date = "2014-10-26T01:01:01-07:00"
+date = "2014-10-26T16:30:00-08:00"
 title = "My cask script!"
 SubTitle = "Say goodbye to manual installations"
 disqusIdentifier = "437 http://www.richardsumilang.com/blog/?p=437"
@@ -14,13 +14,13 @@ haven't already! Below is my personal script for my setup. Maybe I'll move this
 to chef recipe for my mac one day? ;)
 
 Note: The latest and greatest will be maintained on [GitHub][2].
- 
+
 <pre><code class="language-bash" title="Cask" >#!/bin/sh
 # Let's automate installing all our apps!
 #
 # Note: This will require homebrew and cask!
 # See: http://caskroom.io/
-# 
+#
 # Uninstall: Provide the --appdir when removing.
 #
 # @author Richard Sumilang <me@richardsumilang.com>

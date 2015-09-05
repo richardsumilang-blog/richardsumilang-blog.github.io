@@ -1,7 +1,7 @@
 +++
 Categories = ["Apps"]
 Tags = ["IDE", "IDEA", "IntelliJ"]
-date = "2014-05-06T01:01:01-07:00"
+date = "2014-05-06T11:00:00-08:00"
 title = "IntelliJ IDEA Optimizations"
 disqusIdentifier = "197 http://www.richardsumilang.com/blog/?p=197"
 aliases = ["/blog/2014/05/06/intellij-idea-13-optimizations"]
@@ -25,7 +25,7 @@ settings like this:
 -XX:MaxPermSize=512m
 -XX:ReservedCodeCacheSize=256m
 -XX:+UseCompressedOops
--DlocalHistory.daysToKeep=1</code></pre> 
+-DlocalHistory.daysToKeep=1</code></pre>
 
 2.1) You might notice the last setting on there is a local history setting. I do
 a pretty good job at committing anything useful to my version control system, so

@@ -1,7 +1,7 @@
 +++
 Categories = ["Etc"]
 Tags = ["Life"]
-date = "2014-04-24T01:01:01-07:00"
+date = "2014-04-24T18:55:00-08:00"
 title = "Reflection"
 disqusIdentifier = "188 http://www.richardsumilang.com/blog/?p=188"
 aliases = ["/blog/2014/04/24/reflection"]

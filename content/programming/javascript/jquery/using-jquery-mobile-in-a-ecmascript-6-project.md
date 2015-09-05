@@ -2,7 +2,7 @@
 Categories = ["Programming"]
 Tags = ["Babel", "ECMAScript 6", "JavaScript", "jQuery Mobile", "Node.js", "NPM"]
 SubTitle = "Oh the pain..."
-date = "2015-03-11T01:01:01-07:00"
+date = "2015-03-11T17:10:00-08:00"
 title = "Using jQuery mobile in a ECMAScript 6 project"
 disqusIdentifier = "505 http://www.richardsumilang.com/blog/?p=505"
 aliases = ["/blog/2015/03/11/using-jquery-mobile-in-a-ecmascript-6-project"]

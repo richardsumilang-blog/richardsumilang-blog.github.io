@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["Groovy", "Java", "OS X"]
-date = "2014-04-15T01:01:01-07:00"
+date = "2014-04-15T13:09:00-08:00"
 title = "How to install Groovy on OS X"
 disqusIdentifier = "171 http://www.richardsumilang.com/blog/?p=171"
 aliases = ["/blog/2014/04/15/how-to-install-groovy-on-os-x"]
@@ -13,7 +13,7 @@ Setup [Groovy][1] with OS X 10.9.2 Mavericks using [brew][2].
 <pre><code class="language-bash" title="Install">brew install groovy
 echo "export GROOVY_HOME=/usr/local/opt/groovy/libexec" | tee -a ~/.bash_profile; source ~/.bash_profile</code></pre>
 
-Here is a little test script taken from <a href="http://groovy.codehaus.org/Quick+Start" target="_blank">Groovy's quickstart guide</a>.
+Here is a little test script taken from [Groovy's quickstart guide][3].
 
 <pre><code class="language-groovy" title="hello.groovy">//hello.groovy
 println "hello, world"
@@ -39,3 +39,4 @@ You should have the following apps installed:
 
 [1]: http://groovy.codehaus.org/ "Groovy"
 [2]: http://brew.sh/ "Homebrew"
+[3]: http://groovy.codehaus.org/Quick+Start "Groovy Quickstart"

@@ -3,7 +3,7 @@ CoverImage = "images/cycling/just-one-of-those-days.jpg"
 Categories = ["Etc"]
 Tags = ["Cycling", "Pasadena"]
 Description = "Just one of those beautiful days to do a bike ride through Pasadena."
-date = "2014-03-30T01:01:01-07:00"
+date = "2014-03-30T19:35:00-08:00"
 title = "Just one of those days"
 disqusIdentifier = "33 http://www.richardsumilang.com/blog/?p=33"
 aliases = ["/blog/2014/03/30/just-one-of-those-days"]
@@ -14,6 +14,6 @@ I couldn't help but notice how beautiful the weather was today while returning h
 
 Today's ride in Pasadena:
 
-- Caltech
-- San Marino
-- Huntington Gardens
+1. Caltech
+2. San Marino
+3. Huntington Gardens

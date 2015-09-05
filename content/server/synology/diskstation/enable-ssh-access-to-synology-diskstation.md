@@ -1,14 +1,14 @@
 +++
 Categories = ["Servers"]
 Tags = ["DSM 5", "NAS", "SSH", "Synology"]
-date = "2014-07-12T01:01:01-07:00"
+date = "2014-07-12T18:32:00-08:00"
 title = "How to enable SSH access to Synology DiskStation"
 disqusIdentifier = "364 http://www.richardsumilang.com/blog/?p=364"
 aliases = ["/blog/2014/07/12/how-to-enable-ssh-access-to-synology-diskstation"]
 
 +++
 
-Log into your system with an administrator account and open the 
+Log into your system with an administrator account and open the
 **<sup>1</sup>Control Panel** applet. From there, click on
 **<sup>2</sup>Terminal &amp; SNMP**, **<sup>3</sup>Enabled SSH service**, and
 **<sup>4</sup>Apply**.

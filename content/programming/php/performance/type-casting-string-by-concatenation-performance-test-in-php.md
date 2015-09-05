@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["Optimization", "PHP", "Type Casting"]
-date = "2014-05-08T01:01:01-07:00"
+date = "2014-05-08T18:15:00-08:00"
 title = "Type Casting String by Concatenation Performance Test in PHP"
 disqusIdentifier = "212 http://www.richardsumilang.com/blog/?p=212"
 aliases = ["/blog/2014/05/08/type-casting-string-by-concatenation-performance-test-in-php"]

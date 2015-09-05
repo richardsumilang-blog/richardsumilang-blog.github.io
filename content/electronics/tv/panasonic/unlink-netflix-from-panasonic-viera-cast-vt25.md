@@ -1,7 +1,7 @@
 +++
 Categories = ["Electronics"]
 Tags = ["Netflix", "Panasonic", "Viera Cast", "VT25", "TV"]
-date = "2014-05-25T01:01:01-07:00"
+date = "2014-05-25T14:24:00-08:00"
 title = "How to unlink Netflix from Panasonic Viera Cast VT25"
 disqusIdentifier = "228 http://www.richardsumilang.com/blog/?p=228"
 aliases = ["/blog/2014/05/25/svn-certificate-issue"]
@@ -22,8 +22,8 @@ implementation is also lacking a search feature.
 If you want to go ahead reset your TV to the factory settings then be sure to
 back up the following settings:
 
-- Network Settings
-- Picture Settings
-- Viera Cast app arrangements
+1. Network Settings
+2. Picture Settings
+3. Viera Cast app arrangements
 
 [1]: http://www.amazon.com/Panasonic-TC-P58VT25-1080p-VIERA-Plasma/dp/B003N3BV5O "Panasonic VT25"

@@ -1,7 +1,7 @@
 +++
 Categories = ["Etc"]
 Description = "Bringing back my blog!"
-date = "2014-03-29T01:01:01-07:00"
+date = "2014-03-29T05:16:01-08:00"
 title = "Hello world! ... Again."
 disqusIdentifier = "1 http://www.richardsumilang.com/blog/?p=1"
 aliases = ["/blog/2014/03/29/hello-world"]

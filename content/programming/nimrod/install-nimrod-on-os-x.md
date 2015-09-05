@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["OS X", "Nimrod"]
-date = "2014-04-07T01:01:01-07:00"
+date = "2014-04-07T11:09:00-08:00"
 title = "How to install Nimrod on OS X"
 disqusIdentifier = "139 http://www.richardsumilang.com/blog/?p=139"
 aliases = ["/blog/2014/04/07/how-to-install-nimrod-on-os-x"]

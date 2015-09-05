@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["Apple", "exif", "ImageMagick", "imagick", "iOS", "iPad", "iPhone", "Jpeg", "PHP", "Tiff"]
-date = "2014-10-17T01:01:01-07:00"
+date = "2014-10-17T14:33:00-08:00"
 title = "Working with Apple's iOS image orientation"
 SubTitle = "Using PHP and ImageMagick"
 disqusIdentifier = "432 http://www.richardsumilang.com/blog/?p=432"

@@ -1,7 +1,7 @@
 +++
 Categories = ["Etc"]
 Tags = ["Apple", "OS X", "Software"]
-date = "2014-05-07T01:01:01-07:00"
+date = "2014-05-07T12:27:00-08:00"
 title = "Apps I can't live without on OS X"
 disqusIdentifier = "203 http://www.richardsumilang.com/blog/?p=203"
 aliases = ["/blog/2014/05/07/apps-i-cant-live-without-on-os-x"]

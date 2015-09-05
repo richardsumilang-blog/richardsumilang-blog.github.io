@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Asana", "Bitbucket", "Git", "GitHub"]
-date = "2015-01-31T01:01:01-07:00"
+date = "2015-01-31T00:58:00-08:00"
 title = "How to reference Bitbucket commits to Asana"
 disqusIdentifier = "477 http://www.richardsumilang.com/blog/?p=477"
 aliases = ["/blog/2015/01/31/how-to-link-bitbucket-to-asana"]

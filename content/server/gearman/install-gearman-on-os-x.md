@@ -1,7 +1,7 @@
 +++
 Categories = ["Servers"]
 Tags = ["Gearman", "OS X"]
-date = "2014-04-23T01:01:01-07:00"
+date = "2014-04-23T22:48:00-08:00"
 title = "How to install Gearman on OS X"
 disqusIdentifier = "177 http://www.richardsumilang.com/blog/?p=177"
 aliases = ["/blog/2014/04/23/how-to-install-gearman-on-os-x"]
@@ -35,15 +35,15 @@ brew install gearman</code></pre>
 And lastly some useful install notes copied from the end of the script worth
 noting:
 
-Start gearman at boot time:
+### Start gearman at boot time:
 
 <pre><code class="language-bash" title="Start at boot">ln -sfv /usr/local/opt/gearman/*.plist ~/Library/LaunchAgents</code></pre>
 
-Start gearman now:
+### Start gearman now:
 
 <pre><code class="language-bash" title="Start now">launchctl load ~/Library/LaunchAgents/homebrew.mxcl.gearman.plist</code></pre>
 
-Raw start:
+### Raw start:
 
 <pre><code class="language-bash" title="Raw start">gearmand -d</code></pre>
 

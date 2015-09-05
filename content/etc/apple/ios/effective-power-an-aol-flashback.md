@@ -1,7 +1,7 @@
 +++
 Categories = ["Etc"]
 Tags = ["AOL", "Apple", "Effective Power", "iOS", "Progz", "Punter"]
-date = "2015-05-28T01:01:01-07:00"
+date = "2015-05-28T00:13:00-08:00"
 title = "\"effective. Power\" ... An AOL Flashback."
 SubTitle = "لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ"
 disqusIdentifier = "519 http://www.richardsumilang.com/blog/?p=519"

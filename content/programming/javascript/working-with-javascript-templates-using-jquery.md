@@ -1,7 +1,7 @@
 +++
 Categories = ["Programming"]
 Tags = ["HTML", "JavaScript", "jQuery", "XHTML"]
-date = "2014-04-01T01:01:01-07:00"
+date = "2014-04-01T23:20:00-08:00"
 title = "Working with JavaScript templates using jQuery"
 disqusIdentifier = "97 http://www.richardsumilang.com/blog/?p=97"
 aliases = ["/blog/2014/04/01/working-with-javascript-templates-using-jquery"]
