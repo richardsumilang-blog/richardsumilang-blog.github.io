@@ -20,9 +20,7 @@ git checkout -b $tempBranch
 
 # Build the project
 hugo -d $buildDirectory
-#cp CNAME public/CNAME
-#git add public/CNAME
-#git commit -a -m "adding CNAME"
+cp CNAME $buildDirectory/CNAME
 
 # Add new files to git
 git add -A
