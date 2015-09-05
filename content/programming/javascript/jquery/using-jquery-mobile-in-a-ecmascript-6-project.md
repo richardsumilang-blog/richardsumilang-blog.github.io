@@ -14,7 +14,7 @@ dependencies I was upgrading from. I used [Babel JS][1] to transpile my ES6 code
 with [browserify][2] and everything was working fine until I got to
 [jQuery-mobile][3].
 
-<p align="center"><img src="/images/reactions/why/jon-stewart.gif" /></p>
+<img src="/images/reactions/why/jon-stewart.gif" class="center" />
 
 After a quick inspection, I see that jQuery-mobile is having trouble binding
 itself to the `root` aka `this` aka `window` object. This is because the way
@@ -81,7 +81,7 @@ Run this command in your project room:
 		npm install jquery-mobile-babel-safe --save
 
 **package.json**
- 
+
 <pre><code class="language-javascript">    "browser": {
       "jquery-mobile": "./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js"
     },
@@ -89,7 +89,7 @@ Run this command in your project room:
       "jquery-mobile": {
         "exports": "jQuery.mobile"
       }
-    }</code></pre> 
+    }</code></pre>
 
 And that's about it. You can test by importing `jquery-mobile` on your page. You
 should have access to `$.mobile` in your scripts.

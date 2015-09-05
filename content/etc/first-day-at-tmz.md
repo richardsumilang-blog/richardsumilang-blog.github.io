@@ -18,8 +18,7 @@ consists of nothing but A+ players. How else would TMZ have gotten to be so big
 in a short amount of time? I'm excited to bring my skills to the team and to see
 what the future has to offer.
 
-<p align="center">
-  <img src="/images/me/tmz.jpg" alt="In the news room" />
-</p>
+
+<img src="/images/me/tmz.jpg" alt="In the news room" class="center" />
 
 [1]: http://www.tmz.com/ "Thirty Mile Zone"

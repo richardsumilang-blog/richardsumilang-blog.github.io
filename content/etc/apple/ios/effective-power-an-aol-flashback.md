@@ -9,7 +9,7 @@ aliases = ["/blog/2015/05/28/effective-power-an-aol-flashback"]
 
 +++
 
-<p align="center"><img src="/images/reactions/gamer/sp-hax0r.gif" alt="haX0r" /></p>
+<img src="/images/reactions/gamer/sp-hax0r.gif" alt="haX0r" class="center" />
 
 There's a popular text message going around today that restarts a recipients
 iPhone (if notifications is turned on) when they receive the following text:
