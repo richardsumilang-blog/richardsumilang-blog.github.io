@@ -1,5 +1,5 @@
 +++
-Categories = ["Programming"]
+Categories = ["Apps"]
 Tags = ["IDE", "IDEA", "IntelliJ"]
 date = "2014-05-06T01:01:01-07:00"
 title = "IntelliJ IDEA Optimizations"
