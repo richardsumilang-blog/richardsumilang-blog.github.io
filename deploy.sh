@@ -15,8 +15,8 @@ tempBranch="deploy_$(date +%s)"
 # Starting
 echo -e "Deploying updates to Github..."
 
-# Switch to deploy branch
-git checkout -vb $deployBranch
+# Switch to tempBranch branch
+git checkout -vb $tempBranch
 
 # Build the project
 hugo -d $buildDirectory
