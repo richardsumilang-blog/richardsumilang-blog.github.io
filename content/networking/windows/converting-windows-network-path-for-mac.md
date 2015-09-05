@@ -1,5 +1,5 @@
 +++
-Categories = ["Servers"]
+Categories = ["Networking"]
 Tags = ["Mac", "Networking", "SMB", "Windows"]
 date = "2014-05-30T01:01:01-07:00"
 title = "Converting Windows Network Path for Mac"
