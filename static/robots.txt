@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://richardsumilang.com/sitemap.xml
