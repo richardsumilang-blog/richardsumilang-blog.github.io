@@ -8,6 +8,7 @@ Tags = ["Babel", "Disqus", "CSS3", "ES6", "Eva", "GitHub", "Gulp", "jQuery", "Ha
 date = "2015-09-05T18:43:34-07:00"
 Title = "Version 3"
 SubTitle = "Refined. Polished."
+Description = "Version 3 of blog. Refined. Polished."
 +++
 
 Rebuilt from the ground up, the new site is refined from the presentation to the
