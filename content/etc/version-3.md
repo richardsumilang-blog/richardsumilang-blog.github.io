@@ -1,6 +1,9 @@
 +++
 Categories = ["Etc"]
 CoverImage = "images/etc/version-3/cover.png"
+CoverImageType = "image/png"
+CoverImageWidth = "755"
+CoverImageHeight = "400"
 Tags = ["Babel", "Disqus", "CSS3", "ES6", "Eva", "GitHub", "Gulp", "jQuery", "Handlebars", "Hugo", "Markdown", "PrismJS", "RSS", "SASS", "Version 3", "XHTML"]
 date = "2015-09-05T18:43:34-07:00"
 Title = "Version 3"
