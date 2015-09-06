@@ -14,6 +14,8 @@ MongoDB extension. I stumbled on an example on
 illustration showing how to do this and rewrote it in what I think is a slightly
 more modern way that does the same thing.
 
+<!--more-->
+
 [ObjectId](http://docs.mongodb.org/manual/reference/object-id/ "ObjectId - MongoDB Manual 2.4.9")'s
 are constructed using a 4-byte timestamp value, 3-byte machine identifier, 2-byte process id, and a 3-byte counter which create a 12-byte BSON type:
 

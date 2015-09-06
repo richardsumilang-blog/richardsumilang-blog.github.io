@@ -12,6 +12,8 @@ The purpose of this test is to see if casting an object to a string by
 concatenating it was actually slower than using normal type casting. Here is my
 source:
 
+<!--more-->
+
 <pre><code class="language-php" title="test-typecast.php">&lt;?php
 
 // Setup

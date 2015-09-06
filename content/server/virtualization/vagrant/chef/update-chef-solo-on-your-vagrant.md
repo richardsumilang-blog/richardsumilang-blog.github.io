@@ -8,6 +8,9 @@ aliases = ["/blog/2014/06/10/update-chef-solo-on-your-vagrant"]
 
 +++
 
+[1]: https://github.com/schisamo/vagrant-omnibus "Vagrant Omnibus"
+[2]: http://docs.vagrantup.com/v2/vagrantfile/index.html "Vagrantfile Doc"
+
 Install [vagrant-omnibus][1]:
 
 <pre><code class="language-bash" title="Install vagrant-omnibus">vagrant plugin install vagrant-omnibus</code></pre>
@@ -20,6 +23,3 @@ Chef:
 You can also upgrade to a specific version like so:
 
 <pre><code class="language-ruby" title="Configure Vagrantfile">config.omnibus.chef_version = "11.12.8"</code></pre>
-
-[1]: https://github.com/schisamo/vagrant-omnibus "Vagrant Omnibus"
-[2]: http://docs.vagrantup.com/v2/vagrantfile/index.html "Vagrantfile Doc"

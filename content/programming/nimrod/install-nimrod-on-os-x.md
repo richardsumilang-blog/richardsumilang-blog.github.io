@@ -8,9 +8,15 @@ aliases = ["/blog/2014/04/07/how-to-install-nimrod-on-os-x"]
 
 +++
 
+[1]: http://brew.sh/ "Nimrod"
+[2]: http://brew.sh/ "Homebrew"
+[3]: http://nimrod-lang.org/tut1.html "Nimrod tutorials"
+
 Setup [Nimrod][1] with OS X 10.9.2 Mavericks using [brew][2].
 
 <pre><code class="language-bash" title="Install">brew install nimrod</code></pre>
+
+<!--more-->
 
 That was painless but unfortunately there is a weird issue with getting a
 symbolic link to run `nimrod` from `/usr/local/bin`. This can be avoided by
@@ -48,7 +54,3 @@ like so:
 <pre><code class="language-bash" title="Running nimrod code (shorthand)">nimrod c -r hellworld.nim</code></pre>
 
 Now take off with the `nimrod` [tutorials][3]!
-
-[1]: http://brew.sh/ "Nimrod"
-[2]: http://brew.sh/ "Homebrew"
-[3]: http://nimrod-lang.org/tut1.html "Nimrod tutorials"

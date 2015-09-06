@@ -8,11 +8,16 @@ aliases = ["/blog/2014/04/01/working-with-javascript-templates-using-jquery"]
 
 +++
 
+[1]: http://www.monkeyquest.com "MonkeyQuest"
+[2]: http://www.iana.org/assignments/media-types/media-types.xhtml "Media types"
+
 I picked up this nifty way of templating HTML code for JavaScript while working
 at [Monkey Quest][1] and haven't looked back. The idea here is to separate your
 design from your code. This is particularly useful when you are adding content
 to your site after the initial rendering. Data can be fed in from a number of
 sources and added to a page using a template.
+
+<!--more-->
 
 Creating an example the old fashion way using concatenation:
 
@@ -64,6 +69,3 @@ Some people also like to load templates externally by putting the code in a HTML
 file on the server and using jQuery's `$.get` method to pull it in as needed.
 There are also plugins for jQuery that simply do string replacements in your
 template string.
-
-[1]: http://www.monkeyquest.com "MonkeyQuest"
-[2]: http://www.iana.org/assignments/media-types/media-types.xhtml "Media types"

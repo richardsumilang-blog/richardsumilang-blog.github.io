@@ -8,10 +8,13 @@ aliases = ["/blog/2014/04/04/how-to-install-redis-on-os-x"]
 
 +++
 
+[1]: http://brew.sh/ "Homebrew"
+
 This is my setup of redis with OS X 10.9.2 Mavericks and requires [brew][1].
 
 <pre><code class="language-bash">brew install redis</code></pre>
 
+<!--more-->
 
 ### Start redis when computer starts:
 
@@ -42,5 +45,3 @@ The configuration file is located in `/usr/local/etc/redis.conf`.
 ### Uninstall redis:
 
 <pre><code class="language-bash">brew uninstall redis; rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist</code></pre>
-
-[1]: http://brew.sh/ "Homebrew"

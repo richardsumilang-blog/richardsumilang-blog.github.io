@@ -9,7 +9,12 @@ aliases = ["/blog/2014/07/07/lsb-init-d-script-template"]
 
 +++
 
+[1]: http://gearman.org/ "Gearman"
+[2]: http://brew.sh/ "Homebrew"
+
 Quick little `init.d` template:
+
+<!--more-->
 
 <pre><code class="language-bash" >#!/bin/bash
 # &lt;Application Name&gt;
@@ -81,7 +86,3 @@ restart)
     echo "Usage: $0 {status|start|stop|restart}"
     exit 1
 esac</code></pre>
-
-
-[1]: http://gearman.org/ "Gearman"
-[2]: http://brew.sh/ "Homebrew"

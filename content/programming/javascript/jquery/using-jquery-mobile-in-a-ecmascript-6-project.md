@@ -9,12 +9,18 @@ aliases = ["/blog/2015/03/11/using-jquery-mobile-in-a-ecmascript-6-project"]
 
 +++
 
+[1]: https://babeljs.io/ "Babel JS"
+[2]: http://browserify.org/ "Browserify"
+[3]: http://jquerymobile.com/ "jQuery Mobile"
+
 I started using ECMAScript 6 in a project which required supporting the
 dependencies I was upgrading from. I used [Babel JS][1] to transpile my ES6 code
 with [browserify][2] and everything was working fine until I got to
 [jQuery-mobile][3].
 
 <img src="/images/reactions/why/jon-stewart.gif" class="center" />
+
+<!--more-->
 
 After a quick inspection, I see that jQuery-mobile is having trouble binding
 itself to the `root` aka `this` aka `window` object. This is because the way
@@ -102,7 +108,3 @@ jQuery package and I'd like to know of a better way of doing this but I know a
 few other people were stuck with this issue so be it.
 
 Happy hacking!
-
-[1]: https://babeljs.io/ "Babel JS"
-[2]: http://browserify.org/ "Browserify"
-[3]: http://jquerymobile.com/ "jQuery Mobile"

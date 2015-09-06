@@ -12,6 +12,8 @@ Here's a quick cheat sheet for lots of design patterns. The examples in this
 post are linked to Java examples however they are not limited to a single
 language implementation. Special thanks to Derek Banas.
 
+<!--more-->
+
 - **[Observer Design Pattern:][1]** Contains an object usually referred to as
 the `subject` that maintains a a list of dependent classes called `observers`.
 The `subject` object notifies all `observers` automatically of any state changes

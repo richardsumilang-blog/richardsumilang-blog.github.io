@@ -9,9 +9,13 @@ aliases = ["/blog/2014/06/20/working-with-javascript-templates-using-jquery"]
 
 +++
 
+[1]: https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js "XDR Patch"
+
 Who can blame jQuery for not wanting to support Internet Explorer? Despite
 whatever the reason, it doesn't always make business sense and we must support
 it. I found this [piece of code][1] that patches the issue with jQuery.
+
+<!--more-->
 
 <pre><code class="language-javascript" title="jQuery CORS IE8 and IE9 fix.">if ( window.XDomainRequest ) {
 	jQuery.ajaxTransport(function( s ) {
@@ -57,5 +61,3 @@ it. I found this [piece of code][1] that patches the issue with jQuery.
 Note: This doesn't work when using the `{async: false}` option in jQuery methods.
 
 Be sure to set the `{crossDomain: true}` setting and you're good to go.
-
-[1]: https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js "XDR Patch"

@@ -8,9 +8,15 @@ aliases = ["/blog/2014/04/08/how-to-install-jython-on-os-x"]
 
 +++
 
+[1]: http://jython.org/ "Jython"
+[2]: http://brew.sh/ "Homebrew"
+[3]: http://oreilly.com/catalog/jythoness/chapter/ch01.html "Jython Book"
+
 Setup [Jython][1] with OS X 10.9.2 Mavericks using [brew][2].
 
 <pre><code class="language-bash" title="Install">brew install jython</code></pre>
+
+<!--more-->
 
 You can end this tutorial now if you can run `jython` without an error. If
 you're getting the `$JYTHON_HOME` error then just run this command once:
@@ -19,7 +25,3 @@ you're getting the `$JYTHON_HOME` error then just run this command once:
 
 Walla! Now you can enjoy the power of Java from Jython! Knock your socks off
 with this [tutorial from O'reilly][3].
-
-[1]: http://jython.org/ "Jython"
-[2]: http://brew.sh/ "Homebrew"
-[3]: http://oreilly.com/catalog/jythoness/chapter/ch01.html "Jython Book"

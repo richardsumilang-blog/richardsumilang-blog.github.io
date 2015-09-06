@@ -8,6 +8,9 @@ aliases = ["/blog/2014/04/24/reflection"]
 
 +++
 
+[1]: http://www.php.net/manual/en/language.namespaces.basics.php#82088 "PHP Namespaces"
+[2]: http://www.pinktaco.com/ "Pink Taco"
+
 Today was just one of those days that started like any other. I've been doing a
 lot of reflection over the past few weeks on what are my new goals. The act of
 starting a new goal is always exciting but my life is pretty consistent despite
@@ -25,6 +28,8 @@ working with agile teams. Now in my current role I have the opportunity to do
 some really cool stuff which has been a bit of a refresh. It's true what they
 say, "if you don't use it, you lose it". But that's ok as I was also focusing
 more on other aspects in my life rather than just being an engineer.
+
+<!--more-->
 
 We get two food trucks come by the office parking lot during lunch. One was a
 rib truck today and the other was some vegan thing. Typically I go straight for
@@ -50,6 +55,3 @@ something amazing that needs to be built. Maybe my recent blogs might hint where
 things are going. Expect some interesting concepts coming down the pipeline as
 I'm seeing a reflection of where things were a decade ago and getting the sense
 of a full picture. Time will tell!
-
-[1]: http://www.php.net/manual/en/language.namespaces.basics.php#82088 "PHP Namespaces"
-[2]: http://www.pinktaco.com/ "Pink Taco"

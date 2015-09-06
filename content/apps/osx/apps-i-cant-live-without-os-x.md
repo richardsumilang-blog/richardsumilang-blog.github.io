@@ -11,6 +11,7 @@ aliases = ["/blog/2014/05/07/apps-i-cant-live-without-on-os-x"]
 **Protip:** Want to automate your software installation? Take a look at how I
 did with [cask]({{< relref "my-cask-script.md" >}})!
 
+<!--more-->
 
 * [Adobe CS 6](http://www.adobe.com/products/cs6.html)
 * [Alfred App](http://www.alfredapp.com)

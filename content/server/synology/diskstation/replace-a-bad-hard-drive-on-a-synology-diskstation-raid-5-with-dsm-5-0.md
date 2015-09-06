@@ -12,6 +12,8 @@ I received an alert from my Synology RAID regarding a few bad sectors on a hard
 drive. Even though the RAID is still operational, it's best practice to replace
 the hard drive before any data gets corrupted due to the bad sectors.
 
+<!--more-->
+
 <img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/bad-sector-count.png" />
 
 ## My Setup

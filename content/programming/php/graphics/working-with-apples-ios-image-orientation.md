@@ -18,7 +18,9 @@ however it wants.
 Apple's camera will write orientation info into the exif headers of images
 taken and you can rotate it accordingly.
 
-Here is an example of rotating an image using PHP with the ImageMagick library:
+Here is an example of rotating an image using PHP with the ImageMagick library;
+
+<!--more-->
 
 <pre><code class="language-php" title="Rotate iOS image">&lt;?php
 

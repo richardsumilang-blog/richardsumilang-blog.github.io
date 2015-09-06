@@ -91,7 +91,6 @@ it's best to do what's best for each language.
 ### Vim
 - [Google Vimscript Style Guide][vim1]
 
-
 [general1]: http://en.wikipedia.org/wiki/Programming_style "Programming style"
 [general2]: https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style "MDN Coding Style"
 [general3]: http://www.komputado.com/eseoj/1tbs.htm "The One True Brace Style"

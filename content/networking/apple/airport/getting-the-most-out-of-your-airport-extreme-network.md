@@ -18,6 +18,8 @@ purchasing another AirPort Extreme. The hardware in it is better than an AirPort
 Express plus I get a few ports to hardwire a few devices. My rule of thumb is
 the less WiFi, the better.
 
+<!--more-->
+
 I configured the extended network with the defaults and I never spent much time
 optimizing the wifi because it's primarily used for my iPhone and iPad.
 Streaming media online from Netflix through a device in the new setup worked

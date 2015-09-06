@@ -8,7 +8,13 @@ aliases = ["/blog/2014/04/15/how-to-install-groovy-on-os-x"]
 
 +++
 
+[1]: http://groovy.codehaus.org/ "Groovy"
+[2]: http://brew.sh/ "Homebrew"
+[3]: http://groovy.codehaus.org/Quick+Start "Groovy Quickstart"
+
 Setup [Groovy][1] with OS X 10.9.2 Mavericks using [brew][2].
+
+<!--more-->
 
 <pre><code class="language-bash" title="Install">brew install groovy
 echo "export GROOVY_HOME=/usr/local/opt/groovy/libexec" | tee -a ~/.bash_profile; source ~/.bash_profile</code></pre>
@@ -36,7 +42,3 @@ You should have the following apps installed:
 - `groovyc`
 - `groovydoc`
 - `groovysh`
-
-[1]: http://groovy.codehaus.org/ "Groovy"
-[2]: http://brew.sh/ "Homebrew"
-[3]: http://groovy.codehaus.org/Quick+Start "Groovy Quickstart"

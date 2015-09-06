@@ -8,9 +8,14 @@ aliases = ["/blog/2015/01/09/synocommunity-packages-for-synology-nas"]
 
 +++
 
+[1]: https://synocommunity.com/packages "SynoCommunity Packages"
+[2]: https://synocommunity.com/ "SynoCommunity"
+
 A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
 Sync, Redis, and Firefox Sync Server just to name a few. Check out the
 [full list of packages][1] or just add the source to your package manager :)
+
+<!--more-->
 
 1. Log into your NAS as administrator and go to Main **Menu → Package Center →
 Settings → Package Sources.**
@@ -21,6 +26,3 @@ validate.
 **Community** tab
 
 See the [official site][2] for more info. Happy hacking!
-
-[1]: https://synocommunity.com/packages "SynoCommunity Packages"
-[2]: https://synocommunity.com/ "SynoCommunity"

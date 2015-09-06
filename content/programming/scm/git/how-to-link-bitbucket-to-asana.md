@@ -8,7 +8,14 @@ aliases = ["/blog/2015/01/31/how-to-link-bitbucket-to-asana"]
 
 +++
 
+[1]: https://github.com/rsumilang/asana-post-commit "Asana Post Commit"
+[2]: https://github.com/Spaceman-Labs/asana-post-commit "Asana Post Commit"
+[3]: https://asana.com/apps/github "Asana GitHub App"
+[4]: http://app.asana.com/-/account_api "Asana Account API"
+
 **tl;dr:** Use [this][1] **post-commit** hook.
+
+<!--more-->
 
 I found [this great][2] git **post-commit** hook by Spaceman Labs. It works by
 adding a comment to your Asana ticket when you reference your commit message by
@@ -58,8 +65,3 @@ the git commit message to link back to the Asana ticket for the sake of
 cross-linking but this might require additional configuration... Unless project
 id is added as part of the ticket number. Ie: #12345/98765. Please feel free to
 add your input! :)
-
-[1]: https://github.com/rsumilang/asana-post-commit "Asana Post Commit"
-[2]: https://github.com/Spaceman-Labs/asana-post-commit "Asana Post Commit"
-[3]: https://asana.com/apps/github "Asana GitHub App"
-[4]: http://app.asana.com/-/account_api "Asana Account API"

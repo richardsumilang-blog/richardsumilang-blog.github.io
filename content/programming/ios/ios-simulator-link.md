@@ -12,6 +12,8 @@ The iOS Simulator is obviously a must have tool for development. Web development
 is no exception but Apple makes you jump through a few hoops (Xcode) to get to
 it. Luckily you can run it as a standalone application.
 
+<!--more-->
+
 Copy this command on your terminal to create a symbolic link to it:
 
 <pre><code class="language-bash" title="Symbolic Link to iOS Simulator" >ln -s /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app /Applications/iPhone\ Simulator.app</code></pre>

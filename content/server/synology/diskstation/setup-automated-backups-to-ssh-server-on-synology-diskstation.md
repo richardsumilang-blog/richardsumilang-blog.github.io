@@ -8,6 +8,8 @@ aliases = ["/blog/2014/07/12/how-to-replace-a-bad-hard-drive-on-a-synology-disks
 
 +++
 
+[1]: http://www.freebsd.org/doc/handbook/configtuning-cron.html "FreeBSD Configuring Cron"
+
 As a best practice, it's great great to have your data in more than one
 location. I use my Synology Diskation as a local network file server at my home.
 The reality is something can happen and I lose all my important data in that
@@ -16,6 +18,8 @@ now all my data is gone. Unfortunately my network rack at home will never be as
 secure as a network rack in a data center. So, backup your data because that's
 much easier to do rather than trying to restore from no backup. Makes logical
 sense right? Derp.
+
+<!--more-->
 
 ## Requirements
 
@@ -86,5 +90,3 @@ or `vi` if you're on DSM 5.
 Lastly, we need to restart the cron daemon to take note of our changes. The
 command is `restart crond` on DSM 5 machines and
 `/usr/syno/sbin/synoservice --restart crond` on DSM 4 machines.
-
-[1]: http://www.freebsd.org/doc/handbook/configtuning-cron.html "FreeBSD Configuring Cron"

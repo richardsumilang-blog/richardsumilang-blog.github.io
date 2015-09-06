@@ -13,6 +13,8 @@ PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
 backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
 and run the following commands:
 
+<!--more-->
+
 <pre><code class="language-bash" title="Installation Instructions">sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:ondrej/php5-oldstable
 sudo apt-get update; sudo apt-get install php5</code></pre>

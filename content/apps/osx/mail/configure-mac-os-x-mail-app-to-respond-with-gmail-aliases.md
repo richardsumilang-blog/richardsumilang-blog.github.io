@@ -8,8 +8,13 @@ aliases = ["/blog/2015/01/08/configure-mac-os-x-mail-app-to-respond-with-gmail-a
 
 +++
 
+[1]: https://support.google.com/a/answer/33327 "Aliases setup in Gmail"
+[2]: https://support.google.com/mail/troubleshooter/1668960 "Configure IMAP and POP3"
+
 Assuming you have [aliases setup in Gmail][1], it's fairly easy to configure the
 Mail application on OS X to respond to the emails using the appropriate alias.
+
+<!--more-->
 
 If you haven't already, [configure your Mail app][2] to your gmail account.
 
@@ -21,6 +26,3 @@ far from obvious but a tooltip will appear after a moment which reads:
 
 You may also find it useful to (configure your iOS)[{{< relref "configure-ios-mail-to-respond-with-gmail-aliases.md" >}})
 device the same way.
-
-[1]: https://support.google.com/a/answer/33327 "Aliases setup in Gmail"
-[2]: https://support.google.com/mail/troubleshooter/1668960 "Configure IMAP and POP3"

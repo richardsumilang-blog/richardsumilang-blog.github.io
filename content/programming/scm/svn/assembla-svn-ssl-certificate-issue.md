@@ -22,6 +22,8 @@ Certificate information:
 (R)eject, accept (t)emporarily or accept (p)ermanently?
 </pre>
 
+<!--more-->
+
 I noticed that the subversion files were owned by the `root` user when
 inspecting the files on my computer. I'm not sure how this happened but it can
 easily be fixed with the `chown` command.

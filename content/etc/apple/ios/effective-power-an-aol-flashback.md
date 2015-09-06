@@ -21,6 +21,8 @@ Power
 冗
 </pre>
 
+<!--more-->
+
 I'm running iOS 8.3 (12F70). While testing the message, I learned that removing
 the "effective. Power" from the text will also crash my the Message app and
 prevent me and my recipient from opening the app. Fun times.

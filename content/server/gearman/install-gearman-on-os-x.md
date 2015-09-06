@@ -8,9 +8,14 @@ aliases = ["/blog/2014/04/23/how-to-install-gearman-on-os-x"]
 
 +++
 
+[1]: http://gearman.org/ "Gearman"
+[2]: http://brew.sh/ "Homebrew"
+
 Setup [Gearman][1] job server with OS X 10.9.2 Mavericks using [brew][2].
 
 <pre><code class="language-bash" title="Install">brew install gearman</code></pre>
+
+<!--more-->
 
 If you get an error during the build:
 
@@ -46,6 +51,3 @@ noting:
 ### Raw start:
 
 <pre><code class="language-bash" title="Raw start">gearmand -d</code></pre>
-
-[1]: http://gearman.org/ "Gearman"
-[2]: http://brew.sh/ "Homebrew"

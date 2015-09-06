@@ -9,9 +9,14 @@ aliases = ["/blog/2014/10/26/my-cask-script"]
 
 +++
 
+[1]: http://caskroom.io/ "Homebrew cask"
+[2]: https://github.com/rsumilang/personal/blob/master/scripts/setup/apps-cask.sh "apps-cask"
+
 Finally we get our own `apt-get` like tool for Mac! Check out [cask][1] if you
 haven't already! Below is my personal script for my setup. Maybe I'll move this
 to chef recipe for my mac one day? ;)
+
+<!--more-->
 
 Note: The latest and greatest will be maintained on [GitHub][2].
 
@@ -90,6 +95,3 @@ $INSTALL_CMD remote-desktop-connection
 $INSTALL_CMD unrarx
 $INSTALL_CMD transmission
 </code></pre>
-
-[1]: http://caskroom.io/ "Homebrew cask"
-[2]: https://github.com/rsumilang/personal/blob/master/scripts/setup/apps-cask.sh "apps-cask"

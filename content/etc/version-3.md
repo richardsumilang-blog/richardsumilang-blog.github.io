@@ -11,10 +11,14 @@ SubTitle = "Refined. Polished."
 Description = "Version 3 of blog. Refined. Polished."
 +++
 
+[rsb]: https://github.com/richardsumilang-blog "Richard Sumilang's Blog on GitHub"
+
 Rebuilt from the ground up, the new site is refined from the presentation to the
 source. The theme has been modernized to load faster and I created more ways to
 navigate the site so more data is easily accessible while keeping the idea of
 simplicity in mind.
+
+<!--more-->
 
 However, the site is more than just a pretty face. As a DIY’er, I take pleasure
 in building something from the ground up. The previous versions were powered by
@@ -118,5 +122,3 @@ doing only one newsletter a month if there is a decent amount of subscriptions.
 This site is dedicated to my daughter, Eva. May all your dreams come true.
 
 <img src="/images/etc/version-3/eva-misfit.jpeg" class="center" />
-
-[rsb]: https://github.com/richardsumilang-blog "Richard Sumilang's Blog on GitHub"

@@ -12,6 +12,8 @@ aliases = ["/blog/2014/07/13/how-to-clean-and-optimize-your-aperture-library"]
 After time you will notice your Aperture Library growing ridiculously big. Here
 a are few tips to shrink it back down and keep it optimal.
 
+<!--more-->
+
 ### 1. Keep master files out of the Aperture Library
 
 I strongly encourage this as it makes your Aperture Library much easier to
