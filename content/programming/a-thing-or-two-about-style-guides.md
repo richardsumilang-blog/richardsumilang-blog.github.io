@@ -23,6 +23,8 @@ it's best to do what's best for each language.
 >
 > Martin Fowler, Refactoring: Improving the Design of Existing Code
 
+<!--more-->
+
 *Last updated: Feb 8th, 2015.*
 
 ### General
