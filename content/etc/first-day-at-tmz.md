@@ -22,5 +22,3 @@ what the future has to offer.
 <img src="/images/me/tmz.jpg" alt="In the news room" class="center" />
 
 [1]: http://www.tmz.com/ "Thirty Mile Zone"
-
-<!--more-->

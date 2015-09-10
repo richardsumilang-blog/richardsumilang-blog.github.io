@@ -14,5 +14,3 @@ Without further adieu, welcome to my blog and don't let the door hit you on the 
 
 Sincerely,
 Me.
-
-<!--more-->

@@ -19,5 +19,3 @@ multiple versions by source. Also has a recipe for the [PHP extension][3].
 [Grab it from GitHub][4]!
 
 kthxbye.
-
-<!--more-->

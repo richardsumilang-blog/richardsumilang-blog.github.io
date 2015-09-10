@@ -12,5 +12,3 @@ If you're given a Windows network path such as `\\Foo\Bar` then that basically
 means connect to shared folder `Bar` on the server `Foo`. To do this, you can go
 `Finder` -&gt; `Go` -&gt; `Connect to Server...` and type `smb://Foo/Bar` which
 is the equivalent.
-
-<!--more-->
