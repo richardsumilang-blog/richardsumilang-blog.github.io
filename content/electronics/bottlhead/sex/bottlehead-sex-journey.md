@@ -1,7 +1,6 @@
 ---
 Categories:
  - Electronics
- - DIY
 CoverImage: images/electronics/bottlehead/sex/bottlehead-sex-journey/cover-900x477.jpg
 CoverImageType: image/jpeg
 CoverImageWidth: 900
