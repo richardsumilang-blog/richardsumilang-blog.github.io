@@ -8,6 +8,7 @@ CoverImageHeight: 477
 Description: Bottlehead S.E.X. Journey with Impedance Switch, C4S upgrade, and custom details.
 Tags:
  - Bottlehead
+ - S.E.X.
  - Impedance Switch
  - C4S Upgrade
  - Amplifier
