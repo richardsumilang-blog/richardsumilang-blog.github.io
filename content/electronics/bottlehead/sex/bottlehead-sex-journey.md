@@ -18,9 +18,12 @@ Tags:
  - DIY
  - Sennheiser HD 650
  - Sennheiser HD 800
+ - Vacuum Tube
 Date: 2015-09-12T18:51:47-07:00
 Title: Bottlehead S.E.X. 2.1 Journey
 SubTitle: Impedance Switch, C4S upgrade, and custom details.
+Aliases:
+ - /electronics/bottlhead/sex/bottlehead-sex-journey
 ---
 
 [1]: http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers "Bottlhead S.E.X. kit for Headphones and Sensitive Speakers"
