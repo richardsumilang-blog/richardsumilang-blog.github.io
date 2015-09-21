@@ -16,7 +16,7 @@ Tags:
  - OS X
  - Software
 Date: 2015-09-20T17:59:00-07:00
-Title: Automate Your OS X Software Installations
+Title: Automate Your OS X App Installations
 SubTitle: "\"To install, drag this icon...\" no more!"
 Description: An example of automating software packages installation for Mac OS X using Homebrew and Cask.
 ---
