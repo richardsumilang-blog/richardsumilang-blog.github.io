@@ -1,16 +1,26 @@
-+++
-Categories = ["Unix-like"]
-Tags = ["Apple", "brew", "cask", "Homebrew", "OS X", "Software"]
-date = "2014-10-26T16:30:00-08:00"
-title = "My cask script!"
-SubTitle = "Say goodbye to manual installations"
-disqusIdentifier = "437 http://www.richardsumilang.com/blog/?p=437"
-aliases = ["/blog/2014/10/26/my-cask-script"]
-
-+++
+---
+Categories:
+ - Apps
+ - Unix-like
+Tags:
+ - Apple
+ - brew
+ - cask
+ - Darwin
+ - Homebrew
+ - OS X
+ - Ruby
+ - Software
+Date: 2014-10-26T16:30:00-07:00
+Title: My cask script!
+SubTitle: Say goodbye to manual installations
+disqusIdentifier: 437 http://www.richardsumilang.com/blog/?p=437
+aliases:
+ - /blog/2014/10/26/my-cask-script
+---
 
 [1]: http://caskroom.io/ "Homebrew cask"
-[2]: https://github.com/rsumilang/personal/blob/master/scripts/setup/apps-cask.sh "apps-cask"
+[2]: https://github.com/rsumilang/casks-installer "Casks Installer"
 
 Finally we get our own `apt-get` like tool for Mac! Check out [cask][1] if you
 haven't already! Below is my personal script for my setup. Maybe I'll move this
