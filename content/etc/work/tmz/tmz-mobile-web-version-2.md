@@ -45,8 +45,8 @@ lighter, faster, and full of new features.
 The inside has been built from the ground up. While I would like to write a
 series of articles detailing the various technologies I chose to build the
 application, I will say ECMAScript 6 proved itself suitable as the front-end
-language and I can't wait to continue upgrading the application to ECMAScript 7
-and ECMAScript 8 in due time.
+language and I can't wait to continue upgrading the application to ECMAScript 7,
+ECMAScript 8, and so fourth as JavaScript continues to gain sanity.
 
 
 ## Show me the features!
