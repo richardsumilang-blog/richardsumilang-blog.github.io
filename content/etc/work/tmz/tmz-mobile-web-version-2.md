@@ -1,7 +1,6 @@
 ---
-Draft: true
-CoverImage: cover-900x477.jpg
-CoverImageType: image/jpeg
+CoverImage: images/etc/work/tmz/tmz-mobile-web-version-2/cover-900x477.png
+CoverImageType: image/png
 CoverImageWidth: 900
 CoverImageHeight: 477
 Description: A high level overview of the new TMZ mobile website created by Richard Sumilang.
@@ -9,12 +8,12 @@ Categories:
  - Etc
 Tags:
  - TMZ
-Title: TMZ Mobile Website. Version 2.
-SubTitle: From the ground up.
-Date: "2015-09-23T17:49:11-07:00"
+Title: TMZ Mobile Website
+SubTitle: Version 2
+Date: "2015-09-22T17:49:11-07:00"
 ---
 
-As the head developer of the TMZ mobile website, I'm pleased to announce,
+As the head developer of the TMZ mobile website, I'm pleased to announce
 *Version 2*! It's been an exciting journey from start to finish. Take a look at
 all the new features. I think you will like it.
 
@@ -27,12 +26,13 @@ staff member or affiliate.
 
 <!--more-->
 
+
 ### My role
 
 I'm a full time developer at TMZ. I work on TMZ products such as the desktop
-site and internal applications. My current focus is enhancing the user
-experience on the mobile website while bringing the technologies up to date with
-modern standards. In other words, creating a brand new product.
+site and internal applications. My current focus is bringing the technologies up
+to date with modern standards while enhancing the user experience on the mobile
+website. In other words, creating a brand new product.
 
 
 ### It's more than just a pretty face
@@ -51,26 +51,28 @@ and ECMAScript 8 in due time.
 
 ## Show me the features!
 
-The first thing you will notice is a fresh skin. It's clean, intuitive, and as
-I've mentioned, brings the familiarity you expect out of a mobile website.
-The larger images help you find the content you are looking for and we continue
-to load more articles into every feed as you scroll, keeping your browsing
-experience smooth.
+The first thing you will notice is a fresh skin. It's clean, intuitive, and
+brings the familiarity you would expect out of a mobile website. The large
+images help you find the content you are looking for while continuing to load
+more articles into the feed as you scroll, keeping your browsing experience
+smooth.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png" class="center" />
 
 
 ### Navigation Menu
 
-On the top left we have a "hamburger" menu icon that easily lets you navigate to
-each section of the site. From top to bottom we have the "Got a tip?" button
-where you can submit any tips you have directly to TMZ. Following that we have
-each of our site sections in big buttons easily clickable. Below that there is a
-way for you to sign up and receive mobile alerts sent directly to your phone or
-access access the TMZ show listings for your area. Or if you're feeling like
-going on a tour then you can click the "TMZ Celebrity Tour" and reserve a spot
-on the bus and tour hollywood.
+On the top left we have a menu button that pulls out a panel to allow navigation
+to each section of the site. Starting from the top, you can find the "Got a tip?"
+button where you can submit tips directly to TMZ. Following that we have each of
+our site sections in big easily clickable buttons. Below that is a "Mobile
+Alerts" button allowing you to register and receive mobile alerts sent directly
+to your phone. The "TV Listings" displays TMZ show listings for your area. Or if
+you're feeling like going on a tour then you can click the "TMZ Celebrity Tour"
+and reserve a spot on the bus and tour hollywood. The "Login / Register" button
+signs you into TMZ, allowing you to add your own comments to articles.
 
-Lastly, here is where you can click on the "Login / Register" button to be able
-to comment on articles using your TMZ account.
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png" class="center" />
 
 
 ## Got A Tip?
@@ -79,31 +81,36 @@ Calling TMZ directly is still an option by clicking the "Give us a call" button.
 The new section now supports sending TMZ a direct email via a web form with the
 ability to upload files from your phone.
 
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif" class="center" />
+
 
 ## News
 
 The news contains tabs to help you sort the content in your preferred order. For
 example, this feed defaults to the **Latest** articles and provides you the
-options of sorting by most **Popular** and the most **Commented** results. The
-**Popular** tab labels each article with a number for it's popularity. The
-**Commented** section similarly labels each article with the number of comments
-per article.
+options of sorting by most **Popular** and the most **Commented** trending
+results. The **Popular** tab labels each article with a number for it's
+popularity. The **Commented** section similarly labels each article with the
+number of comments per article.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif" class="center" />
+
 
 ### Article Page
 
 Clicking an article thumbnail brings you to a beautiful view of the article that
-is easy to read. The cover is usually either an image, video, or gallery. You
-can tell what the media type is because there is either a large play button for
-videos or gallery icon for galleries. You can click the primary media in the
-cover to load the media right away or you can scroll down the article. As you
-scroll you will notice buttons for sharing an article on your social networks
-and the comment count next to the article details.
+is easy to read. The cover is either an image, video, or gallery. You can tell
+what the media type is because there is either a large play button for video or
+gallery icon for galleries. You can click the primary media in the cover to load
+the media right away or you can scroll down the article. As you scroll you will
+notice buttons for sharing an article on your social networks and the comment
+count next to the article details.
 
 Within the article details there can be links to more related galleries, videos,
 images, polls, and a number of other items (depending on what the content writer
 chose to include).
 
-Clicking on the comment bubble next to the article details or the large comment
+Clicking on the comment bubble next to the article details, or the large comment
 count below the article will show load all the comments. You may log in here
 using one of many social network authentications (Facebook, Twitter, Gmail, etc)
 to share your thoughts. If you are already logged into the mobile website with
@@ -112,27 +119,29 @@ bring you back to the article.
 
 Below you will find other related articles that you may find interesting. The
 want more section will display buttons to bios of celebrities mentioned in the
-article and buttons to categories of article that you may find interesting.
+article and buttons to article categories that you also may find interesting.
 
 At the end you will see a link to the next article from the feed you came from.
 If you did not land on the article page coming from a feed then you will not see
 this feature.
 
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif" class="center" />
+
 
 ## Videos
 
 Featuring *Latest Videos* by default, TMZ now provides access to videos by
-*Category*. Each video now has it's own page where you can share the current
+*Category*. Each video also has it's own page where you can share the current
 video with your social networks and find other related videos that you might be
 interested in watching next.
 
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png" class="center" />
 
 ## Photos
 
-Like all the other feeds, bigger images and easier scrolling. We're in a world
-of smart phones these days and I think everyone browsing the photos page would
-appreciate this. The takeaway from this section is the new galleries which you
-can load by clicking any photo.
+Like all the other feeds, bigger images and easier scrolling. The takeaway from
+this section is the new thumbnail galleries that you can load by clicking on any
+photo.
 
 In the gallery, we use larger images to take up the whole viewport of your phone
 to provide a richer experience. You can swipe your thumb on a photo to easily
@@ -140,31 +149,39 @@ navigate in the direction you want to go. There are also new sharing features
 per photo and more gallery suggestions when reaching the end. I think you'll
 like it.
 
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif" class="center" />
+
 
 ## Sports
 
 This feed is similar to the latest news feed but focuses on the *Sports*
 category. You can also find sports articles while browsing other article feeds.
-You will be able to easily tell the difference from a sports article by the
-green swipe on the article.
+You will be able to easily identify a sports article by the green swipe on the
+article.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png" class="center" />
 
 
 ## Celebs
 
-Find the most trending celebrity by navigating to this feed section. The page
-defaults to **Trending** and you can click on the **All** tab to find a specific
-celebrity. The **All** section loads smaller thumbnails for faster scrolling.
+Find the most trending celebrity by navigating to this feed section. This section
+defaults to the most **Trending** celebrities and you can click on the **All**
+tab to find a specific celebrity quicker. The **All** section loads smaller
+thumbnails for faster scrolling.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif" class="center" />
 
 
 ### Celebrity Bio
 
 Clicking on a celebrity will load up a detailed biography page where you can
-find more information about a celebrity. From top to bottom, you can share the
-celebrity information with your social network, read their bio, list photo
-galleries featuring the celebrity, list videos features the celebrity, list
-articles featuring the celebrity, and see the latest articles featuring the
-celebrity. We also show related celebrities that you may be interested in
+find more information about a celebrity. Starting from the top, you can share the
+celebrity information with your social network, read their bio, find photo
+galleries, videos, and/or articles featuring the current celebrity bio you are
+reading. We also show related celebrities that you may be interested in
 reading about.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif" class="center" />
 
 
 ## Shows
@@ -173,6 +190,8 @@ Broken up into three sections, TMZ, TMZ Live, and TMZ Sports. You can come to
 this section and watch live streaming (for TMZ Live), full episodes, and clips
 for any of your favorite shows on your mobile device. You may also use the
 button on the bottom of the page to find local TV listings for your area.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif" class="center" />
 
 
 ## Search
@@ -184,11 +203,15 @@ galleries. Celebrities will be listed first and the other page types will be
 mixed in the results. You can identify each page type by the icons on the
 results.
 
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif" class="center" />
+
 
 # Try it out for yourself!
 
-The site is live now. You can access it on your mobile device by going to
+This application is now live. You can access it on your mobile device by going to
 http://www.tmz.com or directly to http://m.tmz.com. This mobile website is a
 huge improvement over the previous implementation and I'm proud to have my name
-stamped on the face of it. Also, credits go to having an outstanding team. Many
-thanks.
+stamped on the face of it. Many thanks to my awesome team for help making this
+possible.
+
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png" class="center" />
