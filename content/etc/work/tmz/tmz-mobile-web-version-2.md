@@ -11,11 +11,13 @@ Tags:
 Title: TMZ Mobile Website
 SubTitle: Version 2
 Date: "2015-09-22T17:49:11-07:00"
+Weight: -1
 ---
 
-As the head developer of the TMZ mobile website, I'm pleased to announce
-*Version 2*! It's been an exciting journey from start to finish. Take a look at
-all the new features. I think you will like it.
+It has been an exciting journey from start to finish. As the head developer of
+the mobile website for one of the world's biggest blog sites, I'm pleased to
+announce *Version 2* of TMZ! Take a look at all the new features. I think you
+will like it.
 
 
 ## Disclaimer
