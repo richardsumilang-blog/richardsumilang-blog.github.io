@@ -10,7 +10,7 @@ Tags:
  - TMZ
 Title: TMZ Mobile Website
 SubTitle: Version 2
-Date: "2015-09-22T17:49:11-07:00"
+Date: "2015-09-22T13:00:00-07:00"
 Weight: -1
 ---
 
