@@ -1,5 +1,5 @@
 ---
-CoverImage: images/etc/work/losslesslife/live-900x477.jpg
+CoverImage: images/etc/work/losslesslife/the-worlds-finest-audiophile-electronics-900x477.jpg
 CoverImageType: image/jpg
 CoverImageWidth: 900
 CoverImageHeight: 477
