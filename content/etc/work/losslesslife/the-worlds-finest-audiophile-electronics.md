@@ -1,6 +1,6 @@
 ---
 CoverImage: images/etc/work/losslesslife/the-worlds-finest-audiophile-electronics-900x477.jpg
-CoverImageType: image/jpg
+CoverImageType: image/jpeg
 CoverImageWidth: 900
 CoverImageHeight: 477
 Description: LosslessLife covers everything high-end and audiophile headphones. Headphones and headphone amps, accessories, how-to guides, and reviews.
