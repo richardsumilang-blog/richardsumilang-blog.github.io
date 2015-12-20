@@ -1,5 +1,5 @@
 ---
-CoverImage: images/programming/ruby/ror/facebook-analytics-ror/facebook-analytics-ror-cover-900x477.png
+CoverImage: images/programming/ruby/ror/facebook-page-analytics-ror/facebook-page-analytics-ror-cover-900x477.png
 CoverImageType: image/png
 CoverImageWidth: 900
 CoverImageHeight: 477
@@ -124,7 +124,7 @@ rake jobs:work # job server</code></pre>
 
 Please refer to the graphic:
 
-![Facebook Analytics Database Graphic](/images/programming/ruby/ror/facebook-analytics-ror/db-layout-772x378.png)
+![Facebook Analytics Database Graphic](/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png)
 
 
 ## How it works
