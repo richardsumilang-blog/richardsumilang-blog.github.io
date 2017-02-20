@@ -4,17 +4,8 @@ RichardSumilang.com's blog with Hugo.
 
 ## Development
 
-The theme is attached as a sub-module therefor the following commands must be
-ran after cloning this repository.
-  
-  1) Initialize sub-modules
-      
-      git submodule init
-      
-  2) Update submodules
-  
-      git submodule update
-  
-  3) Get latest submodules
-  
-      git submodule foreach git pull origin master
+Run `./dependencies.sh` then `./dev.sh` to begin development.
+
+## Deployment
+
+Run `./deploy.sh`.

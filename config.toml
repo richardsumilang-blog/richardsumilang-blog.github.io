@@ -11,7 +11,7 @@ theme = "hugo-theme-richardsumilang-dark"
   category = "categories"
   tag = "tags"
 
-[Params]
+[params]
   AmazonAffiliate = "http://www.amazon.com?_encoding=UTF8&tag=topseclabrics-20"
   AuthorName = "Richard"
   Bitbucket = "rsumilang"
