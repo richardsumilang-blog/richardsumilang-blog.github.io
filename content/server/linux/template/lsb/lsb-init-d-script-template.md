@@ -9,9 +9,6 @@ aliases = ["/blog/2014/07/07/lsb-init-d-script-template"]
 
 +++
 
-[1]: http://gearman.org/ "Gearman"
-[2]: http://brew.sh/ "Homebrew"
-
 Quick little `init.d` template:
 
 <!--more-->

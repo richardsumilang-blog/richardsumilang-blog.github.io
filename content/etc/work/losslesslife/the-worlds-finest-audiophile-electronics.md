@@ -26,7 +26,6 @@ Keywords:
 Title: The World's Finest Audiophile Electronics
 SubTitle: Now Live
 Date: "2015-11-15T15:28:00-07:00"
-Weight: -1
 ---
 
 [1]: https://www.losslesslife.com/ "The world's finest Audiophile Electronics. Headphones, DACs, Amplifiers, reviews, and more."
