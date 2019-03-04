@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aperture on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/aperture/</link>
+    <description>Recent content in Aperture on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jul 2014 20:47:01 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/aperture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 13 Jul 2014 20:47:01 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

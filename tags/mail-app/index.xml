@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mail App on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/mail-app/</link>
+    <description>Recent content in Mail App on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2015 21:41:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/mail-app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>https://richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:41:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

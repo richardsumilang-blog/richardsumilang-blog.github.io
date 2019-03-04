@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openssl on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/openssl/</link>
+    <description>Recent content in Openssl on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2014 10:21:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/openssl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fixing OpenSSL Heartbleed vulnerability on Ubuntu</title>
+      <link>https://richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
+      <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
+remote users to read memory without leaving a trace. Here are the steps to up
+update Ubuntu to patch the issue.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

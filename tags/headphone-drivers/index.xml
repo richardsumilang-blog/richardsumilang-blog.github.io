@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Headphone Drivers on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/headphone-drivers/</link>
+    <description>Recent content in Headphone Drivers on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Nov 2015 22:18:45 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/headphone-drivers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What are headphone drivers?</title>
+      <link>https://richardsumilang.com/electronics/audio/headphone-drivers/</link>
+      <pubDate>Thu, 05 Nov 2015 22:18:45 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/electronics/audio/headphone-drivers/</guid>
+      <description>&lt;p&gt;Headphones are essentially a set of tiny speakers that sit in, on or around your
+ears and like all speakers, they have drivers. Everyone can agree that not all
+headphones are the same or created equally. But besides the superficial
+differences and the various features you may be offered such as noise cancelling
+and wireless capabilities, there are other more subtle differences that can make
+a huge difference. That subtle difference is determined by the type of driver
+used in the headphones.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

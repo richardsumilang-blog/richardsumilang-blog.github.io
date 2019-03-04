@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Servers on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/categories/servers/</link>
+    <description>Recent content in Servers on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2017 14:08:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/categories/servers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrading Emacs to 24.5</title>
+      <link>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dump this in your terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
+mkdir -p ~/src
+cd ~/src
+wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+tar xf emacs-24.5.tar.gz
+cd emacs-24.5
+./configure
+make
+sudo checkinstall
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>https://richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sat, 31 Jan 2015 00:58:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SynoCommunity packages for Synology NAS</title>
+      <link>https://richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
+      <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
+      <description>&lt;p&gt;A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
+Sync, Redis, and Firefox Sync Server just to name a few. Check out the
+&lt;a href=&#34;https://synocommunity.com/packages&#34; title=&#34;SynoCommunity Packages&#34;&gt;full list of packages&lt;/a&gt; or just add the source to your package manager :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to enable SSH access to Synology DiskStation</title>
+      <link>https://richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</link>
+      <pubDate>Sat, 12 Jul 2014 18:32:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</guid>
+      <description>&lt;p&gt;Log into your system with an administrator account and open the
+&lt;strong&gt;&lt;sup&gt;1&lt;/sup&gt;Control Panel&lt;/strong&gt; applet. From there, click on
+&lt;strong&gt;&lt;sup&gt;2&lt;/sup&gt;Terminal &amp;amp; SNMP&lt;/strong&gt;, &lt;strong&gt;&lt;sup&gt;3&lt;/sup&gt;Enabled SSH service&lt;/strong&gt;, and
+&lt;strong&gt;&lt;sup&gt;4&lt;/sup&gt;Apply&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to setup automated backups to SSH server with Synology DiskStation</title>
+      <link>https://richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</link>
+      <pubDate>Sat, 12 Jul 2014 02:01:01 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</guid>
+      <description>&lt;p&gt;As a best practice, it&amp;rsquo;s great great to have your data in more than one
+location. I use my Synology Diskation as a local network file server at my home.
+The reality is something can happen and I lose all my important data in that
+little box. From a BBQ, a birthday party, or maybe the house just burns down and
+now all my data is gone. Unfortunately my network rack at home will never be as
+secure as a network rack in a data center. So, backup your data because that&amp;rsquo;s
+much easier to do rather than trying to restore from no backup. Makes logical
+sense right? Derp.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LSB Init.d Script Template</title>
+      <link>https://richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</link>
+      <pubDate>Mon, 07 Jul 2014 14:08:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</guid>
+      <description>&lt;p&gt;Quick little &lt;code&gt;init.d&lt;/code&gt; template:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0</title>
+      <link>https://richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>
+      <pubDate>Sat, 28 Jun 2014 11:30:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</guid>
+      <description>&lt;p&gt;I received an alert from my Synology RAID regarding a few bad sectors on a hard
+drive. Even though the RAID is still operational, it&amp;rsquo;s best practice to replace
+the hard drive before any data gets corrupted due to the bad sectors.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chef Gearman Cookbook v0.1.0</title>
+      <link>https://richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</link>
+      <pubDate>Thu, 12 Jun 2014 11:22:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</guid>
+      <description>A little Gearman cookbook I put together for Chef. Supports installing multiple versions by source. Also has a recipe for the PHP extension.
+Grab it from GitHub!
+kthxbye.</description>
+    </item>
+    
+    <item>
+      <title>Update Chef Solo on your Vagrant</title>
+      <link>https://richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
+      <pubDate>Tue, 10 Jun 2014 15:50:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
+      <description>Install vagrant-omnibus:
+vagrant plugin install vagrant-omnibus Configure your Vagrantfile before provisioning to the latest version of Chef:
+config.omnibus.chef_version = :latest You can also upgrade to a specific version like so:
+config.omnibus.chef_version = &#34;11.12.8&#34; </description>
+    </item>
+    
+    <item>
+      <title>Backing up and Restoring with MongoDB</title>
+      <link>https://richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</link>
+      <pubDate>Fri, 30 May 2014 16:33:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</guid>
+      <description>Dump You can dump the database locally using the following mongodump:
+mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD This will create a dump folder containing a subfolder named after your database. The default port for MongoDB is 27017.
+Import You can import the same dump to a local MongoDB instance using something like the following mongorestore after changing into the dump directory:
+mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.</description>
+    </item>
+    
+    <item>
+      <title>How to install Gearman on OS X</title>
+      <link>https://richardsumilang.com/server/gearman/install-gearman-on-os-x/</link>
+      <pubDate>Wed, 23 Apr 2014 22:48:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Redis on OS X</title>
+      <link>https://richardsumilang.com/server/redis/install-redis-on-os-x/</link>
+      <pubDate>Fri, 04 Apr 2014 10:04:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
+      <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

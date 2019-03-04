@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2017 14:08:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrading Emacs to 24.5</title>
+      <link>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dump this in your terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
+mkdir -p ~/src
+cd ~/src
+wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+tar xf emacs-24.5.tar.gz
+cd emacs-24.5
+./configure
+make
+sudo checkinstall
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fixing OpenSSL Heartbleed vulnerability on Ubuntu</title>
+      <link>https://richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
+      <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
+remote users to read memory without leaving a trace. Here are the steps to up
+update Ubuntu to patch the issue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to upgrade to PHP 5.4 on Ubuntu 12.10</title>
+      <link>https://richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
+      <pubDate>Mon, 31 Mar 2014 03:51:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
+      <description>&lt;p&gt;PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
+backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
+and run the following commands:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

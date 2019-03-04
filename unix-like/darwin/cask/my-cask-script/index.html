@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="Apple, brew, cask, Darwin, Homebrew, OS X, Ruby, Software" />
+<meta name="news_keywords" content="Apple, brew, cask, Darwin, Homebrew, OS X, Ruby, Software" />
+
+
+<meta property="og:type" content="article" />
+
+<meta property="og:title" content="My cask script!" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:url" content="https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/" />
+<meta property="og:locale" content="en_US" />
+
+  
+  
+  
+  
+  <meta property="article:published_time" content="2014-10-26" />
+  <meta property="article:modified_time" content="2014-10-26" />
+
+
+
+
+  <meta property="article:tag" content="Apple" /><meta property="article:tag" content="brew" /><meta property="article:tag" content="cask" /><meta property="article:tag" content="Darwin" /><meta property="article:tag" content="Homebrew" /><meta property="article:tag" content="OS X" /><meta property="article:tag" content="Ruby" /><meta property="article:tag" content="Software" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="My cask script! - Top Secret Labs - Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <base href="https://richardsumilang.com/" />
+  <title>My cask script! - Top Secret Labs - Richard Sumilang</title>
+
+  <link rel="canonical" href="https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="https://richardsumilang.com/"><img src="https://richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps" >apps</a></li>
+  
+  <li><a href="/categories/electronics" >electronics</a></li>
+  
+  <li><a href="/categories/etc" >etc</a></li>
+  
+  <li><a href="/categories/networking" >networking</a></li>
+  
+  <li><a href="/categories/programming" >programming</a></li>
+  
+  <li><a href="/categories/servers" >servers</a></li>
+  
+  <li><a href="/categories/unix-like" >unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+
+    <header class="heading">
+      <h2><a href="https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/">My cask script!</a></h2>
+      
+        <h3>Say goodbye to manual installations</h3>
+      
+    </header>
+
+    <div class="details">
+      <p>Finally we get our own <code>apt-get</code> like tool for Mac! Check out <a href="http://caskroom.io/" title="Homebrew cask">cask</a> if you
+haven&rsquo;t already! Below is my personal script for my setup. Maybe I&rsquo;ll move this
+to chef recipe for my mac one day? ;)</p>
+
+<p>Note: The latest and greatest will be maintained on <a href="https://github.com/rsumilang/casks-installer" title="Casks Installer">GitHub</a>.</p>
+
+<pre><code class="language-bash" title="Cask" >#!/bin/sh
+# Let's automate installing all our apps!
+#
+# Note: This will require homebrew and cask!
+# See: http://caskroom.io/
+#
+# Uninstall: Provide the --appdir when removing.
+#
+# @author Richard Sumilang <me@richardsumilang.com>
+INSTALL_CMD="brew cask install --appdir=/Applications"
+
+###########################
+# Communication
+$INSTALL_CMD colloquy
+$INSTALL_CMD propane
+#$INSTALL_CMD skype
+
+
+
+###########################
+# Development
+$INSTALL_CMD atom
+$INSTALL_CMD charles
+$INSTALL_CMD filezilla
+$INSTALL_CMD gas-mask
+$INSTALL_CMD geektool
+$INSTALL_CMD intellij-idea
+$INSTALL_CMD robomongo
+$INSTALL_CMD sequel-pro
+$INSTALL_CMD sourcetree
+$INSTALL_CMD vagrant vagrant-bar
+$INSTALL_CMD virtualbox
+
+
+
+###########################
+# Enterprise
+#$INSTALL_CMD citrix-receiver
+
+
+
+###########################
+# Interwebs
+$INSTALL_CMD firefox
+$INSTALL_CMD google-chrome
+
+
+
+###########################
+# Media
+$INSTALL_CMD mediaelch
+$INSTALL_CMD miro-video-converter
+$INSTALL_CMD videospec
+$INSTALL_CMD vlc
+
+
+
+###########################
+# Music
+$INSTALL_CMD spotify
+
+
+
+###########################
+# Tools
+$INSTALL_CMD dropbox
+
+
+
+###########################
+# Utilities
+$INSTALL_CMD remote-desktop-connection
+$INSTALL_CMD unrarx
+$INSTALL_CMD transmission
+</code></pre>
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/apple">Apple</a>
+      
+      <a href="/tags/brew">brew</a>
+      
+      <a href="/tags/cask">cask</a>
+      
+      <a href="/tags/darwin">Darwin</a>
+      
+      <a href="/tags/homebrew">Homebrew</a>
+      
+      <a href="/tags/os-x">OS X</a>
+      
+      <a href="/tags/ruby">Ruby</a>
+      
+      <a href="/tags/software">Software</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Oct 26, 2014
+      
+        
+          <a href="/categories/apps"><i class="fa fa-bookmark"></i> Apps</a>
+        
+          <a href="/categories/unix-like"><i class="fa fa-bookmark"></i> Unix-like</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frichardsumilang.com%2funix-like%2fdarwin%2fcask%2fmy-cask-script%2f&t=My%20cask%20script%21"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=https%3a%2f%2frichardsumilang.com%2funix-like%2fdarwin%2fcask%2fmy-cask-script%2f&text=My%20cask%20script%21&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=https%3a%2f%2frichardsumilang.com%2funix-like%2fdarwin%2fcask%2fmy-cask-script%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2frichardsumilang.com%2funix-like%2fdarwin%2fcask%2fmy-cask-script%2f&media=&description=My%20cask%20script%21"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+  </article>
+
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_shortname = 'richardsumilang';
+  var disqus_identifier = '437 http:\/\/www.richardsumilang.com\/blog\/?p=437';
+  var disqus_url = 'https:\/\/richardsumilang.com\/unix-like\/darwin\/cask\/my-cask-script\/';
+
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="https://facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="https://instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>
+      </p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2019. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="/js/common.js"></script>
+<script src="/js/app.js"></script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+</body>
+</html>
+

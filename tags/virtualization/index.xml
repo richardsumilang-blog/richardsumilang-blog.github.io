@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/virtualization/</link>
+    <description>Recent content in Virtualization on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jun 2014 15:50:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Update Chef Solo on your Vagrant</title>
+      <link>https://richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
+      <pubDate>Tue, 10 Jun 2014 15:50:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
+      <description>Install vagrant-omnibus:
+vagrant plugin install vagrant-omnibus Configure your Vagrantfile before provisioning to the latest version of Chef:
+config.omnibus.chef_version = :latest You can also upgrade to a specific version like so:
+config.omnibus.chef_version = &#34;11.12.8&#34; </description>
+    </item>
+    
+  </channel>
+</rss>

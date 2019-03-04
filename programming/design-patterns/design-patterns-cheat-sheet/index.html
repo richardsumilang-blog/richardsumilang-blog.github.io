@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="Design Patterns, Cheat Sheet" />
+<meta name="news_keywords" content="Design Patterns, Cheat Sheet" />
+
+
+<meta property="og:type" content="article" />
+
+<meta property="og:title" content="Design Patterns Cheat Sheet" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:url" content="https://richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/" />
+<meta property="og:locale" content="en_US" />
+
+  
+  
+  
+  
+  <meta property="article:published_time" content="2014-06-02" />
+  <meta property="article:modified_time" content="2014-06-02" />
+
+
+
+
+  <meta property="article:tag" content="Design Patterns" /><meta property="article:tag" content="Cheat Sheet" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="Design Patterns Cheat Sheet - Top Secret Labs - Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <base href="https://richardsumilang.com/" />
+  <title>Design Patterns Cheat Sheet - Top Secret Labs - Richard Sumilang</title>
+
+  <link rel="canonical" href="https://richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="https://richardsumilang.com/"><img src="https://richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps" >apps</a></li>
+  
+  <li><a href="/categories/electronics" >electronics</a></li>
+  
+  <li><a href="/categories/etc" >etc</a></li>
+  
+  <li><a href="/categories/networking" >networking</a></li>
+  
+  <li><a href="/categories/programming" >programming</a></li>
+  
+  <li><a href="/categories/servers" >servers</a></li>
+  
+  <li><a href="/categories/unix-like" >unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+
+    <header class="heading">
+      <h2><a href="https://richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/">Design Patterns Cheat Sheet</a></h2>
+      
+    </header>
+
+    <div class="details">
+      <p>Here&rsquo;s a quick cheat sheet for lots of design patterns. The examples in this
+post are linked to Java examples however they are not limited to a single
+language implementation. Special thanks to Derek Banas.</p>
+
+<ul>
+<li><strong><a href="http://www.newthinktank.com/2012/08/observer-design-pattern-tutorial/" title="Observer Pattern Tutorial">Observer Design Pattern:</a></strong> Contains an object usually referred to as
+the <code>subject</code> that maintains a a list of dependent classes called <code>observers</code>.
+The <code>subject</code> object notifies all <code>observers</code> automatically of any state changes
+by calling their methods.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/factory-design-pattern-tutorial/" title="Factory Pattern Tutorial">Factory Design Pattern:</a></strong> Creates objects that share the same super
+class type. Usually has a method named like <code>makeTypeOfSuperClass</code> which accepts
+an argument to tell it what to do.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/abstract-factory-design-pattern/" title="Abstract Factory Pattern Tutorial">Abstract Factory Design Pattern:</a></strong> Groups together individual
+factories. The objects that the these factories return share a common API.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/singleton-design-pattern-tutorial/" title="Observer Pattern Tutorial">Singleton Design Pattern:</a></strong> Used to eliminate the option of instantiating
+more than one object. Contains a static variable that holds the first instance
+of the object created. This object is always is returned. Typically returned by
+using a <code>getInstance</code> method. The constructor is set as a private function to
+prevent users instantiating it.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/builder-design-pattern-tutorial/" title="Builder Pattern Tutorial">Builder Design Pattern:</a></strong> Builder objects contain methods that tell a
+factory how to build/configure an object.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/prototype-design-pattern-tutorial/" title="Prototype Pattern Tutorial">Prototype Design Pattern:</a></strong> Creates new objects by copying other
+objects. Nice to use a clone factory that accepts an object to clone.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/decorator-design-pattern-tutorial/" title="Decorator Pattern Tutorial">Decorator Design Pattern:</a></strong> Adds functionality by using many simple
+classes.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/command-design-pattern-tutorial/" title="Command Pattern Tutorial">Command Design Pattern:</a></strong> Allows you to set aside a list of commands
+for later use. Each command is typically it&rsquo;s own command object that implements
+the same command interface.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/adapter-design-pattern-tutorial/" title="Adapter Pattern Tutorial">Adapter Design Pattern:</a></strong> Allows 2 incompatible objects that share a
+similar purpose to work transparently by abstraction.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/09/facade-design-pattern-tutorial/" title="Facade Pattern Tutorial">Facade Design Pattern:</a></strong> Decouples or separates the client from all of
+the sub components. Main purpose is to simplify interfaces so you don&rsquo;t have to
+worry about what&rsquo;s going on under the hood. Similar to a <code>Service Design
+Pattern</code> except a Service typically communicates on external service.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/bridge-design-pattern-tutorial/" title="Bridge Pattern Tutorial">Bridge Design Pattern:</a></strong> Defines 2 layers of abstraction. One for the
+target which can be extended for different types of receivers and one for the
+controls which can be extended to different type of controls that will be able
+to communicate with the targets.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/template-method-design-pattern-tutorial/" title="Template Method Pattern Tutorial">Template Design Pattern:</a></strong> Contains a <em>usually a final</em> method that
+defines the steps of an algorithm. It allows subclasses to configure the
+<em>template</em> by overwriting methods.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/iterator-design-pattern-tutorial/" title="Iterator Design Pattern Tutorial">Iterator Design Pattern:</a></strong> Provides a uniform way to access different
+collection types of objects. For instance, creating an iterator interface that
+your collections of Arrays, Lists, or Maps can implement so you can iterate over
+them the same way.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/composite-design-pattern-tutorial/" title="Composite Design Pattern Tutorial">Composite Design Pattern:</a></strong> Allows you to attach individual objects
+and a composition of objects uniformly. For example, imagine a folder tree
+structure starting at root. This can be the root composite object (aka folder)
+where it accepts types of files and types of folders. File types have no child
+components attached to them but a folder can have many more files and even more
+groupings contained within.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/flyweight-design-pattern-tutorial/" title="Flyweight Design Pattern Tutorial">Flyweight Design Pattern:</a></strong> Used when creating a lot (i.e.: 100,000 or
+more) of similar objects. Objects will be created from a factory that checks if
+a pre-existing object does not exist that shares a similar definition. If a pre-
+existing object exists with a similar configuration then the factory will
+return this rather creating a new object and reconfiguring.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/state-design-pattern-tutorial/" title="State Design Pattern Tutorial">State Design Pattern:</a></strong> Allows an object to change it&rsquo;s behavior when
+it&rsquo;s state changes. Each state implements a behavior associated with it&rsquo;s state
+of context. Should be implemented with as few states as possible. Ie: Imagine a
+database connection that has  two states (connected and disconnected) and a
+query method. The connection object execute the query method differently
+depending on it&rsquo;s connection state.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/proxy-design-pattern-tutorial/" title="Proxy Design Pattern Tutorial">Proxy Design Pattern:</a></strong> Provides a class with limited access to
+another class. This is done for security reasons.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/chain-of-responsibility-design-pattern-tutorial/" title="Chain of Responsibility Design Pattern Tutorial">Chain of Responsibility Design Pattern:</a></strong> Sends problem to an object
+and if that object can&rsquo;t use it, then it sends it to an object chained to it
+that might. The object chained to it can have an additional object chained and
+will continue to run it&rsquo;s course until it finds an object that can solve the
+problem.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/interpreter-design-pattern-tutorial/" title="Interpreter Design Pattern Tutorial">Interpreter Design Pattern:</a></strong> This pattern solves a problem by using a
+context object to interpret an issue and find a class using reflection to return
+the answer.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/mediator-design-pattern-tutorial/" title="Mediator Design Pattern Tutorial">Mediator Design Pattern:</a></strong> Handles communication between related
+objects without having to know anything about each other. Objects are typically
+constructed with the mediator passed in. Mediator will regulate interactions.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/10/memento-design-pattern-tutorial/" title="Memento Design Pattern Tutorial">Memento Design Pattern:</a></strong> Useful for saving history states of an
+object. The object stored in state is referred to as the Memento. Mementos are
+managed by caretakers contain a list of each version for retrieval. Lastly, we
+have an originator which is responsible for communicating with the caretaker to
+save and restore states. Imagine a save, under, and redo scenario.</li>
+<li><strong><a href="http://www.newthinktank.com/2012/11/visitor-design-pattern-tutorial/" title="Visitor Design Pattern Tutorial">Visitor Design Pattern:</a></strong> Allows you to perform the same action on
+many objects of different types without much alteration to those classes. A
+concrete Visitor class will implement a common visit method for each type of
+visitor. Each visitable will implement a Visitable interface that implements an
+accept method. Upon usage, each visitable object can pass a type of visitor
+object to perform different functions. Extremely useful for creating new ways of
+Visitors without touching Visitable classes.</li>
+</ul>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+<li><strong><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/" title="Essential JavaScript Design Patterns">JavaScript Design Patterns:</a></strong> A free book by O&rsquo;Reily showing many of
+the above design patterns implemented in JavaScript.</li>
+<li><strong><a href="https://github.com/domnikl/DesignPatternsPHP" title="Design Patterns PHP Project">DesignPatternsPHP Projects:</a></strong> Great code examples of implementing the
+above design patterns (and more) in PHP.</li>
+</ul>
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/design-patterns">Design Patterns</a>
+      
+      <a href="/tags/cheat-sheet">Cheat Sheet</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Jun 2, 2014
+      
+        
+          <a href="/categories/programming"><i class="fa fa-bookmark"></i> Programming</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frichardsumilang.com%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&t=Design%20Patterns%20Cheat%20Sheet"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&text=Design%20Patterns%20Cheat%20Sheet&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&media=&description=Design%20Patterns%20Cheat%20Sheet"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+  </article>
+
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_shortname = 'richardsumilang';
+  var disqus_identifier = '266 http:\/\/www.richardsumilang.com\/blog\/?p=266';
+  var disqus_url = 'https:\/\/richardsumilang.com\/programming\/design-patterns\/design-patterns-cheat-sheet\/';
+
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="https://facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="https://instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>
+      </p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2019. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="/js/common.js"></script>
+<script src="/js/app.js"></script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+</body>
+</html>
+

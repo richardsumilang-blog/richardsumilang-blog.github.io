@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+<meta name="description" content="A high level overview of the new TMZ mobile website created by Richard Sumilang." />
+<meta name="keywords" content="TMZ" />
+<meta name="news_keywords" content="TMZ" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="A high level overview of the new TMZ mobile website created by Richard Sumilang." />
+<meta property="og:title" content="TMZ Mobile Website" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:url" content="https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/" />
+<meta property="og:locale" content="en_US" />
+
+  <meta property="og:image" content="https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/cover-900x477.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="900" />
+  <meta property="og:image:height" content="477" />
+  <meta property="article:published_time" content="2015-09-22" />
+  <meta property="article:modified_time" content="2015-09-22" />
+
+
+
+
+  <meta property="article:tag" content="TMZ" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="TMZ Mobile Website - Top Secret Labs - Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+<meta name="twitter:description" content="A high level overview of the new TMZ mobile website created by Richard Sumilang." />
+<meta name="twitter:image:src" content="https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/cover-900x477.png" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <base href="https://richardsumilang.com/" />
+  <title>TMZ Mobile Website - Top Secret Labs - Richard Sumilang</title>
+
+  <link rel="canonical" href="https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="https://richardsumilang.com/"><img src="https://richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps" >apps</a></li>
+  
+  <li><a href="/categories/electronics" >electronics</a></li>
+  
+  <li><a href="/categories/etc" >etc</a></li>
+  
+  <li><a href="/categories/networking" >networking</a></li>
+  
+  <li><a href="/categories/programming" >programming</a></li>
+  
+  <li><a href="/categories/servers" >servers</a></li>
+  
+  <li><a href="/categories/unix-like" >unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+      <a href="https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/"><img src="https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/cover-900x477.png" class="header-entry" /></a>
+    
+
+    <header class="heading">
+      <h2><a href="https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/">TMZ Mobile Website</a></h2>
+      
+        <h3>Version 2</h3>
+      
+    </header>
+
+    <div class="details">
+      <p>It has been an exciting journey from start to finish. As the head developer of
+the mobile website for one of the world&rsquo;s biggest blog sites, I&rsquo;m pleased to
+announce <em>Version 2</em> of TMZ! Take a look at all the new features. I think you
+will like it.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>The views and opinions shared in this article are those of the author&rsquo;s (Richard
+Sumilang) and do not necessarily reflect TMZ, Telepictures, Warner Bros and any
+staff member or affiliate.</p>
+
+<h3 id="my-role">My role</h3>
+
+<p>I&rsquo;m a full time developer at TMZ. I work on TMZ products such as the desktop
+site and internal applications. My current focus is bringing the technologies up
+to date with modern standards while enhancing the user experience on the mobile
+website. In other words, creating a brand new product.</p>
+
+<h3 id="it-s-more-than-just-a-pretty-face">It&rsquo;s more than just a pretty face</h3>
+
+<p>The new site provides a new fun and modern interface to interact with TMZ&rsquo;s
+content. It borrows designs from our native mobile applications so you feel at
+home; but they have been optimized for the mobile web browsing experience. It&rsquo;s
+lighter, faster, and full of new features.</p>
+
+<p>The inside has been built from the ground up. While I would like to write a
+series of articles detailing the various technologies I chose to build the
+application, I will say ECMAScript 6 proved itself suitable as the front-end
+language and I can&rsquo;t wait to continue upgrading the application to ECMAScript 7,
+ECMAScript 8, and so fourth as JavaScript continues to gain sanity.</p>
+
+<h2 id="show-me-the-features">Show me the features!</h2>
+
+<p>The first thing you will notice is a fresh skin. It&rsquo;s clean, intuitive, and
+brings the familiarity you would expect out of a mobile website. The large
+images help you find the content you are looking for while continuing to load
+more articles into the feed as you scroll, keeping your browsing experience
+smooth.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png" class="center" /></p>
+
+<h3 id="navigation-menu">Navigation Menu</h3>
+
+<p>On the top left we have a menu button that pulls out a panel to allow navigation
+to each section of the site. Starting from the top, you can find the &ldquo;Got a tip?&rdquo;
+button where you can submit tips directly to TMZ. Following that we have each of
+our site sections in big easily clickable buttons. Below that is a &ldquo;Mobile
+Alerts&rdquo; button allowing you to register and receive mobile alerts sent directly
+to your phone. The &ldquo;TV Listings&rdquo; displays TMZ show listings for your area. Or if
+you&rsquo;re feeling like going on a tour then you can click the &ldquo;TMZ Celebrity Tour&rdquo;
+and reserve a spot on the bus and tour hollywood. The &ldquo;Login / Register&rdquo; button
+signs you into TMZ, allowing you to add your own comments to articles.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png" class="center" /></p>
+
+<h2 id="got-a-tip">Got A Tip?</h2>
+
+<p>Calling TMZ directly is still an option by clicking the &ldquo;Give us a call&rdquo; button.
+The new section now supports sending TMZ a direct email via a web form with the
+ability to upload files from your phone.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif" class="center" /></p>
+
+<h2 id="news">News</h2>
+
+<p>The news contains tabs to help you sort the content in your preferred order. For
+example, this feed defaults to the <strong>Latest</strong> articles and provides you the
+options of sorting by most <strong>Popular</strong> and the most <strong>Commented</strong> trending
+results. The <strong>Popular</strong> tab labels each article with a number for it&rsquo;s
+popularity. The <strong>Commented</strong> section similarly labels each article with the
+number of comments per article.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif" class="center" /></p>
+
+<h3 id="article-page">Article Page</h3>
+
+<p>Clicking an article thumbnail brings you to a beautiful view of the article that
+is easy to read. The cover is either an image, video, or gallery. You can tell
+what the media type is because there is either a large play button for video or
+gallery icon for galleries. You can click the primary media in the cover to load
+the media right away or you can scroll down the article. As you scroll you will
+notice buttons for sharing an article on your social networks and the comment
+count next to the article details.</p>
+
+<p>Within the article details there can be links to more related galleries, videos,
+images, polls, and a number of other items (depending on what the content writer
+chose to include).</p>
+
+<p>Clicking on the comment bubble next to the article details, or the large comment
+count below the article will show load all the comments. You may log in here
+using one of many social network authentications (Facebook, Twitter, Gmail, etc)
+to share your thoughts. If you are already logged into the mobile website with
+your TMZ account then you can comment immediately. Closing the comment page will
+bring you back to the article.</p>
+
+<p>Below you will find other related articles that you may find interesting. The
+want more section will display buttons to bios of celebrities mentioned in the
+article and buttons to article categories that you also may find interesting.</p>
+
+<p>At the end you will see a link to the next article from the feed you came from.
+If you did not land on the article page coming from a feed then you will not see
+this feature.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif" class="center" /></p>
+
+<h2 id="videos">Videos</h2>
+
+<p>Featuring <em>Latest Videos</em> by default, TMZ now provides access to videos by
+<em>Category</em>. Each video also has it&rsquo;s own page where you can share the current
+video with your social networks and find other related videos that you might be
+interested in watching next.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png" class="center" /></p>
+
+<h2 id="photos">Photos</h2>
+
+<p>Like all the other feeds, bigger images and easier scrolling. The takeaway from
+this section is the new thumbnail galleries that you can load by clicking on any
+photo.</p>
+
+<p>In the gallery, we use larger images to take up the whole viewport of your phone
+to provide a richer experience. You can swipe your thumb on a photo to easily
+navigate in the direction you want to go. There are also new sharing features
+per photo and more gallery suggestions when reaching the end. I think you&rsquo;ll
+like it.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif" class="center" /></p>
+
+<h2 id="sports">Sports</h2>
+
+<p>This feed is similar to the latest news feed but focuses on the <em>Sports</em>
+category. You can also find sports articles while browsing other article feeds.
+You will be able to easily identify a sports article by the green swipe on the
+article.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png" class="center" /></p>
+
+<h2 id="celebs">Celebs</h2>
+
+<p>Find the most trending celebrity by navigating to this feed section. This section
+defaults to the most <strong>Trending</strong> celebrities and you can click on the <strong>All</strong>
+tab to find a specific celebrity quicker. The <strong>All</strong> section loads smaller
+thumbnails for faster scrolling.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif" class="center" /></p>
+
+<h3 id="celebrity-bio">Celebrity Bio</h3>
+
+<p>Clicking on a celebrity will load up a detailed biography page where you can
+find more information about a celebrity. Starting from the top, you can share the
+celebrity information with your social network, read their bio, find photo
+galleries, videos, and/or articles featuring the current celebrity bio you are
+reading. We also show related celebrities that you may be interested in
+reading about.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif" class="center" /></p>
+
+<h2 id="shows">Shows</h2>
+
+<p>Broken up into three sections, TMZ, TMZ Live, and TMZ Sports. You can come to
+this section and watch live streaming (for TMZ Live), full episodes, and clips
+for any of your favorite shows on your mobile device. You may also use the
+button on the bottom of the page to find local TV listings for your area.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif" class="center" /></p>
+
+<h2 id="search">Search</h2>
+
+<p>Can&rsquo;t find what you&rsquo;re looking for? Try out the new search feature. It uses an
+updated backend service to provide you more accurate results than before. From
+the search page you will be able to find celebrities, articles, videos, and
+galleries. Celebrities will be listed first and the other page types will be
+mixed in the results. You can identify each page type by the icons on the
+results.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif" class="center" /></p>
+
+<h1 id="try-it-out-for-yourself">Try it out for yourself!</h1>
+
+<p>This application is now live. You can access it on your mobile device by going to
+<a href="http://www.tmz.com">http://www.tmz.com</a> or directly to <a href="http://m.tmz.com">http://m.tmz.com</a>. This mobile website is a
+huge improvement over the previous implementation and I&rsquo;m proud to have my name
+stamped on the face of it. Many thanks to my awesome team for help making this
+possible.</p>
+
+<p><img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png" class="center" /></p>
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/tmz">TMZ</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Sep 22, 2015
+      
+        
+          <a href="/categories/etc"><i class="fa fa-bookmark"></i> Etc</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frichardsumilang.com%2fetc%2fwork%2ftmz%2ftmz-mobile-web-version-2%2f&t=TMZ%20Mobile%20Website"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=https%3a%2f%2frichardsumilang.com%2fetc%2fwork%2ftmz%2ftmz-mobile-web-version-2%2f&text=TMZ%20Mobile%20Website&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=https%3a%2f%2frichardsumilang.com%2fetc%2fwork%2ftmz%2ftmz-mobile-web-version-2%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2frichardsumilang.com%2fetc%2fwork%2ftmz%2ftmz-mobile-web-version-2%2f&media=https://richardsumilang.com/images%2fetc%2fwork%2ftmz%2ftmz-mobile-web-version-2%2fcover-900x477.png&description=TMZ%20Mobile%20Website"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+  </article>
+
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_shortname = 'richardsumilang';
+  var disqus_identifier = '2015-09-22T13:00:00-07:00';
+  var disqus_url = 'https:\/\/richardsumilang.com\/etc\/work\/tmz\/tmz-mobile-web-version-2\/';
+
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="https://facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="https://instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>
+      </p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2019. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="/js/common.js"></script>
+<script src="/js/app.js"></script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+</body>
+</html>
+

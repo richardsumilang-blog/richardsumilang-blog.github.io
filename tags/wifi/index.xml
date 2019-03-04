@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wifi on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/wifi/</link>
+    <description>Recent content in Wifi on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jan 2015 01:57:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting the most out of your Apple AirPort Extreme network</title>
+      <link>https://richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
+      <pubDate>Fri, 09 Jan 2015 01:57:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
+      <description>&lt;p&gt;My home network is wired through a Dell gigabit switch which is connected to my
+AirPort extreme. Needless to say, this has worked well for me as the only
+wireless devices connected are mobile devices. I decided to set up another room
+in the house but I didn&amp;rsquo;t want to go through the hassle of running wires through
+the walls again. It&amp;rsquo;s undoubtably the best thing to do but this isn&amp;rsquo;t meant to
+be permanent. I figured the next best thing to do is extend the network by
+purchasing another AirPort Extreme. The hardware in it is better than an AirPort
+Express plus I get a few ports to hardwire a few devices. My rule of thumb is
+the less WiFi, the better.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

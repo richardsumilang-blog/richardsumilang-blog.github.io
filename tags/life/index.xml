@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/life/</link>
+    <description>Recent content in Life on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Apr 2014 18:55:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reflection</title>
+      <link>https://richardsumilang.com/etc/reflection/</link>
+      <pubDate>Thu, 24 Apr 2014 18:55:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/etc/reflection/</guid>
+      <description>&lt;p&gt;Today was just one of those days that started like any other. I&amp;rsquo;ve been doing a
+lot of reflection over the past few weeks on what are my new goals. The act of
+starting a new goal is always exciting but my life is pretty consistent despite
+how random it seems. I always start off the day choosing one of my many similar
+yet different shirts. Today I chose the shirt labeled Chocolate. I just wanted
+someone to read &amp;ldquo;Chocolate&amp;rdquo; aloud so I can reply &amp;ldquo;Melts with in your mouth, not
+in your hands.&amp;rdquo; Is that too much to ask for? (Who knows&amp;hellip;) So I go about my day
+and start brushing up on PHP namespacing documents. I got some pretty useful
+information out of the &lt;a href=&#34;http://www.php.net/manual/en/language.namespaces.basics.php#82088&#34; title=&#34;PHP Namespaces&#34;&gt;top comment&lt;/a&gt; and find out that it was written by me 6
+years ago! It felt like the &lt;em&gt;past me&lt;/em&gt; was talking to &lt;em&gt;current me&lt;/em&gt;. A bit trippy
+but also a bit embarrassing because I used to be on the bleeding edge of
+software development &amp;gt;= 6 years ago. I then joined big corporations. The
+technology was usually behind but I did learn a lot in terms of scalability and
+working with agile teams. Now in my current role I have the opportunity to do
+some really cool stuff which has been a bit of a refresh. It&amp;rsquo;s true what they
+say, &amp;ldquo;if you don&amp;rsquo;t use it, you lose it&amp;rdquo;. But that&amp;rsquo;s ok as I was also focusing
+more on other aspects in my life rather than just being an engineer.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

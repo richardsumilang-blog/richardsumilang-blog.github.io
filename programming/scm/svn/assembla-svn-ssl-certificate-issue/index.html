@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="Assembla, SVN" />
+<meta name="news_keywords" content="Assembla, SVN" />
+
+
+<meta property="og:type" content="article" />
+
+<meta property="og:title" content="Assembla SVN SSL Certificate Issue" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:url" content="https://richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/" />
+<meta property="og:locale" content="en_US" />
+
+  
+  
+  
+  
+  <meta property="article:published_time" content="2014-05-12" />
+  <meta property="article:modified_time" content="2014-05-12" />
+
+
+
+
+  <meta property="article:tag" content="Assembla" /><meta property="article:tag" content="SVN" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="Assembla SVN SSL Certificate Issue - Top Secret Labs - Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <base href="https://richardsumilang.com/" />
+  <title>Assembla SVN SSL Certificate Issue - Top Secret Labs - Richard Sumilang</title>
+
+  <link rel="canonical" href="https://richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="https://richardsumilang.com/"><img src="https://richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps" >apps</a></li>
+  
+  <li><a href="/categories/electronics" >electronics</a></li>
+  
+  <li><a href="/categories/etc" >etc</a></li>
+  
+  <li><a href="/categories/networking" >networking</a></li>
+  
+  <li><a href="/categories/programming" >programming</a></li>
+  
+  <li><a href="/categories/servers" >servers</a></li>
+  
+  <li><a href="/categories/unix-like" >unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+
+    <header class="heading">
+      <h2><a href="https://richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/">Assembla SVN SSL Certificate Issue</a></h2>
+      
+    </header>
+
+    <div class="details">
+      <p>I kept getting the following message when I tried running <code>svn</code> commands on my
+computer. I tried to accept the certificate permanently with no luck:</p>
+
+<pre>Error validating server certificate for 'https://subversion.assembla.com:443':
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
+Certificate information:
+ - Hostname: *.assembla.com
+ - Valid: from Wed, 16 Apr 2014 13:31:17 GMT until Thu, 24 Mar 2016 19:30:40 GMT
+ - Issuer: http://certs.godaddy.com/repository/, GoDaddy.com, Inc., Scottsdale, Arizona, US
+ - Fingerprint: ec:9f:9d:b2:39:e1:34:81:7b:27:f6:51:30:8b:ac:41:5b:62:09:19
+(R)eject, accept (t)emporarily or accept (p)ermanently?
+</pre>
+
+<p>I noticed that the subversion files were owned by the <code>root</code> user when
+inspecting the files on my computer. I&rsquo;m not sure how this happened but it can
+easily be fixed with the <code>chown</code> command.</p>
+
+<pre><code class="language-bash" title="Fix SVN permissions">sudo chown -R $(whoami) ~$(whoami)/.subversion</code></pre>
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/assembla">Assembla</a>
+      
+      <a href="/tags/svn">SVN</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> May 12, 2014
+      
+        
+          <a href="/categories/programming"><i class="fa fa-bookmark"></i> Programming</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frichardsumilang.com%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f&t=Assembla%20SVN%20SSL%20Certificate%20Issue"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f&text=Assembla%20SVN%20SSL%20Certificate%20Issue&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f&media=&description=Assembla%20SVN%20SSL%20Certificate%20Issue"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+  </article>
+
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_shortname = 'richardsumilang';
+  var disqus_identifier = '228 http:\/\/www.richardsumilang.com\/blog\/?p=228';
+  var disqus_url = 'https:\/\/richardsumilang.com\/programming\/scm\/svn\/assembla-svn-ssl-certificate-issue\/';
+
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="https://facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="https://instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>
+      </p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2019. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="/js/common.js"></script>
+<script src="/js/app.js"></script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+</body>
+</html>
+

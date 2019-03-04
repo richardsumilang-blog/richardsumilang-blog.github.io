@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/categories/apps/</link>
+    <description>Recent content in Apps on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2017 14:08:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/categories/apps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrading Emacs to 24.5</title>
+      <link>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dump this in your terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
+mkdir -p ~/src
+cd ~/src
+wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+tar xf emacs-24.5.tar.gz
+cd emacs-24.5
+./configure
+make
+sudo checkinstall
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Automate Your OS X App Installations</title>
+      <link>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <pubDate>Sun, 20 Sep 2015 17:59:00 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+multiple Mac workstations. The new version now allows you to configure parameters of
+the installation such as install path and which category of applications you
+wish to install.&lt;/p&gt;
+
+&lt;p&gt;The point of this tool is to help me configure (or reconfigure) workstations as
+needed by removing the manual work of finding the applications I always use
+online, unpacking, and copying to applications folder. That process becomes a
+tedious task when working with dozens of pieces of software.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/casks-installer/fork&#34; title=&#34;Casks Installer Fork&#34;&gt;Fork it&lt;/a&gt; for your own use on &lt;a href=&#34;https://github.com/rsumilang/casks-installer&#34; title=&#34;Casks Installer&#34;&gt;Github&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>https://richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:41:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tidying up your security with a Password Manager</title>
+      <link>https://richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</link>
+      <pubDate>Tue, 11 Nov 2014 16:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</guid>
+      <description>&lt;p&gt;Using a password manager adds numerous of security benefits. The key feature
+being strong unique passwords for each application you use. Two of the most
+popular password managers are &lt;a href=&#34;http://lastpass.com/&#34; title=&#34;LastPass&#34;&gt;LastPass&lt;/a&gt; and &lt;a href=&#34;https://agilebits.com/onepassword&#34; title=&#34;1Password&#34;&gt;1Password&lt;/a&gt;. The main
+difference is LastPass syncs to all your devices by storing your vault on their
+servers. 1Password syncs to all your devices via Dropbox and does not save your
+vault to any other servers. They are both good and whichever you choose to use
+will be up to you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My cask script!</title>
+      <link>https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <pubDate>Sun, 26 Oct 2014 16:30:00 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
+haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
+to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 13 Jul 2014 20:47:01 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IntelliJ IDEA Optimizations</title>
+      <link>https://richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</link>
+      <pubDate>Tue, 06 May 2014 11:00:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</guid>
+      <description>Please post a comment if you have any additional tips to making IDEA faster.
+1) The first thing you want to do is disable all the plugins you are not using. Go to *Preferences&amp;amp; -&amp;gt; Plugins and un-check as many as possible. I unchecked about 80%.
+2) Give yourself more memory. I figure if Firefox allows itself to take a gig of my ram then I should treat my IDE a little better.</description>
+    </item>
+    
+  </channel>
+</rss>

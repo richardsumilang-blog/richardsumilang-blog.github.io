@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/authentication/</link>
+    <description>Recent content in Authentication on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Nov 2014 16:27:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tidying up your security with a Password Manager</title>
+      <link>https://richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</link>
+      <pubDate>Tue, 11 Nov 2014 16:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</guid>
+      <description>&lt;p&gt;Using a password manager adds numerous of security benefits. The key feature
+being strong unique passwords for each application you use. Two of the most
+popular password managers are &lt;a href=&#34;http://lastpass.com/&#34; title=&#34;LastPass&#34;&gt;LastPass&lt;/a&gt; and &lt;a href=&#34;https://agilebits.com/onepassword&#34; title=&#34;1Password&#34;&gt;1Password&lt;/a&gt;. The main
+difference is LastPass syncs to all your devices by storing your vault on their
+servers. 1Password syncs to all your devices via Dropbox and does not save your
+vault to any other servers. They are both good and whichever you choose to use
+will be up to you.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

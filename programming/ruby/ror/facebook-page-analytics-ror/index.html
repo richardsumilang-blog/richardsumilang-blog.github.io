@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+<meta name="description" content="Ruby on Rails application that provides analytics for Facebook posts of a Facebook page. A user should be able to login using Facebook, authorize access for a specific page they administer, and see a display of that pages&#39; top 5 posts as well as a sortable table of 100 most recent posts." />
+<meta name="keywords" content="Facebook, Ruby, Ruby on Rails, Analytics, Open Source, Open Graph, SQLite, Rails::API" />
+<meta name="news_keywords" content="Facebook, Ruby, Ruby on Rails, Analytics, Open Source, Open Graph, SQLite, Rails::API" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Ruby on Rails application that provides analytics for Facebook posts of a Facebook page. A user should be able to login using Facebook, authorize access for a specific page they administer, and see a display of that pages&#39; top 5 posts as well as a sortable table of 100 most recent posts." />
+<meta property="og:title" content="Facebook Page Analytics" />
+<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:url" content="https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/" />
+<meta property="og:locale" content="en_US" />
+
+  <meta property="og:image" content="https://richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/facebook-page-analytics-ror-cover-900x477.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="900" />
+  <meta property="og:image:height" content="477" />
+  <meta property="article:published_time" content="2015-12-20" />
+  <meta property="article:modified_time" content="2015-12-20" />
+
+
+
+
+  <meta property="article:tag" content="Facebook" /><meta property="article:tag" content="Ruby" /><meta property="article:tag" content="Ruby on Rails" /><meta property="article:tag" content="Analytics" /><meta property="article:tag" content="Open Source" /><meta property="article:tag" content="Open Graph" /><meta property="article:tag" content="SQLite" /><meta property="article:tag" content="Rails::API" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="Facebook Page Analytics - Top Secret Labs - Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+<meta name="twitter:description" content="Ruby on Rails application that provides analytics for Facebook posts of a Facebook page. A user should be able to login using Facebook, authorize access for a specific page they administer, and see a display of that pages&#39; top 5 posts as well as a sortable table of 100 most recent posts." />
+<meta name="twitter:image:src" content="https://richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/facebook-page-analytics-ror-cover-900x477.png" />
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <base href="https://richardsumilang.com/" />
+  <title>Facebook Page Analytics - Top Secret Labs - Richard Sumilang</title>
+
+  <link rel="canonical" href="https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="https://richardsumilang.com/"><img src="https://richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps" >apps</a></li>
+  
+  <li><a href="/categories/electronics" >electronics</a></li>
+  
+  <li><a href="/categories/etc" >etc</a></li>
+  
+  <li><a href="/categories/networking" >networking</a></li>
+  
+  <li><a href="/categories/programming" >programming</a></li>
+  
+  <li><a href="/categories/servers" >servers</a></li>
+  
+  <li><a href="/categories/unix-like" >unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+      <a href="https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/"><img src="https://richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/facebook-page-analytics-ror-cover-900x477.png" class="header-entry" /></a>
+    
+
+    <header class="heading">
+      <h2><a href="https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/">Facebook Page Analytics</a></h2>
+      
+        <h3>with Ruby On Rails</h3>
+      
+    </header>
+
+    <div class="details">
+      <p>I decided to flex my programming muscle and try something new. I&rsquo;ve done Ruby
+for CLI tools and <a href="https://github.com/rsumilang/chef-gearman" title="Chef-Gearman">Chef cookbooks</a> but never a Ruby on Rails (RoR)
+application. Much of the hype with RoR is gone these days but it&rsquo;s been around
+long enough to be considered tested and somewhat mature like an old elitist
+hipster&hellip; If that makes sense.</p>
+
+<p><strong>tldr;</strong> <a href="https://github.com/rsumilang/fb-page-analytics-ror" title="Facebook Page Analytics with Ruby On Rails">Just give me the source</a></p>
+
+<h2 id="description">Description</h2>
+
+<p>The project was to create a Rails applications that provides analytics for the
+last 100 Facebook posts of a Facebook page. As a user, you should be able to
+login using Facebook, see a list of pages that you have authorized admin access
+to, and lastly see a display of the pages&rsquo; top 5 posts (out of the last 100) as
+well as a sortable table of the 100 most recent posts.</p>
+
+<h3 id="requirements">Requirements</h3>
+
+<ul>
+<li>Store user and page Facebook credentials, basic Facebook profile data (name of
+user, name of page, email address), and the last 100 posts in a database.</li>
+<li>Each entry in the post table should include:
+
+<ul>
+<li>Link to Posts (on Facebook)</li>
+<li>Message/text body of post</li>
+<li>Number of Shares</li>
+<li>Number of Comments</li>
+<li>Number of Likes</li>
+<li>Number of Impressions</li>
+<li>Date Posted</li>
+</ul></li>
+<li>Posts should be sortable by number of shares, likes, comments, and date posted.</li>
+<li>&ldquo;Top 5 Posts&rdquo; display can be chosen/ranked by any arbitrary combination of
+post statistics.</li>
+</ul>
+
+<h1 id="the-application">The Application</h1>
+
+<p>A week long into RoR land and I&rsquo;m happy to say it&rsquo;s done&hellip; Well, 98% of it is.
+I was nice enough to leave a little of this project left for you to do (I
+happily accept pull requests):</p>
+
+<ol>
+<li><p>Retrieving the number of impressions for each post.</p></li>
+
+<li><p>The app currently does not paginate to the end of all Facebook page posts. It
+stops at of the first set of results.</p></li>
+</ol>
+
+<p>The <a href="https://github.com/rsumilang/fb-page-analytics-ror" title="Facebook Page Analytics with Ruby On Rails">Facebook page analytics source</a> is freely made available under the
+<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="Creative Commons License 4.0">Creative Commons License v4</a>.</p>
+
+<h2 id="my-system">My System</h2>
+
+<ul>
+<li><strong>Ruby:</strong> ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]</li>
+<li><strong>Rails:</strong> Rails 4.2.5</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<p>The requirements to run the project will be kept updated in the
+<a href="https://github.com/rsumilang/fb-page-analytics-ror/blob/master/README.rdoc" title="Facebook Page Analytics Readme.rdoc">README.rdoc</a> but shouldn&rsquo;t diverge too much from this:</p>
+
+<ol>
+<li><p>Database setup (sqlite):
+<pre><code class="language-bash" title="Database Setup">rake db:migrate</code></pre></p></li>
+
+<li><p>The Facebook configuration variables are externalized via environment
+variables so you&rsquo;ll need to set these parameters:
+<pre><code class="language-bash" title="Configuration">export FB_APP_ID=YOUR_FB_APP_ID
+export FB_APP_SECRET=YOUR_FB_APP_SECRET</code></pre>
+<a href="https://developers.facebook.com/docs/apps/register" title="Facebook Register and Configure an App">Read this doc</a> if you&rsquo;re unfamiliar with created a Facebook App.</p></li>
+
+<li><p>Two servers need to be started. The <em>app server</em> and <em>job server</em>:
+<pre><code class="language-bash" title="Servers">rails s # app server
+rake jobs:work # job server</code></pre></p></li>
+</ol>
+
+<h3 id="urls">Urls</h3>
+
+<ul>
+<li><strong>Application:</strong> <a href="http://localhost:3000/">http://localhost:3000/</a></li>
+<li><strong>Job Web View:</strong> <a href="http://localhost:3000/delayed_job/overview">http://localhost:3000/delayed_job/overview</a></li>
+</ul>
+
+<h2 id="database">Database</h2>
+
+<p>Please refer to the graphic:</p>
+
+<p><img src="/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png" alt="Facebook Analytics Database Graphic" /></p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<ol>
+<li><p>The application can be loaded on <a href="http://localhost:3000/">http://localhost:3000/</a>. You will find a
+fancy &ldquo;Facebook&rdquo; link in the header. Click the link and log in with the test
+account.</p></li>
+
+<li><p>Upon successful log in, the system grabs all the pages the user is an
+administer of and does a few things:</p>
+
+<ol>
+<li><p>If the page does not exist in our db then we create it and create the
+relationship between the user and the page.</p></li>
+
+<li><p>If a user no longer has access to a specific page then the relationship
+between the two is removed but all page data is kept.</p></li>
+
+<li><p>The pages controller will either list all the pages a user is an admin of,
+allowing the user to choose OR redirect to the stats page of the single page
+they administer.</p></li>
+</ol></li>
+
+<li><p>The stats page is then responsible for retrieving all posts. On first load,
+the stats page will pull from the top of the feed all the way down. On every
+subsequent request, the stats controller will pull only newer feed items.</p>
+
+<ol>
+<li><p>A background job is then created for each post. This background job is
+responsible for fetching the likes, comments, shares, and impressions for each
+post while updating the database. This background process was created so the
+wait on the stats page wasn&rsquo;t terribly long. Because of this, you will see the
+stats update on the page when you refresh.</p></li>
+
+<li><p>The stats page displays a top 5 list of the most popular posts. This is
+ordered by date, likes, and comments. Nothing too crazy.</p></li>
+
+<li><p>The stats page then lists all posts in a table below in a sortable fashion
+by clicking the header.</p></li>
+</ol></li>
+
+<li><p>The sign out button will set session variables to <code>nil</code> causing an invalid
+session and redirect the user to the home page.</p></li>
+</ol>
+
+<h2 id="gems-used">Gems Used</h2>
+
+<p>The following gems were used to build the project:</p>
+
+<ul>
+<li><strong><a href="https://github.com/mkdynamic/omniauth-facebook" title="OmniAuth Facebook">omniauth-facebook</a>:</strong> Used to handle authentication to Facebook.</li>
+<li><strong><a href="https://github.com/arsduo/koala" title="Koala Gem">koala</a>:</strong> Nifty for communicating with Facebook graph API.</li>
+<li><strong><a href="http://daemons.rubyforge.org/" title="Daemons Gem">daemons</a>:</strong> Experimented with this for fun. This would be used to run
+the job server in production.</li>
+<li><strong><a href="https://github.com/collectiveidea/delayed_job_active_record" title="DelayedJob ActiveRecord Backend">delayed_job_active_record</a>:</strong> - Used to schedule and run the background
+jobs.</li>
+<li><strong><a href="https://github.com/ejschmitt/delayed_job_web" title="Delayed Job Web">delayed_job_web</a>:</strong> Web interface for delayed job.</li>
+</ul>
+
+<h2 id="refactoring">Refactoring</h2>
+
+<p>There are a few things I know that can be done better off the top of my head if
+this were a real world application. (I would also appreciate any feedback or
+ruby-isms in the comments.)</p>
+
+<ol>
+<li><p>Ideally the stats page should not be making the request to Facebook to pull
+in the posts associate with the page they are on. It should be a background job
+that fires up more workers to gather the metrics for each post.</p></li>
+
+<li><p>The job worker only supports handling one post at a time. It&rsquo;s fine for the
+sake example but in a real world situation we should be making batch requests.
+This can easily be done by passing an array of Facebook <code>object_ids</code> to the
+endpoint to eliminate multiple requests. The same could be said for the page
+controller.</p></li>
+
+<li><p>As the application grows, there will be more repetition the way things were
+done. I can see use for breaking some of the <code>User</code> model up by removing the
+sign up code and placing it into a concern and there can be good uses for
+helpers.</p></li>
+</ol>
+
+<h2 id="end-thoughts">End Thoughts</h2>
+
+<p><strong>The Good:</strong> I was fairly impressed with the amount of work I got done in a
+short amount of time without having any Ruby friends to lean on. The syntactic
+sugar provided by Ruby made certain things a pleasure to work with and gems seem
+well thought out with a lot of care that the Ruby community is known for. My
+personal favorite being the <em>delayed_job_active_record</em> in this project.</p>
+
+<p>I was also impressed by how organized Rails is. The database migration feature
+was really smooth and I thought it was neat how 3rd party gems made use of that
+in your application.</p>
+
+<p><strong>The Bad:</strong> Sometimes there was too much syntactic sugar that actually did the
+opposite of making code easier to read. One of my pet peeves was using hashes.
+This was because the colon placement in symbols changes and sometimes there
+isn&rsquo;t a clear distinction where a method parameter ends and starts without
+having to look very closely. I found this annoying at times because it was also
+hard for my IDE (IntelliJ) to tell me what was valid code. This is more of a
+Ruby dislike than RoR, though.</p>
+
+<p>On the Rails side, there was also too much magic. I get it, convention over
+configuration but it bit me a few times with ActiveRecord. The code didn&rsquo;t error
+when trying to use so it was kind of annoying to debug at times. Maybe there are
+better ways to do it that I&rsquo;m not aware of?</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Would I use RoR again? Yeah, probably. The learning curve was kind of high with
+Rails but once you get in the groove of it then it&rsquo;s pretty powerful with the
+amount of work you can accomplish in a short amount of time. For me, this would
+be great for prototyping ideas. I&rsquo;m a fan of the great gems I found and
+<a href="https://github.com/rails-api/rails-api" title="Rails::API">Rails::API</a> looks pretty neat.</p>
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/facebook">Facebook</a>
+      
+      <a href="/tags/ruby">Ruby</a>
+      
+      <a href="/tags/ruby-on-rails">Ruby on Rails</a>
+      
+      <a href="/tags/analytics">Analytics</a>
+      
+      <a href="/tags/open-graph">Open Graph</a>
+      
+      <a href="/tags/sqlite">SQLite</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Dec 20, 2015
+      
+        
+          <a href="/categories/programming"><i class="fa fa-bookmark"></i> Programming</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frichardsumilang.com%2fprogramming%2fruby%2fror%2ffacebook-page-analytics-ror%2f&t=Facebook%20Page%20Analytics"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="http://twitter.com/intent/tweet?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fruby%2fror%2ffacebook-page-analytics-ror%2f&text=Facebook%20Page%20Analytics&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="https://plus.google.com/share?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fruby%2fror%2ffacebook-page-analytics-ror%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2frichardsumilang.com%2fprogramming%2fruby%2fror%2ffacebook-page-analytics-ror%2f&media=https://richardsumilang.com/images%2fprogramming%2fruby%2fror%2ffacebook-page-analytics-ror%2ffacebook-page-analytics-ror-cover-900x477.png&description=Facebook%20Page%20Analytics"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+  </article>
+
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_shortname = 'richardsumilang';
+  var disqus_identifier = '2015-12-20T10:57:00-07:00';
+  var disqus_url = 'https:\/\/richardsumilang.com\/programming\/ruby\/ror\/facebook-page-analytics-ror\/';
+
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="http://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="http://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps">apps</a></li>
+        
+        <li><a href="/categories/electronics">electronics</a></li>
+        
+        <li><a href="/categories/etc">etc</a></li>
+        
+        <li><a href="/categories/networking">networking</a></li>
+        
+        <li><a href="/categories/programming">programming</a></li>
+        
+        <li><a href="/categories/servers">servers</a></li>
+        
+        <li><a href="/categories/unix-like">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="http://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="https://facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="https://github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="https://instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>
+      </p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2019. Richard Sumilang</span>
+  </div>
+</footer>
+
+
+<script src="/js/common.js"></script>
+<script src="/js/app.js"></script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+</body>
+</html>
+

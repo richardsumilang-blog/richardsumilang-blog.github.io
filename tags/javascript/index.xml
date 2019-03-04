@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/javascript/</link>
+    <description>Recent content in Javascript on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Mar 2015 17:10:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
+      <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
+      <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery CORS fix for IE8 and IE9</title>
+      <link>https://richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <pubDate>Fri, 20 Jun 2014 15:09:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
+it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with JavaScript templates using jQuery</title>
+      <link>https://richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</link>
+      <pubDate>Tue, 01 Apr 2014 23:20:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
+      <description>&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
+at &lt;a href=&#34;http://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+design from your code. This is particularly useful when you are adding content
+to your site after the initial rendering. Data can be fed in from a number of
+sources and added to a page using a template.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

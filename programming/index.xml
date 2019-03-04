@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmings on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/programming/</link>
+    <description>Recent content in Programmings on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Dec 2015 10:57:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Facebook Page Analytics</title>
+      <link>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</link>
+      <pubDate>Sun, 20 Dec 2015 10:57:00 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</guid>
+      <description>&lt;p&gt;I decided to flex my programming muscle and try something new. I&amp;rsquo;ve done Ruby
+for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34; title=&#34;Chef-Gearman&#34;&gt;Chef cookbooks&lt;/a&gt; but never a Ruby on Rails (RoR)
+application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
+long enough to be considered tested and somewhat mature like an old elitist
+hipster&amp;hellip; If that makes sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tldr;&lt;/strong&gt; &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Just give me the source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The project was to create a Rails applications that provides analytics for the
+last 100 Facebook posts of a Facebook page. As a user, you should be able to
+login using Facebook, see a list of pages that you have authorized admin access
+to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
+      <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
+      <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>https://richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sat, 31 Jan 2015 00:58:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with Apple&#39;s iOS image orientation</title>
+      <link>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <pubDate>Fri, 17 Oct 2014 14:33:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
+they are not rotated properly when transferring them to another device or
+software. This happens because the device is held at a certain angle when the
+picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
+however it wants.&lt;/p&gt;
+
+&lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
+taken and you can rotate it accordingly.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery CORS fix for IE8 and IE9</title>
+      <link>https://richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <pubDate>Fri, 20 Jun 2014 15:09:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
+it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Design Patterns Cheat Sheet</title>
+      <link>https://richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</link>
+      <pubDate>Mon, 02 Jun 2014 00:17:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a quick cheat sheet for lots of design patterns. The examples in this
+post are linked to Java examples however they are not limited to a single
+language implementation. Special thanks to Derek Banas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iOS Simulator Link</title>
+      <link>https://richardsumilang.com/programming/ios/ios-simulator-link/</link>
+      <pubDate>Wed, 14 May 2014 17:22:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/ios/ios-simulator-link/</guid>
+      <description>&lt;p&gt;The iOS Simulator is obviously a must have tool for development. Web development
+is no exception but Apple makes you jump through a few hoops (Xcode) to get to
+it. Luckily you can run it as a standalone application.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembla SVN SSL Certificate Issue</title>
+      <link>https://richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</link>
+      <pubDate>Mon, 12 May 2014 15:22:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
+      <description>&lt;p&gt;I kept getting the following message when I tried running &lt;code&gt;svn&lt;/code&gt; commands on my
+computer. I tried to accept the certificate permanently with no luck:&lt;/p&gt;
+
+&lt;pre&gt;Error validating server certificate for &#39;https://subversion.assembla.com:443&#39;:
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
+Certificate information:
+ - Hostname: *.assembla.com
+ - Valid: from Wed, 16 Apr 2014 13:31:17 GMT until Thu, 24 Mar 2016 19:30:40 GMT
+ - Issuer: http://certs.godaddy.com/repository/, GoDaddy.com, Inc., Scottsdale, Arizona, US
+ - Fingerprint: ec:9f:9d:b2:39:e1:34:81:7b:27:f6:51:30:8b:ac:41:5b:62:09:19
+(R)eject, accept (t)emporarily or accept (p)ermanently?
+&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Type Casting String by Concatenation Performance Test in PHP</title>
+      <link>https://richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
+      <pubDate>Thu, 08 May 2014 18:15:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
+      <description>&lt;p&gt;The purpose of this test is to see if casting an object to a string by
+concatenating it was actually slower than using normal type casting. Here is my
+source:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Gearman for PHP on OS X</title>
+      <link>https://richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
+      <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
+requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
+&lt;a href=&#34;https://richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Groovy on OS X</title>
+      <link>https://richardsumilang.com/programming/groovy/install-groovy-on-os-x/</link>
+      <pubDate>Tue, 15 Apr 2014 13:09:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Jython on OS X</title>
+      <link>https://richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
+      <pubDate>Tue, 08 Apr 2014 17:58:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Nimrod on OS X</title>
+      <link>https://richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</link>
+      <pubDate>Mon, 07 Apr 2014 11:09:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with JavaScript templates using jQuery</title>
+      <link>https://richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</link>
+      <pubDate>Tue, 01 Apr 2014 23:20:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
+      <description>&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
+at &lt;a href=&#34;http://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+design from your code. This is particularly useful when you are adding content
+to your site after the initial rendering. Data can be fed in from a number of
+sources and added to a page using a template.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
+      <link>https://richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <pubDate>Mon, 31 Mar 2014 01:43:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
+MongoDB extension. I stumbled on an example on
+&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+illustration showing how to do this and rewrote it in what I think is a slightly
+more modern way that does the same thing.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

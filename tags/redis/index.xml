@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redis on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/redis/</link>
+    <description>Recent content in Redis on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Apr 2014 10:04:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to install Redis on OS X</title>
+      <link>https://richardsumilang.com/server/redis/install-redis-on-os-x/</link>
+      <pubDate>Fri, 04 Apr 2014 10:04:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
+      <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packages on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/packages/</link>
+    <description>Recent content in Packages on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jan 2015 17:11:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/packages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SynoCommunity packages for Synology NAS</title>
+      <link>https://richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
+      <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
+      <description>&lt;p&gt;A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
+Sync, Redis, and Firefox Sync Server just to name a few. Check out the
+&lt;a href=&#34;https://synocommunity.com/packages&#34; title=&#34;SynoCommunity Packages&#34;&gt;full list of packages&lt;/a&gt; or just add the source to your package manager :)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

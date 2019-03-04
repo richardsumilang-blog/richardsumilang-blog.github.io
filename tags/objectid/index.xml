@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Objectid on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/objectid/</link>
+    <description>Recent content in Objectid on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Mar 2014 01:43:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/objectid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
+      <link>https://richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <pubDate>Mon, 31 Mar 2014 01:43:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
+MongoDB extension. I stumbled on an example on
+&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+illustration showing how to do this and rewrote it in what I think is a slightly
+more modern way that does the same thing.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

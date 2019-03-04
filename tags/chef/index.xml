@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chef on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/chef/</link>
+    <description>Recent content in Chef on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jun 2014 11:22:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/chef/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chef Gearman Cookbook v0.1.0</title>
+      <link>https://richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</link>
+      <pubDate>Thu, 12 Jun 2014 11:22:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</guid>
+      <description>A little Gearman cookbook I put together for Chef. Supports installing multiple versions by source. Also has a recipe for the PHP extension.
+Grab it from GitHub!
+kthxbye.</description>
+    </item>
+    
+    <item>
+      <title>Update Chef Solo on your Vagrant</title>
+      <link>https://richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
+      <pubDate>Tue, 10 Jun 2014 15:50:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
+      <description>Install vagrant-omnibus:
+vagrant plugin install vagrant-omnibus Configure your Vagrantfile before provisioning to the latest version of Chef:
+config.omnibus.chef_version = :latest You can also upgrade to a specific version like so:
+config.omnibus.chef_version = &#34;11.12.8&#34; </description>
+    </item>
+    
+  </channel>
+</rss>

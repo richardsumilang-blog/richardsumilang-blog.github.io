@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Facebook on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/facebook/</link>
+    <description>Recent content in Facebook on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Dec 2015 10:57:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/facebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Facebook Page Analytics</title>
+      <link>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</link>
+      <pubDate>Sun, 20 Dec 2015 10:57:00 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</guid>
+      <description>&lt;p&gt;I decided to flex my programming muscle and try something new. I&amp;rsquo;ve done Ruby
+for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34; title=&#34;Chef-Gearman&#34;&gt;Chef cookbooks&lt;/a&gt; but never a Ruby on Rails (RoR)
+application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
+long enough to be considered tested and somewhat mature like an old elitist
+hipster&amp;hellip; If that makes sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tldr;&lt;/strong&gt; &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Just give me the source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The project was to create a Rails applications that provides analytics for the
+last 100 Facebook posts of a Facebook page. As a user, you should be able to
+login using Facebook, see a list of pages that you have authorized admin access
+to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

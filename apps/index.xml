@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/apps/</link>
+    <description>Recent content in Apps on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2015 21:41:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/apps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>https://richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:41:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tidying up your security with a Password Manager</title>
+      <link>https://richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</link>
+      <pubDate>Tue, 11 Nov 2014 16:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</guid>
+      <description>&lt;p&gt;Using a password manager adds numerous of security benefits. The key feature
+being strong unique passwords for each application you use. Two of the most
+popular password managers are &lt;a href=&#34;http://lastpass.com/&#34; title=&#34;LastPass&#34;&gt;LastPass&lt;/a&gt; and &lt;a href=&#34;https://agilebits.com/onepassword&#34; title=&#34;1Password&#34;&gt;1Password&lt;/a&gt;. The main
+difference is LastPass syncs to all your devices by storing your vault on their
+servers. 1Password syncs to all your devices via Dropbox and does not save your
+vault to any other servers. They are both good and whichever you choose to use
+will be up to you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 13 Jul 2014 20:47:01 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apps I can&#39;t live without on OS X</title>
+      <link>https://richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</link>
+      <pubDate>Wed, 07 May 2014 12:27:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; Want to automate your software installation? Take a look at how I
+did with &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IntelliJ IDEA Optimizations</title>
+      <link>https://richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</link>
+      <pubDate>Tue, 06 May 2014 11:00:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</guid>
+      <description>Please post a comment if you have any additional tips to making IDEA faster.
+1) The first thing you want to do is disable all the plugins you are not using. Go to *Preferences&amp;amp; -&amp;gt; Plugins and un-check as many as possible. I unchecked about 80%.
+2) Give yourself more memory. I figure if Firefox allows itself to take a gig of my ram then I should treat my IDE a little better.</description>
+    </item>
+    
+  </channel>
+</rss>

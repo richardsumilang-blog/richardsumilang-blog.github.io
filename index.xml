@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Top Secret Labs - Richard Sumilang on Top Secret Labs - Richard Sumilang </title>
+    <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://richardsumilang.com/</link>
+    <language>en-us</language>
+    <author>Richard Sumilang</author>
+    
+    <updated>Sun, 46 Aug 5040 04:04:04 PST</updated>
+    
+    <item>
+      <title>Upgrading Emacs to 24.5</title>
+      <link>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <pubDate>Sun, 46 Aug 5040 04:04:04 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dump this in your terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
+mkdir -p ~/src
+cd ~/src
+wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+tar xf emacs-24.5.tar.gz
+cd emacs-24.5
+./configure
+make
+sudo checkinstall
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Take it a step further and install &lt;a href=&#34;https://github.com/syl20bnr/spacemacs&#34; title=&#34;Spacemacs&#34;&gt;Spacemacs&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are In-Ear Monitors?</title>
+      <link>https://richardsumilang.com/electronics/audio/in-ear-monitors/</link>
+      <pubDate>Sun, 16 Aug 10010 01:01:01 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/electronics/audio/in-ear-monitors/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In-Ear Monitors&lt;/em&gt; (IEMs), is a type of headphone designed to be partially
+inserted into a user&amp;rsquo;s ear canal by using form-fitting tips often made by a
+range materials such as rubber, soft plastic, silicon, and more. It&amp;rsquo;s also
+common to purchase custom molded tips to fit your ear canal. This typically
+offers the best results in comfort and noise isolation.&lt;/p&gt;
+
+&lt;p&gt;You may notice musicians typically wearing an IEM during a live performance.
+This is to listen to a custom set of instruments.&lt;/p&gt;
+
+&lt;p&gt;Other names for IEMs are In-Ear-Canalphone, canalphone, or ear-canal headphone.
+People believe the acronym IEM became the popular replacement for canalphones
+with the iPod generation.&lt;/p&gt;
+
+&lt;p&gt;IEMs are sometimes mistakenly called earbuds. The main difference being earbuds
+are worn in the opening of the ear. They are not designed to sit in the ear
+canal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Facebook Page Analytics</title>
+      <link>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</link>
+      <pubDate>Sun, 126 Aug 20120 12:12:12 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</guid>
+      <description>&lt;p&gt;I decided to flex my programming muscle and try something new. I&amp;rsquo;ve done Ruby
+for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34; title=&#34;Chef-Gearman&#34;&gt;Chef cookbooks&lt;/a&gt; but never a Ruby on Rails (RoR)
+application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
+long enough to be considered tested and somewhat mature like an old elitist
+hipster&amp;hellip; If that makes sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tldr;&lt;/strong&gt; &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Just give me the source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The project was to create a Rails applications that provides analytics for the
+last 100 Facebook posts of a Facebook page. As a user, you should be able to
+login using Facebook, see a list of pages that you have authorized admin access
+to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+well as a sortable table of the 100 most recent posts.&lt;/p&gt;
+
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Store user and page Facebook credentials, basic Facebook profile data (name of
+user, name of page, email address), and the last 100 posts in a database.&lt;/li&gt;
+&lt;li&gt;Each entry in the post table should include:
+
+&lt;ul&gt;
+&lt;li&gt;Link to Posts (on Facebook)&lt;/li&gt;
+&lt;li&gt;Message/text body of post&lt;/li&gt;
+&lt;li&gt;Number of Shares&lt;/li&gt;
+&lt;li&gt;Number of Comments&lt;/li&gt;
+&lt;li&gt;Number of Likes&lt;/li&gt;
+&lt;li&gt;Number of Impressions&lt;/li&gt;
+&lt;li&gt;Date Posted&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Posts should be sortable by number of shares, likes, comments, and date posted.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Top 5 Posts&amp;rdquo; display can be chosen/ranked by any arbitrary combination of
+post statistics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;the-application&#34;&gt;The Application&lt;/h1&gt;
+
+&lt;p&gt;A week long into RoR land and I&amp;rsquo;m happy to say it&amp;rsquo;s done&amp;hellip; Well, 98% of it is.
+I was nice enough to leave a little of this project left for you to do (I
+happily accept pull requests):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Retrieving the number of impressions for each post.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The app currently does not paginate to the end of all Facebook page posts. It
+stops at of the first set of results.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Facebook page analytics source&lt;/a&gt; is freely made available under the
+&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/legalcode&#34; title=&#34;Creative Commons License 4.0&#34;&gt;Creative Commons License v4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-system&#34;&gt;My System&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ruby:&lt;/strong&gt; ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rails:&lt;/strong&gt; Rails 4.2.5&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;The requirements to run the project will be kept updated in the
+&lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror/blob/master/README.rdoc&#34; title=&#34;Facebook Page Analytics Readme.rdoc&#34;&gt;README.rdoc&lt;/a&gt; but shouldn&amp;rsquo;t diverge too much from this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Database setup (sqlite):
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Database Setup&#34;&gt;rake db:migrate&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The Facebook configuration variables are externalized via environment
+variables so you&amp;rsquo;ll need to set these parameters:
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Configuration&#34;&gt;export FB_APP_ID=YOUR_FB_APP_ID
+export FB_APP_SECRET=YOUR_FB_APP_SECRET&lt;/code&gt;&lt;/pre&gt;
+&lt;a href=&#34;https://developers.facebook.com/docs/apps/register&#34; title=&#34;Facebook Register and Configure an App&#34;&gt;Read this doc&lt;/a&gt; if you&amp;rsquo;re unfamiliar with created a Facebook App.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Two servers need to be started. The &lt;em&gt;app server&lt;/em&gt; and &lt;em&gt;job server&lt;/em&gt;:
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Servers&#34;&gt;rails s # app server
+rake jobs:work # job server&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;urls&#34;&gt;Urls&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Application:&lt;/strong&gt; &lt;a href=&#34;http://localhost:3000/&#34;&gt;http://localhost:3000/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Job Web View:&lt;/strong&gt; &lt;a href=&#34;http://localhost:3000/delayed_job/overview&#34;&gt;http://localhost:3000/delayed_job/overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;database&#34;&gt;Database&lt;/h2&gt;
+
+&lt;p&gt;Please refer to the graphic:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png&#34; alt=&#34;Facebook Analytics Database Graphic&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The application can be loaded on &lt;a href=&#34;http://localhost:3000/&#34;&gt;http://localhost:3000/&lt;/a&gt;. You will find a
+fancy &amp;ldquo;Facebook&amp;rdquo; link in the header. Click the link and log in with the test
+account.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Upon successful log in, the system grabs all the pages the user is an
+administer of and does a few things:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;If the page does not exist in our db then we create it and create the
+relationship between the user and the page.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If a user no longer has access to a specific page then the relationship
+between the two is removed but all page data is kept.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The pages controller will either list all the pages a user is an admin of,
+allowing the user to choose OR redirect to the stats page of the single page
+they administer.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The stats page is then responsible for retrieving all posts. On first load,
+the stats page will pull from the top of the feed all the way down. On every
+subsequent request, the stats controller will pull only newer feed items.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;A background job is then created for each post. This background job is
+responsible for fetching the likes, comments, shares, and impressions for each
+post while updating the database. This background process was created so the
+wait on the stats page wasn&amp;rsquo;t terribly long. Because of this, you will see the
+stats update on the page when you refresh.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The stats page displays a top 5 list of the most popular posts. This is
+ordered by date, likes, and comments. Nothing too crazy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The stats page then lists all posts in a table below in a sortable fashion
+by clicking the header.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The sign out button will set session variables to &lt;code&gt;nil&lt;/code&gt; causing an invalid
+session and redirect the user to the home page.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;gems-used&#34;&gt;Gems Used&lt;/h2&gt;
+
+&lt;p&gt;The following gems were used to build the project:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mkdynamic/omniauth-facebook&#34; title=&#34;OmniAuth Facebook&#34;&gt;omniauth-facebook&lt;/a&gt;:&lt;/strong&gt; Used to handle authentication to Facebook.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/arsduo/koala&#34; title=&#34;Koala Gem&#34;&gt;koala&lt;/a&gt;:&lt;/strong&gt; Nifty for communicating with Facebook graph API.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://daemons.rubyforge.org/&#34; title=&#34;Daemons Gem&#34;&gt;daemons&lt;/a&gt;:&lt;/strong&gt; Experimented with this for fun. This would be used to run
+the job server in production.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/collectiveidea/delayed_job_active_record&#34; title=&#34;DelayedJob ActiveRecord Backend&#34;&gt;delayed_job_active_record&lt;/a&gt;:&lt;/strong&gt; - Used to schedule and run the background
+jobs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/ejschmitt/delayed_job_web&#34; title=&#34;Delayed Job Web&#34;&gt;delayed_job_web&lt;/a&gt;:&lt;/strong&gt; Web interface for delayed job.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;refactoring&#34;&gt;Refactoring&lt;/h2&gt;
+
+&lt;p&gt;There are a few things I know that can be done better off the top of my head if
+this were a real world application. (I would also appreciate any feedback or
+ruby-isms in the comments.)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Ideally the stats page should not be making the request to Facebook to pull
+in the posts associate with the page they are on. It should be a background job
+that fires up more workers to gather the metrics for each post.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The job worker only supports handling one post at a time. It&amp;rsquo;s fine for the
+sake example but in a real world situation we should be making batch requests.
+This can easily be done by passing an array of Facebook &lt;code&gt;object_ids&lt;/code&gt; to the
+endpoint to eliminate multiple requests. The same could be said for the page
+controller.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;As the application grows, there will be more repetition the way things were
+done. I can see use for breaking some of the &lt;code&gt;User&lt;/code&gt; model up by removing the
+sign up code and placing it into a concern and there can be good uses for
+helpers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;end-thoughts&#34;&gt;End Thoughts&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The Good:&lt;/strong&gt; I was fairly impressed with the amount of work I got done in a
+short amount of time without having any Ruby friends to lean on. The syntactic
+sugar provided by Ruby made certain things a pleasure to work with and gems seem
+well thought out with a lot of care that the Ruby community is known for. My
+personal favorite being the &lt;em&gt;delayed_job_active_record&lt;/em&gt; in this project.&lt;/p&gt;
+
+&lt;p&gt;I was also impressed by how organized Rails is. The database migration feature
+was really smooth and I thought it was neat how 3rd party gems made use of that
+in your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Bad:&lt;/strong&gt; Sometimes there was too much syntactic sugar that actually did the
+opposite of making code easier to read. One of my pet peeves was using hashes.
+This was because the colon placement in symbols changes and sometimes there
+isn&amp;rsquo;t a clear distinction where a method parameter ends and starts without
+having to look very closely. I found this annoying at times because it was also
+hard for my IDE (IntelliJ) to tell me what was valid code. This is more of a
+Ruby dislike than RoR, though.&lt;/p&gt;
+
+&lt;p&gt;On the Rails side, there was also too much magic. I get it, convention over
+configuration but it bit me a few times with ActiveRecord. The code didn&amp;rsquo;t error
+when trying to use so it was kind of annoying to debug at times. Maybe there are
+better ways to do it that I&amp;rsquo;m not aware of?&lt;/p&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Would I use RoR again? Yeah, probably. The learning curve was kind of high with
+Rails but once you get in the groove of it then it&amp;rsquo;s pretty powerful with the
+amount of work you can accomplish in a short amount of time. For me, this would
+be great for prototyping ideas. I&amp;rsquo;m a fan of the great gems I found and
+&lt;a href=&#34;https://github.com/rails-api/rails-api&#34; title=&#34;Rails::API&#34;&gt;Rails::API&lt;/a&gt; looks pretty neat.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The World&#39;s Finest Audiophile Electronics</title>
+      <link>https://richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</link>
+      <pubDate>Sun, 116 Aug 15110 11:11:11 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m very excited to announce &lt;a href=&#34;https://www.losslesslife.com/&#34; title=&#34;The world&#39;s finest Audiophile Electronics. Headphones, DACs, Amplifiers, reviews, and more.&#34;&gt;LosslessLife&lt;/a&gt;, a company focusing on the best
+high resolution audio gear. LosslessLife reflects the continuous hard work
+and commitment in the products it believes in by creating a voice to get the
+word out from the audiophile communities and to consumers.&lt;/p&gt;
+
+&lt;p&gt;It is often assumed by the average consumer that a higher price and/or bigger
+brand name results in better product. While this can be true to some degree,
+consumers are often paying more for a product&amp;rsquo;s marketing expenses when
+purchasing from large retail stores rather than receiving higher performing
+product.&lt;/p&gt;
+
+&lt;p&gt;Strict factors such as performance, output quality, and the overall
+craftsmanship of products must be met in order to make it to LosslessLife as the
+company name is synonymous with the highest level of quality.&lt;/p&gt;
+
+&lt;p&gt;In a market that is saturated with mediocre products, LosslessLife believes it&amp;rsquo;s
+success will be by educating consumers to make smarter choices when purchasing.
+We do the research for you and provide &lt;a href=&#34;http://pages.losslesslife.com/&#34; title=&#34;Covering everything from high-end and audiophile headphones. Headphones and headphone amplifiers, accessories, how-to guides, and reviews.&#34;&gt;all of the facts&lt;/a&gt; in an unbiased
+fashion.&lt;/p&gt;
+
+&lt;p&gt;While many companies sell products which they claim they would use, LosslessLife
+only sells products it does use by it&amp;rsquo;s highly enthusiastic team with
+backgrounds in technology, production, and an affinity for music.&lt;/p&gt;
+
+&lt;h1 id=&#34;stay-informed&#34;&gt;Stay informed&lt;/h1&gt;
+
+&lt;p&gt;Stay connected with the &lt;a href=&#34;https://www.losslesslife.com/&#34; title=&#34;The world&#39;s finest Audiophile Electronics. Headphones, DACs, Amplifiers, reviews, and more.&#34;&gt;LosslessLife movement&lt;/a&gt; by following the latest blogs
+covering everything from &lt;a href=&#34;http://pages.losslesslife.com/&#34; title=&#34;Covering everything from high-end and audiophile headphones. Headphones and headphone amplifiers, accessories, how-to guides, and reviews.&#34;&gt;high-end and audiophile headphones to amplifiers, DACs,
+accessories, how-to guides, and reviews&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re also on your favorite flavor of social media:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/losslesslife&#34; title=&#34;Follow the audiophile gurus on Twitter @ LosslessLife&#34;&gt;Follw our Tweets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/LosslessLife&#34; title=&#34;Follow the audiophile gurus on Facebook @ LosslessLife&#34;&gt;Like us Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://instagram.com/losslesslife/&#34; title=&#34;Follow the audiophile gurus on Instagram @ LosslessLife&#34;&gt;Check out our snaps on Instagram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://losslesslife.tumblr.com/&#34; title=&#34;Follow the audiophile gurus on Tumblr @ LosslessLife&#34;&gt;Follow our blogs on Tumblr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;more-information&#34;&gt;More Information&lt;/h1&gt;
+
+&lt;p&gt;Read the LosslessLife &lt;a href=&#34;http://pages.losslesslife.com/service/mission-statement/&#34; title=&#34;An audiophile mission statement&#34;&gt;Mission Statement&lt;/a&gt; and &lt;a href=&#34;http://pages.losslesslife.com/service/about-losslesslife/&#34; title=&#34;LosslessLife company information&#34;&gt;company incentives&lt;/a&gt;. Need
+more? Feel free to &lt;a href=&#34;http://pages.losslesslife.com/service/customer-service/&#34; title=&#34;We love chatting.&#34;&gt;reach out&lt;/a&gt; to LosslessLife with any questions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are Planar Magnetic Drivers?</title>
+      <link>https://richardsumilang.com/electronics/audio/planar-magnetic-drivers/</link>
+      <pubDate>Sun, 116 Aug 10110 11:11:11 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/electronics/audio/planar-magnetic-drivers/</guid>
+      <description>&lt;p&gt;A Planar Magnetic driver, has coined a few other terms such as &amp;ldquo;orthodynamic&amp;rdquo; or
+&amp;ldquo;Isodynamic&amp;rdquo;, all of which mean the same thing (in regards to headphones). They
+can be described as the child of a dynamic and electrostatic driver, sort of&amp;hellip;
+The best of both worlds, at least.&lt;/p&gt;
+
+&lt;p&gt;Like the &lt;a href=&#34;https://richardsumilang.com/electronics/audio/dynamic-drivers/&#34;&gt;dynamic driver&lt;/a&gt;, it requires a
+magnetic field around a conductor with a current flowing thought it to drive the
+diaphragm. And like the electrostatic driver, it contains a thin sheet of
+flexible film. The key difference that coined the term &amp;ldquo;planar&amp;rdquo; refers to the
+planar magnetic field that has a printed circuit spread across the surface of
+the thin film in the same parallel plane as the diaphragm. In other words the
+planar magnetic driver contains a charged flat wire or voice coil unwound on
+the thin, flat film. The diaphragm is &amp;ldquo;sandwiched&amp;rdquo; with magnets on either side
+of the diaphragm, and when charged the magnetic field pulls on either side of
+the diaphragm pulling it one way or the other causing the air to move, creating
+sound waves.&lt;/p&gt;
+
+&lt;p&gt;Planar magnetic drivers are beneficial because they offer better bass response
+than other headphones because of the large surface area of the membrane
+producing the sound waves. Additionally, they have a wider sound range, low
+distortion levels, are amplifier friendly and are more durable without loosing
+their sound quality. The large surface area of the diaphragm allows the heat
+generated by the currant passing through it to pass or dissipate.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are Dynamic Drivers?</title>
+      <link>https://richardsumilang.com/electronics/audio/dynamic-drivers/</link>
+      <pubDate>Sun, 116 Aug 10110 11:11:11 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/electronics/audio/dynamic-drivers/</guid>
+      <description>&lt;p&gt;A &lt;em&gt;dynamic driver&lt;/em&gt;, sometimes referred to as a &amp;ldquo;moving coil&amp;rdquo; driver is the most
+common driver found in headphones. It is the same technology found in speakers
+around your home, but on a much smaller scale. This type of driver
+consists of alternating magnetic fields powered by a tiny wire coil (or a
+&amp;ldquo;voice coil&amp;rdquo;). As the current changes based on the sound playback, the coil
+reacts with the magnetic field and the lightweight diaphragm rapidly compresses
+and decompresses the air by pulling the diaphragm in and out from the ring
+within the driver to create the sound you hear.&lt;/p&gt;
+
+&lt;p&gt;Dynamic drivers produce good bass with a decent amount of sound pressure without
+the need for using excess power. Dynamic drivers are capable of producing a full
+range of sound for the average listener.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are headphone drivers?</title>
+      <link>https://richardsumilang.com/electronics/audio/headphone-drivers/</link>
+      <pubDate>Sun, 116 Aug 51145 11:11:11 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/electronics/audio/headphone-drivers/</guid>
+      <description>&lt;p&gt;Headphones are essentially a set of tiny speakers that sit in, on or around your
+ears and like all speakers, they have drivers. Everyone can agree that not all
+headphones are the same or created equally. But besides the superficial
+differences and the various features you may be offered such as noise cancelling
+and wireless capabilities, there are other more subtle differences that can make
+a huge difference. That subtle difference is determined by the type of driver
+used in the headphones.&lt;/p&gt;
+
+&lt;p&gt;The driver is what makes or produces the sound you hear and is the most
+important part of the speaker. One can assume; the better the driver, the
+better the sound, and the more powerful the output. It is the part of a speaker
+that compresses and refines air to create sound waves, and the type of driver
+used will dramatically impact the sound quality of a pair of headphones. The
+driver unit falls in the range of 8mm to 15mm for earphones and 20mm to 50mm for
+headphones.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TMZ Mobile Website</title>
+      <link>https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</link>
+      <pubDate>Sun, 96 Aug 22090 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</guid>
+      <description>&lt;p&gt;It has been an exciting journey from start to finish. As the head developer of
+the mobile website for one of the world&amp;rsquo;s biggest blog sites, I&amp;rsquo;m pleased to
+announce &lt;em&gt;Version 2&lt;/em&gt; of TMZ! Take a look at all the new features. I think you
+will like it.&lt;/p&gt;
+
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+
+&lt;p&gt;The views and opinions shared in this article are those of the author&amp;rsquo;s (Richard
+Sumilang) and do not necessarily reflect TMZ, Telepictures, Warner Bros and any
+staff member or affiliate.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-role&#34;&gt;My role&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m a full time developer at TMZ. I work on TMZ products such as the desktop
+site and internal applications. My current focus is bringing the technologies up
+to date with modern standards while enhancing the user experience on the mobile
+website. In other words, creating a brand new product.&lt;/p&gt;
+
+&lt;h3 id=&#34;it-s-more-than-just-a-pretty-face&#34;&gt;It&amp;rsquo;s more than just a pretty face&lt;/h3&gt;
+
+&lt;p&gt;The new site provides a new fun and modern interface to interact with TMZ&amp;rsquo;s
+content. It borrows designs from our native mobile applications so you feel at
+home; but they have been optimized for the mobile web browsing experience. It&amp;rsquo;s
+lighter, faster, and full of new features.&lt;/p&gt;
+
+&lt;p&gt;The inside has been built from the ground up. While I would like to write a
+series of articles detailing the various technologies I chose to build the
+application, I will say ECMAScript 6 proved itself suitable as the front-end
+language and I can&amp;rsquo;t wait to continue upgrading the application to ECMAScript 7,
+ECMAScript 8, and so fourth as JavaScript continues to gain sanity.&lt;/p&gt;
+
+&lt;h2 id=&#34;show-me-the-features&#34;&gt;Show me the features!&lt;/h2&gt;
+
+&lt;p&gt;The first thing you will notice is a fresh skin. It&amp;rsquo;s clean, intuitive, and
+brings the familiarity you would expect out of a mobile website. The large
+images help you find the content you are looking for while continuing to load
+more articles into the feed as you scroll, keeping your browsing experience
+smooth.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;navigation-menu&#34;&gt;Navigation Menu&lt;/h3&gt;
+
+&lt;p&gt;On the top left we have a menu button that pulls out a panel to allow navigation
+to each section of the site. Starting from the top, you can find the &amp;ldquo;Got a tip?&amp;rdquo;
+button where you can submit tips directly to TMZ. Following that we have each of
+our site sections in big easily clickable buttons. Below that is a &amp;ldquo;Mobile
+Alerts&amp;rdquo; button allowing you to register and receive mobile alerts sent directly
+to your phone. The &amp;ldquo;TV Listings&amp;rdquo; displays TMZ show listings for your area. Or if
+you&amp;rsquo;re feeling like going on a tour then you can click the &amp;ldquo;TMZ Celebrity Tour&amp;rdquo;
+and reserve a spot on the bus and tour hollywood. The &amp;ldquo;Login / Register&amp;rdquo; button
+signs you into TMZ, allowing you to add your own comments to articles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;got-a-tip&#34;&gt;Got A Tip?&lt;/h2&gt;
+
+&lt;p&gt;Calling TMZ directly is still an option by clicking the &amp;ldquo;Give us a call&amp;rdquo; button.
+The new section now supports sending TMZ a direct email via a web form with the
+ability to upload files from your phone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+
+&lt;p&gt;The news contains tabs to help you sort the content in your preferred order. For
+example, this feed defaults to the &lt;strong&gt;Latest&lt;/strong&gt; articles and provides you the
+options of sorting by most &lt;strong&gt;Popular&lt;/strong&gt; and the most &lt;strong&gt;Commented&lt;/strong&gt; trending
+results. The &lt;strong&gt;Popular&lt;/strong&gt; tab labels each article with a number for it&amp;rsquo;s
+popularity. The &lt;strong&gt;Commented&lt;/strong&gt; section similarly labels each article with the
+number of comments per article.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;article-page&#34;&gt;Article Page&lt;/h3&gt;
+
+&lt;p&gt;Clicking an article thumbnail brings you to a beautiful view of the article that
+is easy to read. The cover is either an image, video, or gallery. You can tell
+what the media type is because there is either a large play button for video or
+gallery icon for galleries. You can click the primary media in the cover to load
+the media right away or you can scroll down the article. As you scroll you will
+notice buttons for sharing an article on your social networks and the comment
+count next to the article details.&lt;/p&gt;
+
+&lt;p&gt;Within the article details there can be links to more related galleries, videos,
+images, polls, and a number of other items (depending on what the content writer
+chose to include).&lt;/p&gt;
+
+&lt;p&gt;Clicking on the comment bubble next to the article details, or the large comment
+count below the article will show load all the comments. You may log in here
+using one of many social network authentications (Facebook, Twitter, Gmail, etc)
+to share your thoughts. If you are already logged into the mobile website with
+your TMZ account then you can comment immediately. Closing the comment page will
+bring you back to the article.&lt;/p&gt;
+
+&lt;p&gt;Below you will find other related articles that you may find interesting. The
+want more section will display buttons to bios of celebrities mentioned in the
+article and buttons to article categories that you also may find interesting.&lt;/p&gt;
+
+&lt;p&gt;At the end you will see a link to the next article from the feed you came from.
+If you did not land on the article page coming from a feed then you will not see
+this feature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
+
+&lt;p&gt;Featuring &lt;em&gt;Latest Videos&lt;/em&gt; by default, TMZ now provides access to videos by
+&lt;em&gt;Category&lt;/em&gt;. Each video also has it&amp;rsquo;s own page where you can share the current
+video with your social networks and find other related videos that you might be
+interested in watching next.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;photos&#34;&gt;Photos&lt;/h2&gt;
+
+&lt;p&gt;Like all the other feeds, bigger images and easier scrolling. The takeaway from
+this section is the new thumbnail galleries that you can load by clicking on any
+photo.&lt;/p&gt;
+
+&lt;p&gt;In the gallery, we use larger images to take up the whole viewport of your phone
+to provide a richer experience. You can swipe your thumb on a photo to easily
+navigate in the direction you want to go. There are also new sharing features
+per photo and more gallery suggestions when reaching the end. I think you&amp;rsquo;ll
+like it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sports&#34;&gt;Sports&lt;/h2&gt;
+
+&lt;p&gt;This feed is similar to the latest news feed but focuses on the &lt;em&gt;Sports&lt;/em&gt;
+category. You can also find sports articles while browsing other article feeds.
+You will be able to easily identify a sports article by the green swipe on the
+article.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;celebs&#34;&gt;Celebs&lt;/h2&gt;
+
+&lt;p&gt;Find the most trending celebrity by navigating to this feed section. This section
+defaults to the most &lt;strong&gt;Trending&lt;/strong&gt; celebrities and you can click on the &lt;strong&gt;All&lt;/strong&gt;
+tab to find a specific celebrity quicker. The &lt;strong&gt;All&lt;/strong&gt; section loads smaller
+thumbnails for faster scrolling.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;celebrity-bio&#34;&gt;Celebrity Bio&lt;/h3&gt;
+
+&lt;p&gt;Clicking on a celebrity will load up a detailed biography page where you can
+find more information about a celebrity. Starting from the top, you can share the
+celebrity information with your social network, read their bio, find photo
+galleries, videos, and/or articles featuring the current celebrity bio you are
+reading. We also show related celebrities that you may be interested in
+reading about.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;shows&#34;&gt;Shows&lt;/h2&gt;
+
+&lt;p&gt;Broken up into three sections, TMZ, TMZ Live, and TMZ Sports. You can come to
+this section and watch live streaming (for TMZ Live), full episodes, and clips
+for any of your favorite shows on your mobile device. You may also use the
+button on the bottom of the page to find local TV listings for your area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;search&#34;&gt;Search&lt;/h2&gt;
+
+&lt;p&gt;Can&amp;rsquo;t find what you&amp;rsquo;re looking for? Try out the new search feature. It uses an
+updated backend service to provide you more accurate results than before. From
+the search page you will be able to find celebrities, articles, videos, and
+galleries. Celebrities will be listed first and the other page types will be
+mixed in the results. You can identify each page type by the icons on the
+results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;try-it-out-for-yourself&#34;&gt;Try it out for yourself!&lt;/h1&gt;
+
+&lt;p&gt;This application is now live. You can access it on your mobile device by going to
+&lt;a href=&#34;http://www.tmz.com&#34;&gt;http://www.tmz.com&lt;/a&gt; or directly to &lt;a href=&#34;http://m.tmz.com&#34;&gt;http://m.tmz.com&lt;/a&gt;. This mobile website is a
+huge improvement over the previous implementation and I&amp;rsquo;m proud to have my name
+stamped on the face of it. Many thanks to my awesome team for help making this
+possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Automate Your OS X App Installations</title>
+      <link>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <pubDate>Sun, 96 Aug 20090 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+multiple Mac workstations. The new version now allows you to configure parameters of
+the installation such as install path and which category of applications you
+wish to install.&lt;/p&gt;
+
+&lt;p&gt;The point of this tool is to help me configure (or reconfigure) workstations as
+needed by removing the manual work of finding the applications I always use
+online, unpacking, and copying to applications folder. That process becomes a
+tedious task when working with dozens of pieces of software.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/casks-installer/fork&#34; title=&#34;Casks Installer Fork&#34;&gt;Fork it&lt;/a&gt; for your own use on &lt;a href=&#34;https://github.com/rsumilang/casks-installer&#34; title=&#34;Casks Installer&#34;&gt;Github&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h3 id=&#34;why-a-sudden-update&#34;&gt;Why a sudden update?&lt;/h3&gt;
+
+&lt;p&gt;A new version of OS X El Capitan is to be released very soon. I&amp;rsquo;ve always felt
+installing a fresh OS ran smoother than doing an upgrade. Maybe the scars are
+that deep from the days of going Windows 95 to 98? Idk.&lt;/p&gt;
+
+&lt;p&gt;Anyways, I&amp;rsquo;ll be doing a fresh install of El Capitan and I wanted to make sure
+my apps were in order since I&amp;rsquo;ve last used &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;my cask script&lt;/a&gt;. The process of
+manually installing each app takes longer than the actual OS install.
+Furthermore, I don&amp;rsquo;t need all apps installed in one shot so I broke them up into
+installable category groups&amp;hellip; Something I have been itching to do since the
+original mockup.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-it-works&#34;&gt;How it works&lt;/h3&gt;
+
+&lt;p&gt;You&amp;rsquo;ll notice a file called &lt;a href=&#34;https://github.com/rsumilang/casks-installer/blob/master/install.rb&#34; title=&#34;install.rb script&#34;&gt;&lt;code&gt;install.rb&lt;/code&gt;&lt;/a&gt; in the project root. This is the
+script you will interface with for installing (or uninstalling) applications.
+Applications are grouped by categories located in the &lt;a href=&#34;https://github.com/rsumilang/casks-installer/tree/master/category&#34; title=&#34;Casks Installer Categories&#34;&gt;&lt;code&gt;./category&lt;/code&gt;&lt;/a&gt; folder
+where you can add more or less.&lt;/p&gt;
+
+&lt;p&gt;You can get a list of configurable options by running the &lt;code&gt;-h&lt;/code&gt; help option.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby install.rb -h&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;h4 id=&#34;appdir&#34;&gt;&amp;ndash;appdir&lt;/h4&gt;
+
+&lt;p&gt;The default location cask uses for Application shortcuts is &lt;code&gt;~/Applications&lt;/code&gt;. I
+change this setting in my install command to point to &lt;code&gt;/Applications&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Default:&lt;/em&gt; &lt;code&gt;/Applications&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby install.rb --appdir=/Applications&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;category&#34;&gt;&amp;ndash;category&lt;/h4&gt;
+
+&lt;p&gt;Name of the application category group to install (or uninstall). The category
+name should reference a file in the &lt;code&gt;./category/&lt;/code&gt; directory, excluding the file
+extension. If no category group is specified then all will be installed.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby install.rb --category=browsers&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;or:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby install.rb -c browsers&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;uninstall&#34;&gt;&amp;ndash;uninstall&lt;/h4&gt;
+
+&lt;p&gt;This changes the default &lt;code&gt;install&lt;/code&gt; option to &lt;code&gt;uninstall&lt;/code&gt;. With this flag on you
+can uninstall a category group or uninstall everything. This option requires no additional arguments.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby install.rb -c browsers --uninstall&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;or&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby install.rb -c browsers -u&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;updates&#34;&gt;Updates&lt;/h3&gt;
+
+&lt;p&gt;Follow the &lt;a href=&#34;https://github.com/rsumilang/casks-installer&#34; title=&#34;Casks Installer&#34;&gt;GitHub repository&lt;/a&gt; for updates and please add any feature
+requests to the &lt;a href=&#34;https://github.com/rsumilang/casks-installer/issues&#34; title=&#34;Casks Installer Issues&#34;&gt;project issues&lt;/a&gt;. I welcome pull requests :)&lt;/p&gt;
+
+&lt;h3 id=&#34;known-issues&#34;&gt;Known issues&lt;/h3&gt;
+
+&lt;p&gt;Unfortunately there is no way to specify the specific version of an app that you
+need. This hasn&amp;rsquo;t been much of an issue for me yet but I know it would be nice
+to have.&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;This was created by &lt;a href=&#34;http://richardsumilang.com/&#34;&gt;Richard Sumilang&lt;/a&gt; and is
+licensed under the &lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;CC BY-SA 3.0&lt;/a&gt;
+license. You are encouraged to fork this repository and make adjustments
+according to your preferences.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.creativecommons.org/l/by-sa/3.0/88x31.png&#34; alt=&#34;Creative Commons License&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bottlehead S.E.X. 2.1 Unboxed</title>
+      <link>https://richardsumilang.com/electronics/bottlehead/sex/unboxed/</link>
+      <pubDate>Sun, 96 Aug 190910 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/electronics/bottlehead/sex/unboxed/</guid>
+      <description>&lt;p&gt;There you have it. All the parts that I&amp;rsquo;ll be assembling for the Bottlehead
+S.E.X. version 2.1. The parts in the image include the impedance switch and the
+C4S components. To the far left, there is a bag I didn&amp;rsquo;t bother unraveling
+because it is mainly little screws and bolts that felt easy to lose.&lt;/p&gt;
+
+&lt;h3 id=&#34;build-order&#34;&gt;Build Order&lt;/h3&gt;
+
+&lt;p&gt;I will do incremental builds. This way I can test the quality of a build on it&amp;rsquo;s
+own before adding additional components. This is a good practice I follow in
+daily software development and has proved helpful in debugging. The order will
+be as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;S.E.X. kit.&lt;/li&gt;
+&lt;li&gt;Impedance switch installation.&lt;/li&gt;
+&lt;li&gt;C4S Upgrade.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;customizations&#34;&gt;Customizations&lt;/h3&gt;
+
+&lt;p&gt;Before I dive directly into the build I will need to do a few customizations. I
+figure it will be easier to do this now before the parts are assembled because
+they will not be easily accessible later. The order will be as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Bottlehead PC-3 painting.&lt;/li&gt;
+&lt;li&gt;Sanding and varnishing the wood frame.&lt;/li&gt;
+&lt;li&gt;Nickeling metal components.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bottlehead S.E.X. 2.1 Journey</title>
+      <link>https://richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</link>
+      <pubDate>Sun, 96 Aug 120947 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</guid>
+      <description>&lt;p&gt;After almost a month of waiting, my &lt;a href=&#34;http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; has finally arrived.
+This will be my first of many electronic DIY projects. I will detail the journey
+from start to finish. Including details like what tools I used, any problems
+I encountered, and any suggestions I come up with on the way. This blog series
+is sort of like an enhancement to the original guide provided with your
+&lt;a href=&#34;http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; purchase.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-it-started&#34;&gt;How it started&lt;/h3&gt;
+
+&lt;p&gt;Originally I had ordered the &lt;a href=&#34;http://bottlehead.com/?product=crack-otl-headphone-amplifier-kit&#34; title=&#34;Bottlehead Crack OTL Amplifier Kit&#34;&gt;Bottlehead Crack OTL Amplifier Kit&lt;/a&gt; with the
+Speedball Upgrade. This amplifier is widely known as a great way to get into
+audiophile DIY world and great for driving high impedance headphones like the
+&lt;a href=&#34;http://amzn.to/1Kf3W3v&#34; title=&#34;Sennheiser HD 650 Open Back Professional Headphone&#34;&gt;Sennheiser HD 650&lt;/a&gt;&amp;rsquo;s and &lt;a href=&#34;http://amzn.to/1Kf4eaH&#34; title=&#34;Sennheiser HD 800 Over-Ear Circum-Aural Dynamic Headphone&#34;&gt;Sennheiser HD 800&lt;/a&gt;&amp;rsquo;s, which were the headphones
+I was rocking at the time. While there are plenty of other amplifiers out in the
+market, I chose to go this route for the sake of learning and building something
+which seems a lot more fun than just shelling out cash on amplifiers.&lt;/p&gt;
+
+&lt;h3 id=&#34;so-why-did-i-switch-to-the-s-e-x&#34;&gt;So why did I switch to the S.E.X.?&lt;/h3&gt;
+
+&lt;p&gt;Simply because I like to experiment with a range of setup combinations, thus I
+look for versatility in my setups. That is where the Single Ended eXperiement
+comes in; or S.E.X. for short. I want the ability to use my amplifier with a wide
+range of headphones and power desktop speakers. The S.E.X. has an output
+impedance upgrade option that makes this easily possible. The S.E.X. defaults to
+your speakers when there isn&amp;rsquo;t a pair of headphones plugged into the jack. While
+I&amp;rsquo;m going all out, why not upgrade to the C4S load boards, right? Makes sense to
+me.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-beauty-of-it&#34;&gt;The beauty of it&lt;/h3&gt;
+
+&lt;p&gt;One of the greatest benefits of DIY besides a fun project and learning, is the
+ability to customize everything to your liking. My amplifier at the end will not
+look like the stock Bottlehead S.E.X. pictures. This journey will include,
+varnishing, painting, and a custom nickeling job for a sweet hot rod look.&lt;/p&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;I will be posting a progress updates approximately once a week. As with
+everything else on this blog, we&amp;rsquo;re here to learn and experiment. There might be
+errors or perhaps some better way to do things. I would love to hear any
+questions or suggestions in the comments!&lt;/p&gt;
+
+&lt;p&gt;Stay tuned!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Version 3</title>
+      <link>https://richardsumilang.com/etc/version-3/</link>
+      <pubDate>Sun, 96 Aug 50934 09:09:09 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/etc/version-3/</guid>
+      <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
+source. The theme has been modernized to load faster and I created more ways to
+navigate the site so more data is easily accessible while keeping the idea of
+simplicity in mind.&lt;/p&gt;
+
+&lt;p&gt;However, the site is more than just a pretty face. As a DIY’er, I take pleasure
+in building something from the ground up. The previous versions were powered by
+Wordpress. It’s amongst the most popular blogging technologies but honestly
+maintaining it is a nightmare.&lt;/p&gt;
+
+&lt;p&gt;There are also more goals in mind with the new site that will encourage more
+postings and in effect be the personality.&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoy what’s to come.&lt;/p&gt;
+
+&lt;h2 id=&#34;technologies&#34;&gt;Technologies&lt;/h2&gt;
+
+&lt;p&gt;The site is no longer powered by a backend technology that has to be coupled
+with a database. This made issues when trying to upgrade and keep up to date.
+Now we’re a fully statically generated site. This has a lot of benefits such as
+less server maintenance (virtually none) and much faster load times from the
+user experience.&lt;/p&gt;
+
+&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
+
+&lt;p&gt;This is the a new player to the top static site generators out there today. I
+initially tried porting over my site from Wordpress with Jekyll. It wasn’t as
+straight forward as I thought it would be. There were a few bumps on the road
+were taking away from my fire.&lt;/p&gt;
+
+&lt;p&gt;I ended up choosing Hugo because it was easy to get an example site up and
+running very quick. It doesn’t have all the bells and whistles that Jekyll might
+but I realized that I didn’t need them. There is also something to be said about
+Hugo’s speed. It’s a big deal when creating a new page because the generator has
+to rebuild just about every page. Being written in Go was a great idea.&lt;/p&gt;
+
+&lt;p&gt;A few things that I thought were really nice out of the box was the web server,
+sitemap generator, and RSS support. Not to mention the whole application is a
+single binary app.&lt;/p&gt;
+
+&lt;h3 id=&#34;xhtml&#34;&gt;XHTML&lt;/h3&gt;
+
+&lt;p&gt;This is mainly a matter of preference. It bothers me that you don’t have to
+close certain tags in HTML which is why I prefer XHTML. I like to keep some sort
+of sanity.&lt;/p&gt;
+
+&lt;p&gt;I cringe every time I think of how browsers must parse standard HTML. I think of
+the days when I was a fresh programmer at my first job and tasked with data
+mining from websites using PHP. Oh, we just went to a dark place didn’t we?&lt;/p&gt;
+
+&lt;h3 id=&#34;sass-susy-css3&#34;&gt;SASS + SUSY + CSS3&lt;/h3&gt;
+
+&lt;p&gt;This goes back to my DIY nature. I don’t like using pre-built frameworks like
+Twitter’ Bootstrap because it seems to be a lot of overkill for doing a few
+simple things. Sometimes you have to use so many CSS classes to achieve
+something and it feels dirty, similar to writing inline styles. I like running
+lean and mean, that’s always been my motto.&lt;/p&gt;
+
+&lt;h3 id=&#34;es6-babel&#34;&gt;ES6 + Babel&lt;/h3&gt;
+
+&lt;p&gt;Let’s face it, JavaScript sucks. We all know it. A lot of the time it doesn’t
+make sense which is probably why it’s so closely related to HTML. Nonetheless
+it’s a necessary evil. ES6 sucks a lot less by letting you regain some amount of
+sanity. Using Babel I can future proof my code and start using the technologies
+of tomorrow, today.&lt;/p&gt;
+
+&lt;h3 id=&#34;jquery&#34;&gt;jQuery&lt;/h3&gt;
+
+&lt;p&gt;Meh. Not much to say about jQuery. Let’s just move on.&lt;/p&gt;
+
+&lt;h3 id=&#34;handlebars&#34;&gt;Handlebars&lt;/h3&gt;
+
+&lt;p&gt;This is a fantastic client side library for building templates. I’m a huge fan.
+Not currently using it at the moment of this writing but it’s baked into the JS
+application ready to go. It will be used in future plans.&lt;/p&gt;
+
+&lt;h3 id=&#34;prismjs&#34;&gt;PrismJS&lt;/h3&gt;
+
+&lt;p&gt;The source code viewer you see throughout the site is using PrismJS. I have to
+give it two thumbs up. One for following standards and another for looking
+awesome. I just wish they had a better way of building custom packages. Oh well,
+beggars can’t be choosers.&lt;/p&gt;
+
+&lt;h2 id=&#34;services&#34;&gt;Services&lt;/h2&gt;
+
+&lt;p&gt;Now that this is a 100% static site, I need a few services to help with features
+needing a backend.&lt;/p&gt;
+
+&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
+
+&lt;p&gt;GitHub just get’s it. Get it? Thanks to their static website hosting I don’t
+have to pay a dime or manage a server anymore. Instead I just create a repo and
+run my website off a branch. Having your SCM and website coupled together like
+this is very pleasant and makes for a simple deploy process.&lt;/p&gt;
+
+&lt;p&gt;Oh, and did I mention this site is now completely open source?&lt;/p&gt;
+
+&lt;h3 id=&#34;mailchimp&#34;&gt;Mailchimp&lt;/h3&gt;
+
+&lt;p&gt;Please signup to the newsletter if you want to stay up to date. I’m planning on
+doing only one newsletter a month if there is a decent amount of subscriptions.&lt;/p&gt;
+
+&lt;h2 id=&#34;dedicated-to-my-daughter&#34;&gt;Dedicated to my daughter&lt;/h2&gt;
+
+&lt;p&gt;This site is dedicated to my daughter, Eva. May all your dreams come true.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/version-3/eva-misfit.jpeg&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#34;effective. Power&#34; ... An AOL Flashback.</title>
+      <link>https://richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</link>
+      <pubDate>Sun, 56 Aug 28050 05:05:05 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
+iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
+
+&lt;pre&gt;
+effective. 
+Power
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m running iOS 8.3 (12F70). While testing the message, I learned that removing
+the &amp;ldquo;effective. Power&amp;rdquo; from the text will also crash my the Message app and
+prevent me and my recipient from opening the app. Fun times.&lt;/p&gt;
+
+&lt;pre&gt;
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;
+
+&lt;p&gt;You can send yourself another text message something like the desktop Messages
+app with the same exact text which will cancel out the erroring one. Another
+popular technique is to send yourself a text from your photos app.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-does-this-work&#34;&gt;How does this work?&lt;/h3&gt;
+
+&lt;p&gt;The problem is the set of characters used. The Messages app (and possibly
+others) try to render the bad text will cause the program manager and windowing
+system to crash and reboot.&lt;/p&gt;
+
+&lt;p&gt;This felt like a modern day AOL punter for me. A punter was usually a feature of
+an &amp;ldquo;AOL prog&amp;rdquo; or &amp;ldquo;proggie&amp;rdquo; that could sign off anyone you like, similar to this
+exploit. A recepient would receive an instant message from you with bad contents
+in the message body causing the AOL program to crash.&lt;/p&gt;
+
+&lt;p&gt;Funny enough, this is where my interest in computer programming began. Oh Visual
+Basic&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Shout outs to Fate X, Pepsi, HaVok, Pepsi, FireToolz, Fate Zero, Super MaD CoW
+97, EXoRCiST, Cold Fusion and many more for making the internet a much more
+interesting place to be in the 90s.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Sun, 36 Aug 11030 03:03:03 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a quick inspection, I see that jQuery-mobile is having trouble binding
+itself to the &lt;code&gt;root&lt;/code&gt; aka &lt;code&gt;this&lt;/code&gt; aka &lt;code&gt;window&lt;/code&gt; object. This is because the way
+jQuery-mobile is wrapped in a block where &lt;code&gt;this&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt; because the
+code is not being executed in the assumed scope.&lt;/p&gt;
+
+&lt;h3 id=&#34;example&#34;&gt;Example:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function(require,module,exports){
+(function (global){
+;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
+&#34;use strict&#34;;(function(root, doc, factory){if(typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd){define([&#34;jquery&#34;], function($){factory($, root, doc);return $.mobile;});}else {factory(root.jQuery, root, doc);}})(undefined || window, document, function(jQuery, window, document, undefine) {
+
+/*!
+* jQuery Mobile 1.4.5
+* Git HEAD hash: 68e55e78b292634d3991c795f06f5e37a512decc &lt;&gt; Date: Fri Oct 31 2014 17:33:30 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*/
+
+(function ( root, doc, factory ) {
+    if ( typeof define === &#34;function&#34; &amp;amp;&amp;amp; define.amd ) {
+        // AMD. Register as an anonymous module.
+        define( [ &#34;jquery&#34; ], function ( $ ) {
+            factory( $, root, doc );
+            return $.mobile;
+        });
+    } else {
+        // Browser globals
+        factory( root.jQuery, root, doc );
+    }
+}( this, document, function ( jQuery, window, document, undefined ) {
+(function( $ ) {
+    $.mobile = {};
+}( jQuery ));
+
+// more jquery code
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The jQuery-mobile team doesn&amp;rsquo;t want to make fixes for this because they would
+have to continue to make patches for their code when another build system comes
+out and whose got time to keep up with that? Needless to say, I wish they had
+the time for it to make their libraries more compatible for users and they are a
+bigger team than just little ole independent me but that&amp;rsquo;s just my opinion.&lt;/p&gt;
+
+&lt;p&gt;Today is going on my 2nd day being stuck with the issue (also second day of
+using gulp and browserify so give me a break) and I&amp;rsquo;ve tried just about every
+solution I can find on the web before I just gave up and wrote my own. Though,
+not exactly the most elegant solution, I simply replaced all instances of &lt;code&gt;this&lt;/code&gt;
+to &lt;code&gt;this || window&lt;/code&gt; and walla it worked.&lt;/p&gt;
+
+&lt;p&gt;Now I have jQuery-mobile working just fine in my ES6 project. I&amp;rsquo;ve bundled my
+changes up in a npm project under the name &lt;strong&gt;jquery-mobile-babel-safe&lt;/strong&gt;. Here is
+how I use it in my project:&lt;/p&gt;
+
+&lt;h3 id=&#34;install&#34;&gt;Install&lt;/h3&gt;
+
+&lt;p&gt;Run this command in your project room:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    npm install jquery-mobile-babel-safe --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;package.json&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;    &#34;browser&#34;: {
+      &#34;jquery-mobile&#34;: &#34;./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js&#34;
+    },
+    &#34;browserify-shim&#34;: {
+      &#34;jquery-mobile&#34;: {
+        &#34;exports&#34;: &#34;jQuery.mobile&#34;
+      }
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that&amp;rsquo;s about it. You can test by importing &lt;code&gt;jquery-mobile&lt;/code&gt; on your page. You
+should have access to &lt;code&gt;$.mobile&lt;/code&gt; in your scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;wrap-up&#34;&gt;Wrap up&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to hear from you if you have a simpler way of making this work. I do
+feel a little bad about polluting the npm package repository with yet another
+jQuery package and I&amp;rsquo;d like to know of a better way of doing this but I know a
+few other people were stuck with this issue so be it.&lt;/p&gt;
+
+&lt;p&gt;Happy hacking!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
+      <pubDate>Sun, 26 Aug 8020 02:02:02 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
+      <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Last updated: Feb 8th, 2015.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;general&#34;&gt;General&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Programming_style&#34; title=&#34;Programming style&#34;&gt;Programming style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style&#34; title=&#34;MDN Coding Style&#34;&gt;MDN Coding Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.komputado.com/eseoj/1tbs.htm&#34; title=&#34;The One True Brace Style&#34;&gt;The One True Brace Style&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;c&#34;&gt;C++&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stroustrup.com/bs_faq2.html&#34; title=&#34;Bjarne Stroustrup&#39;s C++ Style and Technique FAQ&#34;&gt;Bjarne Stroustrup&amp;rsquo;s C++ Style and Technique FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/cppguide.html&#34; title=&#34;Google C++ Style Guide&#34;&gt;Google C++ Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;html-css&#34;&gt;HTML/CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://codeguide.co/&#34; title=&#34;Code Guide by @mdo&#34;&gt;Code Guide by @mdo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/css&#34; title=&#34;CSS Style Guide&#34;&gt;CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml&#34; title=&#34;Google HTML/CSS Style Guide&#34;&gt;Google HTML/CSS Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/html/html5_syntax.asp&#34; title=&#34;HTML(5) Style Guide and Coding Conventions&#34;&gt;HTML(5) Style Guide and Coding Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;java&#34;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://source.android.com/source/code-style.html&#34; title=&#34;Android Code Style&#34;&gt;Android Code Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/codeconvtoc-136057.html&#34; title=&#34;Code Conventions for the Java Programming Language&#34;&gt;Code Conventions for the Java Programming Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javaguide.html&#34; title=&#34;Google Java Style Guide&#34;&gt;Google Java Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaranch.com/style.jsp&#34; title=&#34;Java Programming Style Guide&#34;&gt;Java Programming Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html&#34; title=&#34;An AngularJS Style Guide for Closure Users at Google&#34;&gt;An AngularJS Style Guide for Closure Users at Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/javascript&#34; title=&#34;GitHub JavaScript style&#34;&gt;GitHub JavaScript style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml&#34; title=&#34;Google JavaScript Style Guide&#34;&gt;Google JavaScript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/felixge/node-style-guide&#34; title=&#34;Node.js Style Guide&#34;&gt;Node.js Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lisp&#34;&gt;Lisp&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/lispguide.xml&#34; title=&#34;Common Lisp Style Guide&#34;&gt;Common Lisp Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objective-c&#34;&gt;Objective C&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html&#34; title=&#34;Apple&#39;s Programming with Objective C Conventions&#34;&gt;Apple&amp;rsquo;s Programming with Objective C Conventions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/objective-c-style-guide&#34; title=&#34;GitHub Objective C Style Guide&#34;&gt;GitHub Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml&#34; title=&#34;Google Objective C Style Guide&#34;&gt;Google Objective C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NYTimes/objective-c-style-guide&#34; title=&#34;NYTimes Objective-C Style Guide&#34;&gt;NYTimes Objective-C Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;php&#34;&gt;PHP&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/standards.php&#34; title=&#34;PEAR Coding Standards&#34;&gt;PEAR Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.php-fig.org/psr/psr-2/&#34; title=&#34;PSR-2 Coding Style Guideline&#34;&gt;PSR-2 Coding Style Guideline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://symfony.com/doc/current/contributing/code/standards.html&#34; title=&#34;Symfony Coding Standards&#34;&gt;Symfony Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://framework.zend.com/manual/1.12/en/coding-standard.html&#34; title=&#34;Zend Coding Standards&#34;&gt;Zend Coding Standards&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/pyguide.html&#34; title=&#34;Google Python Style Guide&#34;&gt;Google Python Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/dev/peps/pep-0008/&#34; title=&#34;PEP 8 - Style Guide for Python Code&#34;&gt;PEP 8 - Style Guide for Python Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ruby&#34;&gt;Ruby&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/styleguide/ruby&#34; title=&#34;GitHub Ruby Styleguide&#34;&gt;GitHub Ruby Styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bestie/objective-ruby-style-guide&#34; title=&#34;The Objective Ruby Style Guide&#34;&gt;The Objective Ruby Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;scala&#34;&gt;Scala&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitter.github.io/effectivescala/&#34; title=&#34;Effective Scala&#34;&gt;Effective Scala&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/style/&#34; title=&#34;Scala Style Guide&#34;&gt;Scala Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;shell&#34;&gt;Shell&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.inquisitor.ru/doc/coding-style-shell.html&#34; title=&#34;Coding style guidelines: Shell script&#34;&gt;Coding style guidelines: Shell script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/shell.xml&#34; title=&#34;Google Shell Style Guide&#34;&gt;Google Shell Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;swift&#34;&gt;Swift&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/swift-style-guide&#34; title=&#34;GitHubs Swift Style Guide&#34;&gt;GitHubs Swift Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://google-styleguide.googlecode.com/svn/trunk/vimscriptguide.xml&#34; title=&#34;Google Vimscript Style Guide&#34;&gt;Google Vimscript Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

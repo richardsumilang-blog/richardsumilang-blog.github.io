@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmz on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/tmz/</link>
+    <description>Recent content in Tmz on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Sep 2015 13:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/tmz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TMZ Mobile Website</title>
+      <link>https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</link>
+      <pubDate>Tue, 22 Sep 2015 13:00:00 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</guid>
+      <description>&lt;p&gt;It has been an exciting journey from start to finish. As the head developer of
+the mobile website for one of the world&amp;rsquo;s biggest blog sites, I&amp;rsquo;m pleased to
+announce &lt;em&gt;Version 2&lt;/em&gt; of TMZ! Take a look at all the new features. I think you
+will like it.&lt;/p&gt;
+
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+
+&lt;p&gt;The views and opinions shared in this article are those of the author&amp;rsquo;s (Richard
+Sumilang) and do not necessarily reflect TMZ, Telepictures, Warner Bros and any
+staff member or affiliate.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First day at TMZ</title>
+      <link>https://richardsumilang.com/etc/first-day-at-tmz/</link>
+      <pubDate>Tue, 01 Apr 2014 21:49:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/etc/first-day-at-tmz/</guid>
+      <description>Today marks day 1 of my journey at TMZ. There is an exciting energy in this environment. The first thing you notice is an open workspace where there is action going on every minute. (You probably already know that if you&amp;rsquo;ve watched the show before.) The technology is also very impressive. The team no doubt consists of nothing but A+ players. How else would TMZ have gotten to be so big in a short amount of time?</description>
+    </item>
+    
+  </channel>
+</rss>

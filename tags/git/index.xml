@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/git/</link>
+    <description>Recent content in Git on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Jan 2015 00:58:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>https://richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sat, 31 Jan 2015 00:58:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

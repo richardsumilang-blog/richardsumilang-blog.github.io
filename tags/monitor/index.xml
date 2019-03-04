@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitor on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/monitor/</link>
+    <description>Recent content in Monitor on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jul 2014 22:28:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/monitor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitor your filesystem events on Linux with inotify</title>
+      <link>https://richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
+      <pubDate>Mon, 14 Jul 2014 22:28:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
+hooks into your kernel and responding to events on your filesystem is much more
+efficient than doing something like writing a cron job to check for changes in a
+directory every minute. Fortunately, if you&amp;rsquo;re not a C developer, there is a
+package called &lt;a href=&#34;https://github.com/rvoicilas/inotify-tools/wiki&#34; title=&#34;inotify tools&#34;&gt;inotify-tools&lt;/a&gt; that comes with two programs, &lt;code&gt;inotifywait&lt;/code&gt;
+and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotifywait&lt;/code&gt; waits for changes and
+&lt;code&gt;inotifywatch&lt;/code&gt; gathers filesystem access statistics.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

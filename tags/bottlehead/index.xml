@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bottlehead on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/bottlehead/</link>
+    <description>Recent content in Bottlehead on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Sep 2015 18:45:10 -0700</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/bottlehead/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bottlehead S.E.X. 2.1 Unboxed</title>
+      <link>https://richardsumilang.com/electronics/bottlehead/sex/unboxed/</link>
+      <pubDate>Sat, 19 Sep 2015 18:45:10 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/electronics/bottlehead/sex/unboxed/</guid>
+      <description>&lt;p&gt;There you have it. All the parts that I&amp;rsquo;ll be assembling for the Bottlehead
+S.E.X. version 2.1. The parts in the image include the impedance switch and the
+C4S components. To the far left, there is a bag I didn&amp;rsquo;t bother unraveling
+because it is mainly little screws and bolts that felt easy to lose.&lt;/p&gt;
+
+&lt;h3 id=&#34;build-order&#34;&gt;Build Order&lt;/h3&gt;
+
+&lt;p&gt;I will do incremental builds. This way I can test the quality of a build on it&amp;rsquo;s
+own before adding additional components. This is a good practice I follow in
+daily software development and has proved helpful in debugging. The order will
+be as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;S.E.X. kit.&lt;/li&gt;
+&lt;li&gt;Impedance switch installation.&lt;/li&gt;
+&lt;li&gt;C4S Upgrade.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bottlehead S.E.X. 2.1 Journey</title>
+      <link>https://richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</link>
+      <pubDate>Sat, 12 Sep 2015 18:51:47 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</guid>
+      <description>&lt;p&gt;After almost a month of waiting, my &lt;a href=&#34;http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; has finally arrived.
+This will be my first of many electronic DIY projects. I will detail the journey
+from start to finish. Including details like what tools I used, any problems
+I encountered, and any suggestions I come up with on the way. This blog series
+is sort of like an enhancement to the original guide provided with your
+&lt;a href=&#34;http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; purchase.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

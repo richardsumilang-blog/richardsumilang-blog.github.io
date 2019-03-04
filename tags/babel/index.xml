@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Babel on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/babel/</link>
+    <description>Recent content in Babel on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2015 18:43:34 -0700</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/babel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Version 3</title>
+      <link>https://richardsumilang.com/etc/version-3/</link>
+      <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
+      
+      <guid>https://richardsumilang.com/etc/version-3/</guid>
+      <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
+source. The theme has been modernized to load faster and I created more ways to
+navigate the site so more data is easily accessible while keeping the idea of
+simplicity in mind.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

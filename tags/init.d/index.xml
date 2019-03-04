@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Init.d on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/init.d/</link>
+    <description>Recent content in Init.d on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2014 14:08:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/init.d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LSB Init.d Script Template</title>
+      <link>https://richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</link>
+      <pubDate>Mon, 07 Jul 2014 14:08:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</guid>
+      <description>&lt;p&gt;Quick little &lt;code&gt;init.d&lt;/code&gt; template:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

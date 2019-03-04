@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tv on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/tv/</link>
+    <description>Recent content in Tv on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 May 2014 14:24:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/tv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to unlink Netflix from Panasonic Viera Cast VT25</title>
+      <link>https://richardsumilang.com/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/</link>
+      <pubDate>Sun, 25 May 2014 14:24:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/</guid>
+      <description>&lt;p&gt;Unfortunately you can&amp;rsquo;t on a &lt;a href=&#34;http://www.amazon.com/Panasonic-TC-P58VT25-1080p-VIERA-Plasma/dp/B003N3BV5O&#34; title=&#34;Panasonic VT25&#34;&gt;Panasonic VT25&lt;/a&gt;. Someone managed to forget
+about that feature on the Netflix app. Weird because it&amp;rsquo;s there for YouTube,
+Pandora, Amazon, etc&amp;hellip; The only way you can is by resetting your TV to the
+factory settings and starting from scratch. You&amp;rsquo;re wrong if you think you can
+just log into your Netflix account and click the unlink all devices link from
+your profile. On the plus side&amp;hellip; Never mind, there is no plus side.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ftp on Top Secret Labs - Richard Sumilang</title>
+    <link>https://richardsumilang.com/tags/ftp/</link>
+    <description>Recent content in Ftp on Top Secret Labs - Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Sep 2014 15:30:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://richardsumilang.com/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FTP Sync Script</title>
+      <link>https://richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
+      <pubDate>Sat, 27 Sep 2014 15:30:00 -0800</pubDate>
+      
+      <guid>https://richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
+it on GitHub now. Enjoy :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/sync-ftp&#34; title=&#34;ftp sync script&#34;&gt;https://github.com/rsumilang/sync-ftp&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
