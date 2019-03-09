@@ -8,7 +8,7 @@ aliases = ["/blog/2014/05/25/svn-certificate-issue"]
 
 +++
 
-[1]: http://www.amazon.com/Panasonic-TC-P58VT25-1080p-VIERA-Plasma/dp/B003N3BV5O "Panasonic VT25"
+[1]: https://www.amazon.com/Panasonic-TC-P58VT25-1080p-VIERA-Plasma/dp/B003N3BV5O "Panasonic VT25"
 
 Unfortunately you can't on a [Panasonic VT25][1]. Someone managed to forget
 about that feature on the Netflix app. Weird because it's there for YouTube,
