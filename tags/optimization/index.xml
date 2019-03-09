@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Optimization on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/optimization/</link>
+    <link>https://www.richardsumilang.com/tags/optimization/</link>
     <description>Recent content in Optimization on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 May 2014 18:15:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Type Casting String by Concatenation Performance Test in PHP</title>
-      <link>https://richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
+      <link>https://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
       <pubDate>Thu, 08 May 2014 18:15:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
       <description>&lt;p&gt;The purpose of this test is to see if casting an object to a string by
 concatenating it was actually slower than using normal type casting. Here is my
 source:&lt;/p&gt;</description>

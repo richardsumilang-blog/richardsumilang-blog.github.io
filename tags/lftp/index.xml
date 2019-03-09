@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lftp on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/lftp/</link>
+    <link>https://www.richardsumilang.com/tags/lftp/</link>
     <description>Recent content in Lftp on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Sep 2014 15:30:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/lftp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/lftp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FTP Sync Script</title>
-      <link>https://richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
+      <link>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
       <pubDate>Sat, 27 Sep 2014 15:30:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <guid>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
       <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
 it on GitHub now. Enjoy :)&lt;/p&gt;
 

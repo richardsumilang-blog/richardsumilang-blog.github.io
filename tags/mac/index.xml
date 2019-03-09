@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/mac/</link>
+    <link>https://www.richardsumilang.com/tags/mac/</link>
     <description>Recent content in Mac on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jan 2015 01:57:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Getting the most out of your Apple AirPort Extreme network</title>
-      <link>https://richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
+      <link>https://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
       <pubDate>Fri, 09 Jan 2015 01:57:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
+      <guid>https://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
       <description>&lt;p&gt;My home network is wired through a Dell gigabit switch which is connected to my
 AirPort extreme. Needless to say, this has worked well for me as the only
 wireless devices connected are mobile devices. I decided to set up another room
@@ -30,20 +30,20 @@ the less WiFi, the better.&lt;/p&gt;</description>
     
     <item>
       <title>How to clean and optimize your Aperture Library</title>
-      <link>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <link>https://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
       <pubDate>Sun, 13 Jul 2014 20:47:01 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <guid>https://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
       <description>&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
 a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Converting Windows Network Path for Mac</title>
-      <link>https://richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</link>
+      <link>https://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</link>
       <pubDate>Fri, 30 May 2014 15:41:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</guid>
+      <guid>https://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</guid>
       <description>If you&amp;rsquo;re given a Windows network path such as \\Foo\Bar then that basically means connect to shared folder Bar on the server Foo. To do this, you can go Finder -&amp;gt; Go -&amp;gt; Connect to Server... and type smb://Foo/Bar which is the equivalent.</description>
     </item>
     

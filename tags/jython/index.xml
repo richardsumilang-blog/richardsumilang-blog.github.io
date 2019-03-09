@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jython on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/jython/</link>
+    <link>https://www.richardsumilang.com/tags/jython/</link>
     <description>Recent content in Jython on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Apr 2014 17:58:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/jython/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/jython/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to install Jython on OS X</title>
-      <link>https://richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
+      <link>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
       <pubDate>Tue, 08 Apr 2014 17:58:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>

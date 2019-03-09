@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/php/</link>
+    <link>https://www.richardsumilang.com/tags/php/</link>
     <description>Recent content in Php on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Feb 2015 19:25:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A thing or two about style guides</title>
-      <link>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
+      <link>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
       <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
+      <guid>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
       <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
 This keeps the code manageable when you or your peers come back to work on it in
 the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
@@ -36,10 +36,10 @@ Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
     
     <item>
       <title>Working with Apple&#39;s iOS image orientation</title>
-      <link>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <link>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
       <pubDate>Fri, 17 Oct 2014 14:33:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
       <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
 they are not rotated properly when transferring them to another device or
 software. This happens because the device is held at a certain angle when the
@@ -54,10 +54,10 @@ taken and you can rotate it accordingly.&lt;/p&gt;
     
     <item>
       <title>Chef Gearman Cookbook v0.1.0</title>
-      <link>https://richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</link>
+      <link>https://www.richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</link>
       <pubDate>Thu, 12 Jun 2014 11:22:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</guid>
+      <guid>https://www.richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</guid>
       <description>A little Gearman cookbook I put together for Chef. Supports installing multiple versions by source. Also has a recipe for the PHP extension.
 Grab it from GitHub!
 kthxbye.</description>
@@ -65,10 +65,10 @@ kthxbye.</description>
     
     <item>
       <title>Type Casting String by Concatenation Performance Test in PHP</title>
-      <link>https://richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
+      <link>https://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
       <pubDate>Thu, 08 May 2014 18:15:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
       <description>&lt;p&gt;The purpose of this test is to see if casting an object to a string by
 concatenating it was actually slower than using normal type casting. Here is my
 source:&lt;/p&gt;</description>
@@ -76,21 +76,21 @@ source:&lt;/p&gt;</description>
     
     <item>
       <title>How to install Gearman for PHP on OS X</title>
-      <link>https://richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
+      <link>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
       <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
 requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
-&lt;a href=&#34;https://richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
+&lt;a href=&#34;https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to upgrade to PHP 5.4 on Ubuntu 12.10</title>
-      <link>https://richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
+      <link>https://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
       <pubDate>Mon, 31 Mar 2014 03:51:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
+      <guid>https://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
       <description>&lt;p&gt;PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
 backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
 and run the following commands:&lt;/p&gt;</description>
@@ -98,10 +98,10 @@ and run the following commands:&lt;/p&gt;</description>
     
     <item>
       <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
-      <link>https://richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <link>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
       <pubDate>Mon, 31 Mar 2014 01:43:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
       <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
 MongoDB extension. I stumbled on an example on
 &lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;

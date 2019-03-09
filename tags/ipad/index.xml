@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ipad on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/ipad/</link>
+    <link>https://www.richardsumilang.com/tags/ipad/</link>
     <description>Recent content in Ipad on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Oct 2014 14:33:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Working with Apple&#39;s iOS image orientation</title>
-      <link>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <link>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
       <pubDate>Fri, 17 Oct 2014 14:33:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
       <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
 they are not rotated properly when transferring them to another device or
 software. This happens because the device is held at a certain angle when the
@@ -31,10 +31,10 @@ taken and you can rotate it accordingly.&lt;/p&gt;
     
     <item>
       <title>iOS Simulator Link</title>
-      <link>https://richardsumilang.com/programming/ios/ios-simulator-link/</link>
+      <link>https://www.richardsumilang.com/programming/ios/ios-simulator-link/</link>
       <pubDate>Wed, 14 May 2014 17:22:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/ios/ios-simulator-link/</guid>
+      <guid>https://www.richardsumilang.com/programming/ios/ios-simulator-link/</guid>
       <description>&lt;p&gt;The iOS Simulator is obviously a must have tool for development. Web development
 is no exception but Apple makes you jump through a few hoops (Xcode) to get to
 it. Luckily you can run it as a standalone application.&lt;/p&gt;</description>

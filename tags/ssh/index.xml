@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ssh on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/ssh/</link>
+    <link>https://www.richardsumilang.com/tags/ssh/</link>
     <description>Recent content in Ssh on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Jul 2014 18:32:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to enable SSH access to Synology DiskStation</title>
-      <link>https://richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</link>
+      <link>https://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</link>
       <pubDate>Sat, 12 Jul 2014 18:32:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</guid>
+      <guid>https://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</guid>
       <description>&lt;p&gt;Log into your system with an administrator account and open the
 &lt;strong&gt;&lt;sup&gt;1&lt;/sup&gt;Control Panel&lt;/strong&gt; applet. From there, click on
 &lt;strong&gt;&lt;sup&gt;2&lt;/sup&gt;Terminal &amp;amp; SNMP&lt;/strong&gt;, &lt;strong&gt;&lt;sup&gt;3&lt;/sup&gt;Enabled SSH service&lt;/strong&gt;, and
@@ -25,10 +25,10 @@
     
     <item>
       <title>How to setup automated backups to SSH server with Synology DiskStation</title>
-      <link>https://richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</link>
+      <link>https://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</link>
       <pubDate>Sat, 12 Jul 2014 02:01:01 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</guid>
+      <guid>https://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</guid>
       <description>&lt;p&gt;As a best practice, it&amp;rsquo;s great great to have your data in more than one
 location. I use my Synology Diskation as a local network file server at my home.
 The reality is something can happen and I lose all my important data in that

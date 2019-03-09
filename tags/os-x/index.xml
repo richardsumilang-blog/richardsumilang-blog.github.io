@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Os X on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/os-x/</link>
+    <link>https://www.richardsumilang.com/tags/os-x/</link>
     <description>Recent content in Os X on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2015 17:59:00 -0700</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/os-x/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/os-x/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automate Your OS X App Installations</title>
-      <link>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <link>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
       <pubDate>Sun, 20 Sep 2015 17:59:00 -0700</pubDate>
       
-      <guid>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
-      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
 multiple Mac workstations. The new version now allows you to configure parameters of
 the installation such as install path and which category of applications you
 wish to install.&lt;/p&gt;
@@ -32,20 +32,20 @@ tedious task when working with dozens of pieces of software.&lt;/p&gt;
     
     <item>
       <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
-      <link>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <link>https://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
       <pubDate>Thu, 08 Jan 2015 21:27:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <guid>https://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
       <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
 Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My cask script!</title>
-      <link>https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <link>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
       <pubDate>Sun, 26 Oct 2014 16:30:00 -0700</pubDate>
       
-      <guid>https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
       <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
 haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
 to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
@@ -53,41 +53,41 @@ to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
     
     <item>
       <title>How to clean and optimize your Aperture Library</title>
-      <link>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <link>https://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
       <pubDate>Sun, 13 Jul 2014 20:47:01 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <guid>https://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
       <description>&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
 a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Apps I can&#39;t live without on OS X</title>
-      <link>https://richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</link>
+      <link>https://www.richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</link>
       <pubDate>Wed, 07 May 2014 12:27:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</guid>
+      <guid>https://www.richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; Want to automate your software installation? Take a look at how I
-did with &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;</description>
+did with &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to install Gearman for PHP on OS X</title>
-      <link>https://richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
+      <link>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
       <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
 requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
-&lt;a href=&#34;https://richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
+&lt;a href=&#34;https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to install Gearman on OS X</title>
-      <link>https://richardsumilang.com/server/gearman/install-gearman-on-os-x/</link>
+      <link>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</link>
       <pubDate>Wed, 23 Apr 2014 22:48:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
@@ -95,19 +95,19 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
     
     <item>
       <title>How to install Groovy on OS X</title>
-      <link>https://richardsumilang.com/programming/groovy/install-groovy-on-os-x/</link>
+      <link>https://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</link>
       <pubDate>Tue, 15 Apr 2014 13:09:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to install Jython on OS X</title>
-      <link>https://richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
+      <link>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</link>
       <pubDate>Tue, 08 Apr 2014 17:58:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>
@@ -115,10 +115,10 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
     
     <item>
       <title>How to install Nimrod on OS X</title>
-      <link>https://richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</link>
+      <link>https://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</link>
       <pubDate>Mon, 07 Apr 2014 11:09:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;</description>
@@ -126,10 +126,10 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
     
     <item>
       <title>How to install Redis on OS X</title>
-      <link>https://richardsumilang.com/server/redis/install-redis-on-os-x/</link>
+      <link>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</link>
       <pubDate>Fri, 04 Apr 2014 10:04:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
       <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Css3 on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/css3/</link>
+    <link>https://www.richardsumilang.com/tags/css3/</link>
     <description>Recent content in Css3 on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Sep 2015 18:43:34 -0700</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/css3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/css3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Version 3</title>
-      <link>https://richardsumilang.com/etc/version-3/</link>
+      <link>https://www.richardsumilang.com/etc/version-3/</link>
       <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
       
-      <guid>https://richardsumilang.com/etc/version-3/</guid>
+      <guid>https://www.richardsumilang.com/etc/version-3/</guid>
       <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
 source. The theme has been modernized to load faster and I created more ways to
 navigate the site so more data is easily accessible while keeping the idea of

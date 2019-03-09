@@ -3,7 +3,7 @@
   <channel>
     <title>Top Secret Labs - Richard Sumilang on Top Secret Labs - Richard Sumilang </title>
     <generator uri="https://gohugo.io">Hugo</generator>
-    <link>https://richardsumilang.com/</link>
+    <link>https://www.richardsumilang.com/</link>
     <language>en-us</language>
     <author>Richard Sumilang</author>
     
@@ -11,11 +11,11 @@
     
     <item>
       <title>Upgrading Emacs to 24.5</title>
-      <link>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <link>https://www.richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
       <pubDate>Sun, 46 Aug 5040 04:04:04 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+      <guid>https://www.richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dump this in your terminal:&lt;/p&gt;
 
@@ -39,10 +39,10 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
     
     <item>
       <title>What are In-Ear Monitors?</title>
-      <link>https://richardsumilang.com/electronics/audio/in-ear-monitors/</link>
+      <link>https://www.richardsumilang.com/electronics/audio/in-ear-monitors/</link>
       <pubDate>Sun, 16 Aug 10010 01:01:01 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/electronics/audio/in-ear-monitors/</guid>
+      <guid>https://www.richardsumilang.com/electronics/audio/in-ear-monitors/</guid>
       <description>&lt;p&gt;&lt;em&gt;In-Ear Monitors&lt;/em&gt; (IEMs), is a type of headphone designed to be partially
 inserted into a user&amp;rsquo;s ear canal by using form-fitting tips often made by a
 range materials such as rubber, soft plastic, silicon, and more. It&amp;rsquo;s also
@@ -63,10 +63,10 @@ canal.&lt;/p&gt;</description>
     
     <item>
       <title>Facebook Page Analytics</title>
-      <link>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</link>
+      <link>https://www.richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</link>
       <pubDate>Sun, 126 Aug 20120 12:12:12 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</guid>
+      <guid>https://www.richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</guid>
       <description>&lt;p&gt;I decided to flex my programming muscle and try something new. I&amp;rsquo;ve done Ruby
 for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34; title=&#34;Chef-Gearman&#34;&gt;Chef cookbooks&lt;/a&gt; but never a Ruby on Rails (RoR)
 application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
@@ -158,7 +158,7 @@ rake jobs:work # job server&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;Please refer to the graphic:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png&#34; alt=&#34;Facebook Analytics Database Graphic&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png&#34; alt=&#34;Facebook Analytics Database Graphic&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
 
@@ -277,10 +277,10 @@ be great for prototyping ideas. I&amp;rsquo;m a fan of the great gems I found an
     
     <item>
       <title>The World&#39;s Finest Audiophile Electronics</title>
-      <link>https://richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</link>
+      <link>https://www.richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</link>
       <pubDate>Sun, 116 Aug 15110 11:11:11 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</guid>
+      <guid>https://www.richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m very excited to announce &lt;a href=&#34;https://www.losslesslife.com/&#34; title=&#34;The world&#39;s finest Audiophile Electronics. Headphones, DACs, Amplifiers, reviews, and more.&#34;&gt;LosslessLife&lt;/a&gt;, a company focusing on the best
 high resolution audio gear. LosslessLife reflects the continuous hard work
 and commitment in the products it believes in by creating a voice to get the
@@ -328,16 +328,16 @@ more? Feel free to &lt;a href=&#34;http://pages.losslesslife.com/service/custome
     
     <item>
       <title>What are Planar Magnetic Drivers?</title>
-      <link>https://richardsumilang.com/electronics/audio/planar-magnetic-drivers/</link>
+      <link>https://www.richardsumilang.com/electronics/audio/planar-magnetic-drivers/</link>
       <pubDate>Sun, 116 Aug 10110 11:11:11 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/electronics/audio/planar-magnetic-drivers/</guid>
+      <guid>https://www.richardsumilang.com/electronics/audio/planar-magnetic-drivers/</guid>
       <description>&lt;p&gt;A Planar Magnetic driver, has coined a few other terms such as &amp;ldquo;orthodynamic&amp;rdquo; or
 &amp;ldquo;Isodynamic&amp;rdquo;, all of which mean the same thing (in regards to headphones). They
 can be described as the child of a dynamic and electrostatic driver, sort of&amp;hellip;
 The best of both worlds, at least.&lt;/p&gt;
 
-&lt;p&gt;Like the &lt;a href=&#34;https://richardsumilang.com/electronics/audio/dynamic-drivers/&#34;&gt;dynamic driver&lt;/a&gt;, it requires a
+&lt;p&gt;Like the &lt;a href=&#34;https://www.richardsumilang.com/electronics/audio/dynamic-drivers/&#34;&gt;dynamic driver&lt;/a&gt;, it requires a
 magnetic field around a conductor with a current flowing thought it to drive the
 diaphragm. And like the electrostatic driver, it contains a thin sheet of
 flexible film. The key difference that coined the term &amp;ldquo;planar&amp;rdquo; refers to the
@@ -359,10 +359,10 @@ generated by the currant passing through it to pass or dissipate.&lt;/p&gt;</des
     
     <item>
       <title>What are Dynamic Drivers?</title>
-      <link>https://richardsumilang.com/electronics/audio/dynamic-drivers/</link>
+      <link>https://www.richardsumilang.com/electronics/audio/dynamic-drivers/</link>
       <pubDate>Sun, 116 Aug 10110 11:11:11 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/electronics/audio/dynamic-drivers/</guid>
+      <guid>https://www.richardsumilang.com/electronics/audio/dynamic-drivers/</guid>
       <description>&lt;p&gt;A &lt;em&gt;dynamic driver&lt;/em&gt;, sometimes referred to as a &amp;ldquo;moving coil&amp;rdquo; driver is the most
 common driver found in headphones. It is the same technology found in speakers
 around your home, but on a much smaller scale. This type of driver
@@ -379,10 +379,10 @@ range of sound for the average listener.&lt;/p&gt;</description>
     
     <item>
       <title>What are headphone drivers?</title>
-      <link>https://richardsumilang.com/electronics/audio/headphone-drivers/</link>
+      <link>https://www.richardsumilang.com/electronics/audio/headphone-drivers/</link>
       <pubDate>Sun, 116 Aug 51145 11:11:11 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/electronics/audio/headphone-drivers/</guid>
+      <guid>https://www.richardsumilang.com/electronics/audio/headphone-drivers/</guid>
       <description>&lt;p&gt;Headphones are essentially a set of tiny speakers that sit in, on or around your
 ears and like all speakers, they have drivers. Everyone can agree that not all
 headphones are the same or created equally. But besides the superficial
@@ -402,10 +402,10 @@ headphones.&lt;/p&gt;</description>
     
     <item>
       <title>TMZ Mobile Website</title>
-      <link>https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</link>
+      <link>https://www.richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</link>
       <pubDate>Sun, 96 Aug 22090 09:09:09 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</guid>
+      <guid>https://www.richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</guid>
       <description>&lt;p&gt;It has been an exciting journey from start to finish. As the head developer of
 the mobile website for one of the world&amp;rsquo;s biggest blog sites, I&amp;rsquo;m pleased to
 announce &lt;em&gt;Version 2&lt;/em&gt; of TMZ! Take a look at all the new features. I think you
@@ -445,7 +445,7 @@ images help you find the content you are looking for while continuing to load
 more articles into the feed as you scroll, keeping your browsing experience
 smooth.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;navigation-menu&#34;&gt;Navigation Menu&lt;/h3&gt;
 
@@ -459,7 +459,7 @@ you&amp;rsquo;re feeling like going on a tour then you can click the &amp;ldquo;
 and reserve a spot on the bus and tour hollywood. The &amp;ldquo;Login / Register&amp;rdquo; button
 signs you into TMZ, allowing you to add your own comments to articles.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;got-a-tip&#34;&gt;Got A Tip?&lt;/h2&gt;
 
@@ -467,7 +467,7 @@ signs you into TMZ, allowing you to add your own comments to articles.&lt;/p&gt;
 The new section now supports sending TMZ a direct email via a web form with the
 ability to upload files from your phone.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
 
@@ -478,7 +478,7 @@ results. The &lt;strong&gt;Popular&lt;/strong&gt; tab labels each article with a
 popularity. The &lt;strong&gt;Commented&lt;/strong&gt; section similarly labels each article with the
 number of comments per article.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;article-page&#34;&gt;Article Page&lt;/h3&gt;
 
@@ -509,7 +509,7 @@ article and buttons to article categories that you also may find interesting.&lt
 If you did not land on the article page coming from a feed then you will not see
 this feature.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
 
@@ -518,7 +518,7 @@ this feature.&lt;/p&gt;
 video with your social networks and find other related videos that you might be
 interested in watching next.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;photos&#34;&gt;Photos&lt;/h2&gt;
 
@@ -532,7 +532,7 @@ navigate in the direction you want to go. There are also new sharing features
 per photo and more gallery suggestions when reaching the end. I think you&amp;rsquo;ll
 like it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;sports&#34;&gt;Sports&lt;/h2&gt;
 
@@ -541,7 +541,7 @@ category. You can also find sports articles while browsing other article feeds.
 You will be able to easily identify a sports article by the green swipe on the
 article.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;celebs&#34;&gt;Celebs&lt;/h2&gt;
 
@@ -550,7 +550,7 @@ defaults to the most &lt;strong&gt;Trending&lt;/strong&gt; celebrities and you c
 tab to find a specific celebrity quicker. The &lt;strong&gt;All&lt;/strong&gt; section loads smaller
 thumbnails for faster scrolling.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;celebrity-bio&#34;&gt;Celebrity Bio&lt;/h3&gt;
 
@@ -561,7 +561,7 @@ galleries, videos, and/or articles featuring the current celebrity bio you are
 reading. We also show related celebrities that you may be interested in
 reading about.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;shows&#34;&gt;Shows&lt;/h2&gt;
 
@@ -570,7 +570,7 @@ this section and watch live streaming (for TMZ Live), full episodes, and clips
 for any of your favorite shows on your mobile device. You may also use the
 button on the bottom of the page to find local TV listings for your area.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;search&#34;&gt;Search&lt;/h2&gt;
 
@@ -581,7 +581,7 @@ galleries. Celebrities will be listed first and the other page types will be
 mixed in the results. You can identify each page type by the icons on the
 results.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;try-it-out-for-yourself&#34;&gt;Try it out for yourself!&lt;/h1&gt;
 
@@ -591,16 +591,16 @@ huge improvement over the previous implementation and I&amp;rsquo;m proud to hav
 stamped on the face of it. Many thanks to my awesome team for help making this
 possible.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Automate Your OS X App Installations</title>
-      <link>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <link>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
       <pubDate>Sun, 96 Aug 20090 09:09:09 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
-      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
 multiple Mac workstations. The new version now allows you to configure parameters of
 the installation such as install path and which category of applications you
 wish to install.&lt;/p&gt;
@@ -619,7 +619,7 @@ installing a fresh OS ran smoother than doing an upgrade. Maybe the scars are
 that deep from the days of going Windows 95 to 98? Idk.&lt;/p&gt;
 
 &lt;p&gt;Anyways, I&amp;rsquo;ll be doing a fresh install of El Capitan and I wanted to make sure
-my apps were in order since I&amp;rsquo;ve last used &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;my cask script&lt;/a&gt;. The process of
+my apps were in order since I&amp;rsquo;ve last used &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;my cask script&lt;/a&gt;. The process of
 manually installing each app takes longer than the actual OS install.
 Furthermore, I don&amp;rsquo;t need all apps installed in one shot so I broke them up into
 installable category groups&amp;hellip; Something I have been itching to do since the
@@ -699,10 +699,10 @@ according to your preferences.&lt;/p&gt;
     
     <item>
       <title>Bottlehead S.E.X. 2.1 Unboxed</title>
-      <link>https://richardsumilang.com/electronics/bottlehead/sex/unboxed/</link>
+      <link>https://www.richardsumilang.com/electronics/bottlehead/sex/unboxed/</link>
       <pubDate>Sun, 96 Aug 190910 09:09:09 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/electronics/bottlehead/sex/unboxed/</guid>
+      <guid>https://www.richardsumilang.com/electronics/bottlehead/sex/unboxed/</guid>
       <description>&lt;p&gt;There you have it. All the parts that I&amp;rsquo;ll be assembling for the Bottlehead
 S.E.X. version 2.1. The parts in the image include the impedance switch and the
 C4S components. To the far left, there is a bag I didn&amp;rsquo;t bother unraveling
@@ -736,10 +736,10 @@ they will not be easily accessible later. The order will be as follows:&lt;/p&gt
     
     <item>
       <title>Bottlehead S.E.X. 2.1 Journey</title>
-      <link>https://richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</link>
+      <link>https://www.richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</link>
       <pubDate>Sun, 96 Aug 120947 09:09:09 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</guid>
+      <guid>https://www.richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</guid>
       <description>&lt;p&gt;After almost a month of waiting, my &lt;a href=&#34;http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; has finally arrived.
 This will be my first of many electronic DIY projects. I will detail the journey
 from start to finish. Including details like what tools I used, any problems
@@ -787,10 +787,10 @@ questions or suggestions in the comments!&lt;/p&gt;
     
     <item>
       <title>Version 3</title>
-      <link>https://richardsumilang.com/etc/version-3/</link>
+      <link>https://www.richardsumilang.com/etc/version-3/</link>
       <pubDate>Sun, 96 Aug 50934 09:09:09 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/etc/version-3/</guid>
+      <guid>https://www.richardsumilang.com/etc/version-3/</guid>
       <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
 source. The theme has been modernized to load faster and I created more ways to
 navigate the site so more data is easily accessible while keeping the idea of
@@ -897,16 +897,16 @@ doing only one newsletter a month if there is a decent amount of subscriptions.&
 
 &lt;p&gt;This site is dedicated to my daughter, Eva. May all your dreams come true.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/etc/version-3/eva-misfit.jpeg&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/etc/version-3/eva-misfit.jpeg&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>&#34;effective. Power&#34; ... An AOL Flashback.</title>
-      <link>https://richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</link>
+      <link>https://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</link>
       <pubDate>Sun, 56 Aug 28050 05:05:05 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+      <guid>https://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
 iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
@@ -952,16 +952,16 @@ interesting place to be in the 90s.&lt;/p&gt;</description>
     
     <item>
       <title>Using jQuery mobile in a ECMAScript 6 project</title>
-      <link>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <link>https://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
       <pubDate>Sun, 36 Aug 11030 03:03:03 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <guid>https://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
       <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
 &lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After a quick inspection, I see that jQuery-mobile is having trouble binding
 itself to the &lt;code&gt;root&lt;/code&gt; aka &lt;code&gt;this&lt;/code&gt; aka &lt;code&gt;window&lt;/code&gt; object. This is because the way
@@ -1054,10 +1054,10 @@ few other people were stuck with this issue so be it.&lt;/p&gt;
     
     <item>
       <title>A thing or two about style guides</title>
-      <link>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
+      <link>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
       <pubDate>Sun, 26 Aug 8020 02:02:02 PST</pubDate>
       <author>Richard Sumilang</author>
-      <guid>https://richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
+      <guid>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
       <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
 This keeps the code manageable when you or your peers come back to work on it in
 the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you

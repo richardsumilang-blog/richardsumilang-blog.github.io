@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/software/</link>
+    <link>https://www.richardsumilang.com/tags/software/</link>
     <description>Recent content in Software on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2015 17:59:00 -0700</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automate Your OS X App Installations</title>
-      <link>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <link>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
       <pubDate>Sun, 20 Sep 2015 17:59:00 -0700</pubDate>
       
-      <guid>https://richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
-      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
 multiple Mac workstations. The new version now allows you to configure parameters of
 the installation such as install path and which category of applications you
 wish to install.&lt;/p&gt;
@@ -32,10 +32,10 @@ tedious task when working with dozens of pieces of software.&lt;/p&gt;
     
     <item>
       <title>My cask script!</title>
-      <link>https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <link>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
       <pubDate>Sun, 26 Oct 2014 16:30:00 -0700</pubDate>
       
-      <guid>https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
       <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
 haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
 to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
@@ -43,12 +43,12 @@ to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
     
     <item>
       <title>Apps I can&#39;t live without on OS X</title>
-      <link>https://richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</link>
+      <link>https://www.richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</link>
       <pubDate>Wed, 07 May 2014 12:27:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</guid>
+      <guid>https://www.richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; Want to automate your software installation? Take a look at how I
-did with &lt;a href=&#34;https://richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;</description>
+did with &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
     
   </channel>

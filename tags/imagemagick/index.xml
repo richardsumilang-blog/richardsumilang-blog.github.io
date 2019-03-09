@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Imagemagick on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/imagemagick/</link>
+    <link>https://www.richardsumilang.com/tags/imagemagick/</link>
     <description>Recent content in Imagemagick on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Oct 2014 14:33:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/imagemagick/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/imagemagick/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Working with Apple&#39;s iOS image orientation</title>
-      <link>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <link>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
       <pubDate>Fri, 17 Oct 2014 14:33:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <guid>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
       <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
 they are not rotated properly when transferring them to another device or
 software. This happens because the device is held at a certain angle when the

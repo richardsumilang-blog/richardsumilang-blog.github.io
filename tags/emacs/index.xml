@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emacs on Top Secret Labs - Richard Sumilang</title>
-    <link>https://richardsumilang.com/tags/emacs/</link>
+    <link>https://www.richardsumilang.com/tags/emacs/</link>
     <description>Recent content in Emacs on Top Secret Labs - Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Apr 2017 14:08:00 -0800</lastBuildDate>
     
-	<atom:link href="https://richardsumilang.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Upgrading Emacs to 24.5</title>
-      <link>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <link>https://www.richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
       <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
       
-      <guid>https://richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+      <guid>https://www.richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dump this in your terminal:&lt;/p&gt;
 
