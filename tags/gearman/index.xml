@@ -28,8 +28,8 @@ kthxbye.</description>
       <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
-requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
+requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
 &lt;a href=&#34;https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
     </item>
     
@@ -39,7 +39,7 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
       <pubDate>Wed, 23 Apr 2014 22:48:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
     </item>

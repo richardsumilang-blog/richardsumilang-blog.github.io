@@ -41,7 +41,7 @@ it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/mast
       
       <guid>https://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
       <description>&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
-at &lt;a href=&#34;http://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+at &lt;a href=&#34;https://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
 design from your code. This is particularly useful when you are adding content
 to your site after the initial rendering. Data can be fed in from a number of
 sources and added to a page using a template.&lt;/p&gt;</description>

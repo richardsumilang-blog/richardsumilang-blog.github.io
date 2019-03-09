@@ -36,7 +36,7 @@ tedious task when working with dozens of pieces of software.&lt;/p&gt;
       <pubDate>Sun, 26 Oct 2014 16:30:00 -0700</pubDate>
       
       <guid>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
-      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;http://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
+      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;https://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
 haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
 to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
     </item>
@@ -59,7 +59,7 @@ it on GitHub now. Enjoy :)&lt;/p&gt;
       <pubDate>Mon, 14 Jul 2014 22:28:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
+      <description>&lt;p&gt;&lt;a href=&#34;https://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
 hooks into your kernel and responding to events on your filesystem is much more
 efficient than doing something like writing a cron job to check for changes in a
 directory every minute. Fortunately, if you&amp;rsquo;re not a C developer, there is a
@@ -74,7 +74,7 @@ and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotify
       <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
+      <description>&lt;p&gt;The &lt;a href=&#34;https://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
 remote users to read memory without leaving a trace. Here are the steps to up
 update Ubuntu to patch the issue.&lt;/p&gt;</description>
     </item>

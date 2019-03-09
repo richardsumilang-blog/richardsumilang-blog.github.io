@@ -31,7 +31,7 @@ mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --dr
       <guid>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
       <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
 MongoDB extension. I stumbled on an example on
-&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
 illustration showing how to do this and rewrote it in what I think is a slightly
 more modern way that does the same thing.&lt;/p&gt;</description>
     </item>

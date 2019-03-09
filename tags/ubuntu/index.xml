@@ -24,7 +24,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
 cd ~/src
-wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+wget https://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
 tar xf emacs-24.5.tar.gz
 cd emacs-24.5
 ./configure
@@ -39,7 +39,7 @@ sudo checkinstall
       <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
+      <description>&lt;p&gt;The &lt;a href=&#34;https://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
 remote users to read memory without leaving a trace. Here are the steps to up
 update Ubuntu to patch the issue.&lt;/p&gt;</description>
     </item>

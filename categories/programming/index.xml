@@ -42,8 +42,8 @@ well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
       <guid>https://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
       <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
-with &lt;a href=&#34;http://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
-&lt;a href=&#34;http://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
     </item>
@@ -160,8 +160,8 @@ source:&lt;/p&gt;</description>
       <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
-requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
+requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
 &lt;a href=&#34;https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
     </item>
     
@@ -171,7 +171,7 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
       <pubDate>Tue, 15 Apr 2014 13:09:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -180,7 +180,7 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
       <pubDate>Tue, 08 Apr 2014 17:58:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -191,7 +191,7 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
       <pubDate>Mon, 07 Apr 2014 11:09:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -203,7 +203,7 @@ requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgear
       
       <guid>https://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
       <description>&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
-at &lt;a href=&#34;http://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+at &lt;a href=&#34;https://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
 design from your code. This is particularly useful when you are adding content
 to your site after the initial rendering. Data can be fed in from a number of
 sources and added to a page using a template.&lt;/p&gt;</description>
@@ -217,7 +217,7 @@ sources and added to a page using a template.&lt;/p&gt;</description>
       <guid>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
       <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
 MongoDB extension. I stumbled on an example on
-&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
 illustration showing how to do this and rewrote it in what I think is a slightly
 more modern way that does the same thing.&lt;/p&gt;</description>
     </item>

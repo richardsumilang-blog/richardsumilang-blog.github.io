@@ -24,7 +24,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
 cd ~/src
-wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+wget https://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
 tar xf emacs-24.5.tar.gz
 cd emacs-24.5
 ./configure

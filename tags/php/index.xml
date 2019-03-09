@@ -80,8 +80,8 @@ source:&lt;/p&gt;</description>
       <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
-requires &lt;a href=&#34;http://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
+requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
 &lt;a href=&#34;https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
     </item>
     
@@ -104,7 +104,7 @@ and run the following commands:&lt;/p&gt;</description>
       <guid>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
       <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
 MongoDB extension. I stumbled on an example on
-&lt;a href=&#34;http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
 illustration showing how to do this and rewrote it in what I think is a slightly
 more modern way that does the same thing.&lt;/p&gt;</description>
     </item>

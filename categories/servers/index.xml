@@ -24,7 +24,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
 cd ~/src
-wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+wget https://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
 tar xf emacs-24.5.tar.gz
 cd emacs-24.5
 ./configure
@@ -142,7 +142,7 @@ mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --dr
       <pubDate>Wed, 23 Apr 2014 22:48:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
-      <description>&lt;p&gt;Setup &lt;a href=&#34;http://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -153,7 +153,7 @@ mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --dr
       <pubDate>Fri, 04 Apr 2014 10:04:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
-      <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;http://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
