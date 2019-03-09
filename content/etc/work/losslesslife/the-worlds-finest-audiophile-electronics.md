@@ -29,14 +29,14 @@ Date: "2015-11-15T15:28:00-07:00"
 ---
 
 [1]: https://www.losslesslife.com/ "The world's finest Audiophile Electronics. Headphones, DACs, Amplifiers, reviews, and more."
-[2]: http://pages.losslesslife.com/ "Covering everything from high-end and audiophile headphones. Headphones and headphone amplifiers, accessories, how-to guides, and reviews."
+[2]: https://pages.losslesslife.com/ "Covering everything from high-end and audiophile headphones. Headphones and headphone amplifiers, accessories, how-to guides, and reviews."
 [3]: https://twitter.com/losslesslife "Follow the audiophile gurus on Twitter @ LosslessLife"
 [4]: https://www.facebook.com/LosslessLife "Follow the audiophile gurus on Facebook @ LosslessLife"
 [5]: https://instagram.com/losslesslife/ "Follow the audiophile gurus on Instagram @ LosslessLife"
-[6]: http://losslesslife.tumblr.com/ "Follow the audiophile gurus on Tumblr @ LosslessLife"
-[7]: http://pages.losslesslife.com/service/mission-statement/ "An audiophile mission statement"
-[8]: http://pages.losslesslife.com/service/about-losslesslife/ "LosslessLife company information"
-[9]: http://pages.losslesslife.com/service/customer-service/ "We love chatting."
+[6]: https://losslesslife.tumblr.com/ "Follow the audiophile gurus on Tumblr @ LosslessLife"
+[7]: https://pages.losslesslife.com/service/mission-statement/ "An audiophile mission statement"
+[8]: https://pages.losslesslife.com/service/about-losslesslife/ "LosslessLife company information"
+[9]: https://pages.losslesslife.com/service/customer-service/ "We love chatting."
 
 I'm very excited to announce [LosslessLife][1], a company focusing on the best
 high resolution audio gear. LosslessLife reflects the continuous hard work

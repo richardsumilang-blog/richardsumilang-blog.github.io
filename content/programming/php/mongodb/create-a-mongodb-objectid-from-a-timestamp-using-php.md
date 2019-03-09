@@ -10,13 +10,13 @@ aliases = ["/blog/2014/03/31/how-to-create-a-mongodb-objectid-from-a-timestamp-u
 
 This is a useful tidbit of code to have until PHP adds this feature into their
 MongoDB extension. I stumbled on an example on
-[Stack Overflow](http://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver "Create MongoDB ObjectID from date in the past using PHP driver")
+[Stack Overflow](https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver "Create MongoDB ObjectID from date in the past using PHP driver")
 illustration showing how to do this and rewrote it in what I think is a slightly
 more modern way that does the same thing.
 
 <!--more-->
 
-[ObjectId](http://docs.mongodb.org/manual/reference/object-id/ "ObjectId - MongoDB Manual 2.4.9")'s
+[ObjectId](https://docs.mongodb.org/manual/reference/object-id/ "ObjectId - MongoDB Manual 2.4.9")'s
 are constructed using a 4-byte timestamp value, 3-byte machine identifier, 2-byte process id, and a 3-byte counter which create a 12-byte BSON type:
 
 

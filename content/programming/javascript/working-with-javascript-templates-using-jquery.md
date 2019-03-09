@@ -8,8 +8,8 @@ aliases = ["/blog/2014/04/01/working-with-javascript-templates-using-jquery"]
 
 +++
 
-[1]: http://www.monkeyquest.com "MonkeyQuest"
-[2]: http://www.iana.org/assignments/media-types/media-types.xhtml "Media types"
+[1]: https://www.monkeyquest.com "MonkeyQuest"
+[2]: https://www.iana.org/assignments/media-types/media-types.xhtml "Media types"
 
 I picked up this nifty way of templating HTML code for JavaScript while working
 at [Monkey Quest][1] and haven't looked back. The idea here is to separate your

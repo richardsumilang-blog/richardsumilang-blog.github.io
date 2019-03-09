@@ -8,9 +8,9 @@ aliases = ["/blog/2014/04/23/how-to-install-gearman-for-php-on-os-x"]
 
 +++
 
-[1]: http://www.php.net/manual/en/book.gearman.php "Gearman PHP"
-[2]: http://brew.sh/ "Homebrew"
-[3]: http://gearman.info/libgearman/ "libgearman"
+[1]: https://www.php.net/manual/en/book.gearman.php "Gearman PHP"
+[2]: https://brew.sh/ "Homebrew"
+[3]: https://gearman.info/libgearman/ "libgearman"
 
 Setup [Gearman][1] for PHP with OS X 10.9.2 Mavericks using [brew][2]. This
 requires [libgearman][3] and the easiest way to get it is probably to

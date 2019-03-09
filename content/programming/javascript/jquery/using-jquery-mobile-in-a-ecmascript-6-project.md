@@ -10,8 +10,8 @@ aliases = ["/blog/2015/03/11/using-jquery-mobile-in-a-ecmascript-6-project"]
 +++
 
 [1]: https://babeljs.io/ "Babel JS"
-[2]: http://browserify.org/ "Browserify"
-[3]: http://jquerymobile.com/ "jQuery Mobile"
+[2]: https://browserify.org/ "Browserify"
+[3]: https://jquerymobile.com/ "jQuery Mobile"
 
 I started using ECMAScript 6 in a project which required supporting the
 dependencies I was upgrading from. I used [Babel JS][1] to transpile my ES6 code

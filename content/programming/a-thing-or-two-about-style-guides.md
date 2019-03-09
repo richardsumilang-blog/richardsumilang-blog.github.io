@@ -91,52 +91,52 @@ it's best to do what's best for each language.
 ### Vim
 - [Google Vimscript Style Guide][vim1]
 
-[general1]: http://en.wikipedia.org/wiki/Programming_style "Programming style"
+[general1]: https://en.wikipedia.org/wiki/Programming_style "Programming style"
 [general2]: https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style "MDN Coding Style"
-[general3]: http://www.komputado.com/eseoj/1tbs.htm "The One True Brace Style"
+[general3]: https://www.komputado.com/eseoj/1tbs.htm "The One True Brace Style"
 
-[cpp1]: http://www.stroustrup.com/bs_faq2.html "Bjarne Stroustrup's C++ Style and Technique FAQ"
-[cpp2]: http://google-styleguide.googlecode.com/svn/trunk/cppguide.html "Google C++ Style Guide"
+[cpp1]: https://www.stroustrup.com/bs_faq2.html "Bjarne Stroustrup's C++ Style and Technique FAQ"
+[cpp2]: https://google-styleguide.googlecode.com/svn/trunk/cppguide.html "Google C++ Style Guide"
 
-[html/css1]: http://codeguide.co/ "Code Guide by @mdo"
+[html/css1]: https://codeguide.co/ "Code Guide by @mdo"
 [html/css2]: https://github.com/styleguide/css "CSS Style Guide"
-[html/css3]: http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml "Google HTML/CSS Style Guide"
-[html/css4]: http://www.w3schools.com/html/html5_syntax.asp "HTML(5) Style Guide and Coding Conventions"
+[html/css3]: https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml "Google HTML/CSS Style Guide"
+[html/css4]: https://www.w3schools.com/html/html5_syntax.asp "HTML(5) Style Guide and Coding Conventions"
 
 [java1]: https://source.android.com/source/code-style.html "Android Code Style"
-[java2]: http://www.oracle.com/technetwork/java/codeconvtoc-136057.html "Code Conventions for the Java Programming Language"
-[java3]: http://google-styleguide.googlecode.com/svn/trunk/javaguide.html "Google Java Style Guide"
-[java4]: http://www.javaranch.com/style.jsp "Java Programming Style Guide"
+[java2]: https://www.oracle.com/technetwork/java/codeconvtoc-136057.html "Code Conventions for the Java Programming Language"
+[java3]: https://google-styleguide.googlecode.com/svn/trunk/javaguide.html "Google Java Style Guide"
+[java4]: https://www.javaranch.com/style.jsp "Java Programming Style Guide"
 
 [js1]: https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html "An AngularJS Style Guide for Closure Users at Google"
 [js2]: https://github.com/styleguide/javascript "GitHub JavaScript style"
-[js3]: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml "Google JavaScript Style Guide"
+[js3]: https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml "Google JavaScript Style Guide"
 [js4]: https://github.com/felixge/node-style-guide "Node.js Style Guide"
 
-[lisp1]: http://google-styleguide.googlecode.com/svn/trunk/lispguide.xml "Common Lisp Style Guide"
+[lisp1]: https://google-styleguide.googlecode.com/svn/trunk/lispguide.xml "Common Lisp Style Guide"
 
 [objc1]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html "Apple's Programming with Objective C Conventions"
 [objc2]: https://github.com/github/objective-c-style-guide "GitHub Objective C Style Guide"
-[objc3]: http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml "Google Objective C Style Guide"
+[objc3]: https://google-styleguide.googlecode.com/svn/trunk/objcguide.xml "Google Objective C Style Guide"
 [objc4]: https://github.com/NYTimes/objective-c-style-guide "NYTimes Objective-C Style Guide"
 
-[php1]: http://pear.php.net/manual/en/standards.php "PEAR Coding Standards"
-[php2]: http://www.php-fig.org/psr/psr-2/ "PSR-2 Coding Style Guideline"
-[php3]: http://symfony.com/doc/current/contributing/code/standards.html "Symfony Coding Standards"
-[php4]: http://framework.zend.com/manual/1.12/en/coding-standard.html "Zend Coding Standards"
+[php1]: https://pear.php.net/manual/en/standards.php "PEAR Coding Standards"
+[php2]: https://www.php-fig.org/psr/psr-2/ "PSR-2 Coding Style Guideline"
+[php3]: https://symfony.com/doc/current/contributing/code/standards.html "Symfony Coding Standards"
+[php4]: https://framework.zend.com/manual/1.12/en/coding-standard.html "Zend Coding Standards"
 
-[python1]: http://google-styleguide.googlecode.com/svn/trunk/pyguide.html "Google Python Style Guide"
+[python1]: https://google-styleguide.googlecode.com/svn/trunk/pyguide.html "Google Python Style Guide"
 [python2]: https://www.python.org/dev/peps/pep-0008/ "PEP 8 - Style Guide for Python Code"
 
 [ruby1]: https://github.com/styleguide/ruby "GitHub Ruby Styleguide"
 [ruby2]: https://github.com/bestie/objective-ruby-style-guide "The Objective Ruby Style Guide"
 
-[scala1]: http://twitter.github.io/effectivescala/ "Effective Scala"
-[scala2]: http://docs.scala-lang.org/style/ "Scala Style Guide"
+[scala1]: https://twitter.github.io/effectivescala/ "Effective Scala"
+[scala2]: https://docs.scala-lang.org/style/ "Scala Style Guide"
 
-[shell1]: http://www.inquisitor.ru/doc/coding-style-shell.html "Coding style guidelines: Shell script"
-[shell2]: http://google-styleguide.googlecode.com/svn/trunk/shell.xml "Google Shell Style Guide"
+[shell1]: https://www.inquisitor.ru/doc/coding-style-shell.html "Coding style guidelines: Shell script"
+[shell2]: https://google-styleguide.googlecode.com/svn/trunk/shell.xml "Google Shell Style Guide"
 
 [swift1]: https://github.com/github/swift-style-guide "GitHubs Swift Style Guide"
 
-[vim1]: http://google-styleguide.googlecode.com/svn/trunk/vimscriptguide.xml "Google Vimscript Style Guide"
+[vim1]: https://google-styleguide.googlecode.com/svn/trunk/vimscriptguide.xml "Google Vimscript Style Guide"

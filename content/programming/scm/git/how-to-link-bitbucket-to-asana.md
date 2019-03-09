@@ -11,7 +11,7 @@ aliases = ["/blog/2015/01/31/how-to-link-bitbucket-to-asana"]
 [1]: https://github.com/rsumilang/asana-post-commit "Asana Post Commit"
 [2]: https://github.com/Spaceman-Labs/asana-post-commit "Asana Post Commit"
 [3]: https://asana.com/apps/github "Asana GitHub App"
-[4]: http://app.asana.com/-/account_api "Asana Account API"
+[4]: https://app.asana.com/-/account_api "Asana Account API"
 
 **tl;dr:** Use [this][1] **post-commit** hook.
 

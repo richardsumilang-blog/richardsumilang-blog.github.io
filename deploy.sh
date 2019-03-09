@@ -7,20 +7,27 @@
 
 # Settings
 buildDirectory="build"
-sourceBranch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 deployBranch="master"
+distDirectory="dist"
 deployRepo="git@github.com:richardsumilang-blog/richardsumilang-blog.github.io.git"
-tempBranch="deploy_$(date +%s)"
 
 # Starting
-echo -e "Deploying updates to Github..."
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# Switch to tempBranch branch
-git checkout -b $tempBranch
+# This should updated to check if dist already exists and is a github repo,
+# then just do a pull
+rm -rf $distDirectory
 
-# Build the project
-hugo -d $buildDirectory
-cp CNAME $buildDirectory/CNAME
+# Clone branch into dist
+git clone -b $deployBranch $deployRepo $distDirectory
+
+# Copy build to project
+yes | cp -rf $buildDirectory/* $distDirectory/
+
+# Get .nojekyll
+yes | cp $buildDirectory/.* $distDirectory/
+
+cd $distDirectory
 
 # Add new files to git
 git add -A
@@ -32,14 +39,8 @@ if [ $# -eq 1 ]
 fi
 git commit -m "$msg"
 
-# Delete deploy branch on remote
-git push origin --delete $deployBranch
 
 # Push build to deploy branch
-git subtree push  --prefix=$buildDirectory $deployRepo $deployBranch
+git push origin $deployBranch
 
-# Switch back to original branch
-git checkout $sourceBranch
-
-# Delete temp branch
-git branch -D $tempBranch
+cd ..

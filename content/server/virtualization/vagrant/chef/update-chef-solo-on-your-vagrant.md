@@ -9,7 +9,7 @@ aliases = ["/blog/2014/06/10/update-chef-solo-on-your-vagrant"]
 +++
 
 [1]: https://github.com/schisamo/vagrant-omnibus "Vagrant Omnibus"
-[2]: http://docs.vagrantup.com/v2/vagrantfile/index.html "Vagrantfile Doc"
+[2]: https://docs.vagrantup.com/v2/vagrantfile/index.html "Vagrantfile Doc"
 
 Install [vagrant-omnibus][1]:
 

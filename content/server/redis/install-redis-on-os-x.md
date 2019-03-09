@@ -8,7 +8,7 @@ aliases = ["/blog/2014/04/04/how-to-install-redis-on-os-x"]
 
 +++
 
-[1]: http://brew.sh/ "Homebrew"
+[1]: https://brew.sh/ "Homebrew"
 
 This is my setup of redis with OS X 10.9.2 Mavericks and requires [brew][1].
 

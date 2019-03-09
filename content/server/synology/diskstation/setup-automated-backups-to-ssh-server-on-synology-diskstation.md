@@ -8,7 +8,7 @@ aliases = ["/blog/2014/07/12/how-to-replace-a-bad-hard-drive-on-a-synology-disks
 
 +++
 
-[1]: http://www.freebsd.org/doc/handbook/configtuning-cron.html "FreeBSD Configuring Cron"
+[1]: https://www.freebsd.org/doc/handbook/configtuning-cron.html "FreeBSD Configuring Cron"
 
 As a best practice, it's great great to have your data in more than one
 location. I use my Synology Diskation as a local network file server at my home.

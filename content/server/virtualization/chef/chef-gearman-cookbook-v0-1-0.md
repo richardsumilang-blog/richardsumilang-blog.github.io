@@ -8,8 +8,8 @@ aliases = ["/blog/2014/06/12/chef-gearman-cookbook-v0-1-0"]
 
 +++
 
-[1]: http://gearman.org/ "Gearman"
-[2]: http://www.getchef.com/ "Chef"
+[1]: https://gearman.org/ "Gearman"
+[2]: https://www.getchef.com/ "Chef"
 [3]: https://pecl.php.net/package/gearman "Gearman PHP Extension"
 [4]: https://github.com/rsumilang/chef-gearman "Chef Gearman Cookbook"
 

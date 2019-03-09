@@ -8,4 +8,8 @@ Run `./dependencies.sh` then `./dev.sh` to begin development.
 
 ## Deployment
 
-Run `./deploy.sh`.
+Buid:
+    `./build.sh`
+
+Deploy
+    `./deploy.sh`

@@ -20,7 +20,7 @@ Sync, Redis, and Firefox Sync Server just to name a few. Check out the
 1. Log into your NAS as administrator and go to Main **Menu → Package Center →
 Settings → Package Sources.**
 2. Click **Add**, type *SynoCommunity* as **Name** and
-*<http://packages.synocommunity.com/>* as **Location** and then press **OK** to
+*<https://packages.synocommunity.com/>* as **Location** and then press **OK** to
 validate.
 3. Go back to the **Package Center** and enjoy SynoCommunity's packages in the
 **Community** tab

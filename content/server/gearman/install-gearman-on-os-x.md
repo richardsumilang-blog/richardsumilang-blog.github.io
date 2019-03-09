@@ -8,8 +8,8 @@ aliases = ["/blog/2014/04/23/how-to-install-gearman-on-os-x"]
 
 +++
 
-[1]: http://gearman.org/ "Gearman"
-[2]: http://brew.sh/ "Homebrew"
+[1]: https://gearman.org/ "Gearman"
+[2]: https://brew.sh/ "Homebrew"
 
 Setup [Gearman][1] job server with OS X 10.9.2 Mavericks using [brew][2].
 

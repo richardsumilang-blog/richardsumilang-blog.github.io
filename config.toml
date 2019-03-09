@@ -1,18 +1,18 @@
-baseurl = "https://richardsumilang.com/"
+baseurl = "https://www.richardsumilang.com/"
 languageCode = "en-us"
 title = "Top Secret Labs - Richard Sumilang"
 theme = "hugo-theme-richardsumilang-dark"
 
 [author]
   name = "Richard Sumilang"
-  homepage = "http://richardsumilang.com"
+  homepage = "https://www.richardsumilang.com"
 
 [indexes]
   category = "categories"
   tag = "tags"
 
 [params]
-  AmazonAffiliate = "http://www.amazon.com?_encoding=UTF8&tag=topseclabrics-20"
+  AmazonAffiliate = "https://www.amazon.com?_encoding=UTF8&tag=topseclabrics-20"
   AuthorName = "Richard"
   Bitbucket = "rsumilang"
   Disqus = "richardsumilang"
@@ -28,7 +28,7 @@ theme = "hugo-theme-richardsumilang-dark"
   Instagram = "RichardSumilang"
   Linkedin = "richardsumilang"
   Logo = "images/header-logo.png"
-  NewsletterUrl = "http://eepurl.com/bwckhL"
+  NewsletterUrl = "https://eepurl.com/bwckhL"
   Pinterest = "rsumilang"
   Twitter = "richardsumilang"
   YouTube = "richardsumilang"

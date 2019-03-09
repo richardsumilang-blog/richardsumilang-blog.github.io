@@ -8,7 +8,7 @@ aliases = ["/blog/2014/07/12/how-to-enable-ssh-access-to-synology-diskstation"]
 
 +++
 
-[1]: http://forum.synology.com/wiki/index.php/Enabling_the_Command_Line_Interface "Enabling the command line interface"
+[1]: https://forum.synology.com/wiki/index.php/Enabling_the_Command_Line_Interface "Enabling the command line interface"
 
 Log into your system with an administrator account and open the
 **<sup>1</sup>Control Panel** applet. From there, click on

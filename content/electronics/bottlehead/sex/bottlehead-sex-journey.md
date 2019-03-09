@@ -26,10 +26,10 @@ Aliases:
  - /electronics/bottlhead/sex/bottlehead-sex-journey
 ---
 
-[1]: http://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers "Bottlhead S.E.X. kit for Headphones and Sensitive Speakers"
-[2]: http://bottlehead.com/?product=crack-otl-headphone-amplifier-kit "Bottlehead Crack OTL Amplifier Kit"
-[3]: http://amzn.to/1Kf3W3v "Sennheiser HD 650 Open Back Professional Headphone"
-[4]: http://amzn.to/1Kf4eaH "Sennheiser HD 800 Over-Ear Circum-Aural Dynamic Headphone"
+[1]: https://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers "Bottlhead S.E.X. kit for Headphones and Sensitive Speakers"
+[2]: https://bottlehead.com/?product=crack-otl-headphone-amplifier-kit "Bottlehead Crack OTL Amplifier Kit"
+[3]: https://amzn.to/1Kf3W3v "Sennheiser HD 650 Open Back Professional Headphone"
+[4]: https://amzn.to/1Kf4eaH "Sennheiser HD 800 Over-Ear Circum-Aural Dynamic Headphone"
 
 After almost a month of waiting, my [Bottlehead S.E.X.][1] has finally arrived.
 This will be my first of many electronic DIY projects. I will detail the journey

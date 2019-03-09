@@ -8,7 +8,7 @@ aliases = ["/blog/2014/07/14/monitor-your-filesystem-events-with-inotify"]
 
 +++
 
-[1]: http://man7.org/linux/man-pages/man7/inotify.7.html "inotify man page"
+[1]: https://man7.org/linux/man-pages/man7/inotify.7.html "inotify man page"
 [2]: https://github.com/rvoicilas/inotify-tools/wiki "inotify tools"
 
 [Inotify][1] provides a nifty C API to monitor files and directories. The API

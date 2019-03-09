@@ -8,9 +8,9 @@ aliases = ["/blog/2014/04/07/how-to-install-nimrod-on-os-x"]
 
 +++
 
-[1]: http://brew.sh/ "Nimrod"
-[2]: http://brew.sh/ "Homebrew"
-[3]: http://nimrod-lang.org/tut1.html "Nimrod tutorials"
+[1]: https://brew.sh/ "Nimrod"
+[2]: https://brew.sh/ "Homebrew"
+[3]: https://nimrod-lang.org/tut1.html "Nimrod tutorials"
 
 Setup [Nimrod][1] with OS X 10.9.2 Mavericks using [brew][2].
 

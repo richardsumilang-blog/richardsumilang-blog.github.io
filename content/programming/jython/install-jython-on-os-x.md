@@ -8,9 +8,9 @@ aliases = ["/blog/2014/04/08/how-to-install-jython-on-os-x"]
 
 +++
 
-[1]: http://jython.org/ "Jython"
-[2]: http://brew.sh/ "Homebrew"
-[3]: http://oreilly.com/catalog/jythoness/chapter/ch01.html "Jython Book"
+[1]: https://jython.org/ "Jython"
+[2]: https://brew.sh/ "Homebrew"
+[3]: https://oreilly.com/catalog/jythoness/chapter/ch01.html "Jython Book"
 
 Setup [Jython][1] with OS X 10.9.2 Mavericks using [brew][2].
 

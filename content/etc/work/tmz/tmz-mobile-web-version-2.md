@@ -210,7 +210,7 @@ results.
 # Try it out for yourself!
 
 This application is now live. You can access it on your mobile device by going to
-http://www.tmz.com or directly to http://m.tmz.com. This mobile website is a
+https://www.tmz.com or directly to https://m.tmz.com. This mobile website is a
 huge improvement over the previous implementation and I'm proud to have my name
 stamped on the face of it. Many thanks to my awesome team for help making this
 possible.

@@ -8,8 +8,8 @@ aliases = ["/blog/2014/04/24/reflection"]
 
 +++
 
-[1]: http://www.php.net/manual/en/language.namespaces.basics.php#82088 "PHP Namespaces"
-[2]: http://www.pinktaco.com/ "Pink Taco"
+[1]: https://www.php.net/manual/en/language.namespaces.basics.php#82088 "PHP Namespaces"
+[2]: https://www.pinktaco.com/ "Pink Taco"
 
 Today was just one of those days that started like any other. I've been doing a
 lot of reflection over the past few weeks on what are my new goals. The act of

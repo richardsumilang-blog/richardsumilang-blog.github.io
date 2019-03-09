@@ -8,7 +8,7 @@ aliases = ["/blog/2014/11/11/tidying-up-your-system-with-a-password-manager"]
 
 +++
 
-[1]: http://lastpass.com/ "LastPass"
+[1]: https://lastpass.com/ "LastPass"
 [2]: https://agilebits.com/onepassword "1Password"
 
 [3]: https://support.mozilla.org/en-US/kb/password-manager-remember-delete-change-passwords#w_viewing-and-deleting-passwords "Delete passwords from Firefox"

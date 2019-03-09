@@ -19,7 +19,7 @@ aliases:
  - /blog/2014/10/26/my-cask-script
 ---
 
-[1]: http://caskroom.io/ "Homebrew cask"
+[1]: https://caskroom.io/ "Homebrew cask"
 [2]: https://github.com/rsumilang/casks-installer "Casks Installer"
 
 Finally we get our own `apt-get` like tool for Mac! Check out [cask][1] if you
