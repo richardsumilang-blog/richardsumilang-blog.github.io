@@ -20,7 +20,7 @@
 <meta property="og:type" content="article" />
 
 <meta property="og:title" content="Converting Windows Network Path for Mac" />
-<meta property="og:site_name" content="Top Secret Labs" />
+<meta property="og:site_name" content="Tech tips, photography, and more." />
 <meta property="og:url" content="https://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/" />
 <meta property="og:locale" content="en_US" />
 
@@ -41,7 +41,7 @@
 <meta name="twitter:card" content="summary" />
 
 <meta name="twitter:site" content="@richardsumilang" />
-<meta name="twitter:title" content="Converting Windows Network Path for Mac - Top Secret Labs - Richard Sumilang" />
+<meta name="twitter:title" content="Converting Windows Network Path for Mac - Richard Sumilang" />
 <meta name="twitter:creator" content="@richardsumilang" />
 <meta name="twitter:domain" content="richardsumilang.com" />
 
@@ -51,7 +51,9 @@
 
 
   <base href="https://www.richardsumilang.com/" />
-  <title>Converting Windows Network Path for Mac - Top Secret Labs - Richard Sumilang</title>
+  
+    <title>Converting Windows Network Path for Mac - Richard Sumilang</title>
+  
 
   <link rel="canonical" href="https://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/" />
 
@@ -78,7 +80,11 @@
 
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
+  var q = q || [];
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
 </script>
+
 
 
   <script defer src="https://www.richardsumilang.com/_app/main.97cea160.js"></script>
@@ -92,6 +98,20 @@
 
 
 
+
+<script>
+  q.push(function loadPage() {
+    window.app.dispatch(window.app.actions.loadPage({
+      title: "Converting Windows Network Path for Mac",
+      url: 'https:\/\/www.richardsumilang.com\/networking\/windows\/converting-windows-network-path-for-mac\/',
+      uri: '\/networking\/windows\/converting-windows-network-path-for-mac\/',
+      query: location.search.slice(1).split('&').map(p => p.split('=')).reduce((obj, pair) => { var [key, value] = pair.map(decodeURIComponent); return ({ ...obj, [key]: value }) }, {}),
+      section: 'page',
+      subSection: '',
+      isTurbolinksPreview: document.documentElement.hasAttribute('data-turbolinks-preview')
+    }));
+  });
+</script>
 
 </head>
 
@@ -277,10 +297,10 @@ is the equivalent.</p>
         <a href="//github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
       </p>
       <p>
-        Photographers can see my latest work and behind the scenes on a <a href="//instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>
+        Photographers can see my latest work and behind the scenes on a <a href="//instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>.
       </p>
       <p>
-
+        Actors and models should visit <a href="https://photography.richardsumilang.com" title="Photography">my portfolio</a> to for booking information and more.
       </p>
     </div>
   </div>
@@ -288,6 +308,13 @@ is the equivalent.</p>
     <span>Copyright 2019. Richard Sumilang</span>
   </div>
 </footer>
+<script>
+  q.push(function renderPage() {
+    var isTurbolinksPreview = document.documentElement.hasAttribute('data-turbolinks-preview');
+    window.app.dispatch(window.app.actions.renderPage(isTurbolinksPreview));
+  });
+</script>
+
 
 </body>
 </html>
