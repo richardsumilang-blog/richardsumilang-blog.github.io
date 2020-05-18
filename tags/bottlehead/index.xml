@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bottlehead on Richard Sumilang</title>
@@ -21,14 +21,11 @@
 S.E.X. version 2.1. The parts in the image include the impedance switch and the
 C4S components. To the far left, there is a bag I didn&amp;rsquo;t bother unraveling
 because it is mainly little screws and bolts that felt easy to lose.&lt;/p&gt;
-
 &lt;h3 id=&#34;build-order&#34;&gt;Build Order&lt;/h3&gt;
-
 &lt;p&gt;I will do incremental builds. This way I can test the quality of a build on it&amp;rsquo;s
 own before adding additional components. This is a good practice I follow in
 daily software development and has proved helpful in debugging. The order will
 be as follows:&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;S.E.X. kit.&lt;/li&gt;
 &lt;li&gt;Impedance switch installation.&lt;/li&gt;

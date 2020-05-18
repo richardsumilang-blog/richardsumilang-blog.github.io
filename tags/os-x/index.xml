@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Os X on Richard Sumilang</title>
+    <title>OS X on Richard Sumilang</title>
     <link>https://www.richardsumilang.com/tags/os-x/</link>
-    <description>Recent content in Os X on Richard Sumilang</description>
+    <description>Recent content in OS X on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2015 17:59:00 -0700</lastBuildDate>
@@ -21,12 +21,10 @@
 multiple Mac workstations. The new version now allows you to configure parameters of
 the installation such as install path and which category of applications you
 wish to install.&lt;/p&gt;
-
 &lt;p&gt;The point of this tool is to help me configure (or reconfigure) workstations as
 needed by removing the manual work of finding the applications I always use
 online, unpacking, and copying to applications folder. That process becomes a
 tedious task when working with dozens of pieces of software.&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/casks-installer/fork&#34; title=&#34;Casks Installer Fork&#34;&gt;Fork it&lt;/a&gt; for your own use on &lt;a href=&#34;https://github.com/rsumilang/casks-installer&#34; title=&#34;Casks Installer&#34;&gt;Github&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
     
@@ -89,7 +87,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -109,7 +106,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -120,7 +116,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -131,7 +126,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
       <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

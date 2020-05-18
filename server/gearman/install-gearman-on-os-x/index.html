@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -155,11 +161,8 @@
 
     <div class="details">
       <p>Setup <a href="https://gearman.org/" title="Gearman">Gearman</a> job server with OS X 10.9.2 Mavericks using <a href="https://brew.sh/" title="Homebrew">brew</a>.</p>
-
 <pre><code class="language-bash" title="Install">brew install gearman</code></pre>
-
 <p>If you get an error during the build:</p>
-
 <pre title="Build error">==&gt; make install
 #  include &lt;tr1/cinttypes&gt;
            ^
@@ -171,26 +174,17 @@ of Xcode (5.1.1). Please `brew update` and if that doesn’t help, file
 an issue with the output of `brew —config`:
   https://github.com/mxcl/homebrew/issues
 [...]</pre>
-
 <p>Then you can run this command to possibly fix it:</p>
-
 <pre><code class="language-bash" title="Testing script">xcode-select —install
 brew update
 brew install gearman</code></pre>
-
 <p>And lastly some useful install notes copied from the end of the script worth
 noting:</p>
-
 <h3 id="start-gearman-at-boot-time">Start gearman at boot time:</h3>
-
 <pre><code class="language-bash" title="Start at boot">ln -sfv /usr/local/opt/gearman/*.plist ~/Library/LaunchAgents</code></pre>
-
 <h3 id="start-gearman-now">Start gearman now:</h3>
-
 <pre><code class="language-bash" title="Start now">launchctl load ~/Library/LaunchAgents/homebrew.mxcl.gearman.plist</code></pre>
-
 <h3 id="raw-start">Raw start:</h3>
-
 <pre><code class="language-bash" title="Raw start">gearmand -d</code></pre>
     </div>
 

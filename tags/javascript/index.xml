@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on Richard Sumilang</title>
+    <title>JavaScript on Richard Sumilang</title>
     <link>https://www.richardsumilang.com/tags/javascript/</link>
-    <description>Recent content in Javascript on Richard Sumilang</description>
+    <description>Recent content in JavaScript on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Mar 2015 17:10:00 -0800</lastBuildDate>
@@ -21,7 +21,6 @@
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
 &lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
@@ -39,11 +38,9 @@ debt. Below is a collection of style guides that I collected over time. Some
 important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
 a degree) if you are writing in multiple programming languages but ultimately
 it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
 Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
-
 &lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>

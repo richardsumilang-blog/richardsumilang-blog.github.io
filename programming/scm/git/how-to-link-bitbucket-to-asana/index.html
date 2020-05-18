@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -155,54 +161,41 @@
 
     <div class="details">
       <p><strong>tl;dr:</strong> Use <a href="https://github.com/rsumilang/asana-post-commit" title="Asana Post Commit">this</a> <strong>post-commit</strong> hook.</p>
-
 <p>I found <a href="https://github.com/Spaceman-Labs/asana-post-commit" title="Asana Post Commit">this great</a> git <strong>post-commit</strong> hook by Spaceman Labs. It works by
 adding a comment to your Asana ticket when you reference your commit message by
-id. For example, <strong>&ldquo;Fixing issue #12345.&rdquo;</strong> This adds a comment to your ticket:</p>
-
+id. For example, <strong>&ldquo;Fixing issue #12345.&quot;</strong> This adds a comment to your ticket:</p>
 <pre>Just committed %commit-id with message:
 
 "Fixing issue #1234"
 
 to repository %repo-name</pre>
-
 <p>This works by making a curl request to Asana&rsquo;s REST API on your behalf while
 sending the above message as the comment. While this is great, it could be
 better by providing links to your Bitbucket changeset. I&rsquo;ve made the necessary
 edits to do so in the <strong>post-commit</strong> hook. The updated message now looks like
 this:</p>
-
 <pre>Committed %link-to-commit with message:
 
 "Fixing issue #1234"
 
 to repository %repo-name</pre>
-
 <h3 id="how-it-works">How it works</h3>
-
 <p>I loop through all the remote repositories configured for the repo and search
 for either a bitbucket.org or github.com in their URLs. Once  one is found, I
 extract the repo name from the URL and build the link to the changeset.</p>
-
 <p><strong>Note:</strong> If you are using Github then I recommend  using the free
 <a href="https://asana.com/apps/github" title="Asana GitHub App">Asana service</a> provided. I merely included the GitHub code as an example.</p>
-
 <p>The original code from here takes over and parses out the ticket number and does
 the curl request.</p>
-
 <h3 id="installation">Installation</h3>
-
 <p>Grab my edited <strong>post-commit</strong> hook from <a href="https://github.com/rsumilang/asana-post-commit" title="Asana Post Commit">github</a> and drop it into your repos
 <code>.git/hooks</code> directory. Make sure to <code>chmod</code> the file to <code>0755</code>. Lastly, grab
-your <a href="https://app.asana.com/-/account_api" title="Asana Account API">Asana key</a> and run <code>git config --global user.asana-key
-&quot;MY_ASANA_API_KEY&quot;</code>.</p>
-
+your <a href="https://app.asana.com/-/account_api" title="Asana Account API">Asana key</a> and run <code>git config --global user.asana-key &quot;MY_ASANA_API_KEY&quot;</code>.</p>
 <h3 id="afterthoughts">Afterthoughts</h3>
-
 <p>Please let me know if you have any suggestions. I&rsquo;m thinking of possibly editing
 the git commit message to link back to the Asana ticket for the sake of
 cross-linking but this might require additional configuration&hellip; Unless project
-id is added as part of the ticket number. Ie: #<sup>12345</sup>&frasl;<sub>98765</sub>. Please feel free to
+id is added as part of the ticket number. Ie: #12345/98765. Please feel free to
 add your input! :)</p>
     </div>
 

@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -162,78 +168,55 @@ now all my data is gone. Unfortunately my network rack at home will never be as
 secure as a network rack in a data center. So, backup your data because that&rsquo;s
 much easier to do rather than trying to restore from no backup. Makes logical
 sense right? Derp.</p>
-
 <h2 id="requirements">Requirements</h2>
-
 <ul>
 <li>Basic shell knowledge.</li>
 <li>A remote server that you can SSH into.</li>
 </ul>
-
 <h3 id="why-not-use-the-backup-amp-replication-plugin">Why not use the &ldquo;Backup &amp; Replication&rdquo; plugin?</h3>
-
 <p>The <em>Backup &amp; Replication</em> module does not have a way to specify my remote
 server&rsquo;s rsync port. The default is <strong>22</strong> but my host runs on port <strong>2222</strong>.</p>
-
 <h2 id="1-enable-ssh-on-your-synology-box">1. Enable SSH on your Synology Box</h2>
-
 <p>First things first. <a href="/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/">Enable SSH</a>
 on your Synology box if you haven&rsquo;t already done so and log in (via ssh).</p>
-
 <h2 id="2-generate-ssh-keys">2. Generate SSH keys</h2>
-
 <p>We&rsquo;ll need to generate a pair of keys here so <code>rsync</code> is not prompted for your
 password when it runs otherwise this defeats the purpose of automation. To do
 this, run the following command:</p>
-
 <pre><code class="language-bash">ssh-keygen -v -t rsa -f ~/.ssh/backup -P ""</code></pre>
-
 <p>This will generate <code>/root/.ssh/backup</code> and <code>/root/.ssh/backup.pub</code>.</p>
-
 <h2 id="3-copy-your-public-key-to-the-remote-server">3. Copy your public key to the remote server</h2>
-
 <p>Login to your remote server and put the contents of <code>/root/.ssh/backup.pub</code> from
 your Synology box to <code>~/.ssh/authorized_keys</code> on your remote box. If this file
 on your remote box already exists, then just append the contents to it rather
 than overwriting it. If this file does not exist, then create it.</p>
-
 <p><em>If you create it manually then make sure the following files have the following
 permissions otherwise SSH will not allow you to use</em></p>
-
 <ul>
 <li>0700: ~/.ssh</li>
 <li>0644: ~/.ssh/authorized_keys</li>
 </ul>
-
 <p>You should be able to SSH from your Synology Diskation to your remote machine
 without specifying a password. Here is an example command:</p>
-
 <pre><code>ssh username@home -i /root/.ssh/backup -v
 </code></pre>
-
 <p>The <code>-i</code> command tells SSH which private key to use and the <code>-v</code> would make the
 program verbose.</p>
-
 <h2 id="4-configure-rsync-and-crontab">4. Configure rsync and crontab</h2>
-
 <p>Last but not least, we need to add a line in our crontab configuration to run
 rsync at a specific time. Here is an example of mine:</p>
-
-<pre><code class="language-crontab">0   0   *   *   *   root    rsync -avztP --delete --inplace /volume1/photo/ username@host:/backups/glitch/photo -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
-0   1   *   *   *   root    rsync -avztP --inplace /volume1/manuals/ username@host:/backups/glitch/manuals -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
-0   2   *   *   *   root    rsync -avztP --inplace /volume1/surveillance/ username@host:/backups/glitch/surveillance -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
-0   3   *   *   *   root    rsync -avztP --inplace /volume1/video/ username@host:/backups/glitch/video -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
-0   4   *   *   *   root    rsync -avztP --inplace /volume1/applications/ username@host:/backups/glitch/applications -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
-0   5   *   *   *   root    rsync -avztP --delete --inplace /volume1/zappiti/ username@host:/backups/glitch/zappiti -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"</code></pre>
-
+<pre><code class="language-crontab">0	0	*	*	*	root	rsync -avztP --delete --inplace /volume1/photo/ username@host:/backups/glitch/photo -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0	1	*	*	*	root	rsync -avztP --inplace /volume1/manuals/ username@host:/backups/glitch/manuals -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0	2	*	*	*	root	rsync -avztP --inplace /volume1/surveillance/ username@host:/backups/glitch/surveillance -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0	3	*	*	*	root	rsync -avztP --inplace /volume1/video/ username@host:/backups/glitch/video -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0	4	*	*	*	root	rsync -avztP --inplace /volume1/applications/ username@host:/backups/glitch/applications -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"
+0	5	*	*	*	root	rsync -avztP --delete --inplace /volume1/zappiti/ username@host:/backups/glitch/zappiti -e "ssh -p 2222 -i /root/.ssh/backup" --exclude ".DS_Store" --exclude "@eaDir" --exclude ".apdisk"</code></pre>
 <p>It&rsquo;s important to note that each field must be indented by a tab (not a space)
 and the user must be root. If you configure this another way then the Synology
 server will erase the entry when you reboot the machine. Here are some
 <a href="https://www.freebsd.org/doc/handbook/configtuning-cron.html" title="FreeBSD Configuring Cron">configuration options</a> for reference.</p>
-
 <p>Put your configuration in <code>/etc/crontab</code>. You can use <code>nano</code> if you&rsquo;re on DSM 4
 or <code>vi</code> if you&rsquo;re on DSM 5.</p>
-
 <p>Lastly, we need to restart the cron daemon to take note of our changes. The
 command is <code>restart crond</code> on DSM 5 machines and
 <code>/usr/syno/sbin/synoservice --restart crond</code> on DSM 4 machines.</p>

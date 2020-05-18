@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Richard Sumilang</title>
@@ -6,7 +6,7 @@
     <description>Recent content in Git on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jan 2015 00:58:00 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2015 18:43:34 -0700</lastBuildDate>
     
 	<atom:link href="https://www.richardsumilang.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     

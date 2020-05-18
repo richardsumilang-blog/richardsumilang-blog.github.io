@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programmings on Richard Sumilang</title>
@@ -22,11 +22,8 @@ for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34;
 application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
 long enough to be considered tested and somewhat mature like an old elitist
 hipster&amp;hellip; If that makes sense.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;tldr;&lt;/strong&gt; &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Just give me the source&lt;/a&gt;&lt;/p&gt;
-
 &lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
-
 &lt;p&gt;The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access
@@ -44,7 +41,6 @@ well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
 &lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
@@ -62,11 +58,9 @@ debt. Below is a collection of style guides that I collected over time. Some
 important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
 a degree) if you are writing in multiple programming languages but ultimately
 it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
 Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
-
 &lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
@@ -91,10 +85,8 @@ they are not rotated properly when transferring them to another device or
 software. This happens because the device is held at a certain angle when the
 picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
 however it wants.&lt;/p&gt;
-
 &lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
 taken and you can rotate it accordingly.&lt;/p&gt;
-
 &lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library;&lt;/p&gt;</description>
     </item>
     
@@ -139,7 +131,6 @@ it. Luckily you can run it as a standalone application.&lt;/p&gt;</description>
       <guid>https://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
       <description>&lt;p&gt;I kept getting the following message when I tried running &lt;code&gt;svn&lt;/code&gt; commands on my
 computer. I tried to accept the certificate permanently with no luck:&lt;/p&gt;
-
 &lt;pre&gt;Error validating server certificate for &#39;https://subversion.assembla.com:443&#39;:
  - The certificate is not issued by a trusted authority. Use the
    fingerprint to validate the certificate manually!
@@ -190,7 +181,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -201,7 +191,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

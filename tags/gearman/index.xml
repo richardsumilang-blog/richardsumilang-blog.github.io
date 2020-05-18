@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gearman on Richard Sumilang</title>
@@ -40,7 +40,6 @@ requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgea
       
       <guid>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

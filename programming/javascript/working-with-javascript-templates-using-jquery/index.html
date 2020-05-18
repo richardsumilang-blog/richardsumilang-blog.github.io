@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -159,9 +165,7 @@ at <a href="https://www.monkeyquest.com" title="MonkeyQuest">Monkey Quest</a> an
 design from your code. This is particularly useful when you are adding content
 to your site after the initial rendering. Data can be fed in from a number of
 sources and added to a page using a template.</p>
-
 <p>Creating an example the old fashion way using concatenation:</p>
-
 <pre><code class="language-js">//Variables
 var title = "Hello World";
 var excerpt = "This is the world's shortest lorem ipsum. Jk.";
@@ -174,24 +178,18 @@ template += "&lt;/div&gt;";
 
 // Append to "foo" element
 document.getElementById("foo").appendChild( template );</code></pre>
-
 <p>While this may work, it&rsquo;s a nightmare to update your markup as it changes because it&rsquo;s mixed in with your code and will eventually give you gray hairs.</p>
-
 <p>Consider this piece of markup on your page for your template:</p>
-
 <pre><code>&lt;script type="text/xhtml" id="tmpl-foo"&gt;
 &lt;div style="article"&gt;
-    &lt;h1 /&gt;
-    &lt;div class="exerpt" /&gt;
+	&lt;h1 /&gt;
+	&lt;div class="exerpt" /&gt;
 &lt;/div&gt;
 &lt;/script&gt;</code></pre>
-
 <p>That&rsquo;s very easy to read right? The trick is setting the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" title="Media types">script type</a> to a
 value your browser doesn&rsquo;t know how to render. Try to give it a meaningful mime
 type but anything that your browser doesn&rsquo;t know how to render will work.</p>
-
 <p>Now your JavaScript (sprinkled with a little jQuery) could look like this:</p>
-
 <pre><code class="language-javascript">// Variables
 var title = "Hello World";
 var excerpt = "This is the world's shortest lorem ipsum. Jk.";
@@ -203,9 +201,7 @@ template.find("div.excerpt").html( excerpt );
 
 // Append to "foo" element
 $("#foo").append( template );</code></pre>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Some people also like to load templates externally by putting the code in a HTML
 file on the server and using jQuery&rsquo;s <code>$.get</code> method to pull it in as needed.
 There are also plugins for jQuery that simply do string replacements in your

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Rails on Richard Sumilang</title>
@@ -22,11 +22,8 @@ for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34;
 application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
 long enough to be considered tested and somewhat mature like an old elitist
 hipster&amp;hellip; If that makes sense.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;tldr;&lt;/strong&gt; &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Just give me the source&lt;/a&gt;&lt;/p&gt;
-
 &lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
-
 &lt;p&gt;The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access

@@ -47,7 +47,7 @@
 <meta name="twitter:description" content="Ruby on Rails application that provides analytics for Facebook posts of a Facebook page. A user should be able to login using Facebook, authorize access for a specific page they administer, and see a display of that pages&#39; top 5 posts as well as a sortable table of 100 most recent posts." />
 <meta name="twitter:image:src" content="https://www.richardsumilang.com/images/programming/ruby/ror/facebook-page-analytics-ror/facebook-page-analytics-ror-cover-900x477.png" />
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -163,25 +169,18 @@ for CLI tools and <a href="https://github.com/rsumilang/chef-gearman" title="Che
 application. Much of the hype with RoR is gone these days but it&rsquo;s been around
 long enough to be considered tested and somewhat mature like an old elitist
 hipster&hellip; If that makes sense.</p>
-
 <p><strong>tldr;</strong> <a href="https://github.com/rsumilang/fb-page-analytics-ror" title="Facebook Page Analytics with Ruby On Rails">Just give me the source</a></p>
-
 <h2 id="description">Description</h2>
-
 <p>The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access
 to, and lastly see a display of the pages&rsquo; top 5 posts (out of the last 100) as
 well as a sortable table of the 100 most recent posts.</p>
-
 <h3 id="requirements">Requirements</h3>
-
 <ul>
 <li>Store user and page Facebook credentials, basic Facebook profile data (name of
 user, name of page, email address), and the last 100 posts in a database.</li>
-<li>Each entry in the post table should include:
-
-<ul>
+<li>Each entry in the post table should include:</li>
 <li>Link to Posts (on Facebook)</li>
 <li>Message/text body of post</li>
 <li>Number of Shares</li>
@@ -189,116 +188,108 @@ user, name of page, email address), and the last 100 posts in a database.</li>
 <li>Number of Likes</li>
 <li>Number of Impressions</li>
 <li>Date Posted</li>
-</ul></li>
 <li>Posts should be sortable by number of shares, likes, comments, and date posted.</li>
 <li>&ldquo;Top 5 Posts&rdquo; display can be chosen/ranked by any arbitrary combination of
 post statistics.</li>
 </ul>
-
 <h1 id="the-application">The Application</h1>
-
 <p>A week long into RoR land and I&rsquo;m happy to say it&rsquo;s done&hellip; Well, 98% of it is.
 I was nice enough to leave a little of this project left for you to do (I
 happily accept pull requests):</p>
-
 <ol>
-<li><p>Retrieving the number of impressions for each post.</p></li>
-
-<li><p>The app currently does not paginate to the end of all Facebook page posts. It
-stops at of the first set of results.</p></li>
+<li>
+<p>Retrieving the number of impressions for each post.</p>
+</li>
+<li>
+<p>The app currently does not paginate to the end of all Facebook page posts. It
+stops at of the first set of results.</p>
+</li>
 </ol>
-
 <p>The <a href="https://github.com/rsumilang/fb-page-analytics-ror" title="Facebook Page Analytics with Ruby On Rails">Facebook page analytics source</a> is freely made available under the
 <a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="Creative Commons License 4.0">Creative Commons License v4</a>.</p>
-
 <h2 id="my-system">My System</h2>
-
 <ul>
 <li><strong>Ruby:</strong> ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]</li>
 <li><strong>Rails:</strong> Rails 4.2.5</li>
 </ul>
-
 <h2 id="setup">Setup</h2>
-
 <p>The requirements to run the project will be kept updated in the
 <a href="https://github.com/rsumilang/fb-page-analytics-ror/blob/master/README.rdoc" title="Facebook Page Analytics Readme.rdoc">README.rdoc</a> but shouldn&rsquo;t diverge too much from this:</p>
-
 <ol>
-<li><p>Database setup (sqlite):
-<pre><code class="language-bash" title="Database Setup">rake db:migrate</code></pre></p></li>
-
-<li><p>The Facebook configuration variables are externalized via environment
-variables so you&rsquo;ll need to set these parameters:
+<li>Database setup (sqlite):</li>
+</ol>
+<pre><code class="language-bash" title="Database Setup">rake db:migrate</code></pre>
+<ol start="2">
+<li>The Facebook configuration variables are externalized via environment
+variables so you&rsquo;ll need to set these parameters:</li>
+</ol>
 <pre><code class="language-bash" title="Configuration">export FB_APP_ID=YOUR_FB_APP_ID
 export FB_APP_SECRET=YOUR_FB_APP_SECRET</code></pre>
-<a href="https://developers.facebook.com/docs/apps/register" title="Facebook Register and Configure an App">Read this doc</a> if you&rsquo;re unfamiliar with created a Facebook App.</p></li>
-
-<li><p>Two servers need to be started. The <em>app server</em> and <em>job server</em>:
-<pre><code class="language-bash" title="Servers">rails s # app server
-rake jobs:work # job server</code></pre></p></li>
+<p><a href="https://developers.facebook.com/docs/apps/register" title="Facebook Register and Configure an App">Read this doc</a> if you&rsquo;re unfamiliar with created a Facebook App.</p>
+<ol start="3">
+<li>Two servers need to be started. The <em>app server</em> and <em>job server</em>:</li>
 </ol>
-
+<pre><code class="language-bash" title="Servers">rails s # app server
+rake jobs:work # job server</code></pre>
 <h3 id="urls">Urls</h3>
-
 <ul>
-<li><strong>Application:</strong> <a href="http://localhost:3000/">http://localhost:3000/</a></li>
-<li><strong>Job Web View:</strong> <a href="http://localhost:3000/delayed_job/overview">http://localhost:3000/delayed_job/overview</a></li>
+<li><strong>Application:</strong> http://localhost:3000/</li>
+<li><strong>Job Web View:</strong> http://localhost:3000/delayed_job/overview</li>
 </ul>
-
 <h2 id="database">Database</h2>
-
 <p>Please refer to the graphic:</p>
-
-<p><img src="/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png" alt="Facebook Analytics Database Graphic" /></p>
-
+<p><img src="/images/programming/ruby/ror/facebook-page-analytics-ror/db-layout-772x346.png" alt="Facebook Analytics Database Graphic"></p>
 <h2 id="how-it-works">How it works</h2>
-
 <ol>
-<li><p>The application can be loaded on <a href="http://localhost:3000/">http://localhost:3000/</a>. You will find a
+<li>
+<p>The application can be loaded on http://localhost:3000/. You will find a
 fancy &ldquo;Facebook&rdquo; link in the header. Click the link and log in with the test
-account.</p></li>
-
-<li><p>Upon successful log in, the system grabs all the pages the user is an
+account.</p>
+</li>
+<li>
+<p>Upon successful log in, the system grabs all the pages the user is an
 administer of and does a few things:</p>
-
-<ol>
-<li><p>If the page does not exist in our db then we create it and create the
-relationship between the user and the page.</p></li>
-
-<li><p>If a user no longer has access to a specific page then the relationship
-between the two is removed but all page data is kept.</p></li>
-
-<li><p>The pages controller will either list all the pages a user is an admin of,
+</li>
+<li>
+<p>If the page does not exist in our db then we create it and create the
+relationship between the user and the page.</p>
+</li>
+<li>
+<p>If a user no longer has access to a specific page then the relationship
+between the two is removed but all page data is kept.</p>
+</li>
+<li>
+<p>The pages controller will either list all the pages a user is an admin of,
 allowing the user to choose OR redirect to the stats page of the single page
-they administer.</p></li>
-</ol></li>
-
-<li><p>The stats page is then responsible for retrieving all posts. On first load,
+they administer.</p>
+</li>
+<li>
+<p>The stats page is then responsible for retrieving all posts. On first load,
 the stats page will pull from the top of the feed all the way down. On every
 subsequent request, the stats controller will pull only newer feed items.</p>
-
-<ol>
-<li><p>A background job is then created for each post. This background job is
+</li>
+<li>
+<p>A background job is then created for each post. This background job is
 responsible for fetching the likes, comments, shares, and impressions for each
 post while updating the database. This background process was created so the
 wait on the stats page wasn&rsquo;t terribly long. Because of this, you will see the
-stats update on the page when you refresh.</p></li>
-
-<li><p>The stats page displays a top 5 list of the most popular posts. This is
-ordered by date, likes, and comments. Nothing too crazy.</p></li>
-
-<li><p>The stats page then lists all posts in a table below in a sortable fashion
-by clicking the header.</p></li>
-</ol></li>
-
-<li><p>The sign out button will set session variables to <code>nil</code> causing an invalid
-session and redirect the user to the home page.</p></li>
+stats update on the page when you refresh.</p>
+</li>
+<li>
+<p>The stats page displays a top 5 list of the most popular posts. This is
+ordered by date, likes, and comments. Nothing too crazy.</p>
+</li>
+<li>
+<p>The stats page then lists all posts in a table below in a sortable fashion
+by clicking the header.</p>
+</li>
+<li>
+<p>The sign out button will set session variables to <code>nil</code> causing an invalid
+session and redirect the user to the home page.</p>
+</li>
 </ol>
-
 <h2 id="gems-used">Gems Used</h2>
-
 <p>The following gems were used to build the project:</p>
-
 <ul>
 <li><strong><a href="https://github.com/mkdynamic/omniauth-facebook" title="OmniAuth Facebook">omniauth-facebook</a>:</strong> Used to handle authentication to Facebook.</li>
 <li><strong><a href="https://github.com/arsduo/koala" title="Koala Gem">koala</a>:</strong> Nifty for communicating with Facebook graph API.</li>
@@ -308,42 +299,39 @@ the job server in production.</li>
 jobs.</li>
 <li><strong><a href="https://github.com/ejschmitt/delayed_job_web" title="Delayed Job Web">delayed_job_web</a>:</strong> Web interface for delayed job.</li>
 </ul>
-
 <h2 id="refactoring">Refactoring</h2>
-
 <p>There are a few things I know that can be done better off the top of my head if
 this were a real world application. (I would also appreciate any feedback or
 ruby-isms in the comments.)</p>
-
 <ol>
-<li><p>Ideally the stats page should not be making the request to Facebook to pull
+<li>
+<p>Ideally the stats page should not be making the request to Facebook to pull
 in the posts associate with the page they are on. It should be a background job
-that fires up more workers to gather the metrics for each post.</p></li>
-
-<li><p>The job worker only supports handling one post at a time. It&rsquo;s fine for the
+that fires up more workers to gather the metrics for each post.</p>
+</li>
+<li>
+<p>The job worker only supports handling one post at a time. It&rsquo;s fine for the
 sake example but in a real world situation we should be making batch requests.
 This can easily be done by passing an array of Facebook <code>object_ids</code> to the
 endpoint to eliminate multiple requests. The same could be said for the page
-controller.</p></li>
-
-<li><p>As the application grows, there will be more repetition the way things were
+controller.</p>
+</li>
+<li>
+<p>As the application grows, there will be more repetition the way things were
 done. I can see use for breaking some of the <code>User</code> model up by removing the
 sign up code and placing it into a concern and there can be good uses for
-helpers.</p></li>
+helpers.</p>
+</li>
 </ol>
-
 <h2 id="end-thoughts">End Thoughts</h2>
-
 <p><strong>The Good:</strong> I was fairly impressed with the amount of work I got done in a
 short amount of time without having any Ruby friends to lean on. The syntactic
 sugar provided by Ruby made certain things a pleasure to work with and gems seem
 well thought out with a lot of care that the Ruby community is known for. My
 personal favorite being the <em>delayed_job_active_record</em> in this project.</p>
-
 <p>I was also impressed by how organized Rails is. The database migration feature
 was really smooth and I thought it was neat how 3rd party gems made use of that
 in your application.</p>
-
 <p><strong>The Bad:</strong> Sometimes there was too much syntactic sugar that actually did the
 opposite of making code easier to read. One of my pet peeves was using hashes.
 This was because the colon placement in symbols changes and sometimes there
@@ -351,14 +339,11 @@ isn&rsquo;t a clear distinction where a method parameter ends and starts without
 having to look very closely. I found this annoying at times because it was also
 hard for my IDE (IntelliJ) to tell me what was valid code. This is more of a
 Ruby dislike than RoR, though.</p>
-
 <p>On the Rails side, there was also too much magic. I get it, convention over
 configuration but it bit me a few times with ActiveRecord. The code didn&rsquo;t error
 when trying to use so it was kind of annoying to debug at times. Maybe there are
 better ways to do it that I&rsquo;m not aware of?</p>
-
 <h3 id="conclusion">Conclusion</h3>
-
 <p>Would I use RoR again? Yeah, probably. The learning curve was kind of high with
 Rails but once you get in the groove of it then it&rsquo;s pretty powerful with the
 amount of work you can accomplish in a short amount of time. For me, this would

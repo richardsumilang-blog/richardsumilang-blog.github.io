@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -156,7 +162,6 @@
     <div class="details">
       <p>I kept getting the following message when I tried running <code>svn</code> commands on my
 computer. I tried to accept the certificate permanently with no luck:</p>
-
 <pre>Error validating server certificate for 'https://subversion.assembla.com:443':
  - The certificate is not issued by a trusted authority. Use the
    fingerprint to validate the certificate manually!
@@ -167,11 +172,9 @@ Certificate information:
  - Fingerprint: ec:9f:9d:b2:39:e1:34:81:7b:27:f6:51:30:8b:ac:41:5b:62:09:19
 (R)eject, accept (t)emporarily or accept (p)ermanently?
 </pre>
-
 <p>I noticed that the subversion files were owned by the <code>root</code> user when
 inspecting the files on my computer. I&rsquo;m not sure how this happened but it can
 easily be fixed with the <code>chown</code> command.</p>
-
 <pre><code class="language-bash" title="Fix SVN permissions">sudo chown -R $(whoami) ~$(whoami)/.subversion</code></pre>
     </div>
 

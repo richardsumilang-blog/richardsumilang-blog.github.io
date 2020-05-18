@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redis on Richard Sumilang</title>
@@ -18,7 +18,6 @@
       
       <guid>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
       <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

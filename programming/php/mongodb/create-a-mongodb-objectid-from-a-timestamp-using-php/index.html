@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -159,10 +165,8 @@ MongoDB extension. I stumbled on an example on
 <a href="https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver" title="Create MongoDB ObjectID from date in the past using PHP driver">Stack Overflow</a>
 illustration showing how to do this and rewrote it in what I think is a slightly
 more modern way that does the same thing.</p>
-
-<p><a href="https://docs.mongodb.org/manual/reference/object-id/" title="ObjectId - MongoDB Manual 2.4.9">ObjectId</a>&rsquo;s
+<p><a href="https://docs.mongodb.org/manual/reference/object-id/" title="ObjectId - MongoDB Manual 2.4.9">ObjectId</a>&lsquo;s
 are constructed using a 4-byte timestamp value, 3-byte machine identifier, 2-byte process id, and a 3-byte counter which create a 12-byte BSON type:</p>
-
 <pre><code>
  --------------------------------------------------
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
@@ -170,51 +174,46 @@ are constructed using a 4-byte timestamp value, 3-byte machine identifier, 2-byt
 | time          | machine   | pid   | counter      |
  --------------------------------------------------
 </code></pre>
-
 <p>Knowing that makes this PHP code easy to understand:</p>
-
 <h2 id="mongoutil">MongoUtil:</h2>
-
 <pre><code class="language-php" title="MongoUtil.php">/**
  * Class MongoUtil.
  */
 class MongoUtil {
 
-    /**
-     * This is needed to keep documents unique that have the same timestamp.
-     * @var integer
-     * @see $timestamp
-     */
-    public static $_mongoIdFromTimestampCounter = 0;
+	/**
+	 * This is needed to keep documents unique that have the same timestamp.
+	 * @var integer
+	 * @see $timestamp
+	 */
+	public static $_mongoIdFromTimestampCounter = 0;
 
-    /**
-     * Mongo Id From Timestamp
-     * @param integer $timestamp
-     * @return MongoID
-     * @see http://docs.mongodb.org/manual/reference/object-id/
-     */
-    public static function mongoIdFromTimestamp( $timestamp ) {
-        // Build Binary Id
-        $binaryTimestamp = pack('N', $timestamp); // unsigned long
-        $machineId = substr(md5(gethostname()), 0, 3); // 3 bit machine identifier
-        $binaryPID = pack('n', posix_getpid()); // unsigned short
-        $counter = substr(pack('N', self::$_mongoIdFromTimestampCounter++), 1, 3); // Counter
-        $binaryId = "{$binTimestamp}{$machineId}{$machineId}{$counter}";
+	/**
+	 * Mongo Id From Timestamp
+	 * @param integer $timestamp
+	 * @return MongoID
+	 * @see http://docs.mongodb.org/manual/reference/object-id/
+	 */
+	public static function mongoIdFromTimestamp( $timestamp ) {
+		// Build Binary Id
+		$binaryTimestamp = pack('N', $timestamp); // unsigned long
+		$machineId = substr(md5(gethostname()), 0, 3); // 3 bit machine identifier
+		$binaryPID = pack('n', posix_getpid()); // unsigned short
+		$counter = substr(pack('N', self::$_mongoIdFromTimestampCounter++), 1, 3); // Counter
+		$binaryId = "{$binTimestamp}{$machineId}{$machineId}{$counter}";
 
-        // Convert to ASCII
-        $id = '';
-        for ($i = 0; $i &lt; 12; $i++) {
-            $id .= sprintf("%02X", ord($binaryId[$i]));
-        }
+		// Convert to ASCII
+		$id = '';
+		for ($i = 0; $i &lt; 12; $i++) {
+			$id .= sprintf("%02X", ord($binaryId[$i]));
+		}
 
-        // Return Mongo ID
-        return new MongoID($id);
-    }
+		// Return Mongo ID
+		return new MongoID($id);
+	}
 
 }</code></pre>
-
 <h2 id="example-of-usage">Example of usage:</h2>
-
 <pre><code class="language-php" title="Example">$date = strtotime('today');
 $mongoId = MongoUtil::mongoIdFromTimestamp( $date );
 

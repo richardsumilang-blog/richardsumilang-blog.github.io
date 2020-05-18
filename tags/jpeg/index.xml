@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jpeg on Richard Sumilang</title>
@@ -22,10 +22,8 @@ they are not rotated properly when transferring them to another device or
 software. This happens because the device is held at a certain angle when the
 picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
 however it wants.&lt;/p&gt;
-
 &lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
 taken and you can rotate it accordingly.&lt;/p&gt;
-
 &lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library;&lt;/p&gt;</description>
     </item>
     

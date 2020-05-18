@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Svn on Richard Sumilang</title>
+    <title>SVN on Richard Sumilang</title>
     <link>https://www.richardsumilang.com/tags/svn/</link>
-    <description>Recent content in Svn on Richard Sumilang</description>
+    <description>Recent content in SVN on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 May 2014 15:22:00 -0800</lastBuildDate>
@@ -19,7 +19,6 @@
       <guid>https://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
       <description>&lt;p&gt;I kept getting the following message when I tried running &lt;code&gt;svn&lt;/code&gt; commands on my
 computer. I tried to accept the certificate permanently with no luck:&lt;/p&gt;
-
 &lt;pre&gt;Error validating server certificate for &#39;https://subversion.assembla.com:443&#39;:
  - The certificate is not issued by a trusted authority. Use the
    fingerprint to validate the certificate manually!

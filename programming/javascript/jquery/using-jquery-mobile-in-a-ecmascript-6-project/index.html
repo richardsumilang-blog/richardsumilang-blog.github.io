@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -160,16 +166,12 @@
 dependencies I was upgrading from. I used <a href="https://babeljs.io/" title="Babel JS">Babel JS</a> to transpile my ES6 code
 with <a href="https://browserify.org/" title="Browserify">browserify</a> and everything was working fine until I got to
 <a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery-mobile</a>.</p>
-
 <p><img src="/images/reactions/why/jon-stewart.gif" class="center" /></p>
-
 <p>After a quick inspection, I see that jQuery-mobile is having trouble binding
 itself to the <code>root</code> aka <code>this</code> aka <code>window</code> object. This is because the way
 jQuery-mobile is wrapped in a block where <code>this</code> is <code>undefined</code> because the
 code is not being executed in the assumed scope.</p>
-
 <h3 id="example">Example:</h3>
-
 <pre><code class="language-javascript">function(require,module,exports){
 (function (global){
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
@@ -187,49 +189,41 @@ code is not being executed in the assumed scope.</p>
 */
 
 (function ( root, doc, factory ) {
-    if ( typeof define === "function" &amp;&amp; define.amd ) {
-        // AMD. Register as an anonymous module.
-        define( [ "jquery" ], function ( $ ) {
-            factory( $, root, doc );
-            return $.mobile;
-        });
-    } else {
-        // Browser globals
-        factory( root.jQuery, root, doc );
-    }
+	if ( typeof define === "function" &amp;&amp; define.amd ) {
+		// AMD. Register as an anonymous module.
+		define( [ "jquery" ], function ( $ ) {
+			factory( $, root, doc );
+			return $.mobile;
+		});
+	} else {
+		// Browser globals
+		factory( root.jQuery, root, doc );
+	}
 }( this, document, function ( jQuery, window, document, undefined ) {
 (function( $ ) {
-    $.mobile = {};
+	$.mobile = {};
 }( jQuery ));
 
 // more jquery code
 }</code></pre>
-
 <p>The jQuery-mobile team doesn&rsquo;t want to make fixes for this because they would
 have to continue to make patches for their code when another build system comes
 out and whose got time to keep up with that? Needless to say, I wish they had
 the time for it to make their libraries more compatible for users and they are a
 bigger team than just little ole independent me but that&rsquo;s just my opinion.</p>
-
 <p>Today is going on my 2nd day being stuck with the issue (also second day of
 using gulp and browserify so give me a break) and I&rsquo;ve tried just about every
 solution I can find on the web before I just gave up and wrote my own. Though,
 not exactly the most elegant solution, I simply replaced all instances of <code>this</code>
 to <code>this || window</code> and walla it worked.</p>
-
 <p>Now I have jQuery-mobile working just fine in my ES6 project. I&rsquo;ve bundled my
 changes up in a npm project under the name <strong>jquery-mobile-babel-safe</strong>. Here is
 how I use it in my project:</p>
-
 <h3 id="install">Install</h3>
-
 <p>Run this command in your project room:</p>
-
 <pre><code>    npm install jquery-mobile-babel-safe --save
 </code></pre>
-
 <p><strong>package.json</strong></p>
-
 <pre><code class="language-javascript">    "browser": {
       "jquery-mobile": "./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js"
     },
@@ -238,17 +232,13 @@ how I use it in my project:</p>
         "exports": "jQuery.mobile"
       }
     }</code></pre>
-
 <p>And that&rsquo;s about it. You can test by importing <code>jquery-mobile</code> on your page. You
 should have access to <code>$.mobile</code> in your scripts.</p>
-
 <h3 id="wrap-up">Wrap up&hellip;</h3>
-
 <p>I&rsquo;d like to hear from you if you have a simpler way of making this work. I do
 feel a little bad about polluting the npm package repository with yet another
 jQuery package and I&rsquo;d like to know of a better way of doing this but I know a
 few other people were stuck with this issue so be it.</p>
-
 <p>Happy hacking!</p>
     </div>
 

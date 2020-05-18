@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Servers on Richard Sumilang</title>
@@ -18,9 +18,7 @@
       
       <guid>https://www.richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
-
 &lt;p&gt;Dump this in your terminal:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
 cd ~/src
@@ -143,7 +141,6 @@ mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --dr
       
       <guid>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -154,7 +151,6 @@ mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --dr
       
       <guid>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</guid>
       <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

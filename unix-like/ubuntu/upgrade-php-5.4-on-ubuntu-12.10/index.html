@@ -47,7 +47,7 @@
 <meta name="twitter:description" content="How to upgrade to PHP 5.4 on Ubuntu 12.10" />
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -157,20 +163,15 @@
       <p>PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
 backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
 and run the following commands:</p>
-
 <pre><code class="language-bash" title="Installation Instructions">sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:ondrej/php5-oldstable
 sudo apt-get update; sudo apt-get install php5</code></pre>
-
 <p>If you compiled or installed any PHP extensions via <code>pecl</code> then you will need to
 reinstall those too. Development packages must be upgraded before you run <code>pecl</code>
 or <code>phpize</code>:</p>
-
 <pre><code class="language-bash" title="Development packages">sudo apt-get install php-pear php5-dev</code></pre>
-
 <p>Test if everything is ok by running <code>phpinfo();</code> from a PHP script on your
 web-server and <code>php -i</code> from your terminal.</p>
-
 <p>Enjoy!</p>
     </div>
 

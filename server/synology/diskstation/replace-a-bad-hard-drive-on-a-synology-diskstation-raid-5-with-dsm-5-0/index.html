@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -59,7 +59,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.2797a9753da94e60856c.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.1d229b13ad26dde8058c.css" />
 
 
 
@@ -78,6 +78,12 @@
 
 
 
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
 <script>
   var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
   var q = q || [];
@@ -87,7 +93,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.da9032c4.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.16ce31c3.js"></script>
   
 
 
@@ -157,17 +163,13 @@
       <p>I received an alert from my Synology RAID regarding a few bad sectors on a hard
 drive. Even though the RAID is still operational, it&rsquo;s best practice to replace
 the hard drive before any data gets corrupted due to the bad sectors.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/bad-sector-count.png" /></p>
-
 <h2 id="my-setup">My Setup</h2>
-
 <ul>
 <li>Synology DS413</li>
 <li>DSM 5.0</li>
 <li>4x Western Digital 3TB Caviar Green</li>
 </ul>
-
 <p><em>Tip: It&rsquo;s best to purchase an extra disk when initially configuring your RAID.
 While I can still find WD 3TB Caviar Green drives online, they are not the same.
 Some are actually smaller than others by a few megabytes even though they are
@@ -175,13 +177,10 @@ labeled 3TB. To rebuild your RAID, you will need a disk with the <code>exact</co
 more. Trying to replace it with a drive that is just 1mb smaller will not work.
 Your hard drive manufacturer will release a few different versions of the same
 drive model while the space may fluctuate in megabytes.</em></p>
-
 <p>I tried finding a close match by using the physical date on the drive but even a
 ones that I found with a month difference were smaller. While it was not
 impossible to find another WD Caviar drive, it was a long and annoying search.</p>
-
 <h2 id="lets-fix-it">Lets fix it!</h2>
-
 <p><em>Edit: I think it&rsquo;s best to remove the drive sooner rather than later and run
 your system (if necessary) with only the good drives. I shut down my DiskStation
 and physically removed the bad drive from the array. I did this because I did
@@ -189,67 +188,43 @@ not want to chance data being written to the a bad sector which would then make
 it corrupt. I then powered on my DiskStation only when I needed something from
 it. I do not recommend leaving it on with a disk removed because now it
 technically has a higher chance of failure.</em></p>
-
 <p><strong>1)</strong> Upon logging into your DiskStation, you will be prompted with a series of
 alerts. The topmost screen, <strong>Storage Manager</strong>, will tell your RAID is
 degraded. Your system will literally beep continuously until you click the
 &ldquo;Beep Off&rdquo; button in your <strong>Control Panel</strong>. Your <strong>System Health</strong> panel will
 also try to gain your attention.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-1.png" /></p>
-
 <p><strong>2)</strong> From your <strong>Storage Manager</strong>, click on <strong>Volume</strong>. You will notice that the <strong>Manage</strong> button will be disabled until you replace the failed drive with a disk of the same size or bigger.</p>
-
 <p><em>Note: Be sure to power your down your DiskStation when swapping out the drives.
 Do not try and do this with it running.</em></p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-2.png" /></p>
-
 <p><strong>3)</strong> After you replace your drive, the <strong>Manage</strong> button will no longer be
 disabled. Click on that.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-3.png" /></p>
-
 <p><strong>4)</strong> Click the <strong>Repair</strong> radio button and then <strong>Next</strong>.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-4.png" /></p>
-
 <p><strong>5)</strong> Select the correct disk in your system to use for the RAID and click
 <strong>Next</strong>.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-5.png" /></p>
-
 <p><strong>6)</strong> You will be prompted with a warning before you continue. Make sure you&rsquo;re ok with destroying all the current contents of the selected disk and click <strong>Ok</strong> if you are.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-6.png" /></p>
-
 <p><strong>7)</strong> And one more window to confirm that you are ok with the warning. Click
 <strong>Apply</strong>.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-7.png" /></p>
-
 <p><strong>8)</strong> You will be brought back to your <strong>Storage Manager</strong> panel while it&rsquo;s
 under <strong>repair</strong>. This took about 12 hours for it to complete. I imagine the
 process could take longer if you are actively using it while it&rsquo;s under repair.
 If possible, try not to.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-8.png" /></p>
-
 <p><strong>9)</strong> When complete, your volume should say <strong>Normal</strong> next to it.</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/step-9.png" /></p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>The most important things to note from this are the following:</p>
-
 <ul>
 <li>Have a spare drive on standby. Always.</li>
 <li>Completely shut down your DiskStation when swapping your drive.</li>
 </ul>
-
 <p>And last but not least, properly dispose of your bad hard drive correctly so any data is not recoverable:</p>
-
 <p><img src="/images/server/synology/diskstation/how-to-replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/disposed-drive.jpg" /></p>
     </div>
 
