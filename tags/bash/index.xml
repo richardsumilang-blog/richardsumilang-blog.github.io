@@ -13,10 +13,10 @@
     
     <item>
       <title>LSB Init.d Script Template</title>
-      <link>https://www.richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</link>
+      <link>https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/</link>
       <pubDate>Mon, 07 Jul 2014 14:08:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</guid>
+      <guid>https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/</guid>
       <description>&lt;p&gt;Quick little &lt;code&gt;init.d&lt;/code&gt; template:&lt;/p&gt;</description>
     </item>
     

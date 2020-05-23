@@ -13,10 +13,10 @@
     
     <item>
       <title>Update Chef Solo on your Vagrant</title>
-      <link>https://www.richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
+      <link>https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
       <pubDate>Tue, 10 Jun 2014 15:50:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
+      <guid>https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
       <description>Install vagrant-omnibus:
 vagrant plugin install vagrant-omnibus Configure your Vagrantfile before provisioning to the latest version of Chef:
 config.omnibus.chef_version = :latest You can also upgrade to a specific version like so:

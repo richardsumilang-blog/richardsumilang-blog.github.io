@@ -13,10 +13,10 @@
     
     <item>
       <title>Design Patterns Cheat Sheet</title>
-      <link>https://www.richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</link>
+      <link>https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/</link>
       <pubDate>Mon, 02 Jun 2014 00:17:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a quick cheat sheet for lots of design patterns. The examples in this
 post are linked to Java examples however they are not limited to a single
 language implementation. Special thanks to Derek Banas.&lt;/p&gt;</description>

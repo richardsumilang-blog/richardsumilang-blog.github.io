@@ -13,10 +13,10 @@
     
     <item>
       <title>Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0</title>
-      <link>https://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>
+      <link>https://www.richardsumilang.com/posts/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>
       <pubDate>Sat, 28 Jun 2014 11:30:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</guid>
+      <guid>https://www.richardsumilang.com/posts/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</guid>
       <description>&lt;p&gt;I received an alert from my Synology RAID regarding a few bad sectors on a hard
 drive. Even though the RAID is still operational, it&amp;rsquo;s best practice to replace
 the hard drive before any data gets corrupted due to the bad sectors.&lt;/p&gt;</description>

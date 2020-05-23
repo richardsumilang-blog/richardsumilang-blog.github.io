@@ -13,10 +13,10 @@
     
     <item>
       <title>IntelliJ IDEA Optimizations</title>
-      <link>https://www.richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</link>
+      <link>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</link>
       <pubDate>Tue, 06 May 2014 11:00:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</guid>
+      <guid>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</guid>
       <description>Please post a comment if you have any additional tips to making IDEA faster.
   The first thing you want to do is disable all the plugins you are not using. Go to *Preferences&amp;amp; -&amp;gt; Plugins and un-check as many as possible. I unchecked about 80%.
   Give yourself more memory. I figure if Firefox allows itself to take a gig of my ram then I should treat my IDE a little better.</description>

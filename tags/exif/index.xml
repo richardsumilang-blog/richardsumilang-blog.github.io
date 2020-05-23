@@ -13,10 +13,10 @@
     
     <item>
       <title>Working with Apple&#39;s iOS image orientation</title>
-      <link>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <link>https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
       <pubDate>Fri, 17 Oct 2014 14:33:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
       <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
 they are not rotated properly when transferring them to another device or
 software. This happens because the device is held at a certain angle when the

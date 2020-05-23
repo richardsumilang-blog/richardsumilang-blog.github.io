@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.richardsumilang.com/about/</loc>
+    <lastmod>2020-05-22T17:09:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.richardsumilang.com/about/privacy/</loc>
+    <lastmod>2020-05-22T17:09:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.richardsumilang.com/</loc>
+    <lastmod>2020-05-22T17:09:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.richardsumilang.com/about/terms/</loc>
+    <lastmod>2020-05-22T17:09:47+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.richardsumilang.com/categories/apps/</loc>
     <lastmod>2017-04-05T14:08:00-08:00</lastmod>
   </url>
@@ -18,17 +38,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/</loc>
+    <loc>https://www.richardsumilang.com/posts/</loc>
     <lastmod>2017-04-05T14:08:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.richardsumilang.com/categories/servers/</loc>
-    <lastmod>2017-04-05T14:08:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.richardsumilang.com/server/</loc>
     <lastmod>2017-04-05T14:08:00-08:00</lastmod>
   </url>
   
@@ -43,7 +58,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</loc>
     <lastmod>2017-04-05T14:08:00-08:00</lastmod>
   </url>
   
@@ -68,17 +83,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/</loc>
-    <lastmod>2016-01-10T15:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.richardsumilang.com/tags/iems/</loc>
     <lastmod>2016-01-10T15:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/audio/in-ear-monitors/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/audio/in-ear-monitors/</loc>
     <lastmod>2016-01-10T15:00:00-08:00</lastmod>
   </url>
   
@@ -93,7 +103,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/ruby/ror/facebook-page-analytics-ror/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/ruby/ror/facebook-page-analytics-ror/</loc>
     <lastmod>2015-12-20T10:57:00-07:00</lastmod>
   </url>
   
@@ -104,11 +114,6 @@
   
   <url>
     <loc>https://www.richardsumilang.com/categories/programming/</loc>
-    <lastmod>2015-12-20T10:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.richardsumilang.com/programming/</loc>
     <lastmod>2015-12-20T10:57:00-07:00</lastmod>
   </url>
   
@@ -143,17 +148,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/</loc>
-    <lastmod>2015-11-15T15:28:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.richardsumilang.com/tags/losslesslife/</loc>
     <lastmod>2015-11-15T15:28:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</loc>
     <lastmod>2015-11-15T15:28:00-07:00</lastmod>
   </url>
   
@@ -163,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/audio/planar-magnetic-drivers/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/audio/planar-magnetic-drivers/</loc>
     <lastmod>2015-11-10T22:39:00-08:00</lastmod>
   </url>
   
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/audio/dynamic-drivers/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/audio/dynamic-drivers/</loc>
     <lastmod>2015-11-10T22:00:00-08:00</lastmod>
   </url>
   
@@ -183,7 +183,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/audio/headphone-drivers/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/audio/headphone-drivers/</loc>
     <lastmod>2015-11-05T22:18:45-08:00</lastmod>
   </url>
   
@@ -193,7 +193,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/work/tmz/tmz-mobile-web-version-2/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/work/tmz/tmz-mobile-web-version-2/</loc>
     <lastmod>2015-09-22T13:00:00-07:00</lastmod>
   </url>
   
@@ -203,7 +203,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</loc>
+    <loc>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</loc>
     <lastmod>2015-09-20T17:59:00-07:00</lastmod>
   </url>
   
@@ -248,11 +248,6 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/</loc>
-    <lastmod>2015-09-20T17:59:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.richardsumilang.com/tags/amplifier/</loc>
     <lastmod>2015-09-19T18:45:10-07:00</lastmod>
   </url>
@@ -263,7 +258,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/bottlehead/sex/unboxed/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/unboxed/</loc>
     <lastmod>2015-09-19T18:45:10-07:00</lastmod>
   </url>
   
@@ -318,7 +313,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/bottlehead/sex/bottlehead-sex-journey/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/bottlehead-sex-journey/</loc>
     <lastmod>2015-09-12T18:51:47-07:00</lastmod>
   </url>
   
@@ -418,7 +413,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/version-3/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/version-3/</loc>
     <lastmod>2015-09-05T18:43:34-07:00</lastmod>
   </url>
   
@@ -428,7 +423,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/apple/ios/effective-power-an-aol-flashback/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/apple/ios/effective-power-an-aol-flashback/</loc>
     <lastmod>2015-05-28T00:13:00-08:00</lastmod>
   </url>
   
@@ -488,12 +483,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</loc>
     <lastmod>2015-03-11T17:10:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/a-thing-or-two-about-style-guides/</loc>
     <lastmod>2015-02-08T19:25:00-08:00</lastmod>
   </url>
   
@@ -553,7 +548,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/scm/git/how-to-link-bitbucket-to-asana/</loc>
     <lastmod>2015-01-31T00:58:00-08:00</lastmod>
   </url>
   
@@ -573,7 +568,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</loc>
     <lastmod>2015-01-09T17:11:00-08:00</lastmod>
   </url>
   
@@ -588,7 +583,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</loc>
+    <loc>https://www.richardsumilang.com/posts/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</loc>
     <lastmod>2015-01-09T01:57:00-08:00</lastmod>
   </url>
   
@@ -603,22 +598,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/networking/</loc>
-    <lastmod>2015-01-09T01:57:00-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.richardsumilang.com/tags/wifi/</loc>
     <lastmod>2015-01-09T01:57:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/apps/</loc>
-    <lastmod>2015-01-08T21:41:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.richardsumilang.com/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</loc>
+    <loc>https://www.richardsumilang.com/posts/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</loc>
     <lastmod>2015-01-08T21:41:00-08:00</lastmod>
   </url>
   
@@ -633,7 +618,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</loc>
+    <loc>https://www.richardsumilang.com/posts/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</loc>
     <lastmod>2015-01-08T21:27:00-08:00</lastmod>
   </url>
   
@@ -678,12 +663,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/apps/security/tidying-up-your-security-with-a-password-manager/</loc>
+    <loc>https://www.richardsumilang.com/posts/apps/security/tidying-up-your-security-with-a-password-manager/</loc>
     <lastmod>2014-11-11T16:27:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</loc>
+    <loc>https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/</loc>
     <lastmod>2014-10-26T16:30:00-07:00</lastmod>
   </url>
   
@@ -723,7 +708,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/php/graphics/working-with-apples-ios-image-orientation/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/</loc>
     <lastmod>2014-10-17T14:33:00-08:00</lastmod>
   </url>
   
@@ -733,7 +718,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</loc>
+    <loc>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</loc>
     <lastmod>2014-09-27T15:30:00-08:00</lastmod>
   </url>
   
@@ -763,7 +748,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</loc>
+    <loc>https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</loc>
     <lastmod>2014-07-14T22:28:00-08:00</lastmod>
   </url>
   
@@ -773,7 +758,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</loc>
+    <loc>https://www.richardsumilang.com/posts/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</loc>
     <lastmod>2014-07-13T20:47:01-08:00</lastmod>
   </url>
   
@@ -783,7 +768,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</loc>
     <lastmod>2014-07-12T18:32:00-08:00</lastmod>
   </url>
   
@@ -803,7 +788,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</loc>
     <lastmod>2014-07-12T02:01:01-08:00</lastmod>
   </url>
   
@@ -828,7 +813,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/linux/template/lsb/lsb-init-d-script-template/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/</loc>
     <lastmod>2014-07-07T14:08:00-08:00</lastmod>
   </url>
   
@@ -848,7 +833,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</loc>
     <lastmod>2014-06-28T11:30:00-08:00</lastmod>
   </url>
   
@@ -863,7 +848,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</loc>
     <lastmod>2014-06-20T15:09:00-08:00</lastmod>
   </url>
   
@@ -873,7 +858,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</loc>
     <lastmod>2014-06-12T11:22:00-08:00</lastmod>
   </url>
   
@@ -893,7 +878,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</loc>
     <lastmod>2014-06-10T15:50:00-08:00</lastmod>
   </url>
   
@@ -918,12 +903,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/design-patterns/design-patterns-cheat-sheet/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/</loc>
     <lastmod>2014-06-02T00:17:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/mongodb/backing-up-and-restoring-with-mongodb/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/</loc>
     <lastmod>2014-05-30T16:33:00-08:00</lastmod>
   </url>
   
@@ -948,7 +933,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/networking/windows/converting-windows-network-path-for-mac/</loc>
+    <loc>https://www.richardsumilang.com/posts/networking/windows/converting-windows-network-path-for-mac/</loc>
     <lastmod>2014-05-30T15:41:00-08:00</lastmod>
   </url>
   
@@ -968,7 +953,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/</loc>
+    <loc>https://www.richardsumilang.com/posts/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/</loc>
     <lastmod>2014-05-25T14:24:00-08:00</lastmod>
   </url>
   
@@ -998,7 +983,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/ios/ios-simulator-link/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/</loc>
     <lastmod>2014-05-14T17:22:00-08:00</lastmod>
   </url>
   
@@ -1013,7 +998,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/</loc>
     <lastmod>2014-05-12T15:22:00-08:00</lastmod>
   </url>
   
@@ -1033,12 +1018,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</loc>
     <lastmod>2014-05-08T18:15:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/apps/osx/apps-i-cant-live-without-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/apps/osx/apps-i-cant-live-without-os-x/</loc>
     <lastmod>2014-05-07T12:27:00-08:00</lastmod>
   </url>
   
@@ -1058,7 +1043,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/apps/ide/intellij/intellij-idea-optimizations/</loc>
+    <loc>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</loc>
     <lastmod>2014-05-06T11:00:00-08:00</lastmod>
   </url>
   
@@ -1068,17 +1053,17 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/reflection/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/reflection/</loc>
     <lastmod>2014-04-24T18:55:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/php/gearman/install-gearman-for-php-on-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/php/gearman/install-gearman-for-php-on-os-x/</loc>
     <lastmod>2014-04-23T23:05:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/gearman/install-gearman-on-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/gearman/install-gearman-on-os-x/</loc>
     <lastmod>2014-04-23T22:48:00-08:00</lastmod>
   </url>
   
@@ -1088,12 +1073,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/groovy/install-groovy-on-os-x/</loc>
     <lastmod>2014-04-15T13:09:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</loc>
+    <loc>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</loc>
     <lastmod>2014-04-14T10:21:00-08:00</lastmod>
   </url>
   
@@ -1108,7 +1093,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/jython/install-jython-on-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/jython/install-jython-on-os-x/</loc>
     <lastmod>2014-04-08T17:58:00-08:00</lastmod>
   </url>
   
@@ -1118,7 +1103,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/nimrod/install-nimrod-on-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/nimrod/install-nimrod-on-os-x/</loc>
     <lastmod>2014-04-07T11:09:00-08:00</lastmod>
   </url>
   
@@ -1128,7 +1113,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/server/redis/install-redis-on-os-x/</loc>
+    <loc>https://www.richardsumilang.com/posts/server/redis/install-redis-on-os-x/</loc>
     <lastmod>2014-04-04T10:04:00-08:00</lastmod>
   </url>
   
@@ -1138,12 +1123,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/javascript/working-with-javascript-templates-using-jquery/</loc>
     <lastmod>2014-04-01T23:20:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/first-day-at-tmz/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/first-day-at-tmz/</loc>
     <lastmod>2014-04-01T21:49:00-08:00</lastmod>
   </url>
   
@@ -1153,12 +1138,12 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</loc>
+    <loc>https://www.richardsumilang.com/posts/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</loc>
     <lastmod>2014-03-31T03:51:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</loc>
+    <loc>https://www.richardsumilang.com/posts/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</loc>
     <lastmod>2014-03-31T01:43:00-08:00</lastmod>
   </url>
   
@@ -1173,7 +1158,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/just-one-of-those-days/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/just-one-of-those-days/</loc>
     <lastmod>2014-03-30T19:35:00-08:00</lastmod>
   </url>
   
@@ -1183,7 +1168,7 @@
   </url>
   
   <url>
-    <loc>https://www.richardsumilang.com/etc/hello-world...again/</loc>
+    <loc>https://www.richardsumilang.com/posts/etc/hello-world...again/</loc>
     <lastmod>2014-03-29T05:16:01-08:00</lastmod>
   </url>
   

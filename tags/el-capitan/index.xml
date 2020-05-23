@@ -13,11 +13,11 @@
     
     <item>
       <title>Automate Your OS X App Installations</title>
-      <link>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</link>
       <pubDate>Sun, 20 Sep 2015 17:59:00 -0700</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
-      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+      <guid>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
 multiple Mac workstations. The new version now allows you to configure parameters of
 the installation such as install path and which category of applications you
 wish to install.&lt;/p&gt;

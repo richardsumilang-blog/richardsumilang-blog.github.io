@@ -13,10 +13,10 @@
     
     <item>
       <title>Version 3</title>
-      <link>https://www.richardsumilang.com/etc/version-3/</link>
+      <link>https://www.richardsumilang.com/posts/etc/version-3/</link>
       <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
       
-      <guid>https://www.richardsumilang.com/etc/version-3/</guid>
+      <guid>https://www.richardsumilang.com/posts/etc/version-3/</guid>
       <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
 source. The theme has been modernized to load faster and I created more ways to
 navigate the site so more data is easily accessible while keeping the idea of
@@ -25,10 +25,10 @@ simplicity in mind.&lt;/p&gt;</description>
     
     <item>
       <title>Working with JavaScript templates using jQuery</title>
-      <link>https://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</link>
+      <link>https://www.richardsumilang.com/posts/programming/javascript/working-with-javascript-templates-using-jquery/</link>
       <pubDate>Tue, 01 Apr 2014 23:20:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
       <description>&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
 at &lt;a href=&#34;https://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
 design from your code. This is particularly useful when you are adding content

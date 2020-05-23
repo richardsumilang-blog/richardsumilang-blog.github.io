@@ -13,10 +13,10 @@
     
     <item>
       <title>Fixing OpenSSL Heartbleed vulnerability on Ubuntu</title>
-      <link>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
       <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
 remote users to read memory without leaving a trace. Here are the steps to up
 update Ubuntu to patch the issue.&lt;/p&gt;</description>

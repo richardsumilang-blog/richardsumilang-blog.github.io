@@ -13,10 +13,10 @@
     
     <item>
       <title>Using jQuery mobile in a ECMAScript 6 project</title>
-      <link>https://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <link>https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
       <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
       <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to

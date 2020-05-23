@@ -13,10 +13,10 @@
     
     <item>
       <title>jQuery CORS fix for IE8 and IE9</title>
-      <link>https://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <link>https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
       <pubDate>Fri, 20 Jun 2014 15:09:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
       <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
 whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
 it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;</description>

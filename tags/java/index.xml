@@ -13,10 +13,10 @@
     
     <item>
       <title>A thing or two about style guides</title>
-      <link>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</link>
+      <link>https://www.richardsumilang.com/posts/programming/a-thing-or-two-about-style-guides/</link>
       <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/a-thing-or-two-about-style-guides/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/a-thing-or-two-about-style-guides/</guid>
       <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
 This keeps the code manageable when you or your peers come back to work on it in
 the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
@@ -34,10 +34,10 @@ Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
     
     <item>
       <title>How to install Groovy on OS X</title>
-      <link>https://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</link>
+      <link>https://www.richardsumilang.com/posts/programming/groovy/install-groovy-on-os-x/</link>
       <pubDate>Tue, 15 Apr 2014 13:09:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/groovy/install-groovy-on-os-x/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/groovy/install-groovy-on-os-x/</guid>
       <description>&lt;p&gt;Setup &lt;a href=&#34;https://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

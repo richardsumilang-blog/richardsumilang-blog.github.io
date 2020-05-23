@@ -13,10 +13,10 @@
     
     <item>
       <title>SynoCommunity packages for Synology NAS</title>
-      <link>https://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
+      <link>https://www.richardsumilang.com/posts/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
       <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
+      <guid>https://www.richardsumilang.com/posts/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
       <description>&lt;p&gt;A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
 Sync, Redis, and Firefox Sync Server just to name a few. Check out the
 &lt;a href=&#34;https://synocommunity.com/packages&#34; title=&#34;SynoCommunity Packages&#34;&gt;full list of packages&lt;/a&gt; or just add the source to your package manager :)&lt;/p&gt;</description>

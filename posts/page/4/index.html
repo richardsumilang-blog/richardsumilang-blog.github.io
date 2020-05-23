@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="" />
+<meta name="news_keywords" content="" />
+
+
+<meta property="og:type" content="article" />
+
+<meta property="og:title" content="" />
+<meta property="og:site_name" content="Tech tips, photography, and more." />
+<meta property="og:url" content="https://www.richardsumilang.com/posts/" />
+<meta property="og:locale" content="en_US" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+
+
+<meta name="generator" content="Hugo 0.70.0" />
+
+
+  <base href="https://www.richardsumilang.com/" />
+  
+    <title>Tech tips, photography, and more. - Posts</title>
+  
+
+  <link rel="canonical" href="https://www.richardsumilang.com/posts/" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.d0f6a8e88823aafe10a1.css" />
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.richardsumilang.com/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://www.richardsumilang.com/favicon.ico" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://www.richardsumilang.com/posts/index.xml" title="Richard Sumilang" />
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+  window._mNHandle = window._mNHandle || {};
+  window._mNHandle.queue = window._mNHandle.queue || [];
+  medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CUY1C7V5" async="async"></script>
+
+
+
+<script>
+  var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
+  var q = q || [];
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+
+
+  <script defer src="https://www.richardsumilang.com/_app/main.ce90e790.js"></script>
+  
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+
+<script>
+  q.push(function loadPage() {
+    window.app.dispatch(window.app.actions.loadPage({
+      title: "Richard Sumilang",
+      url: 'https:\/\/www.richardsumilang.com\/posts\/',
+      uri: '\/posts\/',
+      query: location.search.slice(1).split('&').map(p => p.split('=')).reduce((obj, pair) => { var [key, value] = pair.map(decodeURIComponent); return ({ ...obj, [key]: value }) }, {}),
+      section: 'section',
+      subSection: '',
+      isTurbolinksPreview: document.documentElement.hasAttribute('data-turbolinks-preview')
+    }));
+  });
+</script>
+
+</head>
+
+<body>
+
+  
+<div id="logo">
+  <a href="https://www.richardsumilang.com/"><img src="https://www.richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+  <ul id="navigation">
+  
+  
+  <li><a href="/categories/apps/" >apps</a></li>
+  
+  <li><a href="/categories/electronics/" >electronics</a></li>
+  
+  <li><a href="/categories/etc/" >etc</a></li>
+  
+  <li><a href="/categories/networking/" >networking</a></li>
+  
+  <li><a href="/categories/programming/" >programming</a></li>
+  
+  <li><a href="/categories/servers/" >servers</a></li>
+  
+  <li><a href="/categories/unix-like/" >unix-like</a></li>
+  
+</ul>
+
+
+  
+  <section id="articles">
+    
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/">jQuery CORS fix for IE8 and IE9</a></h2>
+    
+      <h3>No browser is left behind</h3>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&rsquo;t always make business sense and we must support
+it. I found this <a href="https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js" title="XDR Patch">piece of code</a> that patches the issue with jQuery.</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Jun 20, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fjquery-cors-fix-for-ie8-and-ie9%2f&t=jQuery%20CORS%20fix%20for%20IE8%20and%20IE9"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fjquery-cors-fix-for-ie8-and-ie9%2f&text=jQuery%20CORS%20fix%20for%20IE8%20and%20IE9&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fjquery-cors-fix-for-ie8-and-ie9%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fjquery-cors-fix-for-ie8-and-ie9%2f&media=&description=jQuery%20CORS%20fix%20for%20IE8%20and%20IE9"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/">Chef Gearman Cookbook v0.1.0</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>A little <a href="https://gearman.org/" title="Gearman">Gearman</a> cookbook I put together for <a href="https://www.getchef.com/" title="Chef">Chef</a>. Supports installing
+multiple versions by source. Also has a recipe for the <a href="https://pecl.php.net/package/gearman" title="Gearman PHP Extension">PHP extension</a>.</p>
+<p><a href="https://github.com/rsumilang/chef-gearman" title="Chef Gearman Cookbook">Grab it from GitHub</a>!</p>
+<p>kthxbye.</p>
+
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Jun 12, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f&t=Chef%20Gearman%20Cookbook%20v0.1.0"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f&text=Chef%20Gearman%20Cookbook%20v0.1.0&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f&media=&description=Chef%20Gearman%20Cookbook%20v0.1.0"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/">Update Chef Solo on your Vagrant</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>Install <a href="https://github.com/schisamo/vagrant-omnibus" title="Vagrant Omnibus">vagrant-omnibus</a>:</p>
+<pre><code class="language-bash" title="Install vagrant-omnibus">vagrant plugin install vagrant-omnibus</code></pre>
+<p>Configure your <a href="https://docs.vagrantup.com/v2/vagrantfile/index.html" title="Vagrantfile Doc">Vagrantfile</a> before provisioning to the latest version of
+Chef:</p>
+<pre><code class="language-ruby" title="Configure Vagrantfile">config.omnibus.chef_version = :latest</code></pre>
+<p>You can also upgrade to a specific version like so:</p>
+<pre><code class="language-ruby" title="Configure Vagrantfile">config.omnibus.chef_version = "11.12.8"</code></pre>
+
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Jun 10, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f&t=Update%20Chef%20Solo%20on%20your%20Vagrant"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f&text=Update%20Chef%20Solo%20on%20your%20Vagrant&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f&media=&description=Update%20Chef%20Solo%20on%20your%20Vagrant"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/">Design Patterns Cheat Sheet</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>Here&rsquo;s a quick cheat sheet for lots of design patterns. The examples in this
+post are linked to Java examples however they are not limited to a single
+language implementation. Special thanks to Derek Banas.</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Jun 2, 2014
+    <i class="fa fa-align-left"></i> 5 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&t=Design%20Patterns%20Cheat%20Sheet"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&text=Design%20Patterns%20Cheat%20Sheet&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&media=&description=Design%20Patterns%20Cheat%20Sheet"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/">Backing up and Restoring with MongoDB</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      Dump You can dump the database locally using the following mongodump:
+mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD This will create a dump folder containing a subfolder named after your database. The default port for MongoDB is 27017.
+Import You can import the same dump to a local MongoDB instance using something like the following mongorestore after changing into the dump directory:
+mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 30, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&t=Backing%20up%20and%20Restoring%20with%20MongoDB"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&text=Backing%20up%20and%20Restoring%20with%20MongoDB&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&media=&description=Backing%20up%20and%20Restoring%20with%20MongoDB"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/networking/windows/converting-windows-network-path-for-mac/">Converting Windows Network Path for Mac</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>If you&rsquo;re given a Windows network path such as <code>\\Foo\Bar</code> then that basically
+means connect to shared folder <code>Bar</code> on the server <code>Foo</code>. To do this, you can go
+<code>Finder</code> -&gt; <code>Go</code> -&gt; <code>Connect to Server...</code> and type <code>smb://Foo/Bar</code> which
+is the equivalent.</p>
+
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/networking/windows/converting-windows-network-path-for-mac/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 30, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fnetworking%2fwindows%2fconverting-windows-network-path-for-mac%2f&t=Converting%20Windows%20Network%20Path%20for%20Mac"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fnetworking%2fwindows%2fconverting-windows-network-path-for-mac%2f&text=Converting%20Windows%20Network%20Path%20for%20Mac&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fnetworking%2fwindows%2fconverting-windows-network-path-for-mac%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fnetworking%2fwindows%2fconverting-windows-network-path-for-mac%2f&media=&description=Converting%20Windows%20Network%20Path%20for%20Mac"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/">How to unlink Netflix from Panasonic Viera Cast VT25</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>Unfortunately you can&rsquo;t on a <a href="https://www.amazon.com/Panasonic-TC-P58VT25-1080p-VIERA-Plasma/dp/B003N3BV5O" title="Panasonic VT25">Panasonic VT25</a>. Someone managed to forget
+about that feature on the Netflix app. Weird because it&rsquo;s there for YouTube,
+Pandora, Amazon, etc&hellip; The only way you can is by resetting your TV to the
+factory settings and starting from scratch. You&rsquo;re wrong if you think you can
+just log into your Netflix account and click the unlink all devices link from
+your profile. On the plus side&hellip; Never mind, there is no plus side.</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 25, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2felectronics%2ftv%2fpanasonic%2funlink-netflix-from-panasonic-viera-cast-vt25%2f&t=How%20to%20unlink%20Netflix%20from%20Panasonic%20Viera%20Cast%20VT25"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2felectronics%2ftv%2fpanasonic%2funlink-netflix-from-panasonic-viera-cast-vt25%2f&text=How%20to%20unlink%20Netflix%20from%20Panasonic%20Viera%20Cast%20VT25&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2felectronics%2ftv%2fpanasonic%2funlink-netflix-from-panasonic-viera-cast-vt25%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2felectronics%2ftv%2fpanasonic%2funlink-netflix-from-panasonic-viera-cast-vt25%2f&media=&description=How%20to%20unlink%20Netflix%20from%20Panasonic%20Viera%20Cast%20VT25"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/">iOS Simulator Link</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>The iOS Simulator is obviously a must have tool for development. Web development
+is no exception but Apple makes you jump through a few hoops (Xcode) to get to
+it. Luckily you can run it as a standalone application.</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 14, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fios%2fios-simulator-link%2f&t=iOS%20Simulator%20Link"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fios%2fios-simulator-link%2f&text=iOS%20Simulator%20Link&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fios%2fios-simulator-link%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fios%2fios-simulator-link%2f&media=&description=iOS%20Simulator%20Link"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/">Assembla SVN SSL Certificate Issue</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>I kept getting the following message when I tried running <code>svn</code> commands on my
+computer. I tried to accept the certificate permanently with no luck:</p>
+<pre>Error validating server certificate for 'https://subversion.assembla.com:443':
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
+Certificate information:
+ - Hostname: *.assembla.com
+ - Valid: from Wed, 16 Apr 2014 13:31:17 GMT until Thu, 24 Mar 2016 19:30:40 GMT
+ - Issuer: http://certs.godaddy.com/repository/, GoDaddy.com, Inc., Scottsdale, Arizona, US
+ - Fingerprint: ec:9f:9d:b2:39:e1:34:81:7b:27:f6:51:30:8b:ac:41:5b:62:09:19
+(R)eject, accept (t)emporarily or accept (p)ermanently?
+</pre>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 12, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f&t=Assembla%20SVN%20SSL%20Certificate%20Issue"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f&text=Assembla%20SVN%20SSL%20Certificate%20Issue&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fscm%2fsvn%2fassembla-svn-ssl-certificate-issue%2f&media=&description=Assembla%20SVN%20SSL%20Certificate%20Issue"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/">Type Casting String by Concatenation Performance Test in PHP</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>The purpose of this test is to see if casting an object to a string by
+concatenating it was actually slower than using normal type casting. Here is my
+source:</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 8, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fperformance%2ftype-casting-string-by-concatenation-performance-test-in-php%2f&t=Type%20Casting%20String%20by%20Concatenation%20Performance%20Test%20in%20PHP"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fperformance%2ftype-casting-string-by-concatenation-performance-test-in-php%2f&text=Type%20Casting%20String%20by%20Concatenation%20Performance%20Test%20in%20PHP&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fperformance%2ftype-casting-string-by-concatenation-performance-test-in-php%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fperformance%2ftype-casting-string-by-concatenation-performance-test-in-php%2f&media=&description=Type%20Casting%20String%20by%20Concatenation%20Performance%20Test%20in%20PHP"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+
+    
+<div class="pagination">
+
+  
+    <a href="/posts/page/3/">&larr; Previous</a>
+  
+
+  
+    <a href="/posts/page/5/">Next &rarr; </a>
+  
+
+</div>
+
+  </section>
+
+  
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="https://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="https://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="https://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+  
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="https://www.richardsumilang.com/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps/">apps</a></li>
+        
+        <li><a href="/categories/electronics/">electronics</a></li>
+        
+        <li><a href="/categories/etc/">etc</a></li>
+        
+        <li><a href="/categories/networking/">networking</a></li>
+        
+        <li><a href="/categories/programming/">programming</a></li>
+        
+        <li><a href="/categories/servers/">servers</a></li>
+        
+        <li><a href="/categories/unix-like/">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="//twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="//facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="//github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="//instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>.
+      </p>
+      <p>
+        Actors and models should visit <a href="https://photography.richardsumilang.com" title="Photography">my portfolio</a> to for booking information and more.
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2020. Richard Sumilang</span>
+    <ul id="nav-about">
+    
+      <li><a href="/about/terms/">Terms and Conditions</a></li>
+      <li><a href="/about/privacy/">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+  q.push(function renderPage() {
+    var isTurbolinksPreview = document.documentElement.hasAttribute('data-turbolinks-preview');
+    window.app.dispatch(window.app.actions.renderPage(isTurbolinksPreview));
+  });
+</script>
+
+
+</body>
+</html>
+

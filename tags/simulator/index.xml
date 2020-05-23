@@ -13,10 +13,10 @@
     
     <item>
       <title>iOS Simulator Link</title>
-      <link>https://www.richardsumilang.com/programming/ios/ios-simulator-link/</link>
+      <link>https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/</link>
       <pubDate>Wed, 14 May 2014 17:22:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/ios/ios-simulator-link/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/</guid>
       <description>&lt;p&gt;The iOS Simulator is obviously a must have tool for development. Web development
 is no exception but Apple makes you jump through a few hoops (Xcode) to get to
 it. Luckily you can run it as a standalone application.&lt;/p&gt;</description>

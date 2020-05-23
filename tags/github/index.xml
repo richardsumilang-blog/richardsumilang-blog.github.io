@@ -13,10 +13,10 @@
     
     <item>
       <title>Version 3</title>
-      <link>https://www.richardsumilang.com/etc/version-3/</link>
+      <link>https://www.richardsumilang.com/posts/etc/version-3/</link>
       <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
       
-      <guid>https://www.richardsumilang.com/etc/version-3/</guid>
+      <guid>https://www.richardsumilang.com/posts/etc/version-3/</guid>
       <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
 source. The theme has been modernized to load faster and I created more ways to
 navigate the site so more data is easily accessible while keeping the idea of
@@ -25,19 +25,19 @@ simplicity in mind.&lt;/p&gt;</description>
     
     <item>
       <title>How to reference Bitbucket commits to Asana</title>
-      <link>https://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <link>https://www.richardsumilang.com/posts/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
       <pubDate>Sat, 31 Jan 2015 00:58:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
       <description>&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>FTP Sync Script</title>
-      <link>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</link>
       <pubDate>Sat, 27 Sep 2014 15:30:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</guid>
       <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
 it on GitHub now. Enjoy :)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/sync-ftp&#34; title=&#34;ftp sync script&#34;&gt;https://github.com/rsumilang/sync-ftp&lt;/a&gt;&lt;/p&gt;</description>

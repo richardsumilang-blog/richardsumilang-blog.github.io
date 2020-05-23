@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="language" content="english" />
+<meta name="robots" content="all" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<meta name="keywords" content="Babel, ECMAScript 6, JavaScript, jQuery Mobile, Node.js, NPM" />
+<meta name="news_keywords" content="Babel, ECMAScript 6, JavaScript, jQuery Mobile, Node.js, NPM" />
+
+
+<meta property="og:type" content="article" />
+
+<meta property="og:title" content="Using jQuery mobile in a ECMAScript 6 project" />
+<meta property="og:site_name" content="Tech tips, photography, and more." />
+<meta property="og:url" content="https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/" />
+<meta property="og:locale" content="en_US" />
+
+  
+  
+  
+  
+  <meta property="article:published_time" content="2015-03-11" />
+  <meta property="article:modified_time" content="2015-03-11" />
+
+
+
+
+  <meta property="article:tag" content="Babel" /><meta property="article:tag" content="ECMAScript 6" /><meta property="article:tag" content="JavaScript" /><meta property="article:tag" content="jQuery Mobile" /><meta property="article:tag" content="Node.js" /><meta property="article:tag" content="NPM" />
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@richardsumilang" />
+<meta name="twitter:title" content="Using jQuery mobile in a ECMAScript 6 project - Richard Sumilang" />
+<meta name="twitter:creator" content="@richardsumilang" />
+<meta name="twitter:domain" content="richardsumilang.com" />
+
+
+
+<meta name="generator" content="Hugo 0.70.0" />
+
+
+  <base href="https://www.richardsumilang.com/" />
+  
+    <title>Using jQuery mobile in a ECMAScript 6 project - Richard Sumilang</title>
+  
+
+  <link rel="canonical" href="https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.d0f6a8e88823aafe10a1.css" />
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.richardsumilang.com/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://www.richardsumilang.com/favicon.ico" />
+
+
+
+  
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TD3RCSD');</script>
+
+
+
+
+
+<script data-ad-client="ca-pub-9583222607083188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+  window._mNHandle = window._mNHandle || {};
+  window._mNHandle.queue = window._mNHandle.queue || [];
+  medianet_versionId = "3121199";
+</script>
+<script src="https://contextual.media.net/dmedianet.js?cid=8CUY1C7V5" async="async"></script>
+
+
+
+<script>
+  var SITE_BASE_URL='https:\/\/www.richardsumilang.com\/';
+  var q = q || [];
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+
+
+  <script defer src="https://www.richardsumilang.com/_app/main.ce90e790.js"></script>
+  
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3RCSD&gtm_preview=env-7&gtm_auth=j8O4JXfBl0ZE8KUkCt1uKw&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+
+
+
+<script>
+  q.push(function loadPage() {
+    window.app.dispatch(window.app.actions.loadPage({
+      title: "Using jQuery mobile in a ECMAScript 6 project",
+      url: 'https:\/\/www.richardsumilang.com\/posts\/programming\/javascript\/jquery\/using-jquery-mobile-in-a-ecmascript-6-project\/',
+      uri: '\/posts\/programming\/javascript\/jquery\/using-jquery-mobile-in-a-ecmascript-6-project\/',
+      query: location.search.slice(1).split('&').map(p => p.split('=')).reduce((obj, pair) => { var [key, value] = pair.map(decodeURIComponent); return ({ ...obj, [key]: value }) }, {}),
+      section: 'page',
+      subSection: '',
+      isTurbolinksPreview: document.documentElement.hasAttribute('data-turbolinks-preview')
+    }));
+  });
+</script>
+
+</head>
+
+<body>
+
+
+<div id="logo">
+  <a href="https://www.richardsumilang.com/"><img src="https://www.richardsumilang.com/images/header-logo.png" /></a>
+</div>
+
+
+<ul id="navigation">
+  
+  
+  <li><a href="/categories/apps/" >apps</a></li>
+  
+  <li><a href="/categories/electronics/" >electronics</a></li>
+  
+  <li><a href="/categories/etc/" >etc</a></li>
+  
+  <li><a href="/categories/networking/" >networking</a></li>
+  
+  <li><a href="/categories/programming/" >programming</a></li>
+  
+  <li><a href="/categories/servers/" >servers</a></li>
+  
+  <li><a href="/categories/unix-like/" >unix-like</a></li>
+  
+</ul>
+
+
+
+<section id="articles">
+  <article>
+    
+
+    <header class="heading">
+      <h2><a href="https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/">Using jQuery mobile in a ECMAScript 6 project</a></h2>
+      
+        <h3>Oh the pain...</h3>
+      
+    </header>
+
+    <div class="details">
+      <p>I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used <a href="https://babeljs.io/" title="Babel JS">Babel JS</a> to transpile my ES6 code
+with <a href="https://browserify.org/" title="Browserify">browserify</a> and everything was working fine until I got to
+<a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery-mobile</a>.</p>
+<p><img src="/images/reactions/why/jon-stewart.gif" class="center" /></p>
+<p>After a quick inspection, I see that jQuery-mobile is having trouble binding
+itself to the <code>root</code> aka <code>this</code> aka <code>window</code> object. This is because the way
+jQuery-mobile is wrapped in a block where <code>this</code> is <code>undefined</code> because the
+code is not being executed in the assumed scope.</p>
+<h3 id="example">Example:</h3>
+<pre><code class="language-javascript">function(require,module,exports){
+(function (global){
+;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
+"use strict";(function(root, doc, factory){if(typeof define === "function" &amp;&amp; define.amd){define(["jquery"], function($){factory($, root, doc);return $.mobile;});}else {factory(root.jQuery, root, doc);}})(undefined || window, document, function(jQuery, window, document, undefine) {
+
+/*!
+* jQuery Mobile 1.4.5
+* Git HEAD hash: 68e55e78b292634d3991c795f06f5e37a512decc <> Date: Fri Oct 31 2014 17:33:30 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*/
+
+(function ( root, doc, factory ) {
+	if ( typeof define === "function" &amp;&amp; define.amd ) {
+		// AMD. Register as an anonymous module.
+		define( [ "jquery" ], function ( $ ) {
+			factory( $, root, doc );
+			return $.mobile;
+		});
+	} else {
+		// Browser globals
+		factory( root.jQuery, root, doc );
+	}
+}( this, document, function ( jQuery, window, document, undefined ) {
+(function( $ ) {
+	$.mobile = {};
+}( jQuery ));
+
+// more jquery code
+}</code></pre>
+<p>The jQuery-mobile team doesn&rsquo;t want to make fixes for this because they would
+have to continue to make patches for their code when another build system comes
+out and whose got time to keep up with that? Needless to say, I wish they had
+the time for it to make their libraries more compatible for users and they are a
+bigger team than just little ole independent me but that&rsquo;s just my opinion.</p>
+<p>Today is going on my 2nd day being stuck with the issue (also second day of
+using gulp and browserify so give me a break) and I&rsquo;ve tried just about every
+solution I can find on the web before I just gave up and wrote my own. Though,
+not exactly the most elegant solution, I simply replaced all instances of <code>this</code>
+to <code>this || window</code> and walla it worked.</p>
+<p>Now I have jQuery-mobile working just fine in my ES6 project. I&rsquo;ve bundled my
+changes up in a npm project under the name <strong>jquery-mobile-babel-safe</strong>. Here is
+how I use it in my project:</p>
+<h3 id="install">Install</h3>
+<p>Run this command in your project room:</p>
+<pre><code>    npm install jquery-mobile-babel-safe --save
+</code></pre>
+<p><strong>package.json</strong></p>
+<pre><code class="language-javascript">    "browser": {
+      "jquery-mobile": "./node_modules/jquery-mobile-babel-safe/dist/jquery.mobile-1.4.5.js"
+    },
+    "browserify-shim": {
+      "jquery-mobile": {
+        "exports": "jQuery.mobile"
+      }
+    }</code></pre>
+<p>And that&rsquo;s about it. You can test by importing <code>jquery-mobile</code> on your page. You
+should have access to <code>$.mobile</code> in your scripts.</p>
+<h3 id="wrap-up">Wrap up&hellip;</h3>
+<p>I&rsquo;d like to hear from you if you have a simpler way of making this work. I do
+feel a little bad about polluting the npm package repository with yet another
+jQuery package and I&rsquo;d like to know of a better way of doing this but I know a
+few other people were stuck with this issue so be it.</p>
+<p>Happy hacking!</p>
+    </div>
+
+    
+    <div class="tags">
+      
+      <a href="/tags/babel">Babel</a>
+      
+      <a href="/tags/ecmascript-6">ECMAScript 6</a>
+      
+      <a href="/tags/javascript">JavaScript</a>
+      
+      <a href="/tags/jquery-mobile">jQuery Mobile</a>
+      
+      <a href="/tags/node.js">Node.js</a>
+      
+      <a href="/tags/npm">NPM</a>
+      
+    </div>
+    
+
+    <div class="meta">
+      <i class="fa fa-clock-o"></i> Mar 11, 2015
+      
+        
+          <a href="/categories/programming"><i class="fa fa-bookmark"></i> Programming</a>
+        
+      
+    </div>
+
+    <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fusing-jquery-mobile-in-a-ecmascript-6-project%2f&t=Using%20jQuery%20mobile%20in%20a%20ECMAScript%206%20project"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fusing-jquery-mobile-in-a-ecmascript-6-project%2f&text=Using%20jQuery%20mobile%20in%20a%20ECMAScript%206%20project&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fusing-jquery-mobile-in-a-ecmascript-6-project%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fjavascript%2fjquery%2fusing-jquery-mobile-in-a-ecmascript-6-project%2f&media=&description=Using%20jQuery%20mobile%20in%20a%20ECMAScript%206%20project"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+  </article>
+
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_shortname = 'richardsumilang';
+  var disqus_identifier = '505 http:\/\/www.richardsumilang.com\/blog\/?p=505';
+  var disqus_url = 'https:\/\/www.richardsumilang.com\/posts\/programming\/javascript\/jquery\/using-jquery-mobile-in-a-ecmascript-6-project\/';
+
+  (function() {
+    if (window.location.hostname === "localhost") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+</section>
+
+
+<footer id="sub-footer">
+
+  <a href="https://photography.richardsumilang.com" title="Photography"><span class="fa fa-camera-retro"></span> Photography</a>
+
+  
+  <a href="https://www.youtube.com/richardsumilang" title="YouTube" target="_blank"><span class="fa fa-youtube"></span> YouTube</a>
+  
+
+  
+  <a href="https://instagram.com/RichardSumilang" title="Follow me on Instagram" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>
+  
+
+  
+  <a href="https://twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+  
+
+  
+  <a href="https://facebook.com/rsumilang" title="Add me on Facebook" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/richardsumilang" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+  
+
+  
+  <a href="https://plus.google.com/103897788753346013902/posts" title="Google+" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+  
+
+  
+  <a href="https://www.pinterest.com/rsumilang/" title="Pinterest" target="_blank"><span class="fa fa-pinterest"></span> Pinterest</a>
+  
+
+  
+  <a href="https://github.com/rsumilang" title="rsumilang on GitHub" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+  
+</footer>
+
+
+<footer id="footer">
+  <div class="info">
+    <div class="column about">
+      <h3 class="title">About the Author</h3>
+      <p><img width="80" class="user-icon" src="https://www.richardsumilang.com/images/me.png" alt="icon" />
+        I'm Richard Sumilang, an artisan, DIY'er, entrepreneur, programmer,
+        photographer, etc. Basically, I like to create stuff.
+      </p>
+      <p>I am based in the Los Angeles area and you can reach me via <a href="mailto:me@richardsumilang.com">email</a>.</p>
+    </div>
+    <div class="column categories">
+      <h3 class="title">Categories</h3>
+      <ul>
+        
+        
+        <li><a href="/categories/apps/">apps</a></li>
+        
+        <li><a href="/categories/electronics/">electronics</a></li>
+        
+        <li><a href="/categories/etc/">etc</a></li>
+        
+        <li><a href="/categories/networking/">networking</a></li>
+        
+        <li><a href="/categories/programming/">programming</a></li>
+        
+        <li><a href="/categories/servers/">servers</a></li>
+        
+        <li><a href="/categories/unix-like/">unix-like</a></li>
+        
+      </ul>
+    </div>
+    <div class="column stay-in-touch">
+      <h3 class="title">Stay in touch</h3>
+      <p>
+        Follow my occasional rants on <a  href="//twitter.com/richardsumilang" title="@richardsumilang on Twitter" target="_blank">twitter</a>
+        or <a href="//facebook.com/rsumilang" title="Richard Sumilang on Facebook" target="_blank">facebook</a>. From time to time I will also
+        post videos on my <a href="richardsumilang" target="_blank">YouTube channel</a>.
+      </p>
+      <p>Geeks should know that my public work is on
+        <a href="//github.com/rsumilang" title="Richard Sumilang on GitHub" target="_blank">Github</a>! (Even this blog.)
+      </p>
+      <p>
+        Photographers can see my latest work and behind the scenes on a <a href="//instagram.com/RichardSumilang" title="Richard Sumilang on Instagram">Instagram</a>.
+      </p>
+      <p>
+        Actors and models should visit <a href="https://photography.richardsumilang.com" title="Photography">my portfolio</a> to for booking information and more.
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2020. Richard Sumilang</span>
+    <ul id="nav-about">
+    
+      <li><a href="/about/terms/">Terms and Conditions</a></li>
+      <li><a href="/about/privacy/">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+  q.push(function renderPage() {
+    var isTurbolinksPreview = document.documentElement.hasAttribute('data-turbolinks-preview');
+    window.app.dispatch(window.app.actions.renderPage(isTurbolinksPreview));
+  });
+</script>
+
+
+</body>
+</html>
+

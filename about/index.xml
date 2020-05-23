@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Richard Sumilang</title>
+    <link>https://www.richardsumilang.com/about/</link>
+    <description>Recent content in Abouts on Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 May 2020 17:09:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.richardsumilang.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://www.richardsumilang.com/about/privacy/</link>
+      <pubDate>Fri, 22 May 2020 17:09:47 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/about/privacy/</guid>
+      <description>We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about the policy, or practices with regards to your personal information, please contact us.
+This Privacy Policy governs the privacy policies and practices of the Website, located at RichardSumilang.com and its sub domains. Please read the Privacy Policy carefully as it will help you make informed decisions about sharing your personal information with the site.</description>
+    </item>
+    
+    <item>
+      <title>Terms and Conditions</title>
+      <link>https://www.richardsumilang.com/about/terms/</link>
+      <pubDate>Fri, 22 May 2020 17:09:47 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/about/terms/</guid>
+      <description>A. Overview Welcome to the website RichardSumilang.com (the “Site”). The Site is an online service owned by Richard Sumilang (or “Richard Sumilang Photography”). Richard Sumilang has created this Site for your personal enjoyment, education and entertainment. This Terms of Use agreement (the “Agreement”) describes the terms and conditions under which Richard Sumilang permits your use of the Site, and any other services of Richard Sumilang that display this Agreement (collectively with the Site and services, the “Services”).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,10 +13,10 @@
     
     <item>
       <title>Assembla SVN SSL Certificate Issue</title>
-      <link>https://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</link>
+      <link>https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/</link>
       <pubDate>Mon, 12 May 2014 15:22:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
       <description>&lt;p&gt;I kept getting the following message when I tried running &lt;code&gt;svn&lt;/code&gt; commands on my
 computer. I tried to accept the certificate permanently with no luck:&lt;/p&gt;
 &lt;pre&gt;Error validating server certificate for &#39;https://subversion.assembla.com:443&#39;:

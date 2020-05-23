@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Richard Sumilang</title>
+    <link>https://www.richardsumilang.com/posts/</link>
+    <description>Recent content in Posts on Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2017 14:08:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://www.richardsumilang.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrading Emacs to 24.5</title>
+      <link>https://www.richardsumilang.com/posts/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</link>
+      <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Dump this in your terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
+mkdir -p ~/src
+cd ~/src
+wget https://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
+tar xf emacs-24.5.tar.gz
+cd emacs-24.5
+./configure
+make
+sudo checkinstall
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are In-Ear Monitors?</title>
+      <link>https://www.richardsumilang.com/posts/electronics/audio/in-ear-monitors/</link>
+      <pubDate>Sun, 10 Jan 2016 15:00:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/audio/in-ear-monitors/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In-Ear Monitors&lt;/em&gt; (IEMs), is a type of headphone designed to be partially
+inserted into a user&amp;rsquo;s ear canal by using form-fitting tips often made by a
+range materials such as rubber, soft plastic, silicon, and more. It&amp;rsquo;s also
+common to purchase custom molded tips to fit your ear canal. This typically
+offers the best results in comfort and noise isolation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Facebook Page Analytics</title>
+      <link>https://www.richardsumilang.com/posts/programming/ruby/ror/facebook-page-analytics-ror/</link>
+      <pubDate>Sun, 20 Dec 2015 10:57:00 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/ruby/ror/facebook-page-analytics-ror/</guid>
+      <description>&lt;p&gt;I decided to flex my programming muscle and try something new. I&amp;rsquo;ve done Ruby
+for CLI tools and &lt;a href=&#34;https://github.com/rsumilang/chef-gearman&#34; title=&#34;Chef-Gearman&#34;&gt;Chef cookbooks&lt;/a&gt; but never a Ruby on Rails (RoR)
+application. Much of the hype with RoR is gone these days but it&amp;rsquo;s been around
+long enough to be considered tested and somewhat mature like an old elitist
+hipster&amp;hellip; If that makes sense.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;tldr;&lt;/strong&gt; &lt;a href=&#34;https://github.com/rsumilang/fb-page-analytics-ror&#34; title=&#34;Facebook Page Analytics with Ruby On Rails&#34;&gt;Just give me the source&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The project was to create a Rails applications that provides analytics for the
+last 100 Facebook posts of a Facebook page. As a user, you should be able to
+login using Facebook, see a list of pages that you have authorized admin access
+to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The World&#39;s Finest Audiophile Electronics</title>
+      <link>https://www.richardsumilang.com/posts/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</link>
+      <pubDate>Sun, 15 Nov 2015 15:28:00 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/work/losslesslife/the-worlds-finest-audiophile-electronics/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m very excited to announce &lt;a href=&#34;https://www.losslesslife.com/&#34; title=&#34;The world&#39;s finest Audiophile Electronics. Headphones, DACs, Amplifiers, reviews, and more.&#34;&gt;LosslessLife&lt;/a&gt;, a company focusing on the best
+high resolution audio gear. LosslessLife reflects the continuous hard work
+and commitment in the products it believes in by creating a voice to get the
+word out from the audiophile communities and to consumers.&lt;/p&gt;
+&lt;p&gt;It is often assumed by the average consumer that a higher price and/or bigger
+brand name results in better product. While this can be true to some degree,
+consumers are often paying more for a product&amp;rsquo;s marketing expenses when
+purchasing from large retail stores rather than receiving higher performing
+product.&lt;/p&gt;
+&lt;p&gt;Strict factors such as performance, output quality, and the overall
+craftsmanship of products must be met in order to make it to LosslessLife as the
+company name is synonymous with the highest level of quality.&lt;/p&gt;
+&lt;p&gt;In a market that is saturated with mediocre products, LosslessLife believes it&amp;rsquo;s
+success will be by educating consumers to make smarter choices when purchasing.
+We do the research for you and provide &lt;a href=&#34;https://pages.losslesslife.com/&#34; title=&#34;Covering everything from high-end and audiophile headphones. Headphones and headphone amplifiers, accessories, how-to guides, and reviews.&#34;&gt;all of the facts&lt;/a&gt; in an unbiased
+fashion.&lt;/p&gt;
+&lt;p&gt;While many companies sell products which they claim they would use, LosslessLife
+only sells products it does use by it&amp;rsquo;s highly enthusiastic team with
+backgrounds in technology, production, and an affinity for music.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are Planar Magnetic Drivers?</title>
+      <link>https://www.richardsumilang.com/posts/electronics/audio/planar-magnetic-drivers/</link>
+      <pubDate>Tue, 10 Nov 2015 22:39:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/audio/planar-magnetic-drivers/</guid>
+      <description>&lt;p&gt;A Planar Magnetic driver, has coined a few other terms such as &amp;ldquo;orthodynamic&amp;rdquo; or
+&amp;ldquo;Isodynamic&amp;rdquo;, all of which mean the same thing (in regards to headphones). They
+can be described as the child of a dynamic and electrostatic driver, sort of&amp;hellip;
+The best of both worlds, at least.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are Dynamic Drivers?</title>
+      <link>https://www.richardsumilang.com/posts/electronics/audio/dynamic-drivers/</link>
+      <pubDate>Tue, 10 Nov 2015 22:00:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/audio/dynamic-drivers/</guid>
+      <description>&lt;p&gt;A &lt;em&gt;dynamic driver&lt;/em&gt;, sometimes referred to as a &amp;ldquo;moving coil&amp;rdquo; driver is the most
+common driver found in headphones. It is the same technology found in speakers
+around your home, but on a much smaller scale. This type of driver
+consists of alternating magnetic fields powered by a tiny wire coil (or a
+&amp;ldquo;voice coil&amp;rdquo;). As the current changes based on the sound playback, the coil
+reacts with the magnetic field and the lightweight diaphragm rapidly compresses
+and decompresses the air by pulling the diaphragm in and out from the ring
+within the driver to create the sound you hear.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are headphone drivers?</title>
+      <link>https://www.richardsumilang.com/posts/electronics/audio/headphone-drivers/</link>
+      <pubDate>Thu, 05 Nov 2015 22:18:45 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/audio/headphone-drivers/</guid>
+      <description>&lt;p&gt;Headphones are essentially a set of tiny speakers that sit in, on or around your
+ears and like all speakers, they have drivers. Everyone can agree that not all
+headphones are the same or created equally. But besides the superficial
+differences and the various features you may be offered such as noise cancelling
+and wireless capabilities, there are other more subtle differences that can make
+a huge difference. That subtle difference is determined by the type of driver
+used in the headphones.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TMZ Mobile Website</title>
+      <link>https://www.richardsumilang.com/posts/etc/work/tmz/tmz-mobile-web-version-2/</link>
+      <pubDate>Tue, 22 Sep 2015 13:00:00 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/work/tmz/tmz-mobile-web-version-2/</guid>
+      <description>&lt;p&gt;It has been an exciting journey from start to finish. As the head developer of
+the mobile website for one of the world&amp;rsquo;s biggest blog sites, I&amp;rsquo;m pleased to
+announce &lt;em&gt;Version 2&lt;/em&gt; of TMZ! Take a look at all the new features. I think you
+will like it.&lt;/p&gt;
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;The views and opinions shared in this article are those of the author&amp;rsquo;s (Richard
+Sumilang) and do not necessarily reflect TMZ, Telepictures, Warner Bros and any
+staff member or affiliate.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Automate Your OS X App Installations</title>
+      <link>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</link>
+      <pubDate>Sun, 20 Sep 2015 17:59:00 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+multiple Mac workstations. The new version now allows you to configure parameters of
+the installation such as install path and which category of applications you
+wish to install.&lt;/p&gt;
+&lt;p&gt;The point of this tool is to help me configure (or reconfigure) workstations as
+needed by removing the manual work of finding the applications I always use
+online, unpacking, and copying to applications folder. That process becomes a
+tedious task when working with dozens of pieces of software.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/casks-installer/fork&#34; title=&#34;Casks Installer Fork&#34;&gt;Fork it&lt;/a&gt; for your own use on &lt;a href=&#34;https://github.com/rsumilang/casks-installer&#34; title=&#34;Casks Installer&#34;&gt;Github&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bottlehead S.E.X. 2.1 Unboxed</title>
+      <link>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/unboxed/</link>
+      <pubDate>Sat, 19 Sep 2015 18:45:10 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/unboxed/</guid>
+      <description>&lt;p&gt;There you have it. All the parts that I&amp;rsquo;ll be assembling for the Bottlehead
+S.E.X. version 2.1. The parts in the image include the impedance switch and the
+C4S components. To the far left, there is a bag I didn&amp;rsquo;t bother unraveling
+because it is mainly little screws and bolts that felt easy to lose.&lt;/p&gt;
+&lt;h3 id=&#34;build-order&#34;&gt;Build Order&lt;/h3&gt;
+&lt;p&gt;I will do incremental builds. This way I can test the quality of a build on it&amp;rsquo;s
+own before adding additional components. This is a good practice I follow in
+daily software development and has proved helpful in debugging. The order will
+be as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;S.E.X. kit.&lt;/li&gt;
+&lt;li&gt;Impedance switch installation.&lt;/li&gt;
+&lt;li&gt;C4S Upgrade.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bottlehead S.E.X. 2.1 Journey</title>
+      <link>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/bottlehead-sex-journey/</link>
+      <pubDate>Sat, 12 Sep 2015 18:51:47 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/bottlehead-sex-journey/</guid>
+      <description>&lt;p&gt;After almost a month of waiting, my &lt;a href=&#34;https://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; has finally arrived.
+This will be my first of many electronic DIY projects. I will detail the journey
+from start to finish. Including details like what tools I used, any problems
+I encountered, and any suggestions I come up with on the way. This blog series
+is sort of like an enhancement to the original guide provided with your
+&lt;a href=&#34;https://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; purchase.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Version 3</title>
+      <link>https://www.richardsumilang.com/posts/etc/version-3/</link>
+      <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/version-3/</guid>
+      <description>&lt;p&gt;Rebuilt from the ground up, the new site is refined from the presentation to the
+source. The theme has been modernized to load faster and I created more ways to
+navigate the site so more data is easily accessible while keeping the idea of
+simplicity in mind.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#34;effective. Power&#34; ... An AOL Flashback.</title>
+      <link>https://www.richardsumilang.com/posts/etc/apple/ios/effective-power-an-aol-flashback/</link>
+      <pubDate>Thu, 28 May 2015 00:13:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/apple/ios/effective-power-an-aol-flashback/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
+iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
+&lt;pre&gt;
+effective. 
+Power
+لُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ
+冗
+&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using jQuery mobile in a ECMAScript 6 project</title>
+      <link>https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
+      <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</guid>
+      <description>&lt;p&gt;I started using ECMAScript 6 in a project which required supporting the
+dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
+with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
+&lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A thing or two about style guides</title>
+      <link>https://www.richardsumilang.com/posts/programming/a-thing-or-two-about-style-guides/</link>
+      <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/a-thing-or-two-about-style-guides/</guid>
+      <description>&lt;p&gt;A style guide should be chosen when working on a solo project or with a team.
+This keeps the code manageable when you or your peers come back to work on it in
+the future. It doesn&amp;rsquo;t matter which style guideline you choose as long as you
+stick with it. In a sense, writing clean code will also help reduce technical
+debt. Below is a collection of style guides that I collected over time. Some
+important rules are repeated in other styles. It&amp;rsquo;s nice to keep consistency (to
+a degree) if you are writing in multiple programming languages but ultimately
+it&amp;rsquo;s best to do what&amp;rsquo;s best for each language.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Any fool can write code that a computer can understand.
+Good programmers write code that humans can understand.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Martin Fowler, Refactoring: Improving the Design of Existing Code&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to reference Bitbucket commits to Asana</title>
+      <link>https://www.richardsumilang.com/posts/programming/scm/git/how-to-link-bitbucket-to-asana/</link>
+      <pubDate>Sat, 31 Jan 2015 00:58:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/scm/git/how-to-link-bitbucket-to-asana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Use &lt;a href=&#34;https://github.com/rsumilang/asana-post-commit&#34; title=&#34;Asana Post Commit&#34;&gt;this&lt;/a&gt; &lt;strong&gt;post-commit&lt;/strong&gt; hook.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SynoCommunity packages for Synology NAS</title>
+      <link>https://www.richardsumilang.com/posts/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</link>
+      <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/synology/synocommunity/synocommunity-packages-for-synology-nas/</guid>
+      <description>&lt;p&gt;A great source for all sorts of packages such as Node.js, Zshell, BitTorrent
+Sync, Redis, and Firefox Sync Server just to name a few. Check out the
+&lt;a href=&#34;https://synocommunity.com/packages&#34; title=&#34;SynoCommunity Packages&#34;&gt;full list of packages&lt;/a&gt; or just add the source to your package manager :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting the most out of your Apple AirPort Extreme network</title>
+      <link>https://www.richardsumilang.com/posts/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</link>
+      <pubDate>Fri, 09 Jan 2015 01:57:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/networking/apple/airport/getting-the-most-out-of-your-airport-extreme-network/</guid>
+      <description>&lt;p&gt;My home network is wired through a Dell gigabit switch which is connected to my
+AirPort extreme. Needless to say, this has worked well for me as the only
+wireless devices connected are mobile devices. I decided to set up another room
+in the house but I didn&amp;rsquo;t want to go through the hassle of running wires through
+the walls again. It&amp;rsquo;s undoubtably the best thing to do but this isn&amp;rsquo;t meant to
+be permanent. I figured the next best thing to do is extend the network by
+purchasing another AirPort Extreme. The hardware in it is better than an AirPort
+Express plus I get a few ports to hardwire a few devices. My rule of thumb is
+the less WiFi, the better.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configure iOS Mail App to respond with Gmail aliases</title>
+      <link>https://www.richardsumilang.com/posts/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:41:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/ios/mail/configure-ios-mail-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on iOS to respond to the emails using the correct alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configure Mac OS X Mail App to respond with Gmail aliases</title>
+      <link>https://www.richardsumilang.com/posts/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</link>
+      <pubDate>Thu, 08 Jan 2015 21:27:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/osx/mail/configure-mac-os-x-mail-app-to-respond-with-gmail-aliases/</guid>
+      <description>&lt;p&gt;Assuming you have &lt;a href=&#34;https://support.google.com/a/answer/33327&#34; title=&#34;Aliases setup in Gmail&#34;&gt;aliases setup in Gmail&lt;/a&gt;, it&amp;rsquo;s fairly easy to configure the
+Mail application on OS X to respond to the emails using the appropriate alias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tidying up your security with a Password Manager</title>
+      <link>https://www.richardsumilang.com/posts/apps/security/tidying-up-your-security-with-a-password-manager/</link>
+      <pubDate>Tue, 11 Nov 2014 16:27:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/security/tidying-up-your-security-with-a-password-manager/</guid>
+      <description>&lt;p&gt;Using a password manager adds numerous of security benefits. The key feature
+being strong unique passwords for each application you use. Two of the most
+popular password managers are &lt;a href=&#34;https://lastpass.com/&#34; title=&#34;LastPass&#34;&gt;LastPass&lt;/a&gt; and &lt;a href=&#34;https://agilebits.com/onepassword&#34; title=&#34;1Password&#34;&gt;1Password&lt;/a&gt;. The main
+difference is LastPass syncs to all your devices by storing your vault on their
+servers. 1Password syncs to all your devices via Dropbox and does not save your
+vault to any other servers. They are both good and whichever you choose to use
+will be up to you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My cask script!</title>
+      <link>https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/</link>
+      <pubDate>Sun, 26 Oct 2014 16:30:00 -0700</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/</guid>
+      <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;https://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
+haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
+to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with Apple&#39;s iOS image orientation</title>
+      <link>https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/</link>
+      <pubDate>Fri, 17 Oct 2014 14:33:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/</guid>
+      <description>&lt;p&gt;You might notice pictures taken with an iOS device (iPhone or iPad) look like
+they are not rotated properly when transferring them to another device or
+software. This happens because the device is held at a certain angle when the
+picture is taken and it&amp;rsquo;s up to the software at the receiving end to display it
+however it wants.&lt;/p&gt;
+&lt;p&gt;Apple&amp;rsquo;s camera will write orientation info into the exif headers of images
+taken and you can rotate it accordingly.&lt;/p&gt;
+&lt;p&gt;Here is an example of rotating an image using PHP with the ImageMagick library;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FTP Sync Script</title>
+      <link>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</link>
+      <pubDate>Sat, 27 Sep 2014 15:30:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
+it on GitHub now. Enjoy :)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/sync-ftp&#34; title=&#34;ftp sync script&#34;&gt;https://github.com/rsumilang/sync-ftp&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitor your filesystem events on Linux with inotify</title>
+      <link>https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
+      <pubDate>Mon, 14 Jul 2014 22:28:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
+hooks into your kernel and responding to events on your filesystem is much more
+efficient than doing something like writing a cron job to check for changes in a
+directory every minute. Fortunately, if you&amp;rsquo;re not a C developer, there is a
+package called &lt;a href=&#34;https://github.com/rvoicilas/inotify-tools/wiki&#34; title=&#34;inotify tools&#34;&gt;inotify-tools&lt;/a&gt; that comes with two programs, &lt;code&gt;inotifywait&lt;/code&gt;
+and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotifywait&lt;/code&gt; waits for changes and
+&lt;code&gt;inotifywatch&lt;/code&gt; gathers filesystem access statistics.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to clean and optimize your Aperture Library</title>
+      <link>https://www.richardsumilang.com/posts/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</link>
+      <pubDate>Sun, 13 Jul 2014 20:47:01 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/</guid>
+      <description>&lt;p&gt;After time you will notice your Aperture Library growing ridiculously big. Here
+a are few tips to shrink it back down and keep it optimal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to enable SSH access to Synology DiskStation</title>
+      <link>https://www.richardsumilang.com/posts/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</link>
+      <pubDate>Sat, 12 Jul 2014 18:32:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</guid>
+      <description>&lt;p&gt;Log into your system with an administrator account and open the
+&lt;strong&gt;&lt;sup&gt;1&lt;/sup&gt;Control Panel&lt;/strong&gt; applet. From there, click on
+&lt;strong&gt;&lt;sup&gt;2&lt;/sup&gt;Terminal &amp;amp; SNMP&lt;/strong&gt;, &lt;strong&gt;&lt;sup&gt;3&lt;/sup&gt;Enabled SSH service&lt;/strong&gt;, and
+&lt;strong&gt;&lt;sup&gt;4&lt;/sup&gt;Apply&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to setup automated backups to SSH server with Synology DiskStation</title>
+      <link>https://www.richardsumilang.com/posts/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</link>
+      <pubDate>Sat, 12 Jul 2014 02:01:01 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/synology/diskstation/setup-automated-backups-to-ssh-server-on-synology-diskstation/</guid>
+      <description>&lt;p&gt;As a best practice, it&amp;rsquo;s great great to have your data in more than one
+location. I use my Synology Diskation as a local network file server at my home.
+The reality is something can happen and I lose all my important data in that
+little box. From a BBQ, a birthday party, or maybe the house just burns down and
+now all my data is gone. Unfortunately my network rack at home will never be as
+secure as a network rack in a data center. So, backup your data because that&amp;rsquo;s
+much easier to do rather than trying to restore from no backup. Makes logical
+sense right? Derp.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LSB Init.d Script Template</title>
+      <link>https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/</link>
+      <pubDate>Mon, 07 Jul 2014 14:08:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/</guid>
+      <description>&lt;p&gt;Quick little &lt;code&gt;init.d&lt;/code&gt; template:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0</title>
+      <link>https://www.richardsumilang.com/posts/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>
+      <pubDate>Sat, 28 Jun 2014 11:30:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</guid>
+      <description>&lt;p&gt;I received an alert from my Synology RAID regarding a few bad sectors on a hard
+drive. Even though the RAID is still operational, it&amp;rsquo;s best practice to replace
+the hard drive before any data gets corrupted due to the bad sectors.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery CORS fix for IE8 and IE9</title>
+      <link>https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</link>
+      <pubDate>Fri, 20 Jun 2014 15:09:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/javascript/jquery/jquery-cors-fix-for-ie8-and-ie9/</guid>
+      <description>&lt;p&gt;Who can blame jQuery for not wanting to support Internet Explorer? Despite
+whatever the reason, it doesn&amp;rsquo;t always make business sense and we must support
+it. I found this &lt;a href=&#34;https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js&#34; title=&#34;XDR Patch&#34;&gt;piece of code&lt;/a&gt; that patches the issue with jQuery.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chef Gearman Cookbook v0.1.0</title>
+      <link>https://www.richardsumilang.com/posts/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</link>
+      <pubDate>Thu, 12 Jun 2014 11:22:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/virtualization/chef/chef-gearman-cookbook-v0-1-0/</guid>
+      <description>A little Gearman cookbook I put together for Chef. Supports installing multiple versions by source. Also has a recipe for the PHP extension.
+Grab it from GitHub!
+kthxbye.</description>
+    </item>
+    
+    <item>
+      <title>Update Chef Solo on your Vagrant</title>
+      <link>https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</link>
+      <pubDate>Tue, 10 Jun 2014 15:50:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/</guid>
+      <description>Install vagrant-omnibus:
+vagrant plugin install vagrant-omnibus Configure your Vagrantfile before provisioning to the latest version of Chef:
+config.omnibus.chef_version = :latest You can also upgrade to a specific version like so:
+config.omnibus.chef_version = &#34;11.12.8&#34; </description>
+    </item>
+    
+    <item>
+      <title>Design Patterns Cheat Sheet</title>
+      <link>https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/</link>
+      <pubDate>Mon, 02 Jun 2014 00:17:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/design-patterns/design-patterns-cheat-sheet/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a quick cheat sheet for lots of design patterns. The examples in this
+post are linked to Java examples however they are not limited to a single
+language implementation. Special thanks to Derek Banas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Backing up and Restoring with MongoDB</title>
+      <link>https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/</link>
+      <pubDate>Fri, 30 May 2014 16:33:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/</guid>
+      <description>Dump You can dump the database locally using the following mongodump:
+mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD This will create a dump folder containing a subfolder named after your database. The default port for MongoDB is 27017.
+Import You can import the same dump to a local MongoDB instance using something like the following mongorestore after changing into the dump directory:
+mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.</description>
+    </item>
+    
+    <item>
+      <title>Converting Windows Network Path for Mac</title>
+      <link>https://www.richardsumilang.com/posts/networking/windows/converting-windows-network-path-for-mac/</link>
+      <pubDate>Fri, 30 May 2014 15:41:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/networking/windows/converting-windows-network-path-for-mac/</guid>
+      <description>If you&amp;rsquo;re given a Windows network path such as \\Foo\Bar then that basically means connect to shared folder Bar on the server Foo. To do this, you can go Finder -&amp;gt; Go -&amp;gt; Connect to Server... and type smb://Foo/Bar which is the equivalent.</description>
+    </item>
+    
+    <item>
+      <title>How to unlink Netflix from Panasonic Viera Cast VT25</title>
+      <link>https://www.richardsumilang.com/posts/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/</link>
+      <pubDate>Sun, 25 May 2014 14:24:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/electronics/tv/panasonic/unlink-netflix-from-panasonic-viera-cast-vt25/</guid>
+      <description>&lt;p&gt;Unfortunately you can&amp;rsquo;t on a &lt;a href=&#34;https://www.amazon.com/Panasonic-TC-P58VT25-1080p-VIERA-Plasma/dp/B003N3BV5O&#34; title=&#34;Panasonic VT25&#34;&gt;Panasonic VT25&lt;/a&gt;. Someone managed to forget
+about that feature on the Netflix app. Weird because it&amp;rsquo;s there for YouTube,
+Pandora, Amazon, etc&amp;hellip; The only way you can is by resetting your TV to the
+factory settings and starting from scratch. You&amp;rsquo;re wrong if you think you can
+just log into your Netflix account and click the unlink all devices link from
+your profile. On the plus side&amp;hellip; Never mind, there is no plus side.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iOS Simulator Link</title>
+      <link>https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/</link>
+      <pubDate>Wed, 14 May 2014 17:22:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/ios/ios-simulator-link/</guid>
+      <description>&lt;p&gt;The iOS Simulator is obviously a must have tool for development. Web development
+is no exception but Apple makes you jump through a few hoops (Xcode) to get to
+it. Luckily you can run it as a standalone application.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembla SVN SSL Certificate Issue</title>
+      <link>https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/</link>
+      <pubDate>Mon, 12 May 2014 15:22:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/scm/svn/assembla-svn-ssl-certificate-issue/</guid>
+      <description>&lt;p&gt;I kept getting the following message when I tried running &lt;code&gt;svn&lt;/code&gt; commands on my
+computer. I tried to accept the certificate permanently with no luck:&lt;/p&gt;
+&lt;pre&gt;Error validating server certificate for &#39;https://subversion.assembla.com:443&#39;:
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
+Certificate information:
+ - Hostname: *.assembla.com
+ - Valid: from Wed, 16 Apr 2014 13:31:17 GMT until Thu, 24 Mar 2016 19:30:40 GMT
+ - Issuer: http://certs.godaddy.com/repository/, GoDaddy.com, Inc., Scottsdale, Arizona, US
+ - Fingerprint: ec:9f:9d:b2:39:e1:34:81:7b:27:f6:51:30:8b:ac:41:5b:62:09:19
+(R)eject, accept (t)emporarily or accept (p)ermanently?
+&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Type Casting String by Concatenation Performance Test in PHP</title>
+      <link>https://www.richardsumilang.com/posts/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>
+      <pubDate>Thu, 08 May 2014 18:15:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</guid>
+      <description>&lt;p&gt;The purpose of this test is to see if casting an object to a string by
+concatenating it was actually slower than using normal type casting. Here is my
+source:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apps I can&#39;t live without on OS X</title>
+      <link>https://www.richardsumilang.com/posts/apps/osx/apps-i-cant-live-without-os-x/</link>
+      <pubDate>Wed, 07 May 2014 12:27:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/osx/apps-i-cant-live-without-os-x/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Protip:&lt;/strong&gt; Want to automate your software installation? Take a look at how I
+did with &lt;a href=&#34;https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/&#34;&gt;cask&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IntelliJ IDEA Optimizations</title>
+      <link>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</link>
+      <pubDate>Tue, 06 May 2014 11:00:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</guid>
+      <description>Please post a comment if you have any additional tips to making IDEA faster.
+  The first thing you want to do is disable all the plugins you are not using. Go to *Preferences&amp;amp; -&amp;gt; Plugins and un-check as many as possible. I unchecked about 80%.
+  Give yourself more memory. I figure if Firefox allows itself to take a gig of my ram then I should treat my IDE a little better.</description>
+    </item>
+    
+    <item>
+      <title>Reflection</title>
+      <link>https://www.richardsumilang.com/posts/etc/reflection/</link>
+      <pubDate>Thu, 24 Apr 2014 18:55:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/reflection/</guid>
+      <description>&lt;p&gt;Today was just one of those days that started like any other. I&amp;rsquo;ve been doing a
+lot of reflection over the past few weeks on what are my new goals. The act of
+starting a new goal is always exciting but my life is pretty consistent despite
+how random it seems. I always start off the day choosing one of my many similar
+yet different shirts. Today I chose the shirt labeled Chocolate. I just wanted
+someone to read &amp;ldquo;Chocolate&amp;rdquo; aloud so I can reply &amp;ldquo;Melts with in your mouth, not
+in your hands.&amp;rdquo; Is that too much to ask for? (Who knows&amp;hellip;) So I go about my day
+and start brushing up on PHP namespacing documents. I got some pretty useful
+information out of the &lt;a href=&#34;https://www.php.net/manual/en/language.namespaces.basics.php#82088&#34; title=&#34;PHP Namespaces&#34;&gt;top comment&lt;/a&gt; and find out that it was written by me 6
+years ago! It felt like the &lt;em&gt;past me&lt;/em&gt; was talking to &lt;em&gt;current me&lt;/em&gt;. A bit trippy
+but also a bit embarrassing because I used to be on the bleeding edge of
+software development &amp;gt;= 6 years ago. I then joined big corporations. The
+technology was usually behind but I did learn a lot in terms of scalability and
+working with agile teams. Now in my current role I have the opportunity to do
+some really cool stuff which has been a bit of a refresh. It&amp;rsquo;s true what they
+say, &amp;ldquo;if you don&amp;rsquo;t use it, you lose it&amp;rdquo;. But that&amp;rsquo;s ok as I was also focusing
+more on other aspects in my life rather than just being an engineer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Gearman for PHP on OS X</title>
+      <link>https://www.richardsumilang.com/posts/programming/php/gearman/install-gearman-for-php-on-os-x/</link>
+      <pubDate>Wed, 23 Apr 2014 23:05:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/php/gearman/install-gearman-for-php-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://www.php.net/manual/en/book.gearman.php&#34; title=&#34;Gearman PHP&#34;&gt;Gearman&lt;/a&gt; for PHP with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;. This
+requires &lt;a href=&#34;https://gearman.info/libgearman/&#34; title=&#34;libgearman&#34;&gt;libgearman&lt;/a&gt; and the easiest way to get it is probably to
+&lt;a href=&#34;https://www.richardsumilang.com/posts/server/gearman/install-gearman-on-os-x/&#34;&gt;install gearman&lt;/a&gt; through brew, of course.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Gearman on OS X</title>
+      <link>https://www.richardsumilang.com/posts/server/gearman/install-gearman-on-os-x/</link>
+      <pubDate>Wed, 23 Apr 2014 22:48:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/gearman/install-gearman-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://gearman.org/&#34; title=&#34;Gearman&#34;&gt;Gearman&lt;/a&gt; job server with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install gearman&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Groovy on OS X</title>
+      <link>https://www.richardsumilang.com/posts/programming/groovy/install-groovy-on-os-x/</link>
+      <pubDate>Tue, 15 Apr 2014 13:09:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/groovy/install-groovy-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://groovy.codehaus.org/&#34; title=&#34;Groovy&#34;&gt;Groovy&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fixing OpenSSL Heartbleed vulnerability on Ubuntu</title>
+      <link>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
+      <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
+remote users to read memory without leaving a trace. Here are the steps to up
+update Ubuntu to patch the issue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Jython on OS X</title>
+      <link>https://www.richardsumilang.com/posts/programming/jython/install-jython-on-os-x/</link>
+      <pubDate>Tue, 08 Apr 2014 17:58:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/jython/install-jython-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://jython.org/&#34; title=&#34;Jython&#34;&gt;Jython&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install jython&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Nimrod on OS X</title>
+      <link>https://www.richardsumilang.com/posts/programming/nimrod/install-nimrod-on-os-x/</link>
+      <pubDate>Mon, 07 Apr 2014 11:09:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/nimrod/install-nimrod-on-os-x/</guid>
+      <description>&lt;p&gt;Setup &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Nimrod&#34;&gt;Nimrod&lt;/a&gt; with OS X 10.9.2 Mavericks using &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34; title=&#34;Install&#34;&gt;brew install nimrod&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Redis on OS X</title>
+      <link>https://www.richardsumilang.com/posts/server/redis/install-redis-on-os-x/</link>
+      <pubDate>Fri, 04 Apr 2014 10:04:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/server/redis/install-redis-on-os-x/</guid>
+      <description>&lt;p&gt;This is my setup of redis with OS X 10.9.2 Mavericks and requires &lt;a href=&#34;https://brew.sh/&#34; title=&#34;Homebrew&#34;&gt;brew&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install redis&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with JavaScript templates using jQuery</title>
+      <link>https://www.richardsumilang.com/posts/programming/javascript/working-with-javascript-templates-using-jquery/</link>
+      <pubDate>Tue, 01 Apr 2014 23:20:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/javascript/working-with-javascript-templates-using-jquery/</guid>
+      <description>&lt;p&gt;I picked up this nifty way of templating HTML code for JavaScript while working
+at &lt;a href=&#34;https://www.monkeyquest.com&#34; title=&#34;MonkeyQuest&#34;&gt;Monkey Quest&lt;/a&gt; and haven&amp;rsquo;t looked back. The idea here is to separate your
+design from your code. This is particularly useful when you are adding content
+to your site after the initial rendering. Data can be fed in from a number of
+sources and added to a page using a template.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First day at TMZ</title>
+      <link>https://www.richardsumilang.com/posts/etc/first-day-at-tmz/</link>
+      <pubDate>Tue, 01 Apr 2014 21:49:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/first-day-at-tmz/</guid>
+      <description>Today marks day 1 of my journey at TMZ. There is an exciting energy in this environment. The first thing you notice is an open workspace where there is action going on every minute. (You probably already know that if you&amp;rsquo;ve watched the show before.) The technology is also very impressive. The team no doubt consists of nothing but A+ players. How else would TMZ have gotten to be so big in a short amount of time?</description>
+    </item>
+    
+    <item>
+      <title>How to upgrade to PHP 5.4 on Ubuntu 12.10</title>
+      <link>https://www.richardsumilang.com/posts/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
+      <pubDate>Mon, 31 Mar 2014 03:51:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
+      <description>&lt;p&gt;PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
+backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
+and run the following commands:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
+      <link>https://www.richardsumilang.com/posts/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <pubDate>Mon, 31 Mar 2014 01:43:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
+MongoDB extension. I stumbled on an example on
+&lt;a href=&#34;https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;
+illustration showing how to do this and rewrote it in what I think is a slightly
+more modern way that does the same thing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Just one of those days</title>
+      <link>https://www.richardsumilang.com/posts/etc/just-one-of-those-days/</link>
+      <pubDate>Sun, 30 Mar 2014 19:35:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/just-one-of-those-days/</guid>
+      <description>&lt;p&gt;I couldn&amp;rsquo;t help but notice how beautiful the weather was today while returning home from brunch. The sky was a perfect blue, the winds were fresh but warm, and the sun was casting amazing shadows from the trees. One of those perfect weather day&amp;rsquo;s that you would kick yourself for staying in. As soon as I got home I pulled my bike out from the garage, wiped the spiders off, pumped up the wheels, and rode away. I always forget how happy it makes me to go out for a bike ride until I&amp;rsquo;m actually riding. So glad I did. :D&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello world! ... Again.</title>
+      <link>https://www.richardsumilang.com/posts/etc/hello-world...again/</link>
+      <pubDate>Sat, 29 Mar 2014 05:16:01 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/etc/hello-world...again/</guid>
+      <description>I&amp;rsquo;ve decided to bring back my blog in order to share technical notes and observations. I may carry over some content - particularly timeless posts - from my previous blog. I&amp;rsquo;m hoping to begin a discussion on this blog, so don&amp;rsquo;t hesitate to comment on the posts.
+Without further adieu, welcome to my blog and don&amp;rsquo;t let the door hit you on the way out. ;)
+Sincerely, Me.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,10 +13,10 @@
     
     <item>
       <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
-      <link>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
+      <link>https://www.richardsumilang.com/posts/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>
       <pubDate>Mon, 31 Mar 2014 01:43:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
+      <guid>https://www.richardsumilang.com/posts/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</guid>
       <description>&lt;p&gt;This is a useful tidbit of code to have until PHP adds this feature into their
 MongoDB extension. I stumbled on an example on
 &lt;a href=&#34;https://stackoverflow.com/questions/14370143/create-mongodb-objectid-from-date-in-the-past-using-php-driver&#34; title=&#34;Create MongoDB ObjectID from date in the past using PHP driver&#34;&gt;Stack Overflow&lt;/a&gt;

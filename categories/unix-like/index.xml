@@ -13,11 +13,11 @@
     
     <item>
       <title>Automate Your OS X App Installations</title>
-      <link>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</link>
       <pubDate>Sun, 20 Sep 2015 17:59:00 -0700</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/casks-installer-v1/</guid>
-      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
+      <guid>https://www.richardsumilang.com/posts/unix-like/darwin/cask/casks-installer-v1/</guid>
+      <description>&lt;p&gt;I refined my &lt;a href=&#34;https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/&#34; title=&#34;My Cask Script&#34;&gt;original cask script&lt;/a&gt; for installing the software needed on
 multiple Mac workstations. The new version now allows you to configure parameters of
 the installation such as install path and which category of applications you
 wish to install.&lt;/p&gt;
@@ -30,10 +30,10 @@ tedious task when working with dozens of pieces of software.&lt;/p&gt;
     
     <item>
       <title>My cask script!</title>
-      <link>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/</link>
       <pubDate>Sun, 26 Oct 2014 16:30:00 -0700</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/darwin/cask/my-cask-script/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/darwin/cask/my-cask-script/</guid>
       <description>&lt;p&gt;Finally we get our own &lt;code&gt;apt-get&lt;/code&gt; like tool for Mac! Check out &lt;a href=&#34;https://caskroom.io/&#34; title=&#34;Homebrew cask&#34;&gt;cask&lt;/a&gt; if you
 haven&amp;rsquo;t already! Below is my personal script for my setup. Maybe I&amp;rsquo;ll move this
 to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
@@ -41,10 +41,10 @@ to chef recipe for my mac one day? ;)&lt;/p&gt;</description>
     
     <item>
       <title>FTP Sync Script</title>
-      <link>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</link>
       <pubDate>Sat, 27 Sep 2014 15:30:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/linux/ftp/ftp-sync-script/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</guid>
       <description>&lt;p&gt;Digging around my hard drive and found an old FTP sync script I wrote. Sharing
 it on GitHub now. Enjoy :)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/rsumilang/sync-ftp&#34; title=&#34;ftp sync script&#34;&gt;https://github.com/rsumilang/sync-ftp&lt;/a&gt;&lt;/p&gt;</description>
@@ -52,10 +52,10 @@ it on GitHub now. Enjoy :)&lt;/p&gt;
     
     <item>
       <title>Monitor your filesystem events on Linux with inotify</title>
-      <link>https://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</link>
       <pubDate>Mon, 14 Jul 2014 22:28:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://man7.org/linux/man-pages/man7/inotify.7.html&#34; title=&#34;inotify man page&#34;&gt;Inotify&lt;/a&gt; provides a nifty C API to monitor files and directories. The API
 hooks into your kernel and responding to events on your filesystem is much more
 efficient than doing something like writing a cron job to check for changes in a
@@ -67,10 +67,10 @@ and &lt;code&gt;inotifywatch&lt;/code&gt;. The difference is &lt;code&gt;inotify
     
     <item>
       <title>Fixing OpenSSL Heartbleed vulnerability on Ubuntu</title>
-      <link>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</link>
       <pubDate>Mon, 14 Apr 2014 10:21:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/ubuntu/security/fixing-openssl-heartbleed-vulnerability-on-ubuntu/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://heartbleed.com/&#34; title=&#34;Heartbleed bug&#34;&gt;Heartbleed bug&lt;/a&gt; is a rather nice security vulnerability that allows
 remote users to read memory without leaving a trace. Here are the steps to up
 update Ubuntu to patch the issue.&lt;/p&gt;</description>
@@ -78,10 +78,10 @@ update Ubuntu to patch the issue.&lt;/p&gt;</description>
     
     <item>
       <title>How to upgrade to PHP 5.4 on Ubuntu 12.10</title>
-      <link>https://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
+      <link>https://www.richardsumilang.com/posts/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</link>
       <pubDate>Mon, 31 Mar 2014 03:51:00 -0800</pubDate>
       
-      <guid>https://www.richardsumilang.com/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
+      <guid>https://www.richardsumilang.com/posts/unix-like/ubuntu/upgrade-php-5.4-on-ubuntu-12.10/</guid>
       <description>&lt;p&gt;PHP 5.4 is not in the standard Ubuntu 12.10 repositories. We will use a
 backported version of PHP 5.4 by configuring a 3rd party PPA. Open a terminal
 and run the following commands:&lt;/p&gt;</description>
