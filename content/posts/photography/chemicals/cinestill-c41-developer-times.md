@@ -17,7 +17,7 @@ Keywords:
  - 35mm film
  - 120 film
  - C-41
-Title: Cinestill C-41 Deveopment Times
+Title: Cinestill C-41 Development Times
 SubTitle: Chemical Reuse
 Date: "2020-05-24T21:52:53.529Z"
 ---
