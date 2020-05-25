@@ -157,3 +157,7 @@ The way to read this is not by how many rolls you are going to develop, but how 
 ### Notes
 
 I usually develop batches of five 35mm rolls at a time (or the 120 equivelant) while reusing my chemicals for up to 15 rolls. I've never seen a shift in the quality as I've developed more rolls through the same chemistry. I can probably use 1 quart for 20 or so rolls but I've never stocked up on that film that needed to be developed at once. The nightmare of scanning the film lurking around the corner is just too much for me to bare. Just keep in mind the longer you keep your chemicals and expose to air, then the weaker they become... If I have chemicals sit, it will only be for a week or two in a [sealed bottle][5] that is light safe.
+
+### Push/Pull
+
+Not something I like doing with my color negative film. I'm typically not a fan of the look and it doesn't allow me to develop my film in batches unless I am pushing/pulling all the film in my development container... Black and white may be a different story.
