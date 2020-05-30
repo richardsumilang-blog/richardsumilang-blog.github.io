@@ -57,7 +57,8 @@ class MongoUtil {
 		$machineId = substr(md5(gethostname()), 0, 3); // 3 bit machine identifier
 		$binaryPID = pack('n', posix_getpid()); // unsigned short
 		$counter = substr(pack('N', self::$_mongoIdFromTimestampCounter++), 1, 3); // Counter
-		$binaryId = "{$binTimestamp}{$machineId}{$machineId}{$counter}";
+		
+		$binaryId = "{$binaryTimestamp}{$machineId}{$binaryPID}{$counter}";
 
 		// Convert to ASCII
 		$id = '';
@@ -76,6 +77,6 @@ class MongoUtil {
 
 
 <pre><code class="language-php" title="Example">$date = strtotime('today');
-$mongoId = MongoUtil::mongoIdFromTimestamp( $date );
+$mongoId = MongoUtil::mongoIdFromTimestamp($date);
 
 // Do more stuff.</code></pre>
