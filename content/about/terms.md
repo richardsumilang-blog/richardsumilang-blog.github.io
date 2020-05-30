@@ -5,6 +5,7 @@ menu:
   about:
     weight: 1
 comments: false
+ads: false
 ---
 
 # A. Overview
