@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2020 15:17:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 02:47:57 +0000</lastBuildDate>
     
 	<atom:link href="https://www.richardsumilang.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apps</title>
+      <link>https://www.richardsumilang.com/categories/apps/</link>
+      <pubDate>Sun, 14 Jun 2020 02:47:57 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/categories/apps/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Photography</title>
@@ -17,15 +26,6 @@
       <pubDate>Thu, 04 Jun 2020 15:17:33 +0000</pubDate>
       
       <guid>https://www.richardsumilang.com/categories/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apps</title>
-      <link>https://www.richardsumilang.com/categories/apps/</link>
-      <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
-      
-      <guid>https://www.richardsumilang.com/categories/apps/</guid>
       <description></description>
     </item>
     

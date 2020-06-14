@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IDE on Richard Sumilang</title>
-    <link>https://www.richardsumilang.com/tags/ide/</link>
-    <description>Recent content in IDE on Richard Sumilang</description>
+    <title>Fira Code on Richard Sumilang</title>
+    <link>https://www.richardsumilang.com/tags/fira-code/</link>
+    <description>Recent content in Fira Code on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Jun 2020 02:47:57 +0000</lastBuildDate>
     
-	<atom:link href="https://www.richardsumilang.com/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.richardsumilang.com/tags/fira-code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -28,17 +28,6 @@
     &#34;editor.fontFamily&#34;: &#34;Fira Code iScript, Menlo, Monaco, &#39;Courier New&#39;, monospace&#34;,
     &#34;editor.fontLigatures&#34;: true,
 }&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>IntelliJ IDEA Optimizations</title>
-      <link>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</link>
-      <pubDate>Tue, 06 May 2014 11:00:00 -0800</pubDate>
-      
-      <guid>https://www.richardsumilang.com/posts/apps/ide/intellij/intellij-idea-optimizations/</guid>
-      <description>Please post a comment if you have any additional tips to making IDEA faster.
-  The first thing you want to do is disable all the plugins you are not using. Go to *Preferences&amp;amp; -&amp;gt; Plugins and un-check as many as possible. I unchecked about 80%.
-  Give yourself more memory. I figure if Firefox allows itself to take a gig of my ram then I should treat my IDE a little better.</description>
     </item>
     
   </channel>

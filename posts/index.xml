@@ -6,10 +6,29 @@
     <description>Recent content in Posts on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2020 15:17:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 02:47:57 +0000</lastBuildDate>
     
 	<atom:link href="https://www.richardsumilang.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Add cursive fonts to VS Code</title>
+      <link>https://www.richardsumilang.com/posts/apps/ide/visual-studio-code/how-to-add-cursive/</link>
+      <pubDate>Sun, 14 Jun 2020 02:47:57 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/ide/visual-studio-code/how-to-add-cursive/</guid>
+      <description>&lt;p&gt;I have recently got into caligraphy and thought it would be neat to see cursive in my code editor as well. A quick google and I found a &lt;a href=&#34;https://github.com/tonsky/FiraCode&#34; title=&#34;Fira Code&#34;&gt;monospaced cursive font with ligatures&lt;/a&gt;! (Ligatures are basically symbols that replace pieces of code like &lt;code&gt;!==&lt;/code&gt; to single looking character.) It&amp;rsquo;s really nice and makes some things very easy to read on top of making the coding experience a little more fun.&lt;/p&gt;
+&lt;p&gt;To get started&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You&amp;rsquo;ll first need to download &lt;a href=&#34;https://github.com/tonsky/FiraCode&#34; title=&#34;Fira Code&#34;&gt;Fira Code&lt;/a&gt; fonts and install them.&lt;/li&gt;
+&lt;li&gt;Install and apply &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic&#34; title=&#34;Dark++ Italic&#34;&gt;Dark++ Italic&lt;/a&gt; theme.&lt;/li&gt;
+&lt;li&gt;Open your &lt;a href=&#34;https://code.visualstudio.com/&#34; title=&#34;Visual Studio Code - Code Editing&#34;&gt;VS Code&lt;/a&gt; &lt;code&gt;settings.json&lt;/code&gt; file and add the following lines:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;settings.json&#34; &gt;{
+    &#34;editor.fontFamily&#34;: &#34;Fira Code iScript, Menlo, Monaco, &#39;Courier New&#39;, monospace&#34;,
+    &#34;editor.fontLigatures&#34;: true,
+}&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>Vi Vante Review</title>

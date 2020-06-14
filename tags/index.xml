@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2020 15:17:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 02:47:57 +0000</lastBuildDate>
     
 	<atom:link href="https://www.richardsumilang.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fira Code</title>
+      <link>https://www.richardsumilang.com/tags/fira-code/</link>
+      <pubDate>Sun, 14 Jun 2020 02:47:57 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/fira-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>https://www.richardsumilang.com/tags/ide/</link>
+      <pubDate>Sun, 14 Jun 2020 02:47:57 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VS Code</title>
+      <link>https://www.richardsumilang.com/tags/vs-code/</link>
+      <pubDate>Sun, 14 Jun 2020 02:47:57 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/vs-code/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gear</title>
@@ -1403,15 +1430,6 @@
       <pubDate>Thu, 08 May 2014 18:15:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/tags/type-casting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IDE</title>
-      <link>https://www.richardsumilang.com/tags/ide/</link>
-      <pubDate>Tue, 06 May 2014 11:00:00 -0800</pubDate>
-      
-      <guid>https://www.richardsumilang.com/tags/ide/</guid>
       <description></description>
     </item>
     

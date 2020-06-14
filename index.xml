@@ -6,7 +6,76 @@
     <language>en-us</language>
     <author>Richard Sumilang</author>
     
-    <updated>Sun, 66 Aug 40633 06:06:06 PST</updated>
+    <updated>Sun, 66 Aug 140657 06:06:06 PST</updated>
+    
+    <item>
+      <title>Add cursive fonts to VS Code</title>
+      <link>https://www.richardsumilang.com/posts/apps/ide/visual-studio-code/how-to-add-cursive/</link>
+      <pubDate>Sun, 66 Aug 140657 06:06:06 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://www.richardsumilang.com/posts/apps/ide/visual-studio-code/how-to-add-cursive/</guid>
+      <description>&lt;p&gt;I have recently got into caligraphy and thought it would be neat to see cursive in my code editor as well. A quick google and I found a &lt;a href=&#34;https://github.com/tonsky/FiraCode&#34; title=&#34;Fira Code&#34;&gt;monospaced cursive font with ligatures&lt;/a&gt;! (Ligatures are basically symbols that replace pieces of code like &lt;code&gt;!==&lt;/code&gt; to single looking character.) It&amp;rsquo;s really nice and makes some things very easy to read on top of making the coding experience a little more fun.&lt;/p&gt;
+&lt;p&gt;To get started&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You&amp;rsquo;ll first need to download &lt;a href=&#34;https://github.com/tonsky/FiraCode&#34; title=&#34;Fira Code&#34;&gt;Fira Code&lt;/a&gt; fonts and install them.&lt;/li&gt;
+&lt;li&gt;Install and apply &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic&#34; title=&#34;Dark++ Italic&#34;&gt;Dark++ Italic&lt;/a&gt; theme.&lt;/li&gt;
+&lt;li&gt;Open your &lt;a href=&#34;https://code.visualstudio.com/&#34; title=&#34;Visual Studio Code - Code Editing&#34;&gt;VS Code&lt;/a&gt; &lt;code&gt;settings.json&lt;/code&gt; file and add the following lines:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;settings.json&#34; &gt;{
+    &#34;editor.fontFamily&#34;: &#34;Fira Code iScript, Menlo, Monaco, &#39;Courier New&#39;, monospace&#34;,
+    &#34;editor.fontLigatures&#34;: true,
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You could be done at this point if you are fine with the Dark++ Italic theme colors. Or you could add these additional settings to your &lt;code&gt;settings.json&lt;/code&gt; to override any themes&amp;rsquo; font configuration:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I added a some additional &lt;em&gt;italics&lt;/em&gt; that Dark++ Italic didn&amp;rsquo;t have, like &lt;code&gt;comment&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;settings.json&#34;&gt;{
+    &#34;editor.tokenColorCustomizations&#34;: {
+        &#34;textMateRules&#34;: [
+            {
+                &#34;name&#34;: &#34;comment&#34;,
+                &#34;scope&#34;: [
+                    &#34;comment&#34;
+                ],
+                &#34;settings&#34;: {
+                    &#34;fontStyle&#34;: &#34;italic&#34;
+                }
+            },
+            {
+                &#34;name&#34;: &#34;Keyword Storage&#34;,
+                &#34;scope&#34;: [
+                    &#34;keyword&#34;,
+                    &#34;keyword.control&#34;,
+                    &#34;storage&#34;
+                ],
+                &#34;settings&#34;: {
+                    &#34;fontStyle&#34;: &#34;italic&#34;
+                }
+            },
+            {
+                &#34;name&#34;: &#34;Entity&#34;,
+                &#34;scope&#34;: [
+                    &#34;entity.name.method&#34;,
+                    &#34;entity.name.type.class&#34;,
+                    &#34;entity.other.attribute-name&#34;
+                ],
+                &#34;settings&#34;: {
+                    &#34;fontStyle&#34;: &#34;italic&#34;
+                }
+            },
+            {
+                &#34;name&#34;: &#34;Variable&#34;,
+                &#34;scope&#34;: [
+                    &#34;variable.language&#34;
+                ],
+                &#34;settings&#34;: {
+                    &#34;fontStyle&#34;: &#34;italic&#34;
+                }
+            }
+        ]
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;While taking notes can sometimes seem boring, it can be fun with a nice pen, some ink, and the right notepad. Adding Dark++ Italic and Fira Code does that to my IDE. There are also other monospaced cursive fonts out there like &lt;a href=&#34;https://github.com/kiliman/operator-mono-lig&#34; title=&#34;Operator Mono Lig&#34;&gt;Operator Mono Lig&lt;/a&gt;, for example. Try some out and see what works for you. Have fun.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Vi Vante Review</title>
@@ -905,48 +974,6 @@ they will not be easily accessible later. The order will be as follows:&lt;/p&gt
 &lt;li&gt;Sanding and varnishing the wood frame.&lt;/li&gt;
 &lt;li&gt;Nickeling metal components.&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bottlehead S.E.X. 2.1 Journey</title>
-      <link>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/bottlehead-sex-journey/</link>
-      <pubDate>Sun, 96 Aug 120947 09:09:09 PST</pubDate>
-      <author>Richard Sumilang</author>
-      <guid>https://www.richardsumilang.com/posts/electronics/bottlehead/sex/bottlehead-sex-journey/</guid>
-      <description>&lt;p&gt;After almost a month of waiting, my &lt;a href=&#34;https://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; has finally arrived.
-This will be my first of many electronic DIY projects. I will detail the journey
-from start to finish. Including details like what tools I used, any problems
-I encountered, and any suggestions I come up with on the way. This blog series
-is sort of like an enhancement to the original guide provided with your
-&lt;a href=&#34;https://bottlehead.com/?product=single-ended-experimenters-kit-2-1-for-headphones-sensitive-speakers&#34; title=&#34;Bottlhead S.E.X. kit for Headphones and Sensitive Speakers&#34;&gt;Bottlehead S.E.X.&lt;/a&gt; purchase.&lt;/p&gt;
-&lt;h3 id=&#34;how-it-started&#34;&gt;How it started&lt;/h3&gt;
-&lt;p&gt;Originally I had ordered the &lt;a href=&#34;https://bottlehead.com/?product=crack-otl-headphone-amplifier-kit&#34; title=&#34;Bottlehead Crack OTL Amplifier Kit&#34;&gt;Bottlehead Crack OTL Amplifier Kit&lt;/a&gt; with the
-Speedball Upgrade. This amplifier is widely known as a great way to get into
-audiophile DIY world and great for driving high impedance headphones like the
-&lt;a href=&#34;https://amzn.to/1Kf3W3v&#34; title=&#34;Sennheiser HD 650 Open Back Professional Headphone&#34;&gt;Sennheiser HD 650&lt;/a&gt;&amp;lsquo;s and &lt;a href=&#34;https://amzn.to/1Kf4eaH&#34; title=&#34;Sennheiser HD 800 Over-Ear Circum-Aural Dynamic Headphone&#34;&gt;Sennheiser HD 800&lt;/a&gt;&amp;lsquo;s, which were the headphones
-I was rocking at the time. While there are plenty of other amplifiers out in the
-market, I chose to go this route for the sake of learning and building something
-which seems a lot more fun than just shelling out cash on amplifiers.&lt;/p&gt;
-&lt;h3 id=&#34;so-why-did-i-switch-to-the-sex&#34;&gt;So why did I switch to the S.E.X.?&lt;/h3&gt;
-&lt;p&gt;Simply because I like to experiment with a range of setup combinations, thus I
-look for versatility in my setups. That is where the Single Ended eXperiement
-comes in; or S.E.X. for short. I want the ability to use my amplifier with a wide
-range of headphones and power desktop speakers. The S.E.X. has an output
-impedance upgrade option that makes this easily possible. The S.E.X. defaults to
-your speakers when there isn&amp;rsquo;t a pair of headphones plugged into the jack. While
-I&amp;rsquo;m going all out, why not upgrade to the C4S load boards, right? Makes sense to
-me.&lt;/p&gt;
-&lt;h3 id=&#34;the-beauty-of-it&#34;&gt;The beauty of it&lt;/h3&gt;
-&lt;p&gt;One of the greatest benefits of DIY besides a fun project and learning, is the
-ability to customize everything to your liking. My amplifier at the end will not
-look like the stock Bottlehead S.E.X. pictures. This journey will include,
-varnishing, painting, and a custom nickeling job for a sweet hot rod look.&lt;/p&gt;
-&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;I will be posting a progress updates approximately once a week. As with
-everything else on this blog, we&amp;rsquo;re here to learn and experiment. There might be
-errors or perhaps some better way to do things. I would love to hear any
-questions or suggestions in the comments!&lt;/p&gt;
-&lt;p&gt;Stay tuned!&lt;/p&gt;</description>
     </item>
     
   </channel>
