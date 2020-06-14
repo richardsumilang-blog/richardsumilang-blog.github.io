@@ -22,8 +22,7 @@ Date: "2020-06-14T02:47:57.417Z"
 [1]: https://github.com/tonsky/FiraCode "Fira Code"
 [2]: https://marketplace.visualstudio.com/items?itemName=idbartosz.darkpp-italic "Dark++ Italic"
 [3]: https://code.visualstudio.com/ "Visual Studio Code - Code Editing"
-[4]: https://www.ankursheel.com/blog/add-cursive-fonts-to-vs-code "Ankur Sheel's blog"
-[5]: https://github.com/kiliman/operator-mono-lig "Operator Mono Lig"
+[4]: https://github.com/kiliman/operator-mono-lig "Operator Mono Lig"
 
 
 I have recently got into caligraphy and thought it would be neat to see cursive in my code editor as well. A quick google and I found a [monospaced cursive font with ligatures][1]! (Ligatures are basically symbols that replace pieces of code like `!==` to single looking character.) It's really nice and makes some things very easy to read on top of making the coding experience a little more fun.
@@ -94,4 +93,4 @@ You could be done at this point if you are fine with the Dark++ Italic theme col
 
 ### Conclusion
 
-While taking notes can sometimes seem boring, it can be fun with a nice pen, some ink, and the right notepad. Adding Dark++ Italic and Fira Code does that to my IDE. There are also other monospaced cursive fonts out there like [Operator Mono Lig][5], for example. Try some out and see what works for you. Have fun.
+While taking notes can sometimes seem boring, it can be fun with a nice pen, some ink, and the right notepad. Adding Dark++ Italic and Fira Code does that to my IDE. There are also other monospaced cursive fonts out there like [Operator Mono Lig][4], for example. Try some out and see what works for you. Have fun.
