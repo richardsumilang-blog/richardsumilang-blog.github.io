@@ -58,7 +58,7 @@ images help you find the content you are looking for while continuing to load
 more articles into the feed as you scroll, keeping your browsing experience
 smooth.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/homepage.png" class="center" loading="lazy" />
 
 
 ### Navigation Menu
@@ -73,7 +73,7 @@ you're feeling like going on a tour then you can click the "TMZ Celebrity Tour"
 and reserve a spot on the bus and tour hollywood. The "Login / Register" button
 signs you into TMZ, allowing you to add your own comments to articles.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/nav-menu.png" class="center" loading="lazy" />
 
 
 ## Got A Tip?
@@ -82,7 +82,7 @@ Calling TMZ directly is still an option by clicking the "Give us a call" button.
 The new section now supports sending TMZ a direct email via a web form with the
 ability to upload files from your phone.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/got-a-tip.gif" class="center" loading="lazy" />
 
 
 ## News
@@ -94,7 +94,7 @@ results. The **Popular** tab labels each article with a number for it's
 popularity. The **Commented** section similarly labels each article with the
 number of comments per article.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/news-feed.gif" class="center" loading="lazy" />
 
 
 ### Article Page
@@ -126,7 +126,7 @@ At the end you will see a link to the next article from the feed you came from.
 If you did not land on the article page coming from a feed then you will not see
 this feature.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/article-page.gif" class="center" loading="lazy" />
 
 
 ## Videos
@@ -136,7 +136,7 @@ Featuring *Latest Videos* by default, TMZ now provides access to videos by
 video with your social networks and find other related videos that you might be
 interested in watching next.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/video-latest.png" class="center" loading="lazy" />
 
 ## Photos
 
@@ -150,7 +150,7 @@ navigate in the direction you want to go. There are also new sharing features
 per photo and more gallery suggestions when reaching the end. I think you'll
 like it.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/photo-galleries.gif" class="center" loading="lazy" />
 
 
 ## Sports
@@ -160,7 +160,7 @@ category. You can also find sports articles while browsing other article feeds.
 You will be able to easily identify a sports article by the green swipe on the
 article.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-sports.png" class="center" loading="lazy" />
 
 
 ## Celebs
@@ -170,7 +170,7 @@ defaults to the most **Trending** celebrities and you can click on the **All**
 tab to find a specific celebrity quicker. The **All** section loads smaller
 thumbnails for faster scrolling.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celebs.gif" class="center" loading="lazy" />
 
 
 ### Celebrity Bio
@@ -182,7 +182,7 @@ galleries, videos, and/or articles featuring the current celebrity bio you are
 reading. We also show related celebrities that you may be interested in
 reading about.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/celeb-bio.gif" class="center" loading="lazy" />
 
 
 ## Shows
@@ -192,7 +192,7 @@ this section and watch live streaming (for TMZ Live), full episodes, and clips
 for any of your favorite shows on your mobile device. You may also use the
 button on the bottom of the page to find local TV listings for your area.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/shows.gif" class="center" loading="lazy" />
 
 
 ## Search
@@ -204,7 +204,7 @@ galleries. Celebrities will be listed first and the other page types will be
 mixed in the results. You can identify each page type by the icons on the
 results.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/search-dave.gif" class="center" loading="lazy" />
 
 
 # Try it out for yourself!
@@ -215,4 +215,4 @@ huge improvement over the previous implementation and I'm proud to have my name
 stamped on the face of it. Many thanks to my awesome team for help making this
 possible.
 
-<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png" class="center" />
+<img src="/images/etc/work/tmz/tmz-mobile-web-version-2/tmz-logo.png" class="center" loading="lazy" />

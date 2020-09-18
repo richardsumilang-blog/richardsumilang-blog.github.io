@@ -121,4 +121,4 @@ doing only one newsletter a month if there is a decent amount of subscriptions.
 
 This site is dedicated to my daughter, Eva. May all your dreams come true.
 
-<img src="/images/etc/version-3/eva-misfit.jpeg" class="center" />
+<img src="/images/etc/version-3/eva-misfit.jpeg" class="center" loading="lazy" />

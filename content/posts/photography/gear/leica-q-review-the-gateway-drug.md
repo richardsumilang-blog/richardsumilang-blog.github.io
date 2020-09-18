@@ -84,48 +84,48 @@ Route 4: (Spoiler alert: This is where I end up.) A combination of #2 and #3. I 
 
 Two years later and this brand with their essentials philosophies has infiltrated my photography. I still own the Q as it compliments my now Leica ecosystem just right with it’s macro and wide angle lens. I tried parting with on several occasions like when the Q2 was added to the family but it’s become an emotional attachment. The little pawn shop camera is part of the family. When I go out, an M camera usually comes with me. Rangefinder took less getting used to than you’d think. It removes a lot of technical/digital thinking from the shooting experience when taking your shots. Focusing with it has become a breeze and the preferred way to use a camera. The [SL2][6] is now my studio camera and uses only M lenses for the time being. The Q comes out when there is more of a group setting. It's also great when I know I'm going somewhere where I'd like the camera to be passed to someone else to take a photo. There is a "Touch AF + Release" feature on it that allows someone to touch the the back of the screen to autofocus and take the picture. This has been when handing the camera to novices for snapshots. The [Leica Q][1] has definitely been a gateway drug... And it doesn't even end with photography, wait till you put your eyes in their binoculars. I'll save that for another time.
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030530.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030530.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0086.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0086.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030634.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030634.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030687.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030687.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030717.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030717.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030728.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030728.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0167.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0167.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030696.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030696.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030953.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030953.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0282.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0282.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030996.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030996.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040045.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040045.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040065.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040065.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040136.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040136.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040190.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040190.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040226.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040226.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040441.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040441.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040574.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040574.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03_DSC0574.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03_DSC0574.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC1204.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC1204.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC4663.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC4663.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04L1040623.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04L1040623.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.05_DSC5219.jpg" class="center" />
+<img src="/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.05_DSC5219.jpg" class="center" loading="lazy" />

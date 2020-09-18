@@ -21,4 +21,4 @@ Copy this command on your terminal to create a symbolic link to it:
 It starts off ridiculously big but you can shrink it down by going to *Window*
 -&gt; *Scale* -&gt; *50%*.
 
-<img src="/images/ios/simulator-retina-4in.png" alt="iOS Simulator Retina 4inch" class="center" />
+<img src="/images/ios/simulator-retina-4in.png" alt="iOS Simulator Retina 4inch" class="center" loading="lazy" />

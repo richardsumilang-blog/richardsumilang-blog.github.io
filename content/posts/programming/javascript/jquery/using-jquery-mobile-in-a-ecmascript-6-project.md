@@ -18,7 +18,7 @@ dependencies I was upgrading from. I used [Babel JS][1] to transpile my ES6 code
 with [browserify][2] and everything was working fine until I got to
 [jQuery-mobile][3].
 
-<img src="/images/reactions/why/jon-stewart.gif" class="center" />
+<img src="/images/reactions/why/jon-stewart.gif" class="center" loading="lazy" />
 
 <!--more-->
 

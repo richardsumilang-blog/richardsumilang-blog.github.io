@@ -19,6 +19,6 @@ in a short amount of time? I'm excited to bring my skills to the team and to see
 what the future has to offer.
 
 
-<img src="/images/me/tmz.jpg" alt="In the news room" class="center" />
+<img src="/images/me/tmz.jpg" alt="In the news room" class="center" loading="lazy" />
 
 [1]: https://www.tmz.com/ "Thirty Mile Zone"

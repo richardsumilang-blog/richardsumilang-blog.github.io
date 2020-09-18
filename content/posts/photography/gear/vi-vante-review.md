@@ -56,8 +56,8 @@ There are other little perks of having a [Vi Vante strap][1]. It’s hard to exp
 
 So if you’re an admirer of the Leica’s precision, design, and have been yearning for a camera strap to finally match the standards that it demands, then look no further. I don’t think you’ll be dissatisfied.
 
-<img src="/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-coffee.jpg" class="center" />
+<img src="/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-coffee.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-steps.jpg" class="center" />
+<img src="/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-steps.jpg" class="center" loading="lazy" />
 
-<img src="/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-wrapped.jpg" class="center" />
+<img src="/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-wrapped.jpg" class="center" loading="lazy" />

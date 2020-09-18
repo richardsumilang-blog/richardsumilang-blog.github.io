@@ -17,7 +17,7 @@ Log into your system with an administrator account and open the
 
 <!--more-->
 
-<img src="/images/server/synology/diskstation/how-to-enable-ssh-access-to-synology-diskstation/steps.png" />
+<img src="/images/server/synology/diskstation/how-to-enable-ssh-access-to-synology-diskstation/steps.png" loading="lazy" />
 
 It doesn't get any easier than that! Check out the [Synology Wiki][1] for more
 information. You can log to the root account using your admin password. :)

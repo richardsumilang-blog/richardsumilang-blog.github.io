@@ -19,7 +19,7 @@ Date: "2017-04-05T14:08:00-08:00"
 
 [1]: https://github.com/syl20bnr/spacemacs "Spacemacs"
 
-<img src="/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png" class="center" />
+<img src="/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png" class="center" loading="lazy" />
 
 Dump this in your terminal:
 
