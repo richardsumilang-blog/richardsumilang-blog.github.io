@@ -17,7 +17,7 @@
       <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/posts/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Dump this in your terminal:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
