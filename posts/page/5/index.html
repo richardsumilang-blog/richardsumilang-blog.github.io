@@ -157,6 +157,43 @@
   
 
   <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/">Backing up and Restoring with MongoDB</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      Dump You can dump the database locally using the following mongodump:
+mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD This will create a dump folder containing a subfolder named after your database. The default port for MongoDB is 27017.
+Import You can import the same dump to a local MongoDB instance using something like the following mongorestore after changing into the dump directory:
+mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> May 30, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&t=Backing%20up%20and%20Restoring%20with%20MongoDB"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&text=Backing%20up%20and%20Restoring%20with%20MongoDB&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&media=&description=Backing%20up%20and%20Restoring%20with%20MongoDB"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
     <h2><a href="https://www.richardsumilang.com/posts/networking/windows/converting-windows-network-path-for-mac/">Converting Windows Network Path for Mac</a></h2>
     
   </header>
@@ -498,41 +535,6 @@ requires <a href="https://gearman.info/libgearman/" title="libgearman">libgearma
   <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgearman%2finstall-gearman-for-php-on-os-x%2f&text=How%20to%20install%20Gearman%20for%20PHP%20on%20OS%20X&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
   <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgearman%2finstall-gearman-for-php-on-os-x%2f"><span class="fa fa-google-plus"></span></a>
   <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgearman%2finstall-gearman-for-php-on-os-x%2f&media=&description=How%20to%20install%20Gearman%20for%20PHP%20on%20OS%20X"><span class="fa fa-pinterest"></span></a>
-</div>
-
-
-</article>
-
-    
-      <article>
-  
-
-  <header class="heading">
-    <h2><a href="https://www.richardsumilang.com/posts/server/gearman/install-gearman-on-os-x/">How to install Gearman on OS X</a></h2>
-    
-  </header>
-
-  <div class="details">
-    
-      <p>Setup <a href="https://gearman.org/" title="Gearman">Gearman</a> job server with OS X 10.9.2 Mavericks using <a href="https://brew.sh/" title="Homebrew">brew</a>.</p>
-<pre><code class="language-bash" title="Install">brew install gearman</code></pre>
-    
-  </div>
-
-  <a href="https://www.richardsumilang.com/posts/server/gearman/install-gearman-on-os-x/" class="more-link">
-    Read More
-  </a>
-
-  <div class="meta">
-    <i class="fa fa-clock-o"></i> Apr 23, 2014
-    <i class="fa fa-align-left"></i> 1 min read
-  </div>
-
-  <div class="share-buttons">
-  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fgearman%2finstall-gearman-on-os-x%2f&t=How%20to%20install%20Gearman%20on%20OS%20X"><span class="fa fa-facebook"></span></a>
-  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fgearman%2finstall-gearman-on-os-x%2f&text=How%20to%20install%20Gearman%20on%20OS%20X&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
-  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fgearman%2finstall-gearman-on-os-x%2f"><span class="fa fa-google-plus"></span></a>
-  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fgearman%2finstall-gearman-on-os-x%2f&media=&description=How%20to%20install%20Gearman%20on%20OS%20X"><span class="fa fa-pinterest"></span></a>
 </div>
 
 

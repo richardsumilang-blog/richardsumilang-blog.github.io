@@ -157,6 +157,46 @@
   
 
   <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/">Monitor your filesystem events on Linux with inotify</a></h2>
+    
+  </header>
+
+  <div class="details">
+    
+      <p><a href="https://man7.org/linux/man-pages/man7/inotify.7.html" title="inotify man page">Inotify</a> provides a nifty C API to monitor files and directories. The API
+hooks into your kernel and responding to events on your filesystem is much more
+efficient than doing something like writing a cron job to check for changes in a
+directory every minute. Fortunately, if you&rsquo;re not a C developer, there is a
+package called <a href="https://github.com/rvoicilas/inotify-tools/wiki" title="inotify tools">inotify-tools</a> that comes with two programs, <code>inotifywait</code>
+and <code>inotifywatch</code>. The difference is <code>inotifywait</code> waits for changes and
+<code>inotifywatch</code> gathers filesystem access statistics.</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/unix-like/linux/filesystem/monitor-your-filesystem-events-with-inotify/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Jul 14, 2014
+    <i class="fa fa-align-left"></i> 2 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2funix-like%2flinux%2ffilesystem%2fmonitor-your-filesystem-events-with-inotify%2f&t=Monitor%20your%20filesystem%20events%20on%20Linux%20with%20inotify"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2funix-like%2flinux%2ffilesystem%2fmonitor-your-filesystem-events-with-inotify%2f&text=Monitor%20your%20filesystem%20events%20on%20Linux%20with%20inotify&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2funix-like%2flinux%2ffilesystem%2fmonitor-your-filesystem-events-with-inotify%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2funix-like%2flinux%2ffilesystem%2fmonitor-your-filesystem-events-with-inotify%2f&media=&description=Monitor%20your%20filesystem%20events%20on%20Linux%20with%20inotify"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+      <article>
+  
+
+  <header class="heading">
     <h2><a href="https://www.richardsumilang.com/posts/apps/osx/photo/aperture/clean-and-optimize-your-aperture-library/">How to clean and optimize your Aperture Library</a></h2>
     
       <h3>Cleanliness is the next to godliness</h3>
@@ -487,43 +527,6 @@ language implementation. Special thanks to Derek Banas.</p>
   <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&text=Design%20Patterns%20Cheat%20Sheet&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
   <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f"><span class="fa fa-google-plus"></span></a>
   <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fdesign-patterns%2fdesign-patterns-cheat-sheet%2f&media=&description=Design%20Patterns%20Cheat%20Sheet"><span class="fa fa-pinterest"></span></a>
-</div>
-
-
-</article>
-
-    
-      <article>
-  
-
-  <header class="heading">
-    <h2><a href="https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/">Backing up and Restoring with MongoDB</a></h2>
-    
-  </header>
-
-  <div class="details">
-    
-      Dump You can dump the database locally using the following mongodump:
-mongodump --host DATABASE_HOST --port PORT -d YOUR_DATABASE_NAME -u YOUR_DB_USERNAME -p YOUR_DB_PASSWORD This will create a dump folder containing a subfolder named after your database. The default port for MongoDB is 27017.
-Import You can import the same dump to a local MongoDB instance using something like the following mongorestore after changing into the dump directory:
-mongorestore --host DATABASE_HOST --port PORT -d DATABASE_NAME_TO_IMPORT_TO --drop DATABASE_NAME_TO_IMPORT_FROM Note: This will drop the collections in the DATABASE_NAME_TO_IMPORT_TO database before restoring the same collections from your database dump.
-    
-  </div>
-
-  <a href="https://www.richardsumilang.com/posts/server/mongodb/backing-up-and-restoring-with-mongodb/" class="more-link">
-    Read More
-  </a>
-
-  <div class="meta">
-    <i class="fa fa-clock-o"></i> May 30, 2014
-    <i class="fa fa-align-left"></i> 1 min read
-  </div>
-
-  <div class="share-buttons">
-  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&t=Backing%20up%20and%20Restoring%20with%20MongoDB"><span class="fa fa-facebook"></span></a>
-  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&text=Backing%20up%20and%20Restoring%20with%20MongoDB&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
-  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f"><span class="fa fa-google-plus"></span></a>
-  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fmongodb%2fbacking-up-and-restoring-with-mongodb%2f&media=&description=Backing%20up%20and%20Restoring%20with%20MongoDB"><span class="fa fa-pinterest"></span></a>
 </div>
 
 

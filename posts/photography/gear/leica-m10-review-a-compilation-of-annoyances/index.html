@@ -12,39 +12,39 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-
-<meta name="keywords" content="Bash, init.d, LSB, Templates" />
-<meta name="news_keywords" content="Bash, init.d, LSB, Templates" />
+<meta name="description" content="A list of improvements that can be made to the Leica M10 system." />
+<meta name="keywords" content="Photography, Leica, M10, M10-P, M10-R, Rangefinder, Gear" />
+<meta name="news_keywords" content="Photography, Leica, M10, M10-P, M10-R, Rangefinder, Gear" />
 
 
 <meta property="og:type" content="article" />
-
-<meta property="og:title" content="LSB Init.d Script Template - Managing daemons on Linux" />
+<meta property="og:description" content="A list of improvements that can be made to the Leica M10 system." />
+<meta property="og:title" content="Leica M10 Review - A compilation of annoyances" />
 <meta property="og:site_name" content="Tech tips, photography, and more." />
-<meta property="og:url" content="https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/" />
+<meta property="og:url" content="https://www.richardsumilang.com/posts/photography/gear/leica-m10-review-a-compilation-of-annoyances/" />
 <meta property="og:locale" content="en_US" />
 
   
   
   
   
-  <meta property="article:published_time" content="2014-07-07" />
-  <meta property="article:modified_time" content="2014-07-07" />
+  <meta property="article:published_time" content="2020-10-05" />
+  <meta property="article:modified_time" content="2020-10-05" />
 
 
 
 
-  <meta property="article:tag" content="Bash" /><meta property="article:tag" content="init.d" /><meta property="article:tag" content="LSB" /><meta property="article:tag" content="Templates" />
+  <meta property="article:tag" content="Photography" /><meta property="article:tag" content="Leica" /><meta property="article:tag" content="M10" /><meta property="article:tag" content="M10-P" /><meta property="article:tag" content="M10-R" /><meta property="article:tag" content="Rangefinder" /><meta property="article:tag" content="Gear" />
 
 
 
 <meta name="twitter:card" content="summary" />
 
 <meta name="twitter:site" content="@richardsumilang" />
-<meta name="twitter:title" content="LSB Init.d Script Template - Richard Sumilang" />
+<meta name="twitter:title" content="Leica M10 Review - Richard Sumilang" />
 <meta name="twitter:creator" content="@richardsumilang" />
 <meta name="twitter:domain" content="richardsumilang.com" />
-
+<meta name="twitter:description" content="A list of improvements that can be made to the Leica M10 system." />
 
 
 <meta name="generator" content="Hugo 0.70.0" />
@@ -54,15 +54,15 @@
   
     <title>
       
-        LSB Init.d Script Template
+        Leica M10 Review
         
-          - Managing daemons on Linux
+          - A compilation of annoyances
         
       
     </title>
   
 
-  <link rel="canonical" href="https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/" />
+  <link rel="canonical" href="https://www.richardsumilang.com/posts/photography/gear/leica-m10-review-a-compilation-of-annoyances/" />
 
 
 
@@ -120,9 +120,9 @@
 <script>
   q.push(function loadPage() {
     window.app.dispatch(window.app.actions.loadPage({
-      title: "LSB Init.d Script Template",
-      url: 'https:\/\/www.richardsumilang.com\/posts\/server\/linux\/template\/lsb\/lsb-init-d-script-template\/',
-      uri: '\/posts\/server\/linux\/template\/lsb\/lsb-init-d-script-template\/',
+      title: "Leica M10 Review",
+      url: 'https:\/\/www.richardsumilang.com\/posts\/photography\/gear\/leica-m10-review-a-compilation-of-annoyances\/',
+      uri: '\/posts\/photography\/gear\/leica-m10-review-a-compilation-of-annoyances\/',
       query: location.search.slice(1).split('&').map(p => p.split('=')).reduce((obj, pair) => { var [key, value] = pair.map(decodeURIComponent); return ({ ...obj, [key]: value }) }, {}),
       section: 'page',
       subSection: '',
@@ -174,114 +174,78 @@
     
 
     <header class="heading">
-      <h2><a href="https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/">LSB Init.d Script Template</a></h2>
+      <h2><a href="https://www.richardsumilang.com/posts/photography/gear/leica-m10-review-a-compilation-of-annoyances/">Leica M10 Review</a></h2>
       
-        <h3>Managing daemons on Linux</h3>
+        <h3>A compilation of annoyances</h3>
       
     </header>
 
     <div class="details">
-      <p>Quick little <code>init.d</code> template:</p>
-<pre><code class="language-bash" >#!/bin/bash
-# &lt;Application Name&gt;
-# chkconfig: 345 20 80
-# description: &lt;Description&gt;
-# processname: &lt;Process Name|Application Name|Short name&gt;
-# author: Richard Sumilang &lt;me@richardsumilang.com&gt;
-# see: https://wiki.debian.org/LSBInitScripts
-
-
-CMD=""                             # Command goes here
-NAME="&lt;Short Application Name&gt;"    # Short Application Name
-PIDFILE=/var/run/$NAME.pid         # Process ID File
-SCRIPTNAME=/etc/init.d/$NAME       # This script name
-
-case "$1" in
-start)
-
-    # Make sure process is not already running
-    if [ -f $PIDFILE ]; then
-        echo "PID already exists: $PIDFILE"
-        exit 1
-    fi
-
-    # Use pgrep to retrieve the Process ID
-    $CMD
-    sleep 1
-    PID=`pgrep -fn "$CMD"`
-
-    # Save process ID to file
-    if [ -z $PID ]; then
-        printf "%s\n" "Failed to start $NAME"
-    else
-        echo $PID &gt; $PIDFILE
-        printf "%s\n" "$NAME ... Ok"
-    fi
-;;
-status)
-    printf "%-50s" "Checking $NAME..."
-    if [ -f $PIDFILE ]; then
-        PID=`cat $PIDFILE`
-        if [ -z "`ps axf | grep ${PID} | grep -v grep`" ]; then
-            printf "%s\n" "Process dead but pidfile exists"
-        else
-            echo "$NAME is Running"
-        fi
-    else
-        printf "%s\n" "$NAME is not running"
-    fi
-;;
-stop)
-    printf "%-50s" "Stopping $NAME"
-    PID=`cat $PIDFILE`
-    if [ -f $PIDFILE ]; then
-        kill $PID
-        printf "%s\n" "Ok"
-        rm -f $PIDFILE
-    else
-        printf "%s\n" "pidfile not found"
-    fi
-;;
-
-restart)
-    $0 stop
-    $0 start
-;;
-
-*)
-    echo "Usage: $0 {status|start|stop|restart}"
-    exit 1
-esac</code></pre>
+      <p>Sure, I’ve been giving Leica a lot of praise in my posts because it’s really that great of a company that focuses on the essentials but it’s not all rainbows and unicorns. You’d expect such a high valued item to be closer to perfect but here are some things that could be better.</p>
+<h1 id="on-camera">On Camera</h1>
+<ul>
+<li>
+<p><strong>Small rangefinder patch:</strong> I’ve seen worst [looking at you Hasselblad Xpan] but I would like an explanation why the M3 was able to have such a large rangefinder patch while future models got smaller. I can’t imagine why anyone would say, “yes, yes make their lives harder and they will pay more for it!” in a Dr. Evil voice. Is it because newer lenses have a closer focusing distances than the vintage ones? Is it because the M3 was originally designed for 50mm lenses (and above) that somehow makes it possible? I would appreciate a drop in the comments if you know why.</p>
+</li>
+<li>
+<p><strong>Frame lines startup lag:</strong> Anything less than instant is unacceptable when all the film variants starting with the very first M camera (the M3), had the capabilities to display frame lines at all times.</p>
+</li>
+<li>
+<p><strong>Top cover plate:</strong> My main issue with this is the face design. The illumination window for bright frame lines is gone (maybe this is why the digital frame lines take forever to show up?) and the viewfinder doesn’t sit above the lovely classic bevel that was once there on all other prior models. It’s too minimal.  I get it, it’s a bit more of a modern look but it’s a bit boring and too streamlined.</p>
+</li>
+<li>
+<p><strong>Rear display:</strong> This is a two part issue. I&rsquo;m not going to complain about the display resolution for the <a href="https://amzn.to/2HPIJJq" title="Leica M10 Digital Rangefinder Camera (Silver)">M10</a> and <a href="https://amzn.to/36scWZs" title="Leica M10-P Digital Rangefinder Camera 20021 (Black Chrome)">M10-P</a>, maybe it was ok for 2017? However, no increase in quality with the M10-R is a bit sad especially when the &ldquo;R&rdquo; means resolution. Secondly, the cosmetics of the screen. Why is it not centered within the margins? I’ve seen this issue on other cameras recently so I guess it’s just one company making these parts but I would imagine Leica with it’s price point can demand something a little more acceptable.</p>
+</li>
+<li>
+<p><strong>Self timing lever:</strong> The <a href="https://amzn.to/2HPIJJq" title="Leica M10 Digital Rangefinder Camera (Silver)">M10</a> series is definitely the closest resemblance to the film Leica’s and I think it could’ve been that much better if they returned with the self timing lever. One less reason for me to go into the menus would’ve made the experience that much better. I love it on the M3 and I think the M6/7/P could’ve just been almost perfect if they had it.</p>
+</li>
+<li>
+<p><strong>WiFi/Leica app:</strong> Maybe I would let the self timer issue go if the phone app wasn’t horribly slow. It’s ok&rsquo;ish once you get it connected but it takes handful of moments to startup. Better than nothing in a pinch but most times I&rsquo;d rather not use it at all with the <a href="https://amzn.to/2HPIJJq" title="Leica M10 Digital Rangefinder Camera (Silver)">M10</a>. Maybe they should’ve got rid of this too when they got rid of video? Jk.</p>
+</li>
+<li>
+<p><strong>No silent shutter:</strong> It’s a digital camera so I don’t understand why it doesn’t have an option to take a photo without the shutter. I hope there is a better reason than the <a href="https://amzn.to/2HPIJJq" title="Leica M10 Digital Rangefinder Camera (Silver)">M10</a>-<a href="https://amzn.to/36scWZs" title="Leica M10-P Digital Rangefinder Camera 20021 (Black Chrome)">P</a>/R.</p>
+</li>
+</ul>
+<h1 id="accessories">Accessories</h1>
+<ul>
+<li>
+<p><strong><a href="https://amzn.to/2GxH6j0" title="Leica M10 Thumb Support (black)">Leica M10 Thumb Support</a>:</strong> I think the Match Technical thumbs up grip came out first and Leica tried to get some of that market by making their own &ldquo;knock off&rdquo;. It uses the exact same black or silver paint as the camera which is probably the only thing it has going for it. (But honestly I can’t tell a difference of paint with the Match Technical version.) It’s also Leica branded which means its excessively overpriced. The issue I have with this thumb grip is that it’s a quarter circle cut without the ergonomic design of the Match Technical version. Why bother releasing an additional accessory if you can’t make it better than what has become the standard?</p>
+</li>
+<li>
+<p><strong><a href="https://amzn.to/3lhwhkj" title="Leica Visoflex (Typ 020) Electronic Viewfinder">Leica Visoflex Typ 020</a>:</strong> Another almost useless accessory. I thought it would make life easier when shooting summilux lenses wide open while adding the ability to look straight down into your camera. It kind’ve does but it also makes the camera too slow. The resolution is the worst I’ve seen in a long while, and it protrudes over the shutter dial. I know it was originally made for the <a href="https://amzn.to/2HMNaoj" title="Leica 018-180 T 16 MP Mirrorless Digital Camera with 3.7-Inch LCD, Black Anodized">Leica T</a> system and I guess it’s just an added perk that it works for the <a href="https://amzn.to/2HPIJJq" title="Leica M10 Digital Rangefinder Camera (Silver)">M10</a>. It would’ve been nice if they had one that followed the <a href="https://amzn.to/2HPIJJq" title="Leica M10 Digital Rangefinder Camera (Silver)">M10’s</a> aesthetics. Then again, if it worked a lot more fluid I probably wouldn’t have bought a <a href="https://amzn.to/3ngVsoP" title="Leica SL2 Mirrorless Camera Body">SL2</a>&hellip; Actually, an M10R and a <a href="https://amzn.to/3lhwhkj" title="Leica Visoflex (Typ 020) Electronic Viewfinder">Visoflex</a> worth it’s money would be amazing! Maybe M11 will fix this but I wouldn’t hold my breath.</p>
+</li>
+</ul>
+<p>Well, that’s all I have which are mostly minor cosmetic and nitpick issues. No camera is perfect but the Leica M series is closest for me in the digital realm. All I can hope is someone at Leica reads this and takes it for consideration in the next versions.</p>
     </div>
 
     
     <div class="tags">
       
-      <a href="/tags/bash">Bash</a>
+      <a href="/tags/photography">Photography</a>
       
-      <a href="/tags/init.d">init.d</a>
+      <a href="/tags/leica">Leica</a>
       
-      <a href="/tags/lsb">LSB</a>
+      <a href="/tags/m10">M10</a>
       
-      <a href="/tags/templates">Templates</a>
+      <a href="/tags/gear">Gear</a>
       
     </div>
     
 
     <div class="meta">
-      <i class="fa fa-clock-o"></i> Jul 7, 2014
+      <i class="fa fa-clock-o"></i> Oct 5, 2020
       
         
-          <a href="/categories/servers"><i class="fa fa-bookmark"></i> Servers</a>
+          <a href="/categories/photography"><i class="fa fa-bookmark"></i> Photography</a>
         
       
     </div>
 
     <div class="share-buttons">
-  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f&t=LSB%20Init.d%20Script%20Template"><span class="fa fa-facebook"></span></a>
-  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f&text=LSB%20Init.d%20Script%20Template&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
-  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f"><span class="fa fa-google-plus"></span></a>
-  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f&media=&description=LSB%20Init.d%20Script%20Template"><span class="fa fa-pinterest"></span></a>
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f&t=Leica%20M10%20Review"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f&text=Leica%20M10%20Review&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f&media=&description=Leica%20M10%20Review"><span class="fa fa-pinterest"></span></a>
 </div>
 
 
@@ -309,8 +273,8 @@ esac</code></pre>
 <div id="disqus_thread"></div>
 <script>
   var disqus_shortname = 'richardsumilang';
-  var disqus_identifier = '359 http:\/\/www.richardsumilang.com\/blog\/?p=359';
-  var disqus_url = 'https:\/\/www.richardsumilang.com\/posts\/server\/linux\/template\/lsb\/lsb-init-d-script-template\/';
+  var disqus_identifier = '2020-10-05T01:56:47Z';
+  var disqus_url = 'https:\/\/www.richardsumilang.com\/posts\/photography\/gear\/leica-m10-review-a-compilation-of-annoyances\/';
 
   (function() {
     if (window.location.hostname === "localhost") {

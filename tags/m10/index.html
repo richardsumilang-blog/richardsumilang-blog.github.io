@@ -13,35 +13,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
 
-<meta name="keywords" content="Bash, init.d, LSB, Templates" />
-<meta name="news_keywords" content="Bash, init.d, LSB, Templates" />
+<meta name="keywords" content="" />
+<meta name="news_keywords" content="" />
 
 
 <meta property="og:type" content="article" />
 
-<meta property="og:title" content="LSB Init.d Script Template - Managing daemons on Linux" />
+<meta property="og:title" content="" />
 <meta property="og:site_name" content="Tech tips, photography, and more." />
-<meta property="og:url" content="https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/" />
+<meta property="og:url" content="https://www.richardsumilang.com/tags/m10/" />
 <meta property="og:locale" content="en_US" />
 
-  
-  
-  
-  
-  <meta property="article:published_time" content="2014-07-07" />
-  <meta property="article:modified_time" content="2014-07-07" />
 
 
-
-
-  <meta property="article:tag" content="Bash" /><meta property="article:tag" content="init.d" /><meta property="article:tag" content="LSB" /><meta property="article:tag" content="Templates" />
 
 
 
 <meta name="twitter:card" content="summary" />
 
 <meta name="twitter:site" content="@richardsumilang" />
-<meta name="twitter:title" content="LSB Init.d Script Template - Richard Sumilang" />
+<meta name="twitter:title" content="Richard Sumilang" />
 <meta name="twitter:creator" content="@richardsumilang" />
 <meta name="twitter:domain" content="richardsumilang.com" />
 
@@ -54,15 +45,13 @@
   
     <title>
       
-        LSB Init.d Script Template
-        
-          - Managing daemons on Linux
+        M10
         
       
     </title>
   
 
-  <link rel="canonical" href="https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/" />
+  <link rel="canonical" href="https://www.richardsumilang.com/tags/m10/" />
 
 
 
@@ -74,6 +63,7 @@
 <link rel="shortcut icon" href="https://www.richardsumilang.com/favicon.ico" />
 
 
+<link rel="alternate" type="application/rss+xml" href="https://www.richardsumilang.com/tags/m10/index.xml" title="Richard Sumilang" />
 
   
 
@@ -120,12 +110,12 @@
 <script>
   q.push(function loadPage() {
     window.app.dispatch(window.app.actions.loadPage({
-      title: "LSB Init.d Script Template",
-      url: 'https:\/\/www.richardsumilang.com\/posts\/server\/linux\/template\/lsb\/lsb-init-d-script-template\/',
-      uri: '\/posts\/server\/linux\/template\/lsb\/lsb-init-d-script-template\/',
+      title: "M10",
+      url: 'https:\/\/www.richardsumilang.com\/tags\/m10\/',
+      uri: '\/tags\/m10\/',
       query: location.search.slice(1).split('&').map(p => p.split('=')).reduce((obj, pair) => { var [key, value] = pair.map(decodeURIComponent); return ({ ...obj, [key]: value }) }, {}),
-      section: 'page',
-      subSection: '',
+      section: 'tag',
+      subSection: 'm10',
       isTurbolinksPreview: document.documentElement.hasAttribute('data-turbolinks-preview')
     }));
   });
@@ -140,6 +130,10 @@
   <a href="https://www.richardsumilang.com/"><img src="https://www.richardsumilang.com/images/header-logo.png" loading="eager" /></a>
 </div>
 
+
+<h2 class="taxonomy-header">
+  <span><i class="fa fa-tag"></i> Tag Archives: M10</span>
+</h2>
 
 <ul id="navigation">
   
@@ -170,161 +164,53 @@
 
 
 <section id="articles">
-  <article>
-    
-
-    <header class="heading">
-      <h2><a href="https://www.richardsumilang.com/posts/server/linux/template/lsb/lsb-init-d-script-template/">LSB Init.d Script Template</a></h2>
-      
-        <h3>Managing daemons on Linux</h3>
-      
-    </header>
-
-    <div class="details">
-      <p>Quick little <code>init.d</code> template:</p>
-<pre><code class="language-bash" >#!/bin/bash
-# &lt;Application Name&gt;
-# chkconfig: 345 20 80
-# description: &lt;Description&gt;
-# processname: &lt;Process Name|Application Name|Short name&gt;
-# author: Richard Sumilang &lt;me@richardsumilang.com&gt;
-# see: https://wiki.debian.org/LSBInitScripts
-
-
-CMD=""                             # Command goes here
-NAME="&lt;Short Application Name&gt;"    # Short Application Name
-PIDFILE=/var/run/$NAME.pid         # Process ID File
-SCRIPTNAME=/etc/init.d/$NAME       # This script name
-
-case "$1" in
-start)
-
-    # Make sure process is not already running
-    if [ -f $PIDFILE ]; then
-        echo "PID already exists: $PIDFILE"
-        exit 1
-    fi
-
-    # Use pgrep to retrieve the Process ID
-    $CMD
-    sleep 1
-    PID=`pgrep -fn "$CMD"`
-
-    # Save process ID to file
-    if [ -z $PID ]; then
-        printf "%s\n" "Failed to start $NAME"
-    else
-        echo $PID &gt; $PIDFILE
-        printf "%s\n" "$NAME ... Ok"
-    fi
-;;
-status)
-    printf "%-50s" "Checking $NAME..."
-    if [ -f $PIDFILE ]; then
-        PID=`cat $PIDFILE`
-        if [ -z "`ps axf | grep ${PID} | grep -v grep`" ]; then
-            printf "%s\n" "Process dead but pidfile exists"
-        else
-            echo "$NAME is Running"
-        fi
-    else
-        printf "%s\n" "$NAME is not running"
-    fi
-;;
-stop)
-    printf "%-50s" "Stopping $NAME"
-    PID=`cat $PIDFILE`
-    if [ -f $PIDFILE ]; then
-        kill $PID
-        printf "%s\n" "Ok"
-        rm -f $PIDFILE
-    else
-        printf "%s\n" "pidfile not found"
-    fi
-;;
-
-restart)
-    $0 stop
-    $0 start
-;;
-
-*)
-    echo "Usage: $0 {status|start|stop|restart}"
-    exit 1
-esac</code></pre>
-    </div>
-
-    
-    <div class="tags">
-      
-      <a href="/tags/bash">Bash</a>
-      
-      <a href="/tags/init.d">init.d</a>
-      
-      <a href="/tags/lsb">LSB</a>
-      
-      <a href="/tags/templates">Templates</a>
-      
-    </div>
-    
-
-    <div class="meta">
-      <i class="fa fa-clock-o"></i> Jul 7, 2014
-      
-        
-          <a href="/categories/servers"><i class="fa fa-bookmark"></i> Servers</a>
-        
-      
-    </div>
-
-    <div class="share-buttons">
-  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f&t=LSB%20Init.d%20Script%20Template"><span class="fa fa-facebook"></span></a>
-  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f&text=LSB%20Init.d%20Script%20Template&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
-  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f"><span class="fa fa-google-plus"></span></a>
-  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2flinux%2ftemplate%2flsb%2flsb-init-d-script-template%2f&media=&description=LSB%20Init.d%20Script%20Template"><span class="fa fa-pinterest"></span></a>
-</div>
-
-
-  </article>
-
-  <div class="article-ad">
-    
   
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <article>
+  
 
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/photography/gear/leica-m10-review-a-compilation-of-annoyances/">Leica M10 Review</a></h2>
+    
+      <h3>A compilation of annoyances</h3>
+    
+  </header>
 
-
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-9583222607083188"
-    data-ad-slot="1616837107"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
+  <div class="details">
+    
+      <p>Sure, I’ve been giving Leica a lot of praise in my posts because it’s really that great of a company that focuses on the essentials but it’s not all rainbows and unicorns. You’d expect such a high valued item to be closer to perfect but here are some things that could be better.</p>
+    
   </div>
 
-  
-<div id="disqus_thread"></div>
-<script>
-  var disqus_shortname = 'richardsumilang';
-  var disqus_identifier = '359 http:\/\/www.richardsumilang.com\/blog\/?p=359';
-  var disqus_url = 'https:\/\/www.richardsumilang.com\/posts\/server\/linux\/template\/lsb\/lsb-init-d-script-template\/';
+  <a href="https://www.richardsumilang.com/posts/photography/gear/leica-m10-review-a-compilation-of-annoyances/" class="more-link">
+    Read More
+  </a>
 
-  (function() {
-    if (window.location.hostname === "localhost") {
-      return;
-    }
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Oct 5, 2020
+    <i class="fa fa-align-left"></i> 4 min read
+  </div>
 
-<div class="comments-ad">
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f&t=Leica%20M10%20Review"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f&text=Leica%20M10%20Review&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fphotography%2fgear%2fleica-m10-review-a-compilation-of-annoyances%2f&media=&description=Leica%20M10%20Review"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
+
+    
+    
+    
+    
+
+
+
+
+<div class="feed-ad">
   
   
 
@@ -335,13 +221,38 @@ esac</code></pre>
   <ins class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-9583222607083188"
-    data-ad-slot="1616837107"
+    data-ad-slot="7903043853"
     data-ad-format="auto"
     data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
+
+  
+  <div id="612235533">
+    <script type="text/javascript">
+      try {
+        window._mNHandle.queue.push(function (){
+          window._mNDetails.loadTag("612235533", "728x90", "612235533");
+        });
+      } catch (error) {}
+    </script>
+  </div>
 </div>
 
+
+
+
+    
+  
+
+  
+<div class="pagination">
+
+  
+
+  
+
+</div>
 
 </section>
 
