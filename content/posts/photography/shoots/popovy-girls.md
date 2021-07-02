@@ -1,8 +1,8 @@
 ---
-CoverImage: images/photography/shoots/popovy-girls/popovy-girls-cover-750x500.jpg
+CoverImage: images/photography/shoots/popovy-girls/popovy-girls-header-933x290.jpg
 CoverImageType: image/jpg
-CoverImageWidth: 994
-CoverImageHeight: 663
+CoverImageWidth: 933
+CoverImageHeight: 290
 Description: Photoshoot dedicated to the Popovy Dolls (Lena and Katya Popovy) who continue to be an inspiration of art. Work by Richard Sumiang.
 Categories:
  - Photography
@@ -61,6 +61,8 @@ In 2019, I dedicated a photoshoot to the [Popovy Dolls][1] who continue to be an
 <img src="/images/photography/shoots/popovy-girls/popovy-girls-mantis2-643x643.jpg" class="center" loading="lazy" />
 
 # BTS
+
+<img src="/images/photography/shoots/popovy-girls/popovy-girls-bts0-750x500.jpg" class="center" loading="lazy" />
 
 <img src="/images/photography/shoots/popovy-girls/popovy-girls-bts1-750x500.jpg" class="center" loading="lazy" />
 
