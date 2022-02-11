@@ -15,6 +15,7 @@ Keywords:
 Title: Unlock Fujifilm Film Simulations
 SubTitle: with Capture One and Lightroom
 Date: "2021-07-01T20:48:47.258Z"
+draft: true
 ---
 
 [1]: https://brew.sh/ "Homebrew"
