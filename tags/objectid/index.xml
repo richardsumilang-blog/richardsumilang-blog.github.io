@@ -6,11 +6,7 @@
     <description>Recent content in ObjectID on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Mar 2014 01:43:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/objectid/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 31 Mar 2014 01:43:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/objectid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create a MongoDB ObjectID from a timestamp using PHP</title>
       <link>https://www.richardsumilang.com/posts/programming/php/mongodb/create-a-mongodb-objectid-from-a-timestamp-using-php/</link>

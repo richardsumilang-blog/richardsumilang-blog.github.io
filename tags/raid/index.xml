@@ -6,11 +6,7 @@
     <description>Recent content in RAID on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Jun 2014 11:30:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/raid/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 28 Jun 2014 11:30:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/raid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Replace a bad hard drive on a Synology DiskStation RAID 5 with DSM 5.0</title>
       <link>https://www.richardsumilang.com/posts/server/synology/diskstation/replace-a-bad-hard-drive-on-a-synology-diskstation-raid-5-with-dsm-5-0/</link>

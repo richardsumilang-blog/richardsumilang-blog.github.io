@@ -6,10 +6,16 @@
     <description>Recent content in Posts on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 01:56:47 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 10 Feb 2022 22:18:45 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roon On NAS</title>
+      <link>https://www.richardsumilang.com/posts/apps/synology/roon-on-nas-synology-restricted-access/</link>
+      <pubDate>Thu, 10 Feb 2022 22:18:45 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/synology/roon-on-nas-synology-restricted-access/</guid>
+      <description>&lt;p&gt;If you run your own Synology NAS, you may want to run roon directly on your server for audio streaming. &lt;a href=&#34;https://roononnas.org/&#34; title=&#34;Roon On Nas&#34;&gt;Roon on Nas&lt;/a&gt; provides a package to conveniently install on your Synology server. The issue with this option is that the Synology service runs without any restriction on what it can see.&lt;/p&gt;
+&lt;p&gt;I noticed this issue when configuring my client. While adding the location of my music, the roon client was able to browse the entire NAS. Though the roon app will only add music to its library, this was not something I wanted available to any roon client that was on my network.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Popovy Girls</title>
@@ -207,7 +213,7 @@
       <pubDate>Wed, 05 Apr 2017 14:08:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/posts/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+      <description>&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;p&gt;Dump this in your terminal:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
@@ -250,7 +256,7 @@ hipster&amp;hellip; If that makes sense.&lt;/p&gt;
 &lt;p&gt;The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access
-to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+to, and lastly see a display of the pages&#39; top 5 posts (out of the last 100) as
 well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
     </item>
     
@@ -411,7 +417,7 @@ simplicity in mind.&lt;/p&gt;</description>
       <pubDate>Thu, 28 May 2015 00:13:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/posts/etc/apple/ios/effective-power-an-aol-flashback/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+      <description>&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/gamer/sp-hax0r.gif&#34; alt=&#34;haX0r&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;p&gt;There&amp;rsquo;s a popular text message going around today that restarts a recipients
 iPhone (if notifications is turned on) when they receive the following text:&lt;/p&gt;
 &lt;pre&gt;
@@ -432,7 +438,7 @@ Power
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
 &lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;</description>
     </item>
     
     <item>

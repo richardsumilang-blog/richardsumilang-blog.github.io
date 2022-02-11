@@ -6,7 +6,70 @@
     <language>en-us</language>
     <author>Richard Sumilang</author>
     
-    <updated>Sun, 66 Aug 10647 06:06:06 PST</updated>
+    <updated>Sun, 26 Aug 100245 02:02:02 PST</updated>
+    
+    <item>
+      <title>
+        
+          Roon On NAS
+          
+            - Restrict directory access on Synology
+          
+        
+      </title>
+      <link>https://www.richardsumilang.com/posts/apps/synology/roon-on-nas-synology-restricted-access/</link>
+      <pubDate>Sun, 26 Aug 100245 02:02:02 PST</pubDate>
+      <author>Richard Sumilang</author>
+      <guid>https://www.richardsumilang.com/posts/apps/synology/roon-on-nas-synology-restricted-access/</guid>
+      <description>&lt;p&gt;If you run your own Synology NAS, you may want to run roon directly on your server for audio streaming. &lt;a href=&#34;https://roononnas.org/&#34; title=&#34;Roon On Nas&#34;&gt;Roon on Nas&lt;/a&gt; provides a package to conveniently install on your Synology server. The issue with this option is that the Synology service runs without any restriction on what it can see.&lt;/p&gt;
+&lt;p&gt;I noticed this issue when configuring my client. While adding the location of my music, the roon client was able to browse the entire NAS. Though the roon app will only add music to its library, this was not something I wanted available to any roon client that was on my network.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The Solution&lt;/h2&gt;
+&lt;p&gt;Using docker we can create a container to run the roon server and give the container access only to our music directory via a mount. Essentially making this a jailed environment. A roon client will still have the ability to browse the whole system the server is running on, but now the system is the container whose files don&amp;rsquo;t mean much to us.&lt;/p&gt;
+&lt;p&gt;Steef de Bruijn was kind enough to provide a &lt;a href=&#34;https://roononnas.org/&#34; title=&#34;Roon On Nas&#34;&gt;dockerfile&lt;/a&gt; for running the latest roon server. Here&amp;rsquo;s my setup process:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;em&gt;Docker&lt;/em&gt; app your NAS.&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Registy&lt;/em&gt; tab and enter &lt;code&gt;roonserver&lt;/code&gt; in the search field.&lt;/li&gt;
+&lt;li&gt;Find the &lt;code&gt;steefdebruijn/docker-roonserver&lt;/code&gt;, click it, then click &lt;em&gt;Download&lt;/em&gt;. Choose the &lt;code&gt;latest&lt;/code&gt; tag.&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Image&lt;/em&gt; tab, find &lt;code&gt;steefdebruijn/docker-roonserver:latest&lt;/code&gt; and click &lt;em&gt;Launch&lt;/em&gt;.
+&lt;ul&gt;
+&lt;li&gt;Container name: &lt;em&gt;Whatever you want to call the server&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Advanced Settings&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Volume&lt;/em&gt; tab and add the following folders.
+&lt;ul&gt;
+&lt;li&gt;Folder: &lt;code&gt;/path/to/data&lt;/code&gt; (eg: &lt;code&gt;/roon/data&lt;/code&gt;), Mount Path: &lt;code&gt;/data&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Folder: &lt;code&gt;/path/to/backup&lt;/code&gt; (eg: &lt;code&gt;/roon/backup&lt;/code&gt;), Mount Path: &lt;code&gt;/backup&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Folder: &lt;code&gt;/path/to/app&lt;/code&gt; (eg: &lt;code&gt;/roon/app&lt;/code&gt;), Mount Path: &lt;code&gt;/app&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Folder: &lt;code&gt;/path/to/music&lt;/code&gt; (eg: &lt;code&gt;/roon/music&lt;/code&gt;), Mount Path: &lt;code&gt;/music&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Network&lt;/em&gt; tab and check &lt;em&gt;Use the same network as Docker host&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Environment&lt;/em&gt; tab and &lt;em&gt;Add&lt;/em&gt; your &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones&#34; title=&#34;List of tz database time zones&#34;&gt;time zone&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Eg: &lt;em&gt;variable&lt;/em&gt;: &lt;code&gt;TZ&lt;/code&gt; and &lt;em&gt;value&lt;/em&gt;: &lt;code&gt;America/Los Angeles&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Apply&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Next&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Done&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You should be able to see your new container running momentarily under the &lt;em&gt;Container&lt;/em&gt; tab.&lt;/p&gt;
+&lt;p&gt;The last thing to do is fire up your roon client on a device and the music directory.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open roon client on your device.&lt;/li&gt;
+&lt;li&gt;Click the pullout menu.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Settings&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Storage&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Add folder&lt;/em&gt;.
+&lt;ul&gt;
+&lt;li&gt;Select the mount path you specified on your docker container for music (eg: &lt;code&gt;/music&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You should notice that you are browsing only the contents of your container and not all the shares on your Synology.&lt;/p&gt;
+&lt;p&gt;Wala!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>
@@ -23,22 +86,22 @@
       <guid>https://www.richardsumilang.com/posts/photography/shoots/popovy-girls/</guid>
       <description>&lt;p&gt;In 2019, I dedicated a photoshoot to the &lt;a href=&#34;http://popovy-dolls.com/&#34; title=&#34;Popovy Dolls&#34;&gt;Popovy Dolls&lt;/a&gt; who continue to be an inspiration of art. I put together a small team consisting of a makeup artist, hair stylist, and models who were intrigued by my vision. I took on the responsibility of photography, wardrobes, props, and final presentations. These are the results.&lt;/p&gt;
 &lt;h1 id=&#34;rose&#34;&gt;Rose&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-rose-tempt-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-rose-pond-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-rose-touch-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-rose-tempt-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-rose-pond-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-rose-touch-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;h1 id=&#34;swan&#34;&gt;Swan&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-swan1-663x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-swan2-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-swan1-663x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-swan2-994x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;h1 id=&#34;red&#34;&gt;Red&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-red-663x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-red-663x663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;h1 id=&#34;mantis&#34;&gt;Mantis&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-mantis1-586x586.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-mantis2-643x643.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-mantis1-586x586.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-mantis2-643x643.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;h1 id=&#34;bts&#34;&gt;BTS&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts0-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts1-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts2-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts3-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts0-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts1-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts2-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/shoots/popovy-girls/popovy-girls-bts3-750x500.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;h1 id=&#34;thanks&#34;&gt;Thanks!&lt;/h1&gt;
 &lt;p&gt;This project was a labor of love with months of planning and decision making. From hair (+wigs), makeup, nails, clothes, and props. This was no easy task and not possible as a solo project. Many thanks to Erin Geer, Erica Cervantes, and Hugo Maldonado.&lt;/p&gt;</description>
     </item>
@@ -162,29 +225,29 @@
 &lt;p&gt;Route 4: (Spoiler alert: This is where I end up.) A combination of #2 and #3. I bought into the M system and haven&amp;rsquo;t looked back. I tried the M lenses on my &lt;a href=&#34;https://amzn.to/2BwEEHk&#34; title=&#34;Sony A7R III&#34;&gt;Sony A7R&lt;/a&gt; and the feel just wasn&amp;rsquo;t right. I demo&amp;rsquo;d my M lenses on the &lt;a href=&#34;https://amzn.to/3k3EKru&#34; title=&#34;Leica SL2 Mirrorless Camera Body&#34;&gt;Leica SL2&lt;/a&gt; when it came out. They felt right at home and now I consolidated my lens to M mount. This has been working for me great in studio, casually and street.&lt;/p&gt;
 &lt;h3 id=&#34;now&#34;&gt;Now&lt;/h3&gt;
 &lt;p&gt;Two years later and this brand with their essentials philosophies has infiltrated my photography. I still own the Q as it compliments my now Leica ecosystem just right with it’s macro and wide angle lens. I tried parting with on several occasions like when the Q2 was added to the family but it’s become an emotional attachment. The little pawn shop camera is part of the family. When I go out, an M camera usually comes with me. Rangefinder took less getting used to than you’d think. It removes a lot of technical/digital thinking from the shooting experience when taking your shots. Focusing with it has become a breeze and the preferred way to use a camera. The &lt;a href=&#34;https://amzn.to/3k3EKru&#34; title=&#34;Leica SL2 Mirrorless Camera Body&#34;&gt;SL2&lt;/a&gt; is now my studio camera and uses only M lenses for the time being. The Q comes out when there is more of a group setting. It&amp;rsquo;s also great when I know I&amp;rsquo;m going somewhere where I&amp;rsquo;d like the camera to be passed to someone else to take a photo. There is a &amp;ldquo;Touch AF + Release&amp;rdquo; feature on it that allows someone to touch the the back of the screen to autofocus and take the picture. This has been when handing the camera to novices for snapshots. The &lt;a href=&#34;https://amzn.to/30i3CV5&#34; title=&#34;Leica Q 24.2 Megapixel Digital 35 MM Compact Camera&#34;&gt;Leica Q&lt;/a&gt; has definitely been a gateway drug&amp;hellip; And it doesn&amp;rsquo;t even end with photography, wait till you put your eyes in their binoculars. I&amp;rsquo;ll save that for another time.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030530.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0086.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030634.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030687.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030717.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030728.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0167.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030696.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030953.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0282.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030996.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040045.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040065.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040136.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040190.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040226.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040441.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040574.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03_DSC0574.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC1204.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC4663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04L1040623.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.05_DSC5219.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030530.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0086.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030634.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030687.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030717.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030728.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0167.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030696.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030953.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02_DSC0282.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.02L1030996.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040045.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040065.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040136.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040190.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040226.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040441.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03L1040574.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.03_DSC0574.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC1204.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04_DSC4663.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.04L1040623.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/leica-q-review-the-gateway-drug/2018-08-14+00.28.05_DSC5219.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;</description>
     </item>
     
     <item>
@@ -211,7 +274,7 @@
     &#34;editor.fontFamily&#34;: &#34;Fira Code iScript, Menlo, Monaco, &#39;Courier New&#39;, monospace&#34;,
     &#34;editor.fontLigatures&#34;: true,
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You could be done at this point if you are fine with the Dark++ Italic theme colors. Or you could add these additional settings to your &lt;code&gt;settings.json&lt;/code&gt; to override any themes&amp;rsquo; font configuration:&lt;/p&gt;
+&lt;p&gt;You could be done at this point if you are fine with the Dark++ Italic theme colors. Or you could add these additional settings to your &lt;code&gt;settings.json&lt;/code&gt; to override any themes&#39; font configuration:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I added a some additional &lt;em&gt;italics&lt;/em&gt; that Dark++ Italic didn&amp;rsquo;t have, like &lt;code&gt;comment&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34; title=&#34;settings.json&#34;&gt;{
     &#34;editor.tokenColorCustomizations&#34;: {
@@ -286,9 +349,9 @@
 &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; If you&amp;rsquo;re a wrist strap person, then I have to say yes they&amp;rsquo;ve also made the best wrist strap I&amp;rsquo;ve ever used. Check out the &lt;a href=&#34;https://amzn.to/374A3r9&#34; title=&#34;Vi Vante Bengal Unleashed Black Leather Camera Wrist Strap Ultra Soft Lambskin&#34;&gt;ViVante Bengal Unleashed&lt;/a&gt;. It&amp;rsquo;s basically &lt;a href=&#34;https://amzn.to/3cD09mx&#34; title=&#34;Vi Vante Tiger Braided Luxury Lambskin Leather&#34;&gt;The Tiger&lt;/a&gt; strap shortened for your wrist.&lt;/p&gt;
 &lt;p&gt;There are other little perks of having a &lt;a href=&#34;https://www.vi-vante.com/&#34; title=&#34;Vi Vante designer leather camera straps and more&#34;&gt;Vi Vante strap&lt;/a&gt;. It’s hard to explain but it brings me joy when seeing how the strap falls beautifully around the camera when setting it down on a table. It’s a small thing but if you own one of these straps then you might understand what I mean.&lt;/p&gt;
 &lt;p&gt;So if you’re an admirer of the Leica’s precision, design, and have been yearning for a camera strap to finally match the standards that it demands, then look no further. I don’t think you’ll be dissatisfied.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-coffee.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-steps.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-wrapped.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-coffee.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-steps.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://www.richardsumilang.com/images/photography/gear/vi-vante-review/vi-vante-tiger-richard-wrapped.jpg&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;</description>
     </item>
     
     <item>
@@ -607,7 +670,7 @@
       <pubDate>Sun, 46 Aug 5040 04:04:04 PST</pubDate>
       <author>Richard Sumilang</author>
       <guid>https://www.richardsumilang.com/posts/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+      <description>&lt;img src=&#34;https://www.richardsumilang.com/images/server/ubuntu/upgrade-emacs-to-24-5-on-ubuntu-12-04/gnulogo-370x229.png&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;
 &lt;p&gt;Dump this in your terminal:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install checkinstall
 mkdir -p ~/src
@@ -674,7 +737,7 @@ hipster&amp;hellip; If that makes sense.&lt;/p&gt;
 &lt;p&gt;The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access
-to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+to, and lastly see a display of the pages&#39; top 5 posts (out of the last 100) as
 well as a sortable table of the 100 most recent posts.&lt;/p&gt;
 &lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;ul&gt;
@@ -931,30 +994,6 @@ producing the sound waves. Additionally, they have a wider sound range, low
 distortion levels, are amplifier friendly and are more durable without loosing
 their sound quality. The large surface area of the diaphragm allows the heat
 generated by the currant passing through it to pass or dissipate.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>
-        
-          What are Dynamic Drivers?
-          
-        
-      </title>
-      <link>https://www.richardsumilang.com/posts/electronics/audio/dynamic-drivers/</link>
-      <pubDate>Sun, 116 Aug 10110 11:11:11 PST</pubDate>
-      <author>Richard Sumilang</author>
-      <guid>https://www.richardsumilang.com/posts/electronics/audio/dynamic-drivers/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;dynamic driver&lt;/em&gt;, sometimes referred to as a &amp;ldquo;moving coil&amp;rdquo; driver is the most
-common driver found in headphones. It is the same technology found in speakers
-around your home, but on a much smaller scale. This type of driver
-consists of alternating magnetic fields powered by a tiny wire coil (or a
-&amp;ldquo;voice coil&amp;rdquo;). As the current changes based on the sound playback, the coil
-reacts with the magnetic field and the lightweight diaphragm rapidly compresses
-and decompresses the air by pulling the diaphragm in and out from the ring
-within the driver to create the sound you hear.&lt;/p&gt;
-&lt;p&gt;Dynamic drivers produce good bass with a decent amount of sound pressure without
-the need for using excess power. Dynamic drivers are capable of producing a full
-range of sound for the average listener.&lt;/p&gt;</description>
     </item>
     
   </channel>

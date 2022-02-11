@@ -6,10 +6,16 @@
     <description>Recent content in Synology on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jan 2015 17:11:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/synology/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 10 Feb 2022 22:18:45 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/synology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roon On NAS</title>
+      <link>https://www.richardsumilang.com/posts/apps/synology/roon-on-nas-synology-restricted-access/</link>
+      <pubDate>Thu, 10 Feb 2022 22:18:45 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/posts/apps/synology/roon-on-nas-synology-restricted-access/</guid>
+      <description>&lt;p&gt;If you run your own Synology NAS, you may want to run roon directly on your server for audio streaming. &lt;a href=&#34;https://roononnas.org/&#34; title=&#34;Roon On Nas&#34;&gt;Roon on Nas&lt;/a&gt; provides a package to conveniently install on your Synology server. The issue with this option is that the Synology service runs without any restriction on what it can see.&lt;/p&gt;
+&lt;p&gt;I noticed this issue when configuring my client. While adding the location of my music, the roon client was able to browse the entire NAS. Though the roon app will only add music to its library, this was not something I wanted available to any roon client that was on my network.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>SynoCommunity packages for Synology NAS</title>

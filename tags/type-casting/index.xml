@@ -6,11 +6,7 @@
     <description>Recent content in Type Casting on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 May 2014 18:15:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/type-casting/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 08 May 2014 18:15:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/type-casting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Type Casting String by Concatenation Performance Test in PHP</title>
       <link>https://www.richardsumilang.com/posts/programming/php/performance/type-casting-string-by-concatenation-performance-test-in-php/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in ECMAScript 6 on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2015 17:10:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/ecmascript-6/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 Mar 2015 17:10:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/ecmascript-6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using jQuery mobile in a ECMAScript 6 project</title>
       <link>https://www.richardsumilang.com/posts/programming/javascript/jquery/using-jquery-mobile-in-a-ecmascript-6-project/</link>
@@ -21,7 +17,7 @@
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
 &lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;</description>
     </item>
     
   </channel>

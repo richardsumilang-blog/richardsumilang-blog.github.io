@@ -6,11 +6,7 @@
     <description>Recent content in IDE on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2020 02:47:57 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/ide/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Jun 2020 02:47:57 +0000</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/ide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add cursive fonts to VS Code</title>
       <link>https://www.richardsumilang.com/posts/apps/ide/visual-studio-code/how-to-add-cursive/</link>

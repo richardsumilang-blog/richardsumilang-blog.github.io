@@ -6,11 +6,7 @@
     <description>Recent content in Ruby on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2015 10:57:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 20 Dec 2015 10:57:00 -0700</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Facebook Page Analytics</title>
       <link>https://www.richardsumilang.com/posts/programming/ruby/ror/facebook-page-analytics-ror/</link>
@@ -27,7 +23,7 @@ hipster&amp;hellip; If that makes sense.&lt;/p&gt;
 &lt;p&gt;The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access
-to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+to, and lastly see a display of the pages&#39; top 5 posts (out of the last 100) as
 well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
     </item>
     

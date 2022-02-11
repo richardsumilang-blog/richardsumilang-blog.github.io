@@ -6,11 +6,7 @@
     <description>Recent content in Programming on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2015 10:57:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 20 Dec 2015 10:57:00 -0700</lastBuildDate><atom:link href="https://www.richardsumilang.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Facebook Page Analytics</title>
       <link>https://www.richardsumilang.com/posts/programming/ruby/ror/facebook-page-analytics-ror/</link>
@@ -27,7 +23,7 @@ hipster&amp;hellip; If that makes sense.&lt;/p&gt;
 &lt;p&gt;The project was to create a Rails applications that provides analytics for the
 last 100 Facebook posts of a Facebook page. As a user, you should be able to
 login using Facebook, see a list of pages that you have authorized admin access
-to, and lastly see a display of the pages&amp;rsquo; top 5 posts (out of the last 100) as
+to, and lastly see a display of the pages&#39; top 5 posts (out of the last 100) as
 well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
     </item>
     
@@ -41,7 +37,7 @@ well as a sortable table of the 100 most recent posts.&lt;/p&gt;</description>
 dependencies I was upgrading from. I used &lt;a href=&#34;https://babeljs.io/&#34; title=&#34;Babel JS&#34;&gt;Babel JS&lt;/a&gt; to transpile my ES6 code
 with &lt;a href=&#34;https://browserify.org/&#34; title=&#34;Browserify&#34;&gt;browserify&lt;/a&gt; and everything was working fine until I got to
 &lt;a href=&#34;https://jquerymobile.com/&#34; title=&#34;jQuery Mobile&#34;&gt;jQuery-mobile&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;https://www.richardsumilang.com/images/reactions/why/jon-stewart.gif&#34; class=&#34;center&#34; loading=&#34;lazy&#34; /&gt;</description>
     </item>
     
     <item>

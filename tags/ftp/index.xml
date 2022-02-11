@@ -6,11 +6,7 @@
     <description>Recent content in FTP on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Sep 2014 15:30:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 27 Sep 2014 15:30:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FTP Sync Script</title>
       <link>https://www.richardsumilang.com/posts/unix-like/linux/ftp/ftp-sync-script/</link>

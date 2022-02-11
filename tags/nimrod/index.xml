@@ -6,11 +6,7 @@
     <description>Recent content in Nimrod on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Apr 2014 11:09:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/nimrod/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 07 Apr 2014 11:09:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/nimrod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to install Nimrod on OS X</title>
       <link>https://www.richardsumilang.com/posts/programming/nimrod/install-nimrod-on-os-x/</link>

@@ -6,10 +6,24 @@
     <description>Recent content in Tags on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 01:56:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Feb 2022 22:18:45 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roon</title>
+      <link>https://www.richardsumilang.com/tags/roon/</link>
+      <pubDate>Thu, 10 Feb 2022 22:18:45 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/roon/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://www.richardsumilang.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Synology</title>
+      <link>https://www.richardsumilang.com/tags/synology/</link>
+      <pubDate>Thu, 10 Feb 2022 22:18:45 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/synology/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>BTS</title>
@@ -444,15 +458,6 @@
     </item>
     
     <item>
-      <title>S.E.X.</title>
-      <link>https://www.richardsumilang.com/tags/s.e.x./</link>
-      <pubDate>Sat, 19 Sep 2015 18:45:10 -0700</pubDate>
-      
-      <guid>https://www.richardsumilang.com/tags/s.e.x./</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Transformer</title>
       <link>https://www.richardsumilang.com/tags/transformer/</link>
       <pubDate>Sat, 19 Sep 2015 18:45:10 -0700</pubDate>
@@ -498,15 +503,6 @@
     </item>
     
     <item>
-      <title>CSS</title>
-      <link>https://www.richardsumilang.com/tags/css/</link>
-      <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
-      
-      <guid>https://www.richardsumilang.com/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CSS3</title>
       <link>https://www.richardsumilang.com/tags/css3/</link>
       <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
@@ -539,15 +535,6 @@
       <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
       
       <guid>https://www.richardsumilang.com/tags/eva/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://www.richardsumilang.com/tags/git/</link>
-      <pubDate>Sat, 05 Sep 2015 18:43:34 -0700</pubDate>
-      
-      <guid>https://www.richardsumilang.com/tags/git/</guid>
       <description></description>
     </item>
     
@@ -705,15 +692,6 @@
     </item>
     
     <item>
-      <title>Java</title>
-      <link>https://www.richardsumilang.com/tags/java/</link>
-      <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
-      
-      <guid>https://www.richardsumilang.com/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>JavaScript</title>
       <link>https://www.richardsumilang.com/tags/javascript/</link>
       <pubDate>Wed, 11 Mar 2015 17:10:00 -0800</pubDate>
@@ -759,11 +737,29 @@
     </item>
     
     <item>
+      <title>CSS</title>
+      <link>https://www.richardsumilang.com/tags/css/</link>
+      <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>HTML</title>
       <link>https://www.richardsumilang.com/tags/html/</link>
       <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://www.richardsumilang.com/tags/java/</link>
+      <pubDate>Sun, 08 Feb 2015 19:25:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/java/</guid>
       <description></description>
     </item>
     
@@ -849,6 +845,15 @@
     </item>
     
     <item>
+      <title>Git</title>
+      <link>https://www.richardsumilang.com/tags/git/</link>
+      <pubDate>Sat, 31 Jan 2015 00:58:00 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>NAS</title>
       <link>https://www.richardsumilang.com/tags/nas/</link>
       <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
@@ -872,15 +877,6 @@
       <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/tags/synocommunity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Synology</title>
-      <link>https://www.richardsumilang.com/tags/synology/</link>
-      <pubDate>Fri, 09 Jan 2015 17:11:00 -0800</pubDate>
-      
-      <guid>https://www.richardsumilang.com/tags/synology/</guid>
       <description></description>
     </item>
     
@@ -1583,6 +1579,15 @@
       <pubDate>Sun, 30 Mar 2014 19:35:00 -0800</pubDate>
       
       <guid>https://www.richardsumilang.com/tags/pasadena/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S.E.X.</title>
+      <link>https://www.richardsumilang.com/tags/s.e.x./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.richardsumilang.com/tags/s.e.x./</guid>
       <description></description>
     </item>
     

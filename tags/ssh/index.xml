@@ -6,11 +6,7 @@
     <description>Recent content in SSH on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jul 2014 18:32:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 12 Jul 2014 18:32:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to enable SSH access to Synology DiskStation</title>
       <link>https://www.richardsumilang.com/posts/server/synology/diskstation/enable-ssh-access-to-synology-diskstation/</link>

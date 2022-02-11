@@ -47,7 +47,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.92.2" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -66,7 +66,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.9b7ceee5b74eb21b7539.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.ce4da674f83bd123b1c3.css" />
 
 
 
@@ -105,7 +105,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.b24fec4f.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.c5a1cfc8.js"></script>
   
 
 
@@ -185,7 +185,7 @@
 dependencies I was upgrading from. I used <a href="https://babeljs.io/" title="Babel JS">Babel JS</a> to transpile my ES6 code
 with <a href="https://browserify.org/" title="Browserify">browserify</a> and everything was working fine until I got to
 <a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery-mobile</a>.</p>
-<p><img src="/images/reactions/why/jon-stewart.gif" class="center" loading="lazy" /></p>
+<img src="/images/reactions/why/jon-stewart.gif" class="center" loading="lazy" />
 <p>After a quick inspection, I see that jQuery-mobile is having trouble binding
 itself to the <code>root</code> aka <code>this</code> aka <code>window</code> object. This is because the way
 jQuery-mobile is wrapped in a block where <code>this</code> is <code>undefined</code> because the
@@ -240,7 +240,7 @@ changes up in a npm project under the name <strong>jquery-mobile-babel-safe</str
 how I use it in my project:</p>
 <h3 id="install">Install</h3>
 <p>Run this command in your project room:</p>
-<pre><code>    npm install jquery-mobile-babel-safe --save
+<pre><code>	npm install jquery-mobile-babel-safe --save
 </code></pre>
 <p><strong>package.json</strong></p>
 <pre><code class="language-javascript">    "browser": {

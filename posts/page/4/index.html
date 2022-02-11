@@ -38,7 +38,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.92.2" />
 
 
   <base href="https://www.richardsumilang.com/" />
@@ -50,7 +50,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.9b7ceee5b74eb21b7539.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.richardsumilang.com/_app/main.ce4da674f83bd123b1c3.css" />
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-  <script defer src="https://www.richardsumilang.com/_app/main.b24fec4f.js"></script>
+  <script defer src="https://www.richardsumilang.com/_app/main.c5a1cfc8.js"></script>
   
 
 
@@ -151,6 +151,49 @@
   
   <section id="articles">
     
+
+    
+      <article>
+  
+
+  <header class="heading">
+    <h2><a href="https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/">Working with Apple&#39;s iOS image orientation</a></h2>
+    
+      <h3>Using PHP and ImageMagick</h3>
+    
+  </header>
+
+  <div class="details">
+    
+      <p>You might notice pictures taken with an iOS device (iPhone or iPad) look like
+they are not rotated properly when transferring them to another device or
+software. This happens because the device is held at a certain angle when the
+picture is taken and it&rsquo;s up to the software at the receiving end to display it
+however it wants.</p>
+<p>Apple&rsquo;s camera will write orientation info into the exif headers of images
+taken and you can rotate it accordingly.</p>
+<p>Here is an example of rotating an image using PHP with the ImageMagick library;</p>
+    
+  </div>
+
+  <a href="https://www.richardsumilang.com/posts/programming/php/graphics/working-with-apples-ios-image-orientation/" class="more-link">
+    Read More
+  </a>
+
+  <div class="meta">
+    <i class="fa fa-clock-o"></i> Oct 17, 2014
+    <i class="fa fa-align-left"></i> 1 min read
+  </div>
+
+  <div class="share-buttons">
+  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgraphics%2fworking-with-apples-ios-image-orientation%2f&t=Working%20with%20Apple%27s%20iOS%20image%20orientation"><span class="fa fa-facebook"></span></a>
+  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgraphics%2fworking-with-apples-ios-image-orientation%2f&text=Working%20with%20Apple%27s%20iOS%20image%20orientation&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
+  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgraphics%2fworking-with-apples-ios-image-orientation%2f"><span class="fa fa-google-plus"></span></a>
+  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fprogramming%2fphp%2fgraphics%2fworking-with-apples-ios-image-orientation%2f&media=&description=Working%20with%20Apple%27s%20iOS%20image%20orientation"><span class="fa fa-pinterest"></span></a>
+</div>
+
+
+</article>
 
     
       <article>
@@ -486,47 +529,6 @@ multiple versions by source. Also has a recipe for the <a href="https://pecl.php
   <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f&text=Chef%20Gearman%20Cookbook%20v0.1.0&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
   <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f"><span class="fa fa-google-plus"></span></a>
   <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fchef%2fchef-gearman-cookbook-v0-1-0%2f&media=&description=Chef%20Gearman%20Cookbook%20v0.1.0"><span class="fa fa-pinterest"></span></a>
-</div>
-
-
-</article>
-
-    
-      <article>
-  
-
-  <header class="heading">
-    <h2><a href="https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/">Update Chef Solo on your Vagrant</a></h2>
-    
-  </header>
-
-  <div class="details">
-    
-      <p>Install <a href="https://github.com/schisamo/vagrant-omnibus" title="Vagrant Omnibus">vagrant-omnibus</a>:</p>
-<pre><code class="language-bash" title="Install vagrant-omnibus">vagrant plugin install vagrant-omnibus</code></pre>
-<p>Configure your <a href="https://docs.vagrantup.com/v2/vagrantfile/index.html" title="Vagrantfile Doc">Vagrantfile</a> before provisioning to the latest version of
-Chef:</p>
-<pre><code class="language-ruby" title="Configure Vagrantfile">config.omnibus.chef_version = :latest</code></pre>
-<p>You can also upgrade to a specific version like so:</p>
-<pre><code class="language-ruby" title="Configure Vagrantfile">config.omnibus.chef_version = "11.12.8"</code></pre>
-
-    
-  </div>
-
-  <a href="https://www.richardsumilang.com/posts/server/virtualization/vagrant/chef/update-chef-solo-on-your-vagrant/" class="more-link">
-    Read More
-  </a>
-
-  <div class="meta">
-    <i class="fa fa-clock-o"></i> Jun 10, 2014
-    <i class="fa fa-align-left"></i> 1 min read
-  </div>
-
-  <div class="share-buttons">
-  <a title="Facebook Share" target="_blank" href="//www.facebook.com/sharer.php?u=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f&t=Update%20Chef%20Solo%20on%20your%20Vagrant"><span class="fa fa-facebook"></span></a>
-  <a title="Twitter Share" target="_blank" href="//twitter.com/intent/tweet?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f&text=Update%20Chef%20Solo%20on%20your%20Vagrant&tw_p=tweetbutton"><span class="fa fa-twitter"></span></a>
-  <a title="Google+ Share" target="_blank" href="//plus.google.com/share?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f"><span class="fa fa-google-plus"></span></a>
-  <a title="Pinterest Share" target="_blank" href="//pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.richardsumilang.com%2fposts%2fserver%2fvirtualization%2fvagrant%2fchef%2fupdate-chef-solo-on-your-vagrant%2f&media=&description=Update%20Chef%20Solo%20on%20your%20Vagrant"><span class="fa fa-pinterest"></span></a>
 </div>
 
 

@@ -6,11 +6,7 @@
     <description>Recent content in Redis on Richard Sumilang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Apr 2014 10:04:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://www.richardsumilang.com/tags/redis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 04 Apr 2014 10:04:00 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to install Redis on OS X</title>
       <link>https://www.richardsumilang.com/posts/server/redis/install-redis-on-os-x/</link>
