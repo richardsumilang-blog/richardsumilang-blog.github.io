@@ -38,3 +38,7 @@ theme = "hugo-theme-richardsumilang-dark"
 
 [markup.goldmark.renderer]
   unsafe= true
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_|CSS_ENTRY|JS_ENTRY']
