@@ -36,6 +36,11 @@ theme = "hugo-theme-richardsumilang-dark"
   YouTube = "richardsumilang"
   SiteName = "Tech tips, photography, and more."
 
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
+
 [markup.goldmark.renderer]
   unsafe= true
 
