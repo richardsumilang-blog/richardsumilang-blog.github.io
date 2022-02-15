@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Richard Sumilang</title>
+    <link>https://www.richardsumilang.com/series/</link>
+    <description>Recent content in Series on Richard Sumilang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Dec 2021 22:17:45 -0800</lastBuildDate><atom:link href="https://www.richardsumilang.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The perfect DAP</title>
+      <link>https://www.richardsumilang.com/series/the-perfect-dap/</link>
+      <pubDate>Mon, 27 Dec 2021 22:17:45 -0800</pubDate>
+      
+      <guid>https://www.richardsumilang.com/series/the-perfect-dap/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
