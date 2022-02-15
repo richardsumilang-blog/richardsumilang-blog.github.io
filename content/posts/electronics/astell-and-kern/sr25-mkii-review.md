@@ -15,8 +15,9 @@ Keywords:
  - Audiophile
  - Android
  - Music
-Title: Astell & Kern SR25 MKII
-SubTitle: Review
+PageTitle: Astell & Kern SR25 MKII Review
+Title: Astell & Kern SR25 MKII Review
+SubTitle: So close yet so far
 Rating: 2
 Date: 2021-12-27T22:17:45-08:00
 Series: ['The perfect DAP']
