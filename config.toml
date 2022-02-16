@@ -47,3 +47,10 @@ theme = "hugo-theme-richardsumilang-dark"
 [security]
   [security.funcs]
     getenv = ['^HUGO_|CSS_ENTRY|JS_ENTRY']
+
+[related]
+  includeNewer = true
+  toLower = true
+[[related.indices]]
+  name = 'series'
+  weight = 100

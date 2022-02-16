@@ -1,5 +1,5 @@
 ---
-Description: Running roon on Synology NAS with restricted directory access
+Description: Astell & Kern SR25 MKII hands on review. The ups and downs.
 Categories:
  - Electronics
 CoverImage: images/electronics/astell-and-kern/sr25-mkii-review/cover-900x506.jpg
@@ -20,7 +20,7 @@ Title: Astell & Kern SR25 MKII Review
 SubTitle: So close yet so far
 Rating: 2
 Date: 2021-12-27T22:17:45-08:00
-Series: ['The perfect DAP']
+Series: The perfect DAP
 ---
 
 [1]: https://amzn.to/36ac5P0 "Astell&Kern A&Norma SR25 Portable High Resolution Audio Player"
