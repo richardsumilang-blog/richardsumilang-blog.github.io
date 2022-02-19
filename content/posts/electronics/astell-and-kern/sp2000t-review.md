@@ -4,7 +4,7 @@ Categories:
  - Electronics
 Tags:
  - Astell & Kern
- - SP2000T
+ - DAP
 Keywords:
  - Astell & Kern SP2000T
  - DAP

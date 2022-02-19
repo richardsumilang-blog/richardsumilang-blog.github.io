@@ -8,7 +8,7 @@ CoverImageWidth: 900
 CoverImageHeight: 477
 Tags:
  - Astell & Kern
- - SR25
+ - DAP
 Keywords:
  - Astell & Kern SR25 MKII
  - DAP
