@@ -100,13 +100,11 @@ Skim through the text file and search for any corrupt keywords. The main thing t
 
 2. This command will loop through `.flac` files and create a fixed version of the file in a relative directory called `fixed`.
 
-<pre>
-<code class="language-bash" title="flac-repair-files.sh">for file in *.flac
+<pre><code class="language-bash" title="flac-repair-files.sh">for file in *.flac
 do
   flac --verify --decode-through-errors --preserve-modtime -o fixed/$file $file
 done
-</code>
-</pre>
+</code></pre>
 
 I retested the new files and they were good according to `flac -t`. So I replaced the originals with the fixed and with a tired smile on my face, I slid that sd card back into the DAP. I thought I could see the finish line, but it was a mirage. The DAP continued to crash.
 
