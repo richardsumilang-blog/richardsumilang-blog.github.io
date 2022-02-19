@@ -73,7 +73,7 @@ I reach back to customer support and ask if there is anyway they could tell help
 
 _Note: I ran the command in my sd card path where my music for my DAP is located. Kiss your files goodbye if you accidentally run it in the wrong place._
 
-<pre><code class="bash" title="a&k-supported-files-only.sh">find . -type f -not \( -iname '*.wav' \
+<pre><code class="language-bash" title="a&k-supported-files-only.sh">find . -type f -not \( -iname '*.wav' \
 -or -iname '*.flac' \
 -or -iname '*.wma' \
 -or -iname '*.mp3' \
@@ -92,20 +92,21 @@ My process ended up kind've simple, though manual. I focused on my FLACs since m
 
 1. This command will check all your flac files in the current path and write the output to a file called `flac-report.txt` on your desktop. Don't worry, it does not delete or alter anything.
 
-<pre><code class="bash" title="flac-corrupt-files.sh">
-find . -type f \( -name '*.flac' \) -not -path '*/.*' -print0 | xargs -0 -I {} flac -t {} 2>&1 | tee ~/Desktop/flac-report.txt
+<pre>
+<code class="language-bash" title="flac-corrupt-files.sh">find . -type f \( -name '*.flac' \) -not -path '*/.*' -print0 | xargs -0 -I {} flac -t {} 2>&1 | tee ~/Desktop/flac-report.txt
 </code></pre>
 
 Skim through the text file and search for any corrupt keywords. The main thing the `flac` test command scans for are files that don't have a md5 hash that matches their track info. To my surprise, I only found 12 files with issues. I was pretty excited at this point because I figured this surely had to be the culprit. They were all in my _classical_ directory which was pretty high up in the alphabetical hierachy of files. I figured the DAP would probably scan in alphabetical order so this would explain why it crashes so quick during the scan. (FYI - It never gave me enough time to browse my files before restarting.) Luckily for me, there were just a few directories that contained the corrupt files so I created a little loop to go through all the files in a directory and fix them all instead writing a command per file:
 
 2. This command will loop through `.flac` files and create a fixed version of the file in a relative directory called `fixed`.
 
-<pre><code class="bash" title="flac-repair-files.sh">
-for file in *.flac
+<pre>
+<code class="language-bash" title="flac-repair-files.sh">for file in *.flac
 do
   flac --verify --decode-through-errors --preserve-modtime -o fixed/$file $file
 done
-</code></pre>
+</code>
+</pre>
 
 I retested the new files and they were good according to `flac -t`. So I replaced the originals with the fixed and with a tired smile on my face, I slid that sd card back into the DAP. I thought I could see the finish line, but it was a mirage. The DAP continued to crash.
 
