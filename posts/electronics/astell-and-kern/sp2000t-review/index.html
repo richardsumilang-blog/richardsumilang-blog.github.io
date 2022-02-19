@@ -217,7 +217,7 @@
 <p>This is not good. Honeymoon phase is now quickly wearing off and I reach out to customer support. The best they could tell me is that I must have a corrupt file on my card or maybe my card was corrupt? I didn&rsquo;t believe my new card could be corrupt so quick that was just purchased a month ago for the SR25. Anything is possible though. I ran disk diagnostics on it and no errors came back. I started with the lowest hanging fruit of just reformatting the card and copying the files over again rather than trying to figure out which of my 1tb worth of files might be corrupt. Here&rsquo;s to another day of playing the waiting game, but this time I copy a different set up files that added up to 1tb. Once the card was ready, I popped it back in her and again! She seizured and restart during the scan. Oh boy&hellip;</p>
 <p>I reach back to customer support and ask if there is anyway they could tell help me pinpoint the perhaps corrupt file? They suggested maybe only having files that the device supported such as &ldquo;WAV, FLAC, WMA, MP3, OGG, APE, AAC, ALAC, AIFF, DFF, DSF, MQA&rdquo; (from their email) and not anything else such as &ldquo;.JPG, .PDF., Apple Playlist File, .ITL, .M4A, &hellip;etc&rdquo;. I thougt this was an interesting list they gave as I know I definitely had jpegs, cues, and text files on my SR25 which didn&rsquo;t cause it crash. I also know my library is mostly FLAC and only maybe 0.1% MP3 files. Whatever, I&rsquo;ll play along. I put together a little command to remove everything that didn&rsquo;t match their criteria.</p>
 <p><em>Note: I ran the command in my sd card path where my music for my DAP is located. Kiss your files goodbye if you accidentally run it in the wrong place.</em></p>
-<pre><code class="bash" title="a&k-supported-files-only.sh">find . -type f -not \( -iname '*.wav' \
+<pre><code class="language-bash" title="a&k-supported-files-only.sh">find . -type f -not \( -iname '*.wav' \
 -or -iname '*.flac' \
 -or -iname '*.wma' \
 -or -iname '*.mp3' \
@@ -234,19 +234,20 @@
 <ol>
 <li>This command will check all your flac files in the current path and write the output to a file called <code>flac-report.txt</code> on your desktop. Don&rsquo;t worry, it does not delete or alter anything.</li>
 </ol>
-<pre><code class="bash" title="flac-corrupt-files.sh">
-find . -type f \( -name '*.flac' \) -not -path '*/.*' -print0 | xargs -0 -I {} flac -t {} 2>&1 | tee ~/Desktop/flac-report.txt
+<pre>
+<code class="language-bash" title="flac-corrupt-files.sh">find . -type f \( -name '*.flac' \) -not -path '*/.*' -print0 | xargs -0 -I {} flac -t {} 2>&1 | tee ~/Desktop/flac-report.txt
 </code></pre>
 <p>Skim through the text file and search for any corrupt keywords. The main thing the <code>flac</code> test command scans for are files that don&rsquo;t have a md5 hash that matches their track info. To my surprise, I only found 12 files with issues. I was pretty excited at this point because I figured this surely had to be the culprit. They were all in my <em>classical</em> directory which was pretty high up in the alphabetical hierachy of files. I figured the DAP would probably scan in alphabetical order so this would explain why it crashes so quick during the scan. (FYI - It never gave me enough time to browse my files before restarting.) Luckily for me, there were just a few directories that contained the corrupt files so I created a little loop to go through all the files in a directory and fix them all instead writing a command per file:</p>
 <ol start="2">
 <li>This command will loop through <code>.flac</code> files and create a fixed version of the file in a relative directory called <code>fixed</code>.</li>
 </ol>
-<pre><code class="bash" title="flac-repair-files.sh">
-for file in *.flac
+<pre>
+<code class="language-bash" title="flac-repair-files.sh">for file in *.flac
 do
   flac --verify --decode-through-errors --preserve-modtime -o fixed/$file $file
 done
-</code></pre>
+</code>
+</pre>
 <p>I retested the new files and they were good according to <code>flac -t</code>. So I replaced the originals with the fixed and with a tired smile on my face, I slid that sd card back into the DAP. I thought I could see the finish line, but it was a mirage. The DAP continued to crash.</p>
 <p>The absolute last thing I could do is another thing what A&amp;K customer support suggested. Copy over smaller batches of files to find the problematic ones. I started this process and it was slow and brutal. (Especially with the amount of files I wanted on my DAP.) I figured out a little trick to make it a little less painful than slowly transfering all the files over again. The A&amp;K DAPs treats files/directories with a <code>.</code> dot in front of them (eg: <code>.classical</code>) as a hidden file and will not scan them. This might be valuable to you if youwant to narrow it down this way. Though its quicker, but still requires removing the SD card from the DAP and adding the dot through your computer as a mounted drive. You can&rsquo;t keep your card in the device the whole time and do it through Android File Transfer&hellip; Yeah I know, that sucks :(</p>
 <h2 id="conclusion">Conclusion</h2>
