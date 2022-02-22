@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.richardsumilang.com/categories/apps/</loc>
-    <lastmod>2022-02-10T22:18:45-08:00</lastmod>
-  </url><url>
     <loc>https://www.richardsumilang.com/categories/</loc>
-    <lastmod>2022-02-10T22:18:45-08:00</lastmod>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/tags/dap/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/categories/electronics/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
   </url><url>
     <loc>https://www.richardsumilang.com/posts/</loc>
-    <lastmod>2022-02-10T22:18:45-08:00</lastmod>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
   </url><url>
     <loc>https://www.richardsumilang.com/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/series/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/tags/sony/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/posts/electronics/sony/nw-wm1z-review/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/tags/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/series/the-perfect-dap/</loc>
+    <lastmod>2022-02-11T08:17:45-08:00</lastmod>
+  </url><url>
+    <loc>https://www.richardsumilang.com/categories/apps/</loc>
     <lastmod>2022-02-10T22:18:45-08:00</lastmod>
   </url><url>
     <loc>https://www.richardsumilang.com/tags/roon/</loc>
@@ -23,25 +44,10 @@
     <loc>https://www.richardsumilang.com/tags/synology/</loc>
     <lastmod>2022-02-10T22:18:45-08:00</lastmod>
   </url><url>
-    <loc>https://www.richardsumilang.com/tags/</loc>
-    <lastmod>2022-02-10T22:18:45-08:00</lastmod>
-  </url><url>
     <loc>https://www.richardsumilang.com/tags/astell-kern/</loc>
     <lastmod>2022-01-22T21:15:45-08:00</lastmod>
   </url><url>
     <loc>https://www.richardsumilang.com/posts/electronics/astell-and-kern/sp2000t-review/</loc>
-    <lastmod>2022-01-22T21:15:45-08:00</lastmod>
-  </url><url>
-    <loc>https://www.richardsumilang.com/tags/dap/</loc>
-    <lastmod>2022-01-22T21:15:45-08:00</lastmod>
-  </url><url>
-    <loc>https://www.richardsumilang.com/categories/electronics/</loc>
-    <lastmod>2022-01-22T21:15:45-08:00</lastmod>
-  </url><url>
-    <loc>https://www.richardsumilang.com/series/</loc>
-    <lastmod>2022-01-22T21:15:45-08:00</lastmod>
-  </url><url>
-    <loc>https://www.richardsumilang.com/series/the-perfect-dap/</loc>
     <lastmod>2022-01-22T21:15:45-08:00</lastmod>
   </url><url>
     <loc>https://www.richardsumilang.com/posts/electronics/astell-and-kern/sr25-mkii-review/</loc>
